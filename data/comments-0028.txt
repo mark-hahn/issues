@@ -1,0 +1,171 @@
+
+# page: 28, date: 2014-05-19, count: 30, rateLimit: 4224 of 5000
+
+    245-43613817-2306 @aybabtme Yep, Atom doesn't support this at the moment. However, I think I've noticed some packages t
+     94-43663177-2306 This package adds some functions but not all. Also, it's less usable. :+1: for the suggestion
+    255-57268322-2306 I've used the package, it works, but is not a simple gesture of alt+click and drag. It really should 
+    212-57275984-2306 Check out Sublime-Style-Column-Selection. I think it is what you want. If you have a problem with a
+     54-67592183-2306 I suggest this should be a build-in feature (package).
+     69-77635198-2306 > I suggest this should be a build-in feature (package). Agreed :)
+     98-43538159-2298 Could you open the dev tools with `ctrl-alt-i` and run `atom.getVersion()` and see what it prints?
+     43-43547719-2298 ```atom.getVersion()``` returns ```0.1.0```
+    370-43663960-2298 Can you try editing the file in `resources/atom/browser/lib/init.js` inside the installed Atom folder
+   1326-43674263-2298 Done : 1. edited ```/usr/share/atom-shell/resources/brower/lib/init.js``` 2. launched atom using
+    314-43675453-2298 Yeah, how did you originally build atom? I'm unsure why you have `/usr/share/atom-shell` and `/usr/sh
+    728-43676701-2298 Has I mentioned in my first post, I try to make a set of gentoo packages so I have to package : - d
+    265-43677571-2298 > I should mention that atom-shell is build standalone and I run atom this way : Out of curiosity 
+     90-43677674-2298 Sorry, I was typing the comment before I saw your latest comment, feel free to not answer.
+    227-43677891-2298 > Maybe it's not a good idea or maybe I totally missed the default_app page. Yeah, you are probabl
+   1075-43679962-2298 I thinked that other apps than atom (the editor) could rely on a single slot (installation) of atom-s
+    287-43680475-2298 Yeah, a pull request to atom-shell can definitely fix this case and get the app working with the righ
+x     48-43680629-2298 Thanks for your help ! Sorry for the headache ;)
+x     31-43449236-2287 I'm having the same issue too. 
+    278-43519311-2287 Which versions of Atom are you on, @facundofarias and @bilby91? Do you see the same performance loss 
+    188-43520453-2287 My version is Version 0.95.0 (0.95.0). I've haven't tried start it from the command line, I will. An
+    301-43737575-2287 It's happening right now, I will try to restart it with the --safe option. I've also included the scr
+    638-43924733-2287 @facundofarias Thanks! Could you please take a screenshot which includes the Atom process and all the
+    438-44825005-2287 Alright, I've been following your instructions but I am not able to right-click and save the snapshot
+    722-45009393-2287 @facundofarias Huh, that's strange. I can right-click on it and get the menu just fine: ![screen s
+   1692-48726811-2287 The interesting point about this is: when the editor is getting slower, I also can confirm the "I can
+x     22-48744649-2287 +1 (same issue for me)
+     36-48758523-2287 Are you guys using the react editor?
+     41-48758650-2287 @benogle I'm using the react editor, yes.
+     59-48759722-2287 I'm using react, but I noticed the same thing without react
+    662-48771944-2287 This intensified the suspicion, that the tabs are the problem. ![screen shot 2014-07-11 at 21 10 
+    140-43434864-2286 Maybe a *Default directory* option in [atom/settings-view](https://github.com/atom/settings-view). O
+     86-43527041-2286 I think the best solution for now would be to create an alias in your shell's rc file.
+     65-43542368-2286 I'm with @GeoffreyFrogeye's suggestion of making it configurable.
+   2165-53601546-2286 @gr0undzer0 I think I've found a solution for Mac. Not super elegant, but it works. **1.** Add pr
+    358-43361426-2266 Maybe related to https://github.com/atom/atom/issues/2242. However, that may be hard to tell if it's
+    120-43362354-2266 @GeoffreyFrogeye The shortcut does trigger the IME, or at least the IME icon in the task tray chang
+    256-43362786-2266 @GeoffreyFrogeye It does like it has something to do with the keyboard shortcut though. If I activa
+x     92-45970789-2256 +1 I vote for this also. Would love to ctrl+click to activate the "Go To Declaration" action
+x     94-53841583-2256 This would be awesome. I would love to be able to <kbd>cmd</kbd>+`click` on links to open them
+    239-43223249-2252 I totally agree with the request since I find too difficult to find packages I'm interested in. Somet
+    124-43251471-2252 As you look interrested in this feature, I guess you'll be very well placed to suggest a list of cate
+    282-43293133-2252 Sorting packages by operating system compatibility would be a great use of categorization too. Its te
+    279-43296411-2252 I don't think that will be that useful anymore, because NodeJS/CoffeeScript is very platform independ
+    159-43358555-2252 This is something we'd like to support in the package API and on the site. I was thinking user-define
+    640-43360836-2252 Why not, but consider this: user-defined keywords could quickly become a mess. For example, if you're
+     59-43539342-2242 Does IBus work correctly in Chrome/Chromium? Just wondering
+    345-43578387-2242 Yep, it works well in my Google Chrome, Firefox, Gedit, ... In Atom, whenever I input some special
+    128-45996327-2242 I find out that if I turn on Text Entry before opening Atom, it works fine. But I turn off and turn o
+    235-46091863-2242 This is log ```/tmp/atom-nohup.out``` when I use IBus on Atom ``` (atom:5734): IBUS-WARNING **: P
+    248-42996740-2211 Could we test and set in the build script the appropriate Python version. On a system where python
+    194-42997169-2211 The best solution (in pseudo-Python) would be: ```py try: python_executable = 'python' 
+     93-42998593-2211 I ... don't think stumbling and rising is necessary when the stumble can be avoided outright.
+    458-43010149-2211 I solved this issue in NodeGit (using Q) by running which on python and python2: ``` javascript Q
+    600-45161450-2211 Note that since Python 2.0 (read: forever) one can check the Python version using Python itself: `
+    136-50093473-2211 This is an issue on OS X if you're using python3 as the first 'python' in the PATH. The build instruc
+   1111-50097038-2211 Furthermore, even when specifying the PYTHON environment variable to point to a version-2 python, a s
+    184-60854480-2211 +1 to what @countergram pointed out. Only way I could fix it was to modify the symlink that python po
+     57-48540199-2209 Same on Surface 3. Plus, touchscroll doesn't work at all.
+     80-48627402-2209 In my case (0.110.0) touch-scrolling works for the tree view but not the editor.
+    181-48628805-2209 This is related to issue #2833 (high DPI display support). I suppose it's possible that once chrom
+    488-48830991-2209 This Chromium issue could be reated: https://code.google.com/p/chromium/issues/detail?id=274177 D
+    215-52132226-2209 I have checked version 121 and now my touch events are correct (scrolling issue still occurs), which 
+    341-52153297-2209 The latest atom shell version (included in v121) also now uses Chromium 36's latest high DPI support,
+     94-53505874-2209 Chiming in, this was the first negative for me. I need touch-scrolling! Can't code without it!
+x     56-53572773-2209 agreed, not being able to scroll is quite frustrating...
+    491-58055677-2209 I don't think this is just a Chromium issue. If you pull the scrollbars, you are not simply scrolling
+   2550-58391374-2209 This script for dev console will enable touch scroll for those who really need it. You'll find bugs b
+     94-63050117-2209 A plugin to resolve this problem at least partially. https://atom.io/packages/atom-scroller
+x     42-43249218-2203 That would be great functionality to have.
+    236-43324037-2203 What would be the performance cost if we looked for `gitroot` on each "directory open" rather than "p
+     98-59872274-2203 Would love for it to pick up the parent directory's .gitignore when opening a sub folder in atom. 
+    126-59897715-2203 Actually, isn't this essentially just asking for a special case of "Multiple folder support" #770? If
+    259-59899166-2203 That depends on how multiple folder support is anticipated to work. If each folder is expected to ha
+    139-59899369-2203 I think is in fact just the oposite, to be able to open Atom in an internal folder of a git repositor
+x     55-61060824-2203 Multiple git repositories in one project: big +1 for me
+x     32-63047970-2203 Would also love to see this :+1:
+    268-66564164-2203 +1. Also.. the lack of this functionality has led me to another issue: Opening a folder in a new w
+x      2-72813081-2203 +1
+x     38-75292952-2203 :+1: would use this feature every day!
+x      2-75987300-2203 +1
+    619-42976453-2201 I think they should be able to do it as long as they warn the user. For example, immagine a package t
+    100-42856063-2177 What happens if you cheat and do ``` cd /usr/lib64 sudo ln -s libnotify.so libnotify.so.4 ``` ?
+   1027-42861122-2177 @ceeeKay I tried that too (`sudo ln -s /usr/lib64/libnotify.so.1 /usr/lib64/libnotify.so.4`), but now
+    232-42861444-2177 @grownseed I'm guessing you pulled a binary from somewhere (e.g. the Ubuntu PPA repository) rather th
+    291-42861741-2177 @ceeeKay That's what I assumed too, but I didn't pull any binaries from anywhere, I really just follo
+     97-42861939-2177 What the... the more I dig into the guts of how this thing is built the more horrifying it seems.
+    207-42863650-2177 Also do you guys mind sharing how you dealt with CentOS 6.5 having nvm and/or gyp versions that seem 
+    869-42868937-2177 I didn't do anything in particular as I'm not using nvm, though I did run `npm install -g node-gyp` b
+    264-42874536-2177 Weird; mine puked on errors that people said were related to having an old npm version. Also hacke
+   1648-42883166-2177 Getting a tiny bit further. With a clean CentOS 6.5 (as root): Installed Python 2.7 from source (P
+    348-42899801-2177 Potentially interesting... [OpenSUSE Build Service search results](https://build.opensuse.org/search?
+    412-42911227-2177 @ceeeKay I saw this OpenSUSE stuff, as well as tons of random posts of people trying to build clang 3
+     52-68832729-2177 Has anyone had any success installing on CentOS 6.5?
+   1328-73706075-2177 Yes, I've succeed installing it. I used the solution they provide in the Wiki: https://github.com/nwj
+     96-75915210-2177 @juanchaur the discussion is about atom-shell not NW. Your solution work for both? report him 
+    566-46819559-2158 @colllin Sorry for the delay in getting back to you on this. I'm having trouble reproducing this i
+   1183-47306173-2158 Updated to v0.106 and it seems better. Thank you Ivan. I was able to reproduce it though: - Near
+    134-47322054-2158 Thanks for the detailed instructions, @colllin -- I can reproduce this behavior now, both in the curr
+    285-48276432-2158 @nathansobo I was hoping this issue would be fixed by https://github.com/atom/atom/issues/2815, but i
+     91-48343932-2158 I am able to reproduce this issue as well. +1 to fixing this! OSX: 10.9.3 Atom: 0.107.0
+    242-48371845-2158 I'm going to rename this issue to "Not auto-scrolling when undo does not cause the selection to chang
+    307-68596436-2158 Can confirm by deleting a symbol (e.g. an =), scrolling out and then undoing: it doesn't scroll. I
+    178-47511396-2149 I get the same issue inside a Virtualbox VM (Ubuntu 14.04/XFCE). However, it works outside the VM wit
+    187-42672912-2122 Happens on Ubuntu 14.04 for me as well. Just to clarify, this is the caret of the text editor part
+    203-42711075-2122 Yes, same here on Ubuntu 14.04. I noticed when when you press the left Alt key once the caret disappe
+    268-42765331-2122 Apparently this was fixed with a recent commit, the caret doesn't disappear any more when hitting Alt
+     55-43144922-2122 I get it too - e011becc1a0f52fcaada8b272f54569ef8191a77
+    227-45325290-2122 Is there any progress in this issue? For me this makes the editor unusable, because I cannot enter sp
+    177-45801607-2122 This is still happening for me on Ubuntu 14.04. Especially annoying when trying to use multiple curso
+     59-46162732-2122 alt-tabbed into atom and can confirm happening in 14.04 x64
+     96-46183939-2122 Unsure what might be causing this. @nathansobo do you have any ideas (and Ubuntu 14.04 :grin:)? 
+     94-46184404-2122 I'm fairly sure that this is happening because the `alt` key focuses the application menu bar.
+    106-46196005-2122 @aleksijuvani this also happens, when you hit the right Alt key, which doesn't focus the application 
+    177-48143629-2122 Any fix for this yet? I'm experiencing the same, using `alt` in Ubuntu 14.04 makes the cursor inv
+    116-48836939-2122 Have all Ubuntu users here experienced this using Unity or does this happen with other desktop enviro
+    602-48837788-2122 I'm on Win8 and ![image](https://cloud.githubusercontent.com/assets/7287076/3564309/024f15da-0a7e-1
+     58-48845378-2122 @yaph I'm using Unity, can't tell about other environments
+     67-48949211-2122 Does this happen with the React editor enabled in settings as well?
+     61-48950811-2122 @nathansobo yes, this also happens with React editor enabled.
+x     62-49315889-2122 Happens to me too :( Using Ubuntu 14.4, Atom version 0.116
+x     33-49331424-2122 @nathansobo Yup, React here too.
+    213-49848302-2122 I discovered that pressing again Alt (Ubuntu 14.04, version 0.116.0-262ba6b) makes the cursor reappea
+     47-49974400-2122 @fbrundu unfortunately that doesn't work for me
+     87-50056475-2122 Reproduced under unity in ubuntu 14.04 And can't reproduce under xfce4 in ubuntu 14.04
+    136-51053434-2122 Issue still happening at de6ccd8c08a2edccfe869cb7d376284a69e39073. I'm under Ubuntu 12.04 running At
+    816-51251890-2122 Hello Guys, I think I found out what's causing this really irritating stuff, this is this useless 
+x     17-51252500-2122 @Erwyn :+1: :+1: 
+x     13-51257861-2122 @Erwyn :+1: 
+    268-51305488-2122 @Erwyn Well if that's true, what I have seen on Windows was indeed a different issue, though with a s
+    125-51307460-2122 @batjko it's a shame… :( . I don't know for windows, I don't have one, so I can't say if it is Window
+    337-51312642-2122 Hi, although it's a good idea to disable the annoying hud opening with the alt key in ubuntu unity, 
+    128-51313313-2122 Can only agree with @kaibioinfo, I've tried different Editors/IDEs running Unity and never experience
+    325-51348781-2122 I don't experience the same behaviour (cursor disappearance), but I do experience ineffective keyboar
+    179-42723687-2120 Hey @knutaldrin, could you describe how you determine that the hardware GPU is enabled? I thought tha
+    398-42731197-2120 I am using gfxCardStatus, a small tool to see if the integrated or discrete gnu is running. #1761 on
+    184-42732029-2120 @knutaldrin thanks for all the good info! Based on that and what I've been researching I think this i
+   1512-42732585-2120 I'm not sure what level of control you have over the creation of your OpenGL context in atom-shell (h
+    230-42935495-2120 The OpenGL related things are controlled by Chromium, and I don't think we can really fix it in atom-
+     81-42536177-2080 What is the output of `script/build` ? Does it exit successfully (return code 0)?
+     25-42548623-2080 `ls -lh /tmp/atom-build/`
+    214-44749583-2080 I can confirm that I am having this problem as well. Having installed all dependencies, script/build
+    698-46122749-2080 I am having this problem as well. But I just solved it by running: sudo script/build $ sudo script/b
+     37-46123031-2080 @ghlingjun That does nothing as well.
+x     33-47556432-2080 I am having the same issue as OP.
+    175-42868219-2078 Same issue on Ubuntu 14.04 with Atom 0.94.0. Performance slows to a crawl when trying to type anythin
+    186-74119456-2066 @hminaya Thanks for reporting this issue: unfortunately it hasn't received attention for a while; hav
+    148-42752038-2061 If AppleScript floats your boat, you can always use Node's [Child Process](http://nodejs.org/api/chil
+    127-43032056-2061 I think that @faddah is maybe asking for Atom itself to provide a scripting definition so it can be c
+    303-43561028-2061 @thedaniel & @probablycorey - yes, but more importantly, i need it to be AppleScript aware so it can 
+     63-43562494-2061 @faddah Out of curiosity, does the Chrome browser support this?
+    748-43570038-2061 @thedaniel - which? are you asking if chrome browser has AppleScript support? i'm sorry if i'm being 
+    110-43570660-2061 > i don't understand how this relates to my issue Atom is built on Chromium, which is the basis fo
+    241-43570896-2061 OK, well, we can reopen this since @probablycorey closed it thinking it was about something else. 
+    299-43776698-2060 @docwhat That's an interesting idea. Just so we can understand what you were trying to do -- did you 
+    498-43932596-2060 I guess what I was expecting is this to work: 1. `⌘,` (open settings) 1. Click 'Packages' 1. Cli
+    195-49601993-2060 I envision using swipe to traverse document history - swipe back to the previous tab. This is XCode's
+    238-42478814-2046 `/usr/share/atom/atom` should probably be `/usr/local/share/atom/atom`. That's where the real executa
+    279-43544852-2046 In your example command output it appears that `/tmp/atom-build` is a file when it should be a folder
+    228-60685795-2046 @kelunik, I guess that [this line of the template file](https://github.com/atom/atom/blob/master/reso
+     25-42471421-2037 #1189 is related as well.
+    297-42722029-2037 This doesn't work, but it is supposed to work with this url atom:///Users/corey/github/atom/README.md
+    135-42724789-2037 Well if it's that line, it should call openPath instead openUrl. Maybe it should parse the url to c
+x      2-68606131-2037 +1
+x     97-72201002-2037 :+1: This is the only thing keeping me from abandoning TextMate2 in favour of Atom at the moment.
+    163-42448233-2035 What I did was rm -rf the repo directory, and delete the executable at /usr/local/bin/atom. I'm no
+    464-42448307-2035 As stated in the readme, if you have built the application with `script/build` all compiled files sho
+    810-42448836-2035 Ok, I did a raw, comprehensive approach: <code>sudo updatedb && locate atom >> /tmp/output.txt && ge

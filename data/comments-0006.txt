@@ -1,0 +1,128 @@
+
+# page: 6, date: 2015-02-09, count: 30, rateLimit: 4906 of 5000
+
+     68-73624016-5472 Could you please try to reproduce this in safe mode (`atom --safe`)?
+    101-73757295-5472 What was the language of the file that was open? Looks like maybe an issue with the language grammar.
+    376-73766158-5472 Hi I am sorry I couldn't repeat it yesterday. It was Prolog. On Tue, Feb 10, 2015 at 6:45 PM, Ben
+    791-73862486-5472 The error is thrown from oniguruma: https://github.com/atom/node-oniguruma/blob/bc9e854d8911187285
+    320-73939226-5472 I assume it's a bad regex in from the grammar. > Also, would we consider somehow catching these e
+   3406-74402646-5472 Sorry fir the delay. Try ypp.yap. Also, please notice I have made minor adjustments to the package (l
+    454-74885981-5472 @vscosta I'm still having trouble reproducing this. Here's what I did: 1. installed the language-p
+    686-73572077-5468 Ooh, figured out why the automatic issue creator wasn't working. ![screenshot from 2015-02-09 14 22 
+     57-73584550-5468 Looks similar to https://github.com/atom/atom/issues/5389
+    143-73601460-5468 Yeah, but the reproduction steps are way different (in addition, I don't have Beautify, but perhaps t
+     94-73602513-5468 I wonder if it is https://github.com/iojs/io.js/issues/510 and fixed already upstream in io.js
+    112-74983314-5468 Any updates on when io.js will be updated in Atom to include the linked fix? I'm still getting this 
+    190-75731967-5468 Get the same/simllar error on OS X 10.10.2 n ![screen shot 2015-02-24 at 11 23 07](https://cloud
+     75-73499831-5464 @Gouvi What did you do exactly to trigger that error? When does it happen? 
+    170-73500481-5464 It triggers any time I load Atom. It started happening when I tried installing a package, php-lint
+    219-73500919-5464 @Gouvi Does Atom load and then you see the error or it doesn't load at all? Can you try running Atom 
+    492-73501647-5464 Atom loads and I can use it fine with the exception of accessing packages. When accessing packages it
+    114-73560538-5464 @Gouvi Can you check what is in the `C:\Users\<user>\AppData\Local\atom\app-0.177.0\resources\app\apm
+    150-73626393-5464 @kevinsawicki Just the following Kevin: ![bin](https://cloud.githubusercontent.com/assets/6964274/61
+    118-73627184-5464 So it looks like `C:\Users\<user>\AppData\Local\atom\app-0.177.0\resources\app\apm\bin\apm.cmd` does 
+     13-73628000-5464 That's right.
+    233-73629622-5464 If I try to run the script it says it cannot find itself. If I run it as an Administrator it runs, bu
+     73-76358280-5464 @gouvi Did you resolve this issue? I'm seeing exactly the same behaviour.
+    282-76359948-5464 @dominicbetts No, I couldn't work it out. I have stopped using Atom because of this unfortunately. St
+   1095-76493907-5464 > . Started using PHPStorm which has been brilliant! My editor-of-choice for years was webstorm. It
+    125-77147654-5464 I'm having the exact same issue with almost any command inside Atom. I recently updated npm to 2.x, 
+    307-77164001-5464 I think this maybe a problem with my Windows settings. I can run .bat and .cmd files from a command p
+    142-74127778-5453 I notice no difference on my system running Plasma 5, this is probably something that should -- or al
+    238-74376520-5453 did some tests today. When I copy the 256.png into /usr/local/share/atom/resources/app/resources/atom
+     87-73417786-5449 You'll probably want to add tests for the new behavior in order for this to get merged.
+    124-73421610-5449 I'd like to do that indeed. Could you give me some pointers for how to run atom tests ? I can't find 
+    187-73449548-5449 @Nadrieril try [this document](https://github.com/atom/atom/blob/master/docs/writing-specs.md) (scrol
+    377-74380620-5449 @Nadrieril hey, so you should really be performing the logic for this in the `TextEditorPresenter` la
+    583-74383363-5449 @nathansobo I did not see so much changes coming. I don't think we can replace entirely the bufferRo
+    185-75846368-5449 @Nadrieril You'll probably need a pretty extensive change to the presenter when in relative line numb
+     84-75847019-5449 @nathansobo Yeah, I guessed... That's why I haven't I haven't progressed a lot since
+    405-73352627-5445 For some reason, this only does anything when I'm running it straight from the build directory. I'm n
+    186-74380844-5445 Seems like a more specific config option name like `autoIndentNewlines` would be more descriptive. 
+    497-74411277-5445 That option already exists, and isn't what I want. The current implementation seems to be an all or n
+    394-73475992-5439 Hello. AFAIR there is no function to actually delete files in the atom-shell? I have found method Mov
+    218-75597823-5439 Confirmed. - Delete should fall back to direct delete instead of move to trash when the filesyst
+     26-73288861-5430 Yeah, this would be great.
+    227-73103614-5420 Does this happen every time you use your repro steps? Or is it intermittent? Please quit atom complet
+    977-73185370-5420 It's intermittent. I'll give 'atom --safe' a try tomorrow and see what I get. It's hard to say, thou
+    319-72979067-5410 > Will Atom change this behavior? Sounds reasonable to special case the end of line behavior. It l
+     94-72896084-5400 What were you doing when this happened? Do you see this often? Do you have steps to reproduce?
+    127-72875369-5394 When I try to close a deleted file Atom prompts me to either save|don't save|cancel. Haven't tried a
+    148-72892326-5394 This is legit. Delete the file from outside atom and note that it is still open in atom. If you save 
+    497-72913671-5394 > Actually he's now editing the same file in my trash folder which is confusing. It may be confusin
+    239-72921851-5394 I think the bug here is that we are editing the trash-folder file. I *personally* would expect if I d
+    250-72923100-5394 > I personally would expect if I deleted something on disk, that it would stay open in the editor (bu
+    560-72925274-5394 There is a package that gives notifications on file conflicts. Wouldn't this count as a conflict? O
+    179-72931446-5394 If you delete a file outside Notepad++, it'll ask you if you want to keep it in the editor in an unsa
+    339-72901794-5393 +1 on this, though I'm not sure I can be of much assistance. I'm working on a new package right now, 
+    444-72924384-5393 @sedabull for the record, you won't have to upgrade your specs from jasmine 1.3 in a month or two, or
+    927-72965544-5393 @maxbrunsfeld, I read over my post and realized I hadn't really communicated very well why I'd like t
+    243-72965769-5393 > how long do think it would be before 2.x is availiable to package developers This honestly depen
+    170-72966642-5393 @thedaniel, it sounds like i'll have to just stop being so picky and suck it up :smile:. Is there any
+    473-72967002-5393 Ask @as-cii <https://github.com/as-cii> ? On Wed, Feb 4, 2015 at 3:55 PM, Seth David Bullock <notifi
+    129-72968458-5393 @mark-hahn, a fantastic idea! @as-cii, is there anything I can do to help make jasmine 2.x available
+   2420-73035018-5393 > Indeed, it would be a lot of work for us to upgrade all of our specs to jasmine 2. Maybe you could 
+    400-73137958-5393 It's probably just because I'm a user, but I'm all for n.1! As far as naming conventions, what about 
+     76-72790130-5390 The menu algo really should check for separators before creating the menus. 
+     58-72868505-5390 :+1: Really minor, but it'd be nice to have this fixed :).
+     71-72884760-5390 :+1: I've reproduced this on both Windows 8.1 and Ubuntu 14.04 / 14.10.
+    242-73505717-5390 Does anyone see this problem on OSX? (I don't, but just want to make sure I'm not missing anything.) 
+     48-73509929-5390 @izuzak Nope, it's just a Windows & Linux issue.
+     23-72891779-5388 The window just closes?
+    364-72892686-5388 Yeah, sorry, crash might be the wrong word here. Atom the process is still running but clicking the l
+    307-72893245-5388 Yeah, all links should open externally, there is core code for that here: https://github.com/atom/
+     44-73010824-5388 This only repros when Shadow DOM is enabled.
+    269-73118116-5388 What link? On Thu, Feb 5, 2015 at 12:28 AM, Desmond Brand <notifications@github.com> wrote: > This 
+    227-73126170-5388 In git-blame gutter view, the commit SHA is a link: ![image](https://cloud.githubusercontent.com/a
+    545-73128779-5388 You should post this as an issue on git-blame: https://github.com/alexcorre/git-blame/issues On Thu,
+    278-73147462-5388 > You should post this as an issue on git-blame As I said above, see alexcorre/git-blame#60. I rep
+    701-73148820-5388 > . it should maybe be impossible for a package to do this There is no sand-boxing of packages. A p
+    855-73148887-5388 Actually a package can even erase all your disk drives. On Thu, Feb 5, 2015 at 3:01 PM, Mark Hahn <m
+   1079-72784729-5387 Have you seen the package `atom-node-debugger`? On Tue, Feb 3, 2015 at 6:03 PM, Xue Fuqiao <notifica
+    178-72892502-5387 This type of unified debugger interface sounds like a good use case for the new [services API](https:
+    159-72977287-5387 @mark-hahn Do you mean [this](https://atom.io/packages/node-debugger) [one](https://github.com/kiddka
+     63-75804758-5387 What about built in debbuger can't that be used for JavaScript?
+      8-72752393-5384 What OS?
+     16-72752621-5384 Mac OS X 10.10.2
+     91-72752668-5384 @neurobashing Can you share a link to a file that exhibits the behavior in that screenshot?
+    271-72753033-5384 I can recreate by simply typing a long string in an empty buffer; but here's a test file https://www.
+     21-72777733-5384 I couldn't reproduce.
+     24-72842650-5384 What font are you using?
+    290-72861187-5384 Tried w/ Source Code Pro, Menlo, and Inconsolata (ranged from 12 to 16). Inconsolata 14 fixes the pro
+     46-72862724-5384 Which syntax and UI themes do you have active?
+    241-72863746-5384 happens for me with any combination of theme and syntax; I went through a few (the ones Atom ships wi
+    211-72873944-5384 I have similar effect when using custom font that is missing some symbol. Atom will insert missing sy
+    124-73368251-5384 Exact same issue on Windows 8.1 since v0.177. Changing font may help a little but don't totally resol
+    125-73374228-5384 Reverted back to v0.176 to solve issue. Worked. Make a fresh install also resolve issue. Maybe an iss
+    141-73375591-5384 There was a similar issue to this reported on discuss.atom.io where the culprit was `text-rendering: 
+    245-73429117-5384 @postcasio Thank you for that tip-off, that was my issue as well! It was causing strange things like 
+    170-74485465-5384 For me the problem was with theme `trendy-light-ui` which also uses `text-rendering: optimizeLegibili
+    110-75927458-5384 Had the same issue and removing `text-rendering: optimizeLegibility;` from my user stylesheet fixed i
+     12-72738180-5382 WIN. :boom: 
+    101-72776885-5382 This PR is much shorter than I thought it would be, maybe we'll move to asar sooner rather than later
+     92-72908107-5382 This PR will forever and ever kill all of the long path problems on Windows too, :sparkles: 
+     38-76757290-5382 Any progress on the last bullet point?
+     94-72708425-5379 You should report this in the package's repo. https://github.com/fundon/atom-minimap/issues
+    155-72720202-5379 @AbeEstrada I think the error is in the installation of minimap, not in the usage of minimap. and It'
+    513-72706122-5370 I have a package `web-browser` and a new version will be available in a week or two that will load u
+    138-72736610-5370 @xfq we're somewhat unofficially planning to add tutorial content to the welcome package, but not sur
+    621-72755911-5370 @thedaniel Is there a, er, roadmap / schedule for the [roadmap](https://atom.io/roadmap) to Atom 1.0?
+    956-72756235-5370 http://blog.atom.io/2014/10/23/public-roadmap.html On Tue, Feb 3, 2015 at 3:07 PM, Machiste N. Qui
+    236-72756668-5370 @mark-hahn I linked to that roadmap in my comment :stuck_out_tongue_closed_eyes: – I mean more that 
+    259-72757207-5370 > and where you guys could use the most help from the community. On this note, we have started lab
+    710-72757323-5370 @mnquintana the priorities and roadmap are largely reflected in this task list: https://github.com/at
+    189-72758036-5370 New docs are happening. We even have a little package that shows those docs. But it's a little too ea
+     32-72785394-5370 Great news @benogle :+1: Thanks!
+     92-72607411-5369 Hi, there is a discussion about ChromeOS! https://discuss.atom.io/t/lets-talk-chromeos/8644
+     69-72820388-5369 Uh nice. Hope that it will be having some fruits in the near future..
+    354-73567258-5367 @xfq I'd love to improve our CONTRIBUTING docs in the near future -- thanks for these suggestions! :h
+   1031-73632508-5367 @izuzak Thanks for your attention! For "workflow", I mean how to find something to work on, get an
+    162-73651561-5367 Great -- thanks for clarifying! I've been looking at the contributing docs for some of those projects
+     96-72593029-5366 workaround i found for this issue is to type Enter (return key) at the very end of your script 
+     68-72646374-5366 Could you please try to reproduce this in safe mode (`atom --safe`)?
+    295-72670342-5366 Everything is ok insafe mode (no errors occur when attempting to reproduce in safemode). Doesn't seem
+    228-72688688-5366 My guess is that it is jshint, one of the linters, or one of the autocomplete packages. We dont have 
+     96-72720351-5366 Unfortunately, package-cop considers atom to be failing with this issue, not a specific package.
+    211-72758503-5366 @glennlopez, I had the same problem, and one of the same packages as you, [indent-guide-improved](h
+     74-72787495-5366 @hatzopoulos perfect! You saved me a lot of trial an error. Thanks a lot! 
+    137-73342929-5366 @glennlopez @hatzopoulos Thanks for telling the issue to me. I've created a new issue for this probl

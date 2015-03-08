@@ -1,0 +1,286 @@
+
+# page: 11, date: 2015-01-07, count: 30
+
+  1 4874 68959818 Were you viewing the file that is in the title? Does something in the background rebuild this file or
+  2 4874 69050864   I was not viewing the file in the title. I was attempting to open a .js file. I'm not even sure wha
+  3 4874 69119418 Similar to https://github.com/atom/atom/issues/4805
+  4 4874 71464063 :+1: I'm using v0.175 and this bug is there too.  Just for see or navigate to a .js file after a litt
+  5 4874 71511988 @shingonoide So you're saying you just open the file, and it throws this error? Can you paste in the 
+  6 4851 68824295 Reproduced on Atom v0.167.0-a9c0553 on Mac OS X 10.10.1 running in Safe Mode. Also importantly, if yo
+  7 4851 69038582 There are similar issues after click-dragging to make a selection. If you make a selection going righ
+  8 4849 68823714 Have you tried updating to the latest version? Atom released v0.166.0 today. I don't know that this w
+  9 4849 68873415 I will try that at some point. It's just that with the rapid pace of releases I'm not always on the l
+  10 4849 68875668 So is this just a duplicate of that issue? Should we merge the information there?
+  11 4849 68885875 I suppose the `Uncaught TypeError: Unable to watch path` part is a duplicate, but now when I get it i
+  12 4849 68886553 Well, uncaught exceptions tend to cause other uncaught exceptions and since you don't seem to be sayi
+  13 4849 69038257 They certainly appear in tandem, but I don't believe the second error was paired with the first when 
+  14 4849 69053094 I think it's fine leaving this open
+x  15 4849 69096362 Thanks @benogle.
+  16 4849 69103112 I am having a similar issue as this. Atom is running on Windows and I can edit local files just fine.
+  17 4849 69147663 Does Windows support notify? I know Linux Samba shares do, as do OS X but I don't think Windows has n
+  18 4849 71462450 I have the same issue, I'm running windows 10 technical preview. I'm trying to access a network locat
+  19 4849 73255266 Just got this again in 0.174.0 (although now Atom usually crashes outright before this error has the 
+  20 4842 68645923 Looks like a duplicate of https://github.com/atom/spell-check/issues/43. If you agree, what do you th
+  21 4842 68646021 Yeah, I do agree that it is a duplicate. Let me see if I can duplicate outside of spell-check to veri
+x  22 4842 68646200 :+1: You're a :star2:, @lee-dohm! 
+  23 4842 68654316 Yep, looks like the Decorations API, specifically the `highlight` type.    ## Repro Steps    1. Creat
+  24 4842 68654506 I've closed the spell-check bug since I'm pretty certain this is in the Decorations API.
+  25 4841 68756118 Atom does not require redis, express or socket.io.    This line: `at Object. (c:\Users\Peter\node_mod
+  26 4841 74425251 Sorry I bit forgot about this.  I just got same error after completely reinstalling Atom. I've delete
+  27 4834 68604053 There is API support for choosing what order panels stack in:    https://atom.io/docs/api/latest/Work
+  28 4825 68514497 There is a topic on [Discuss, the official Atom forum,](https://discuss.atom.io) that talks about the
+  29 4825 68534273 I knew there was a hackish way to do it--that's [what ease-blink](https://github.com/miraks/ease-blin
+  30 4808 68694716 >  >These conflict with activating `File` and `Help` menus in Windows.     This problem applies to mo
+  31 4808 69442705 This is a duplicate of #4057
+  32 4806 68375253 Hi @gandhiShepard, can you share the output of `ls -l /Users/812studio/.atom`? It would seem that Ato
+  33 4806 68386413 total 56  drwxr-xr-x   5 Frolko  staff  170 Dec  9 00:12 compile-cache  -rw-r--r--   1 Frolko  staff 
+  34 4806 68386563 Looks like a bug in the `project-manager` package. My guess is that `project-manager` packages needs 
+  35 4806 68387077 What's strange is that it's using `mkdirp`; it shouldn't be an error for the directory to already exi
+  36 4806 68387766 @maxbrunsfeld yes 
+  37 4806 68395835 @NoahDragon saw this issue and did not have `project-manager` installed.
+  38 4806 68400569 @benogle do you know how the stack trace could end up being `undefined`? That seems to be the case fo
+  39 4805 69119413 Similar to https://github.com/atom/atom/issues/4874
+  40 4800 68297098 @mark-hahn I don't fully understand what makes text selectable or not in Atom, but I've noticed that 
+  41 4799 68295440 @Trudko in your opinion, what should `getShortHead` and `hasBranch` return in that case? Thanks!
+  42 4799 68297464 Well true for hasBranch('master') and master in second case. seems like bug rather then enhacemenet. 
+  43 4799 68298453 I could be wrong, but I don't think that would be correct; the repository doesn't actually have a 'ma
+  44 4799 68298947 What do you mean by has a branch? Because if you do git init you are ON a branch  master.
+  45 4799 68303630 `git init` does not create any references.    ```  $ mkdir temp  $ cd temp  $ git init  $ git branch 
+  46 4799 68307890 In my opinion it is simpler and better to make the `hasBranch` method match the output of `git branch
+  47 4799 68308902 Simpler yes, but not very intuitive for those that don't understand how git works under-the-hood.    
+  48 4799 68310359 With the current implementation, it is possible for an atom package to do what the `oh-my-zsh` git pl
+  49 4799 68310389 @Trudko, would you mind sharing your use case for `hasBranch("master")`?
+  50 4799 68311750 @maxbrunsfeld For the record, until the first commit branches are apparently transient. You can run a
+  51 4799 68318153 @mehcode I see your point. So there's no actual `master` branch, but `HEAD` is still a symbolic-ref t
+  52 4799 68318858 I believe the issue lies in [git-utils's `::getHead`](https://github.com/atom/git-utils/blob/master/s
+x  53 4799 68332228 @maxbrunsfeld :+1: I agree.  
+  54 4799 68335538 @maxbrunsfeld actually I don't have any particular use case I found this just by messing around with 
+  55 4778 68913432 Can you upgrade to a later version of Atom? 0.166 is the latest release and it looks like you are on 
+  56 4777 68198857 Thanks for the bug report, I updated the title. Also of note, Cmd-G doesn't do anything in Chrome's o
+  57 4776 68623099 This looks like an issue with [atom-jshint](https://github.com/sindresorhus/atom-jshint), not so much
+  58 4776 68655569 For additional context:    * https://discuss.atom.io/t/links-in-preferences-packages-go-to-xcode/1405
+  59 4776 68655780 I hope you don't mind that I changed the title @silvenon to be more descriptive of the underlying pro
+  60 4776 69331284 @mnquintana from which file is that code coming from? Isn't [this](https://github.com/sindresorhus/at
+  61 4776 69332351 @silvenon Well this just got weird. I took this screenshot from my installed version of atom-jshint's
+  62 4776 69538810 Yep, you're right, I got the same. How does that happen? :smiley: 
+  63 4775 68488929 Getting a different stack trace here:    ```  c:\Users\Vladimir\AppData\Local\atom\app-0.165.0\resour
+  64 4775 68888596 here is my stack trace    ```  TypeError: undefined is not a function    at Config.module.exports.Con
+  65 4775 68890920 ```  /Applications/Atom.app/Contents/Resources/atom/renderer/lib/web-view.js:380  TypeError: undefine
+  66 4775 69423382 Guys, `undefined is not function` is probably one of the most common issues in javascript history. If
+x  67 4775 70805456 :+1: to @abe33 explanation
+  68 4775 73702794 Noticed again in https://github.com/atom/atom/issues/5478.    @bigblind can you reproduce the problem
+  69 4775 77638579 I just installed Atom for the first time and tried to install the "language-batch" package to get syn
+  70 4775 77638956 > Guys, undefined is not function is probably one of the most common issues in javascript history. If
+  71 4771 68304910 I see this when opening files with Atom version 0.165.0, Windows 7, files on network NcFsd filesystem
+  72 4771 68520327 I have this error when I open a file that I'm not the owner of, issue can in my case be solved by doi
+  73 4771 68535424 I am having this problem as well. Ubuntu 14.10 Atom 0.165.0 and 0.153.0 both versions.    The above t
+  74 4769 68395322 This is seeming like a bit of a time suck. The `::shadow` selector works perfectly well for the time 
+  75 4768 68596136 Can you reproduce the issue reliably? If so, can you reproduce this in [safe mode](https://github.com
+  76 4767 68148665 @lagora what were you doing in Atom when this happened? Are you able to reproduce it with `atom --saf
+  77 4767 68158007 Sorry, but I won't be able to reproduce the bug soon, and my code did change drastically.  All I reme
+  78 4767 68311288 I've had this issue happen reliably while running scss-lint-linter.
+  79 4767 70215071 > unseemly large globs of text    Over a megabyte?  There is a pretty hard limit of 2 MB in a buffer.
+  80 4767 72361254 I had this happen when I opened a file ( less than 2MB in size) with Atom and another text editor, th
+  81 4767 74223662 I experienced this pasting a large amount of data from excel (>30,000 rows, 1 column). No particular 
+  82 4767 74871272 I got this pasting 209,456 rows of 7 characters per row from LibreOffice Calc.
+  83 4760 68754175 @zcbenz do you think this is an atom shell issue?
+  84 4760 68757604 Yeah, I have created an issue in https://github.com/atom/atom-shell/issues/975.
+
+# page: 12, date: 2014-12-23, count: 30
+
+  85 4747 67948762 I feel like this is intended since it's keeping the indentation.  Maybe try disabling Normalize Inden
+  86 4747 67950072 I already disabled all auto indent things including "Normalize Indent on Paste".
+  87 4747 67973298 @zhanzhenzhen, currently there is no way to disable this behavior. Out of curiosity, why would you pr
+  88 4747 67976181 @maxbrunsfeld: Because I want to manually control all things. So I disabled all auto (i.e. intelligen
+  89 4747 67976818 Maybe one reason: I want the behaviors of typing the same characters in different editors to be the s
+  90 4738 68431686 :+1: splitting without duplicate files would be very nice. There is https://atom.io/packages/pain-spl
+  91 4737 67848899 Which version of Atom are you using? Are you able to reliably reproduce the issue? Can you find a Win
+  92 4737 67860305 0.165 is version.  I can't seem to replicate the issue, but for clearity I had selected 2 .js files i
+  93 4737 67880279 @ceridian Can you run `require('crash-reporter').getLastCrashReport()` in the devtools console and pa
+  94 4737 67883057 giving me null when I run that.  I haven't been able to replicate it so probably a windows hiccup on 
+  95 4735 67872823 To fix, we should make this message show as a warning with nice verbiage rather than a fatal error.
+b  96 4727 68155056 Anyone?
+b  97 4727 68476813 ...
+  98 4727 68916481 > To get the point, my question is: is there a supported way to fetch dependencies of the build scrip
+  99 4727 68965553 This is almost right, but the issue now is that it still compiles with `script/bootstrap`. All resour
+  100 4727 68966466 > but the issue now is that it still compiles with script/bootstrap.    Yeah, npm, which is what Atom
+x  101 4727 68969830 Dang.
+  102 4727 69272668 #3717 needs this as well, apparently
+  103 4727 77620096 So, is there a related npm issue that allows building 'offline'? Would really love pointers into how 
+  104 4725 67751422 @park9140 what happens if you run `'asdf'.localeCompare('sd')` from the dev console in Atom?
+  105 4725 67751562 @maxbrunsfeld, Works fine from the console. I also just finished installing the new os patch, and it 
+  106 4725 67751591 @maxbrunsfeld, also forgot to include that the point where I'm encoutering the issue, is while runnin
+  107 4725 67909234 /cc @zcbenz
+  108 4725 68939613 @zcbenz, @maxbrunsfeld, Is any more information needed to figure this out?
+  109 4725 68949528 I can reproduced this bug, but I have not figured out the cause yet.    Refs https://github.com/atom/
+x  110 4725 68949831 Thanks @zcbenz, let me know if you need any other info.
+  111 4725 70730537 @maxbrunsfeld,  I confirmed this is fixed in `atom-shell@0.20.7`, by `atom/atom-shell/pull/1019`.  An
+  112 4710 67666386 @SamuelMoy, what were you doing in Atom when this error occurred?
+  113 4710 67806502 I was trying to connect with a Salesforce project
+  114 4710 69119712 Can you give us a little more info? What packages were you using? Can you try in safe mode (quit atom
+  115 4710 72110597 I just hit this too and wasn't doing anything. I was fullscreen mode in OSX and I had moved to my chr
+  116 4710 73304350 Happens to me all the time. How best to capture logs/debug info and share here?
+  117 4708 67666509 @Xatpy can you describe what you were doing in Atom when this occurred?
+  118 4708 67858499 I'm frequently receiving this same error. As far as I can tell, it is occurring when I began to refer
+  119 4708 67858945 Thanks @djpowers! Are you able to reproduce this when you start Atom in [safe mode](https://github.co
+  120 4708 67859562 I wasn't converting a file from .md to .pdf when it returned this error. I was using a customized CSS
+  121 4708 67861348 @izuzak, I'm using Mac OS X 10.9.5, and the problem occurred using Atom 0.161.0. I actually just rest
+  122 4708 70937003 Back again! Currently able to reproduce reliably.    In an .html.erb file here is an example of the s
+  123 4708 71063178 @djpowers is this file local? Can you save the file just fine?
+  124 4708 71070948 @benogle, yes the file is local.    I can save, however, if the syntax error that caused the initial 
+  125 4708 72022893 I am getting this error when I save a c++ file :(
+  126 4708 72244622 From #5320 cc @gttiankai     **Atom Version**: 0.174.0  **System**: Mac OS X 10.9.5  **Thrown From**:
+  127 4708 72598594 Happened for me. Turns out my bug. I was writing to a child process that was terminated.
+  128 4708 76440504 @djpowers What packages do you have installed? can you `apm list`? Try `atom --safe`. it sounds like 
+  129 4708 76442483 @benogle, here are the packages I've installed:    ```  /Users/[user_name]/.atom/packages (9)  ├── co
+  130 4696 67574848 It totally needs a progress indicator of some kind. I've changed the title to better reflect that fea
+x  131 4696 67936670 +1 
+x  132 4696 70872308 +1
+x  133 4695 69540567 :+1: Could be very annoying for some people.
+  134 4695 69600529 To cite @leranus:    >[There should be] a preference where it can be turned off or on entirely, or ju
+  135 4695 69601915 And as was pointed out, the specific code which adds and removes the "Open with Atom" item is in http
+x  136 4695 72257706 :+1: 
+  137 4680 67484582 Would atom/atom-keymap#37 cover this?
+  138 4680 67486703 Hm I am not shure. The Neo Layout is something completely different from the classic German Layout. B
+  139 4674 67413445 What is your login name on your machine? This sounds very similar to https://github.com/atom/atom/iss
+  140 4674 67751601 Maybe it's that. I don't have a non ascii character in my home folder path  but i symlinked c:/users 
+  141 4674 67751720 yup, it was that : somehow atom doesn't follow symlinks ? It needs the real path.    Right click open
+  142 4674 67751936 okay, found it : i had to change the path to the real path in the registry in keys :  HKEY_CKASSES_RO
+  143 4673 67402158 Eventually we would like to have a sanctioned view framework, but we're not there yet.    I did make 
+  144 4673 67404640 I guess you didn't make this the example because you want to discourage  using space-pen?    I'm happ
+  145 4673 67411826 >  Is there anything other than custom elements you would like to see in the  output of the framework
+  146 4673 67419039 > I guess you didn't make this the example because you want to discourage  using space-pen?    Well, 
+  147 4673 67419146 I want databinding and the ability to create the markup with real HTML. No globals is an important re
+  148 4673 67424626 Space-pen-2 would be much simpler than rivets. Rivets puts logic into the  element properties which i
+  149 4673 67425024 > I have a framework in my mind [...] I will put a proposal up on the forum    Cool, looking forward 
+  150 4673 67425120 Oops.  I misunderstood the "... ability to create the markup with real  HTML." requirement.    I don'
+  151 4673 67425500 I guess my requirement is that 100% of the logic be in coffeescript (or  JS).  I don't think that is 
+  152 4673 67426124 > I guess my version will have to be a separate module installed like you do with the latest space-pe
+  153 4673 67444825 A *very* preliminary spec is at https://gist.github.com/mark-hahn/3f9ee0ba4945a285fb38.  I will post 
+  154 4673 67533037 The gist https://gist.github.com/mark-hahn/3f9ee0ba4945a285fb38 now has a new version.  It includes t
+  155 4673 67533220 @mark-hahn You're going to need to pick a new name ;) https://github.com/atom/space-pencil
+  156 4673 67542365 :laughing: Oops ... I suggested the name based on the urban legend. I guess great minds think alike .
+  157 4673 67558597 > I did make this space pen version of the sample package templates:     Thanks.  I'm using that unti
+  158 4663 67495834 I can't reproduce this with Atom 0.162.0-48f6392 on OSX (I followed the exact same steps). Can you tr
+  159 4663 67510907 @gidoca Can you also include which distribution of Linux you're using? bug-report doesn't detect Linu
+  160 4663 67529094 @izuzak I will try that, yes. 0.158.0 is the most recent version in the PPA, but I will try to manual
+  161 4663 67531327 Actually, Atom 0.161.0 was pushed to the PPA in the meantime, and I can confirm that the issue is sti
+  162 4661 67335125 You mean like UTF-16 BE or UTF-16 LE?    ![screen shot 2014-12-17 at 7 06 12 am](https://cloud.github
+  163 4661 67336042 No I meant a CUSTOM encoding... I want to be able to generate, say, an ascii-incompatible variable-wi
+  164 4661 67360362 Good to know. Now I'm familiar with HTML, CSS, JS, but not with Atom-Shell... So as I ramp up, can so
+  165 4661 67371634 >  So as I ramp up, can someone give me a quick run down on how the Unicode handling is done currentl
+  166 4653 67247160 Hmm, is this the first run from the installer? or how did you launch it?
+  167 4653 67247402 `Restart and Install Update` from within Atom.
+  168 4653 75396737 This is back.  Just updated to 0.182.0 from 0.179.0, though I'm pretty sure it also happened 0.174.0-
+  169 4650 67283250 > You could also technically get at it with NodeObjC, but that seems like overkill.    More realistic
+  170 4643 67255380 Please quit atom completely and run `atom --safe`. Is the issue still there?    Can you reproduce thi
+  171 4625 67062742 Can you upgrade atom to the latest version and try again? It should be fixed in 157 or 158
+  172 4625 70866713 Just happened on `v0.174.0`, while using <kbd>Ctrl+Space</kbd> 'auto-complete'.
+  173 4625 70872683 Does it happen all the time you autocomplete? What system are you on?
+  174 4625 70874550 @benogle, no just once. I was pressing and cancelling 'autocomplete' *really* quick :smile_cat:.    I
+  175 4625 73205042 **Atom Version**: 0.176.0  **System**: Ubuntu 14.04 LTS    Happened again while using Ctrl+Space 'aut
+  176 4624 67083349 This is interesting. I'm not sure reaching into the package and requiring a file is the right thing. 
+  177 4624 67384905 @benogle, thanks for taking a look.    I borrowed this technique from [AtomLinter](https://github.com
+  178 4624 67504560 Good idea, with this change i also could add SVN support since we are using SVN at work.
+  179 4624 67512680 @oclbdk You can look at this abandoned status-bar PR for an example of how the services API *might* b
+  180 4619 66967675 Hmmm, can't reproduce anymore.
+  181 4619 67092138 This is at https://github.com/atom/text-buffer/blob/081d6022689ec1de383bfedc49611ad33364aca4/src/text
+  182 4619 67981505 Similar issue over in https://github.com/atom/atom/issues/4749
+  183 4618 67250132 Can you reproduce this easily? Do you have steps to reproduce? Looks like you just hit backspace, but
+  184 4618 67749461 I just run into this. I was editing an XML file with linter package enabled hitting backspace inside 
+  185 4618 68474347 Atom Version: 0.165.0  System: Mac OS X 10.9.5    I ran into this issue while editing a SVG file, hit
+  186 4618 77340844     <a>          <b>              <c><!-- Caret was here and I hitted Enter -->          </b>        
+  187 4614 67250576 Looks like you did a redo when this happened.     Do you remember what you were doing? Does this happ
+
+# page: 14, date: 2014-12-08, count: 30
+
+  1 4441 65956296 I agree that the basic support should probably be in Atom Shell. Can you also open an Issue for this 
+  2 4441 65956904 Done: [https://github.com/atom/atom-shell/issues/903]
+  3 4436 65963681 Hi.. please edit thank you.. On Dec 7, 2014 7:43 PM, "Guilherme Pacheco" <notifications@github.com> w
+  4 4436 65966754 I can't reproduce this on Atom v0.154.0-d69d6bf on Mac OS X 10.10.1. Is there something else that I s
+  5 4436 65970676 @Boying71 what should I exactly edit?    @lee-dohm that's exactly what I'm doing, except I'm on Linux
+  6 4436 65970774 @gfpacheco Can you try uninstalling and installing from the latest binary release? https://github.com
+  7 4436 66148017 Hi @lee-dohm,    I removed the installed atom package  Removed the apt repository  Installed again fr
+  8 4436 66533511 @zcbenz do you think this could be an atom shell issue with regards to the require path?
+  9 4436 66549131 It seems that `app.js` appeared in the require path, it may be caused by a custom `NODE_PATH` environ
+  10 4419 65893235 Looks like a duplicate of #2263. Have you tried the suggestions there?
+  11 4417 65886115 Are you asking for more than what #3684 gives?
+  12 4417 65886285 Yeah, #3684 is a great start, but it really gives very little idea as to a timeline and a priority li
+  13 4417 66167440 Timeline and priority changes often. It's not something we can really commit to. 
+  14 4415 65873881 I know that this doesn't help you, but I have more or less the same setup, and it works for me.
+  15 4408 65828192 What version of Mac OS X are you on?    Also, does the Report... button show more detailed informatio
+  16 4408 65828667 Here's what looks to be the important bit of the error message:    ![screen shot 2014-12-05 at 12 58 
+  17 4403 65781803 Also the diff highlight on the left hand side (orange) was getting confused, these lines never change
+  18 4403 65783760 Those question marks are typically used when the selected font doesn't support that glyph. Have you t
+  19 4403 65807434 Hmm, I will see what other font there are.  Currently the font selection box is empty, so must be usi
+  20 4403 65808418 @lee-dohm do you know what the default font on Ubuntu is?
+  21 4403 66533733 @ljbade if you open the dev tools using `ctrl-shift-I`, you can inspect the editor element and see wh
+  22 4403 66612241 Ok this is what it shows:  `font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;`    L
+  23 4403 70349431 Not sure if this is a new issue or related: On OSX I'm seeing a square where I'm expecting Unicode. I
+  24 4400 70240723 There is now overflow scrolling when pasting multiple lines.    ![overflow](https://cloud.githubuserc
+  25 4400 70241303 @simurai that might be better. Without a scrollbar, it's not obvious that the editor has multiple lin
+  26 4400 70244513 We could force a scrollbar. But looks a bit funny.    ![overflow](https://cloud.githubusercontent.com
+  27 4400 70277254 I expect that, it just join each lines as one long string, then display.
+  28 4400 71153021 This issue is technically not "in-progress" anymore. I only did the overflow scrolling as a quick fix
+  29 4392 65519206 Try disabling the `Normalize Indent on Paste` and `Auto Indent on Paste` options and see if that help
+  30 4392 65519511 Turning off Auto Indent On Paste seems to resolve the issue. Thank you for your assistance. Is that t
+  31 4392 65665702 Auto indent on paste should work for HTML in PHP. Maybe this is an issue with indentation regexps in 
+  32 4392 65666392 Is there any other screenshots or information that you would like? Any other tests that I need to run
+  33 4392 66986389 The intent of this bug report was to keep the indentation after pasting right? So this bug report sho
+  34 4388 65448151 Related issues:  https://github.com/atom/atom/issues/4213  https://github.com/atom/atom/issues/3593
+  35 4388 66232731 This does not occur on my laptop running Kubuntu -- not sure which version off the top of my head. I'
+  36 4388 69212104 Related issue: #4892 
+  37 4388 69227557 This is fixed for me in 0.169.0 on Ubuntu 14.04.1 LTS. (See #4892)
+  38 4388 69231133 @slackboxster Can you try upgrading to Atom 0.169 or later?
+  39 4388 75583237 This still occurs for me with Atom 0.182 in i3 4.2 on my funky debian system. Atom 0.182 does not hav
+  40 4386 65427894 I try to rephrase your question with unix-style newlines, to see if I understand you correctly:    Fi
+  41 4386 65428626 > I try to rephrase your question with unix-style newlines, to see if I understand you correctly    E
+  42 4386 65436396 @rumpelsepp Glad that I understood you correctly. Does this workaround fit your usecase or is it unfe
+  43 4386 65445953 > Does this workaround fit your usecase or is it unfeasible for you to have "ensure trailing newlines
+  44 4385 65358159 @Paranormalcow  this is DNS Issue. Please try again may we DNS is not respond for you but it will be 
+  45 4385 65698998 This looks like you dont have git installed. But maybe it's not on your path. Can you try running `gi
+  46 4385 65699371 > is there a nice way to fix PATH issues on windows?    The best way is to install GitHub for Windows
+  47 4377 65340522 As far as the text only displaying in half of the view, you're using a proportionally-spaced font. At
+x  48 4372 65261731 Makes total sense to me.
+  49 4372 65344636 This sounds awesome.     Undo grouping of typed characters should end on nearly any command. Some com
+  50 4366 65199675 Can confirm this, also noticed it yesterday
+  51 4364 65171390 Just to add some research,  I have been using HaxeIDE/atom-autocomplete-plus-async in my park9140/ato
+  52 4364 65172629 I'm the author of https://atom.io/packages/rsense and https://atom.io/packages/racer, and I've also i
+  53 4364 65187078 [`omnisharp-atom`](https://github.com/OmniSharp/omnisharp-atom) also makes use of `autocomplete-plus-
+  54 4364 65203450 > Evolve the autocomplete-plus provider API to be async, preserving the ability for providers to stay
+  55 4364 65287220 Thanks to everyone so far. Keep them coming.     > It seems like a prudent short-term course of actio
+  56 4364 65300833 > Evolve the autocomplete-plus provider API to be async...    I don't see how this solves anything.  
+  57 4364 65303154 @mark-hahn it's a matter of progressive elaboration. The API needs to support asynchronous suggestion
+  58 4364 65303205 >I don't see how this solves anything.  If a provider is synchronous and it  takes over a thread the 
+  59 4364 65310659 I have been working with the autocomplete-plus-async package and one of the primary issues that seems
+  60 4364 65317611 > I'd rather think long term though. I'm not sure if updating autocomplete-plus is the best course of
+  61 4364 65348916 Code-completion is so much more than auto-completion. It can be achieved with auto-completion but we 
+  62 4364 65349811 @mehcode Regarding `Context`, there are multiple implementations of `autocomplete-plus` (or derivativ
+  63 4364 65375096 @joefitzgerald I know its fairly language / provider specific. I'm just trying to get people thinking
+  64 4364 66313536 @mehcode, I like the defer suggestion, however, It would be nice if we had a more integrated way of d
+  65 4364 66864623 @benogle I add a wiki page: https://github.com/atom-community/autocomplete-plus/wiki/Suggestion-Provi
+  66 4364 67019085 @benogle We've (@yongkangchen, @park9140) been making significant changes to autocomplete-plus to mod
+  67 4364 67042585 > At that point, I think I will create a PR to upstream autocomplete-plus to autocomplete, and plan t
+  68 4364 67043598 > We will likely not get to it until Jan.    At that time you will have a PR to review then. I unders
+  69 4364 67043948 > I want to be clear that I am not sure this is the best approach.    @benogle We now have 4 people w
+  70 4364 67084491 We definitely appreciate the enthusiasm, but none of us have time right now to dig into this, so we c
+  71 4364 67276350 @benogle I think your concern about upgrading providers and the work involved in switching APIs might
+  72 4364 67277070 > We will likely not get to it until Jan.    > At that time you will have a PR to review    We are lo
+  73 4364 68237041 @benogle A quick update on the provider landscape: I've significantly updated https://github.com/atom
+  74 4364 68273356 One other announcement: we're using this Gitter room (https://gitter.im/atom-community/autocomplete-p
+  75 4364 68274322 @joefitzgerald it ain't public thought:  "You've tried to access atom-community's private organizatio
+  76 4364 68279360 @alkama sorry about that, try here: https://gitter.im/atom-community/autocomplete-plus
+  77 4364 68280692 @joefitzgerald thanks ! now we all can read what happens there too :)
+  78 4364 69973836 @benogle I know it's now January and you're nearing completion of the 1.0 API. If your focus starts t
+  79 4364 69981653 Will do
+  80 4364 76480721 Are there any updates on the direction for autocomplete going forward? (ie. is Atom going to adopt au
+  81 4361 70582015 Work to fix the overflowing is happening at #4400. I changed the title to be a feature request to add
+  82 4360 74256195 I am on 0.179.0 and facing the same issue on Ubuntu 12.04.5 LTS (precise) with the Trusty Hardware En
+  83 4360 77260829 If this is the general "doesn't work without DRI GLX", consider this a me-too. Running latest release
+  84 4360 77264964 Updated on Ubuntu 14.04 from v177 to the latest version (186) today without a problem, using the .deb
+  85 4356 65126627 While I think the idea is interesting, it is new to me.  Where have you  seen this behavior before?  
+  86 4356 65277909 @mark-hahn In terms of IDEs in IntellijIDEA. Then, also in file managers like Nautilus and Finder.   
+  87 4356 65280278 This behavior is also present in Windows File Explorer.  Although it does not seem to work in Visual 
+  88 4356 65300520 >  also in file managers like Nautilus and Finder.    >  is also present in Windows File Explorer.   
+  89 4356 65349316 :+1:     This is a good idea. One of those features I (and I expect others) wouldn't notice but the o
+  90 4356 65387804 > But those operate on files not text. There is nothing else undo could do.    Yes, and Atom operates

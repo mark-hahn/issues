@@ -1,0 +1,190 @@
+
+# page: 18, date: 2014-10-28, count: 30, rateLimit: 4534 of 5000
+
+    315-60732817-3981 [donna](https://github.com/atom/donna) is what's used as the first step to generating the current Ato
+    356-60738873-3981 Indeed, and I would highly, highly recommend leveraging [Pandoc](http://johnmacfarlane.net/pandoc/) f
+    101-60572621-3973 There's an error; click the *Console* tab in the Developer Tools pane, and show us the error message.
+    111-60572783-3973 ![image](https://cloud.githubusercontent.com/assets/5865044/4789266/4582af0e-5dc3-11e4-8c51-38169dda3
+    425-60577965-3973 Looks like you downloaded the ZIP file and extracted it to a network share, and are trying to run Ato
+    139-60578124-3973 Ahh, thought that would be a problem. I cannot install via Cocolatey either. Don't have it installed 
+     97-60611870-3973 So this was a recent error? Previous versions worked correctly? Also, what do you mean by uni?
+    155-60616815-3973 Uni means university, and I'm guessing this is the first time he tried to install Atom on one of the 
+    320-60650055-3973 I think this issue with network paths (either having the `.atom` folder or the entire installation on
+    205-60659359-3973 Yeah, I would think Atom should be launchable from a network share. This errors seems to suggest f
+     76-61183778-3973 @Lerogero Can you try Atom 0.141 and see if you still experience this issue?
+    750-61987076-3973 I managed to do a work around downloading Atom and putting it onto a memory stick then copying it ont
+     95-61995826-3973 Just logged onto a computer and still getting the same error as first posted with version 0.141
+    115-62000356-3973 @Lerogero Have you tried running Atom directly from the USB stick? This should work fairly well (albe
+    136-62706991-3973 @paulcbetts I'm yet to try run it directly, I did think about it. Might be a good idea for when I'm u
+     30-60473001-3957 Have you seen #2614 and #2206?
+    321-60478795-3957 >Are you on Windows 8 or Windows 7? >If on Windows 8 with Visual Studio 2013 installed, can you try 
+ x     7-60489496-3957 :beers:
+   4932-64515718-3957 Well nevermind... ``` npm http GET https://registry.npmjs.org/delegato npm http GET https://regist
+    338-69189208-3957 I'm having the same issue currently on Atom v0.166 on Windows 8.1. Out of curiousity, is it possible 
+    106-69191833-3957 Atom uses its own version of `node` and `npm`, yes. It does not come with its own version of `git` th
+    184-69193017-3957 @lee-dohm thanks for the response. To be perfectly honest, I have no idea what the problem is and whe
+    227-69199071-3957 Sorry, unfortunately I'm not on Windows so I can't be much help for the deep-dive stuff. You might tr
+    161-60472959-3956 Actually, aren't parens generally considered "reserved characters" in URLs and should therefore be pe
+   1756-60488950-3954 At first I thought it might be an issue with the tab spacing settings but after trying a couple of co
+   1406-60669497-3954 Thanks for your thoughtful response. After testing some more, and testing across some other editors 
+     75-60669937-3954 Yeah, I do think this is a bug, thanks @sandover for the simplified example
+    121-60706831-3954 It's cool that we figured it out. But me personally I like it how it is. It might just be my weird br
+    149-60229274-3939 From looking at the code, you can get the URL for a named remote by calling: ```coffeescript repo
+     97-60279026-3939 Thats a good point, but I'm thinking more of a case where the code wouldn't know the remote names
+     84-60331338-3939 Definitely :grinning: I just wanted to help out with a workaround if you were stuck.
+     84-60408420-3939 You can get remotes (and heads and tags) from `GitRepository::getReferences()` also.
+    115-60172258-3936 Yeah, I think this is because node's `path.normalize` lower cases it and that function is used on all
+    282-60179210-3936 This issue was also posted to Node-Webkit recently and it was noted that there was a pretty old issue
+    162-68405122-3936 This could be worked around by further normalizing paths for display, possibly wrapping the related f
+     89-60168854-3935 Just going to hop onto this issue and say that I would appreciate this on Windows too :).
+    198-60244321-3935 Yeah this would be very cool. Also icons for recent files/projects below the window in mission contro
+ x     2-60246463-3935 +1
+    111-60779216-3935 @zcbenz Is this something you are planning to add to atom-shell? Want me to open an issue over the
+    255-60805665-3935 @kevinsawicki Just one thought, isn't atom-shell a more general purpose code? If this feature is add
+    240-60807419-3935 > isn't atom-shell a more general purpose code? Yeah, I was thinking it would just be a generic AP
+     51-60862264-3935 Refs https://github.com/atom/atom-shell/issues/746.
+    198-60166601-3933 This makes sense, DMG (with shortcut to /Applications for drag-n-drop) does seem to be the preferred 
+    140-60190157-3933 ![screen shot 2014-10-23 at 05 02 22](https://cloud.githubusercontent.com/assets/6998367/4748146/6d44
+    251-60190276-3933 (Background created in 5 minutes in Photoshop & the actual dmg creation done with [node-appdmg](https
+ x    31-60257335-3933 @DomT4 looking good :sunrise: 
+    107-60260797-3933 What is the difference from having a .APP and a .DMG? Isn't the only difference the dragging the icon
+    197-60261140-3933 @kevinsawicki Cool! Let me know if you want a functional copy of the .dmg or anything, or even the te
+    197-60367468-3933 Having a DMG is also the standard way of instaling applications on Mac OS X, at least before the AppS
+    314-60367697-3933 > PS: for a real "open-source way" one would prefer gimp over photoshop ;) Oh absolutely. I just u
+     81-60162152-3930 What displays in the keybinding resolver when you press that keybinding? `ctrl-.`
+    216-60180418-3930 On the latest Atom source for Windows 7 x64, I was able to toggle and untoggle a bookmark (I think). 
+    628-60240657-3930 ctrl+alt display fine in the resolver. When I press f2 it doesn't display in the resolver. Actually f
+     45-60299792-3930 @combiths What keyboard layout are you using?
+    122-60957335-3930 @kevinsawicki sorry for late reply. I was out of town. I'm using a standard QWERTY keyboard (nothing 
+    321-62474560-3930 I tried to reproduce this on a Windows 8.1 VM but was unable to. Could you possibly have something
+    687-64055063-3930 I can reproduce exactly what @combiths described. * <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F2</kbd> doe
+    965-67113959-3930 I also have this issue! When using the 'Edit > Bookmark > Toggle Bookmark', it works just fine. Wh
+     93-67154028-3930 @WadeShuler: @kevinsawicki asked to test if Ctrl+Alt+B worked just to rule out some theories.
+    561-71294627-3930 You may have something on your computer that has registered a global hotkey with Windows. The Intel 
+    264-71295715-3930 Heh, I just tried to test this on Linux and forgot that Ctrl+Alt+F2 shunted you off the graphical dis
+    565-71334274-3930 @LoneBoco I haven't tested or verified what you said. If it is true that those keys are not available
+    332-72389484-3930 I can confirm that my issue is due to Intel's keybindings (that no one knows about since they're docu
+     76-74022168-3930 @LoneBoco This approach solves my problem，Disable Intel graphics shortcuts. 
+   1290-60125668-3928 Noticed it too, however I see the same thing in the Chrome browser's processes Google Chrome Helper 
+     99-60142550-3928 @zcbenz Is there more information to grab somewhere to make tracking down the cause of this easier?
+    148-60148678-3928 I've the same problem .. OSX mavericks, Atom 0.138.0. Not sure how to get more info, because its n
+   80831-60173696-3928 I sampled the process in Activity Monitor, results: ``` Sampling process 80485 for 3 seconds with 1
+    222-60181672-3928 This is a chromium issue that tracked at https://code.google.com/p/chromium/issues/detail?id=397642, 
+ x    44-60256396-3928 @zcbenz sounds good, thanks for the details.
+    100-61941735-3928 The latest Chrome 39 Beta includes this fix and it solved the issue for me, for those keeping track.
+     84-63078363-3928 @ijuma Solved it only in Chrome, correct? If so, when will this be pulled into Atom?
+    259-63166334-3928 That's right @dreki. I can't speak for the Atom team, but I would expect it to happen at some point a
+    106-63175408-3928 @ijuma Excellent. Atom is very promising and already a great editor. Stability can only increase adop
+    185-63180645-3928 Just to reiterate what @zcbenz is saying, this is really just a visual bug, where Activity Monitor do
+    144-64061888-3928 Atom 0.50.0 may have fixed this. When I converted from my prior version, high 40's, I still had red,
+    147-64308583-3928 ![screen shot 2014-11-24 at 10 22 54 pm](https://cloud.githubusercontent.com/assets/563345/5177970/80
+     54-66559277-3928 I have same problem. I think this is releated chromium
+     66-67741187-3928 Mac OS X 10.9.5 with atom.io 0.155: I still have the same problem!
+     40-67741657-3928 I don't believe Atom uses Chrome 39 yet.
+     57-67742824-3928 Not yet, but https://github.com/atom/atom/pull/4592 soon.
+     97-69687265-3928 I've updated Atom to Ver 0.169.0 but I have same proble. It is on Mac OS X 10.9.4. Thanks.
+    173-69786542-3928 Yeah I still have the same problem. It isn't necessarily affecting performance anymore (previously it
+    144-69814301-3928 confirming that I also have it ![image](https://cloud.githubusercontent.com/assets/656739/5728579/
+    249-69884219-3928 Same here. Updated to 0.171.0 today and I still see Atom Helpers in Not Responding state. ![screen
+     89-69888440-3928 In my opinion, sending your screenshots again and again does not help to resolve problem.
+    160-69897346-3928 @muhasturk In my opinion it helps to get attention to this issue that has been open for a long time. 
+     98-69922981-3928 I'm not sending my screenshot, but I just came here to bump this issue. This happens all the time.
+x    29-69926189-3928 :+1: OSX 10.9.5 Atom v0.172.0
+     86-70039095-3928 Atom v0.172.0 @ OSX 10.9.5 still showing the same issue "Atom Helper (Not Responding)"
+    179-70044945-3928 If you have the same environment as any of the previous posters, please don't add an additional "Me T
+     48-70049437-3928 Yes, a simple "+1" is enough to bump this issue.
+    113-70062258-3928 Totally agreed, a simple "+1" would be enough to make this long standing and ignored issue to be hope
+    110-70087172-3928 It hasn't been ignored. Atom can't really do anything about it since it seems like it's still a Chro
+     52-60180326-3927 @paulcbetts Are `Setup.exe` and `Update.exe` signed?
+    206-60183391-3927 @zcbenz Yes, they should be in the build **Edit:** The final generated Setup.exe is signed in the 
+     73-60216606-3927 @zcbenz yes they are. I have reported it to avast as a false positive.
+    219-62837382-3927 This is creepy. Are you sure it's safe? I uploaded .zip to virustotal and 17 of 55 detects something
+    376-62938118-3927 It looks like signing the final generated Setup.exe with a Code Signing certificate (which the offici
+x     16-62946116-3927 Great! thank you
+    130-63878492-3927 I'm getting (hopefully) a false positive on Atom.exe when installing the new AtomSetup.exe (See Issue
+     77-63883947-3927 @Fammy Can you give us the details of what Sophos claims it is infected with?
+    301-63884477-3927 @paulcbetts They claim it is infected with [Mal/Behav-027](http://www.sophos.com/en-us/threat-center/
+     44-63884597-3927 @Fammy Can you submit the AtomSetup.exe too?
+    121-63885273-3927 @paulcbetts I cannot, they do not accept files over 30MB. FWIW, I did not have any issues with the
+   3613-63892434-3927 I'm getting the Sophos error too. It seems to accept the initial installation (an item is created in 
+    307-63893144-3927 It doesn't like Atom *itself*? That's bizarre. I'm not surprised that Squirrel is going to have some 
+    276-63975343-3927 Got an email back from Sophos, they'be confirmed that atom.exe is not a virus or malware (surprise!).
+x      5-64032268-3927 :+1: 
+x     31-64037222-3927 @Fammy Thanks for submitting it
+    221-64049664-3927 Just going to pop in and say that Avast deepscreen's AtomSetup.exe before it can continue, then it th
+    348-66376092-3927 Avast has been non-stop detecting Update.exe and Squirrel.exe as malware (and moving them to the viru
+    128-66395761-3927 Thanks @50Wliu - not sure what else we can do here other than recommend people install MS Security Es
+    552-75060942-3927 squirrel.exe was just removed from my system today by Symantec.cloud. It is their endpoint protection
+     49-60687326-3926 +1 with version 0.140.0 on debian testing/jessie.
+     39-60687536-3926 Is renaming `apm` the only option here?
+    321-60690613-3926 Actually I didn't know I had this apmd package installed. Maybe it's installed by default on laptops.
+    544-60740304-3926 Renaming 'apm' is probably the only thing you can do, if you ever want to make it into APT proper. 
+     26-64811814-3926 +1 with version 0.152.0
+    253-64813473-3926 +1 with version 0.152.0 on Debian testing/jessie I think the problem is because Atom wants to put 
+    216-64824139-3926 It doesn't matter if it puts them in /usr/bin or /usr/local/bin. The real issue is that they have the
+     31-64824925-3926 @technoplunk Yes, you're right.
+     48-64825415-3926 Please rename apm. Then life will be easy again.
+    276-59919118-3914 Yeah, happens for me as well in projects which have a huge number of items in total (e.g. atom/atom),
+    178-59923251-3914 Weird. I just tried it with atom/atom and it didn't lock up for me. I have some projects at work that
+    170-59923689-3914 > I just tried it with atom/atom and it didn't lock up for me. Interesting! Do you have the "Hide 
+     67-59928445-3914 Yes, I do. I'll try now with it off. Yep, locked up. Good catch!
+     93-62481486-3887 How are you opening a directory? From the command line or from the File > Open Folder dialog?
+    227-62499158-3887 Well, first of all, the default install prepopulates with /home/username , I need only open the app f
+    155-75732752-3887 +1 I have the same issue. It is taking more than a quarter to get this fixed on a next gen Editor? C
+    124-75751652-3887 @vumaasha what Atom version are you using? Are you on Ubuntu as well? Can you reproduce this in saf
+    214-75816662-3887 atom version 0.182.0 *No. it does not happen in safe mode.* Ubuntu version: ( with all latest updat
+    308-75835091-3887 All right, since it doesn't happen in safe mode, that means that one of your installed community pack
+    147-76140424-3887 @50Wliu I do not have any community packages installed. I am testing this in a fresh atom installati
+    186-76227117-3887 If you can't reproduce it in safe mode, that means you have a package somewhere interfering with Atom
+     94-59547818-3869 Can you turn off the 'Enable hardware accleeration' option in settings view? Does that fix it?
+     59-59599828-3869 Yes I think it is better if I disable hardware accerelation
+     99-59663912-3869 I can confirm that this also appears on Windows 10 Preview. Disabling hw acceleration indeed helps.
+    116-73226910-3869 Just out of curiosity, is this still the case with Atom 0.177.0, and do you experience the same thing
+     57-73291144-3869 Yes I think this is the case. Brackets is a little better
+x     23-59866146-3868 :+1: Happens to me too.
+     37-61444329-3868 Issue exists here as well, OS X 10.10
+     60-59451563-3848 Does it happen when you start atom with the `--safe` option?
+    243-59468841-3848 Yes On 17/10/2014 11:35 AM, Kevin Sawicki wrote: > > Does it happens when you start atom with the |--
+    145-59147437-3833 actually - it doesn't switch windows, it's just that the atom window itself disappears. atom is stil
+    190-69326664-3821 ```css body { -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; 
+     75-69326703-3821 Also same problems are with [Fire Code](https://github.com/tonsky/FiraCode)
+     26-69326927-3821 /cc @kevinsawicki @benogle
+     74-69378734-3821 Try disabling `Use hardware acceleration` in the settings. Does that help?
+    124-69455163-3821 @benogle thanks for advice. But it really not help. LIgatures behaviour is totally same without “Use 
+     32-69462703-3821 Refs #2880 (possible duplicate).
+    155-69466136-3821 @50Wliu nope. #2880 is about disabled rendering ligatures (two symbols instead of one) and this issue
+x     11-69472163-3821 Oh, whoops.
+    551-73082096-3821 Is there any progress on this? A recent update (I guess it was 0.177) made this much worse for me. 
+     35-73103178-3821 @killercup what font are you using?
+    290-73103607-3821 That's Hasklig (same as a previous commenter IIRC). On Thu, Feb 5, 2015 at 7:51 PM, Ben Ogle <notifi
+    242-73386081-3821 I'm having the same issue and it makes it impossible to use - the cursor shows up far left of where i
+    115-73387168-3821 I would like to use Hasklig with ligatures as well. Unusable on Linux (tried with all kind of options
+     99-74385486-3821 optimizeLegibility seems to be giving issues: https://discuss.atom.io/t/wrong-font-rendering/14725.
+    436-74414131-3821 I tried to make a html file with this style in its head ```css textarea { -webkit-font-feature
+    348-74846794-3821 @frabert The problem is caused by Atom using a custom editor control, not a `<textarea>`. It performs
+    131-74866197-3821 I see, sorry for the misleading results. Out of curiosity, how does Atom calculate text metrics? Some
+    200-74868423-3821 From my understanding it copies lines into an invisible dummy node, then it iterates over each charac
+    183-74869235-3821 So the browser is incorrectly calculating the width of such a selection? Is it because the characters
+    701-58969648-3816 Could that be a line-ending support problem? What system are you on? IMHO everyone here seems to 
+    114-58970428-3816 > IMHO everyone here seems to be a little lax in their bug report details. Word. Having a gif is n
+    584-58971766-3816 > Having a gif is nice Yes, a picture is worth a thousand words. But we still need words like "OS
+    199-58984206-3816 Apologies for the lack of details. OS: Ubuntu 14.04 Atom version: 0.136 (but it's happened for me
+    157-58986011-3816 For comparison: ![sublime](https://cloud.githubusercontent.com/assets/109951/4623635/e6a48f36-5352-1
+    153-59071898-3816 I created a new package, [bug-report](https://atom.io/packages/bug-report), to help with the bug deta
+    988-59078974-3816 Will test on the latest build for Windows soon, but I was able to reproduce the issue on the followin
+    388-59120995-3816 Just built the latest code for Atom for Windows and this issue no longer exists. It does exactly what
+     48-59122742-3816 Sweet, I'll test against master and report back.
+    412-59139690-3816 My previous testing with it didn't involve reopening the file after converting to DOS line endings. W
+    100-62485346-3816 @SmileyChris so you saw different behavior depending on if the file had `\r\n` or `\n` line endings?
+      7-62490050-3816 Correct
+    263-58861995-3801 Can you paste the content of the generated `npm-debug.log` file? This seems to be a networking proble
+   1119-58903672-3801 this is the npm-debug.log: 0 info it worked if it ends with ok 1 verbose cli [ 'C:\\Program Files\\
+     12-58903914-3801 能留个中文联系方式么。 
+    289-58728582-3788 Can you open files on the Samba share from the command line? For instance: ```cmd C:\> atom X:\fo
+     65-58737522-3788 It crashes when loading from the command line, also. Just tested.
+    215-60189274-3787 Currently it is only enabled on Android > 4.4.3, there is a `--force-gpu-rasterization` flag but only
+x     29-60266085-3787 Thanks for checking that out.
+    139-71372800-3787 You can enable this on the desktop too in Canary via chrome://flags/#enable-gpu-rasterization I thin
+    221-71374536-3787 @MayhemYDG I just checked it out in Chrome 40 and at least on OS X it's not available: ![screensho
+     48-71374584-3787 That's why I specifically mentioned "in Canary".
+     34-71375265-3787 @MayhemYDG Oh sorry I missed that!

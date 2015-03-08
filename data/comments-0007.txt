@@ -1,0 +1,96 @@
+
+# page: 7, date: 2015-02-02, count: 30, rateLimit: 4875 of 5000
+
+    158-72514121-5359 @nathansobo will be soon working on new rendering techniques that will hopefully speed up typing and 
+     23-72604911-5359 Awesome to hear that :)
+    439-72488721-5354 :+1: This has the added benefit of avoiding to write helpers like `fit`, which are already provid
+    627-72515157-5354 Moving to 2.0 would be great, and we look forward to the results of your investigation ;) Some caveat
+     89-72378021-5345 I know this might sound silly, but have you checked that you have enough free disk space?
+     51-72378271-5345 Yes. I have 500GB free disk space and 5GB free RAM.
+    140-72503549-5345 I can confirm that. Sole solution yet is to repeat the building process very often until it works. (M
+    908-72544870-5345 I did some further testing with a [precompiled](https://aur.archlinux.org/packages/atom-editor-bin/) 
+    186-73054941-5345 I've seen reports of that happening as well on [arch](https://aur.archlinux.org/packages/atom-editor/
+    447-73134389-5345 With the last system update I get a timeout error when the build process has stopped for more than a 
+    207-72375159-5344 To be clear, I assume you mean Last Recently Used? LRU by itself is ambiguous because it is often pai
+    303-72380680-5344 This is an interesting suggestion that'll probably be a bit controversial because: * Chrome uses lef
+    593-72383453-5344 I will add this feature to my smart-tab-order package. On Sun, Feb 1, 2015 at 11:50 AM, Wliu <noti
+     69-72386331-5344 :+1: for making this a core feature of https://github.com/atom/tabs 
+    678-72396716-5344 > [image: :+1:] for making this a core feature Why do people want things in core all the time? Wh
+    613-72399727-5344 > Why do people want things in core all the time? Because how is random user A going to *know* tha
+   1714-72401781-5344 > Because how is random user A going to *know* that this wonderful feature is found I don't know.
+    269-72418672-5344 An Idea: Someone should develop a package-feature taxonomy and then create a catalog indexed by that
+    209-72552300-5344 @mark-hahn Is this something you have implemented? (19 hours ago i know!), but this is a painfully us
+    841-72572626-5344 > @mark-hahn <https://github.com/mark-hahn> Is this something you have implemented? So far this h
+    167-72574769-5344 > @mark-hahn <https://github.com/mark-hahn> Is this something you have implemented? You meant th
+    747-72609341-5344 Hi Mark, Yeah, i meant the original Ctrl+Tab/Ctrl+Shit+Tab to switch tabs in a smart order (instead o
+    300-72756719-5344 > So far this has only on my to-do list but with encouragement like yours I will move it to the top. 
+    218-73961073-5344 I don't care if this gets implemented, but it has to be an option. I definitely don't want to be forc
+    212-72367550-5343 View > Panes actually doesn't even exist on Linux. (?) ## Ubuntu 14.10 ![screenshot_2015-02-01_09
+    113-72380440-5343 I think I remember a comment somewhere saying that multi-stroke keybindings weren't showing up proper
+     84-72381319-5343 @50Wliu Ah, found it! https://github.com/atom/atom/issues/2594#issuecomment-56977044
+    190-72579184-5343 Yeah, this issue has been around for a really long time (system menus not showing keybindings for mul
+    164-72357835-5341 I deleted completelly all the files that related to atom, then I reinstalled it and it worked out. Bu
+   1176-72383157-5341 It is hidden off screen. This has been happening to me for a long time but I'm too lazy to post the
+     22-72321218-5331 Refs #5314, @eestrada?
+     84-74355536-5328 I can't reproduce this problem with Atom 0.178.0-e4ca11d (`--safe`) on OS X 10.10.2.
+     29-72284400-5322 Is this a duplicate of #2599?
+   3182-73734350-5322 I've got a similar problem. The instructions in [the howto](https://github.com/atom/atom/blob/master/
+     25-72244262-5321 Can you be more specific?
+    134-72247880-5321 A custom rendering with a as-you-type search bar would be much better. Just using the autocomplete dr
+    265-72248876-5321 ![screenshot_1](https://cloud.githubusercontent.com/assets/4069263/5981091/6bc5e462-a8b7-11e4-9ed9-e6
+     32-72291910-5321 @GameplayJDK What OS are you on?
+    102-72292504-5321 Those are the default scrollbars Chrome uses on Windows, so I'll take a wild guess and say Windows ;P
+    820-72295047-5321 Ah haha, sorry, I've been living in Mac and Linux land for awhile now. :blush: (Although now that I l
+    249-72298127-5321 Hmm, you're absolutely right. I'm on Ubuntu myself right now and I didn't notice that the scrollbars
+    428-72198240-5317 @rumpelsepp I'm having trouble reproducing that: ![screen shot 2015-01-30 at 14 09 09](https://clo
+    287-72209078-5317 Maybe a caching issue or sth. like that? I played around a bit and also edited the `.gitignore`. Now 
+    109-72216491-5317 Not really sure. If you manage to reproduce this behavior -- please let us know. Going to close this 
+    132-72216725-5317 > If you manage to reproduce this behavior -- please let us know. Yeah. I will ping you if it appe
+    286-72415250-5317 @izuzak I can reproduce it on my machine. Try adding a trailing whitespace in your `.gitignore`. I fo
+    675-72423000-5317 Thanks for digging into this, @rumpelsepp -- I was able to reproduce that behavior. Seems like a 
+    112-72232626-5315 Is this reproducible in safe mode (`atom --safe`)? It seems like this may be caused by the remote-sy
+     40-72195643-5311 Can you please add "steps to reproduce"?
+     68-72442737-5311 If happen again post here because I do not remember how it happened.
+      9-72062934-5307 Crash. :(
+     59-72074192-5307 This isnt a crash, right? It's just a red error, I assume. 
+    140-72121450-5307 It was a crash, I clicked a doc from outlook (on OSX Yosemite) and atom is my default editor. Not su
+    138-72076742-5301 So you mean the file doesnt pickup the git modified status (change color) immediately? Or what sideba
+    361-72077513-5301 Sorry, yes, the git change status doesn't update until you open the file. > On 29 Jan 2015, at 18
+   4344-72331326-5301 *Disclaimer: it's the first time I hack on Atom, therefore please excuse me if any of my assumptions 
+    152-73113079-5301 Can you make a PR for your proposed changes? They will be easier to talk about. It seems reasonable. 
+     11-71938371-5298 Refs #4849.
+    240-72545263-5298 Can you go into more detail on the crashes? Can you provide the output from `Console.app`? (search in
+     92-72552149-5298 Can you access programs through a samba share? @Mortoc said that he's on Windows, not OS X.
+     41-72552379-5298 My mistake, I just read the description. 
+    182-71871572-5289 What Atom version are you on? Are you installing through the new installer or through Chocolatey? I
+    371-71890454-5289 Ah I see, I am running C:\Users\name\AppData\Local\atom\app-0.176.0\Atom.exe and this has a different
+    684-71912038-5289 Make sure chocolatey is totally removed. See the blog post about it. On Wed, Jan 28, 2015 at 10:4
+    219-71872982-5285 Did you have an internet connection? Do you have access to write to that crazy temp directory? Ano
+    573-71882834-5285 Yes, I have a direct Internet connection. No proxy or anything. I'm not sure if `\AppData\Local\Te
+   1036-72770012-5285 I think it has to do with the path it's trying to clone into. I'm having this same issue myself and h
+    333-73289341-5285 I'm also experiencing the same issue with the same path: `'/cygdrive/c/Users/Aldo/.atom/.node-gyp/
+     66-73829372-5285 Has anyone made any progress with this? Still seems to be an issue
+     68-74204476-5285 https://github.com/atom/emissary/pull/10 Is it fixed? /cc @atom
+     46-71756471-5278 :+1: This will be nice to have implemented :).
+    468-71539525-5262 Atom already has `atom://` registered in Info.plist: ```plist <key>CFBundleURLTypes</key> <arr
+    127-71555069-5262 @zcbenz That's mac-only though, we don't register the url with the Windows registry / try to set gnom
+    298-71556947-5262 @thedaniel Right, we only have it on Mac. Registering URL on other platforms are quite similar, th
+    210-72079779-5262 Fortunately we can write and test all the app code for this without having to wait for the cross-plat
+    167-71497558-5259 The package install location is based on the `UserProfile` environment variable so just change that v
+    841-71498548-5259 Hi Kevin, When we launch the installation package we are not given a choice of installation l
+    259-72410104-5259 Hey Doug, Sorry, Atom will only install to a user's profile directory, you should change your GP 
+     80-75541141-5259 How about just giving people an option where to install? It's pretty standard...
+    733-75572955-5259 When we run the installation program there is no point where there is a choice on where to install it
+    116-75584769-5259 > How about just giving people an option where to install? It's pretty standard... Nope, we won't 
+    370-75665923-5259  In future versions, a Program Files-compatible version might exist but that's a long way off. 
+    198-75678390-5259 I believe installing to Program Files requires administrator permissions, which is a no no. >* No 
+    532-75682871-5259 > What's the difficulty to just put it either into the Program Files, or any random location of the u
+    326-76824920-5259 Disappointing. Yet another OSS that doesn't respect the Windows security model. I can't wait until 
+    292-76826699-5259 @thx1200 Repeat after me: [UAC is not a security boundary.](http://blogs.msdn.com/b/e7/archive/2009/0
+    154-76834773-5259 UAC is not a security boundary, but Program Files is, and Atom won't install to Program Files because
+    199-76838846-5259 @thx1200 Google Chrome doesn't ask for UAC either. I personally find UAC annoying and it's nice when
+    423-76840813-5259 I can tell this is a losing battle because nobody here apparently understands enterprise security in 
+    195-76841142-5259 @thx1200 There is a .zip Windows distribution which you can install to the location that makes sense 
+    164-76841293-5259 Yes, but remember that Squirrel is still in its infancy **and** that @paulcbetts has indicated that a
+    517-76843801-5259 Also, let's try and stay constructive and friendly. No need to wrap valid concerns into passive-aggre
+    882-76846456-5259 So, @thx1200 is technically right in that installing to Program Files is a bit more secure than insta

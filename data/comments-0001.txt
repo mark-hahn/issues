@@ -1,0 +1,64 @@
+
+# page: 1, date: 2015-03-08, count: 30, rateLimit: 4964 of 5000
+
+     16-77761588-5901 /cc @paulcbetts 
+    104-77762971-5901 We don't need to do this at install time, we just need to have a setting that will enable / disable t
+    111-77751244-5900 Well, out of the corner of my eye, I managed to find a 1px by 1px window, and after resizing it... it
+    319-77733365-5898 How does cross-compiling with TypeScript work when tsc has to have every file in the project to compi
+    758-77733886-5898 > cross-compiling with TypeScript work when tsc has to have every file in the project Not essenti
+    147-77733916-5898 Also, call sites in TypeScript do not rely on source type information. So absence of type information
+    369-77734155-5898 @paulcbetts I've just pushed a multifile demo : https://github.com/basarat/atom-typescript-test/commi
+    308-77734700-5898 @basarat Aha, now it makes sense. It'd be cool to start making a more generalized framework for loadi
+    392-77728717-5896 We already do an integrity check on the update, and I don't think downloading is the longest part of 
+     66-77731072-5896 For reference, this amazing improvement is being tracked in #5382 
+     80-77710190-5892 What Atom version is this? Can you reproduce this in safe mode (`atom --safe`)?
+    108-77735567-5892 I found this in v0.180.0. After upgrading to v0.186.0 the issue persists. The safe mode doesn't help 
+    162-77736187-5892 I've seen this happen before, and I think I remember a package being responsible (I think autocomplet
+   2402-77736297-5892 Sure: ``` andrey@crunchbang:~/dev/nlpkz/lemmatizer$ apm list Built-in Atom packages (84) ├── arch
+x     46-77736364-5892 Thanks! Not a package, then, it seems :smile: 
+   1005-77738954-5892 Not sure if it's of any help but that's how the inner HTML of the "proper" English line looks: 
+    278-77731426-5891 Hello. I have been wanting to contribute to open source for quite some time now. I would like to star
+    129-77732292-5891 I am building atom from source, so that I can change the source code and build it again to preview th
+    725-77632550-5887 Did you quote the backslash, i.e. `\\` On Fri, Mar 6, 2015 at 12:39 PM, Brian Black <notifications@g
+    957-77635672-5887 No. On Mar 6, 2015 3:47 PM, "mark-hahn" <notifications@github.com> wrote: > Did you quote the backsl
+   1261-77640576-5887 Did quoting the backslash fix it? On Fri, Mar 6, 2015 at 1:05 PM, Brian Black <notifications@github
+    275-77683022-5887 I'm guessing that's because the current selection is used as the pattern when you hit `cmd-shift-f`. 
+    313-77531600-5883 This issue appears very frequent for me (3-4 times from the first notification). Now I can reproduc
+     78-77532113-5883 I dont know if it help, but it not appears when I start atom in "--safe mode".
+    177-77534121-5883 Sorry, but it seems the reproduction step is not so "good", after closing and restarting the editor t
+    186-77548844-5883 @nathansobo I'm guessing we can close this in favor of https://github.com/atom/atom/issues/5667, but 
+    247-77567088-5882 Another observation: if soft wrap is turned on, then joining these lines takes forever (I waited for 
+    139-77446374-5869 > Should there be a Bin folder created Yes there should be. Is there anything in your `Squirrel
+   12404-77449423-5869 Yes, quite a bit. Unfortunately, I'm trying to install this at work, which I just got approved, but 
+    191-77451184-5869 Curiously enough, I just installed an older version (0.176.0) that we have access to, and that instal
+    188-77479526-5869 @LiquidFlame This is telling you that Squirrel is trying to check for updates and is getting back 407
+    431-77486186-5869 @paulcbetts To be honest, not sure. I develop internal java web apps, so I don't do any C#, and got 
+    125-77488724-5869 @LiquidFlame If you can get a certain version working, you can safely ignore the message (of course, 
+    297-77489301-5869 @paulcbetts I know I can get v0.176.0 working, but it's a shame because I would like to have the late
+     75-77591678-5869 edit: On closer look, this is a different issue. I will make a new report.
+    207-77609415-5869 @LiquidFlame Honestly, the easiest thing to do is to get another machine with the same version of Ato
+    810-77611629-5869 So good news, I found this post [Atom installation error on Windows 8.1] (https://discuss.atom.io/t/a
+    650-77444316-5867 > option+left/right arrow moves by one word This works for me. See [our mac keymap](https://github
+    377-77558953-5867 > control+left/right arrow moves to beginning/end of line Do you mean <kbd>Cmd+→/←</kbd>? <kbd>Ctr
+    834-77511836-5866 > So, for example, if I have myfile.coffee open and I choose 'Split Right' then the original one on t
+    914-77569271-5866 > In the current state of Atom, if you have the same file opened in two different tabs and they are s
+     99-77412291-5864 > Does this font automatically come with Atom still? I don't think Atom ever shipped this font.
+     32-77415618-5864 So would this be a Linter issue?
+     66-77417277-5864 I'm not 100% sure, was there more to the error like a stack trace?
+    514-77488517-5864 I just figured out part of my problem. I'm trying to install Linter manually, by unzipping the file 
+     77-77371787-5860 Can you reproduce this in safe mode (`atom --safe`)? What OS are you running?
+     44-77377055-5860 thanks, trying. Running on mac os x Yosemite
+    165-77345265-5859 one more thing: starting atom in safe mode won't help--either when closing the changed file with Ctrl
+    535-77285371-5847 It's interesting that you say that. Most people have actually been reporting that it's been getting 
+    868-77288224-5847 > after each release it has been getting slower and slower This is contrary to almost all measurem
+     92-77289731-5847 Oh, and perhaps a screenshot of the Timecop view (search for timecop in the command palette)
+    720-77290361-5847 > I totally believe that it's getting slower *for you* It gets slower and slower as you add new pac
+   2851-77290907-5847 Thank you for the fast reply! First of all, I appreciate the work done by @nathansobo and @as-cii , k
+   3721-77291909-5847 Others may disagree with my feelings, but Atom is always going to be slower than an App written in C+
+   1094-77293086-5847 @mark-hahn No sir. Your reasoning here is completely broken. 1. I'm not asking Atom to behave li
+     79-77293092-5847 @alexandernst you may want to subscribe to this issue then (or poke it): #1873.
+   1767-77302232-5847 @alexandernst a question and a few comments: - What platform are you on? I am assuming Linux of so
+    880-77302845-5847 We're actively working on a new document model that should address many things you bring up. Nothing 
+    731-77340406-5847 @thedaniel You're right, this is Arch Linux, x64 with vanilla kernel and KDE5. Nice to hear that y
+     76-77394007-5847 @nathansobo does that new model intent to work well with large(huge?) files?
+     81-77400779-5847 @YuriSolovyov [Yes.](https://github.com/atom/atom/issues/3684) Subscribe to #307.

@@ -1,0 +1,79 @@
+
+# page: 4, date: 2015-02-21, count: 30, rateLimit: 4968 of 5000
+
+    209-75396817-5667 Hi @dantreasure, can you please try to reproduce this in safe mode (`atom --safe`)? What were you do
+     34-75422352-5667 @50Wliu This is most likely legit.
+    279-75586437-5667 Looking into this today. The fundamental question I need to answer is how the number of lines can cha
+     65-75607464-5667 Any information about reproducing this one would be most helpful.
+     49-77532762-5667 Maybe I found a similar issue, please see: #5883 
+    563-77548729-5667 @nathansobo I finally managed to reproduce this :beetle:. :tada: Steps: 1. Make sure you have 
+     46-76531425-5658 Edited to try reduce my usual walls of text :(
+     45-75346432-5657 Can you post the test file here or as a Gist?
+    301-75347161-5657 This isn't the same file but it a nice simple example to make it clear. ``` ‑| | ``` First 
+     44-75348788-5657 I can confirm on Atom 0.181.0, Ubuntu 14.10.
+x     29-75304018-5654 Thanks for the heads up :+1: 
+x     21-75484052-5654 Windows is HILARIOUS.
+    125-75486665-5654 I think that shit goes all the way back to Windows 3.1 at least, probably earlier. Eight bits ought t
+    168-75259773-5650 Can you try upgrading to 0.181.0 and see if that helps? Similar to https://github.com/atom/releas
+    372-75260210-5650 @atom/core There's a couple of these issues around: atom/release-notes#29, atom/tree-view#377 and thi
+    293-75261545-5650 I currently am using 0.181.0 and that error is not reproducible on my end either. I installed file-ic
+    255-75238924-5649 Hummm ... Sorry I have unfolded these methods then cut it -> it's working Then I retry to reprodu
+     69-75339953-5646 Can you include the text if you expand the arrow on the `Error` line?
+    170-75365230-5646 I updated to version 0.182 and the error is the same. ![captura](https://cloud.githubusercontent.c
+    511-75091677-5640 I realized it's because the file actually doesn't exist, because a git branch that doesn't contain th
+    464-75290573-5640 Atom has also gotten really flaky in general about updating files that have changed on disk, e.g. whe
+     98-75322912-5640 I also now often have to collapse and expand folders in the tree view to get new files to show up.
+    272-75085616-5639 Have you downloaded a pre-built distribution of Atom from atom.io, or are you building from source? I
+    158-75088528-5639 I am using [WebUpd8 PPA](https://launchpad.net/~webupd8team/+archive/ubuntu/atom) to install and upda
+    346-75090253-5639 I guess they are building using an unsupported version of Node. In the past this usually didn't lead 
+    364-75095059-5639 I have purged my installation and installed from the released deb file. It is working fine now. Thank
+    226-75095939-5639 #5628 has made Atom buildable by Node v0.12.x and IO.js v1.x on `master` now and should be available 
+x     34-75097662-5639 Thanks for the pointers @lee-dohm.
+     57-75066607-5638 Did you get this error while editing an EmberScript file?
+     65-75066889-5638 No, while editing a rails erb file. Now getting it constantly :(
+     56-75067252-5638 After restarting atom the issue seems to be gone for now
+     67-75086332-5634 /cc @benogle something seems off with that commands list... :wink:.
+    583-75115019-5634 The actual issue looks like is is probably caused by one of the linters or less processor packages yo
+    238-75000944-5627 This should be tied to some syntax or file-types in specific. This behavior is slightly unwanted in f
+    234-75340387-5626 What platform are you on? Is this happening consistently for you? If so, for all projects or only cer
+    137-75362474-5626 Also, to cover the basics... Is it reproducible in safe mode (`atom --safe`) and how many tabs / file
+    119-75644633-5626 I had today 4 atom processes with 1GB/each :o my pc has 16gb. After restarting atom everything was re
+    151-74946336-5621 This seems very similar to https://github.com/atom/atom/issues/5617 @maxbrunsfeld any ideas on thi
+    685-74947248-5621 > Is there a way to downgrade to 0.179 and disable auto-updates? There are two ways to do this, on
+    188-74947815-5621 @parlayvu can you try clearing out atom's stored state and trying again? If possible, please keep it 
+     75-74949191-5621 I hit a similar issue, and had to downgrade my atom. I am on Ubuntu 14.04 
+    114-74961046-5621 @steelbrain @parlayvu can you upgrade to Atom v0.181, clear out your `$ATOM_HOME/storage` directory a
+    631-74961467-5621 @maxbrunsfeld I will try this and update on my status. Thanks. @kevinsawicki After all this is sor
+    157-74969463-5621 @parlayvu can you report the output of these commands in the dev console? ```javascript atom.proj
+     63-74969563-5621 Also, is this happening when you start atom with `atom --safe`?
+    373-75000148-5621 @maxbrunsfeld Yes this happens in safe mode too atom.project.getPaths() returns an array with 2 st
+    221-75044245-5621 Hi:) @maxbrunsfeld , my problem was actually resolved by renaming storage folder and running atom aga
+b     28-75163859-5621 Is there any updates on this
+    335-75164692-5621 @skandasoft most users reported that 0.181 in safe mode, plus maybe clearing their storage directory 
+    334-75168042-5621 I am on windows..7 and as mentioned the first time window open with the proper directory..but If anot
+    859-75253533-5621 So I am encountering this issue as well. I can't find steps to reproduce this however I did realize 
+     43-75256110-5621 clear your storage...that worked..:) thanks
+    311-75279620-5621 Thanks for the report @hswolff, @skandasoft. Is anyone still experiencing this issue on Atom >= 0.181
+    150-75295316-5621 @maxbrunsfeld It seems to be working now on 0.182 Mac 10.9.5. I haven't had time to fully test but I'
+    210-75640493-5621 I'm on 0.182 and cleared `$ATOM_HOME/storage` and still doesn't work. I've tried --safe too but no lu
+    103-75778808-5621 If I right-click on the home folder and do "remove root folder", then I can add any root folder I wan
+      5-74949815-5620 #461?
+    150-74864241-5612 To be clear-are you right-clicking and choosing `Run as Administrator` or just trying to install it u
+     71-74868665-5612 I am an administrator and I am also choosing to run it as administrator
+    143-75153697-5612 Getting exactly the same error on Windows 7 64-bit with versions 0.180 and 0.181, it works perfectly 
+     26-75300217-5612 Can you try this on 0.182?
+    395-75331388-5612 Got the same error with the same file ``` IEnableLogger: Failed to write file: C:\Users\emarques.
+     50-75331993-5612 @emarques Do you have an Antivirus app installed? 
+    460-75337187-5612 @paulcbetts I have Comodo Internet Security Premium installed, I've disabled it and everything went s
+    141-75355064-5612 Had Comodo aswell, but Atom didnt show up in any of the antivirus events, disabling it worked though;
+    234-74858580-5603 @davidpett Just to make sure we understand, would returning CORS headers instead of adding a crossdom
+    568-74863903-5603 Oh my gosh, yes CORS headers is all I need, sorry. That's embarrassing. On Wednesday, February 18, 
+x     39-74864790-5603 Ha, thanks for clarifying :+1: :smile:.
+   1797-74865247-5596 > I also want to let users customize the shared color palette Ya, the "changing Less variables fro
+    309-75002017-5590 In my case the file tab dragging automatically saves the changes to the new window. Also found a new 
+    118-75002259-5590 This was whatever the latest was yesterday 0.179 I think on OS X, One Dark theme with Base16 Tomorrow
+    111-75002544-5590 Windows seems to behave differently. I guess we are down to waiting for some of the Mac guys to repli
+    193-74731629-5584 Same here running Ubuntu 14.04 on the Pi 2 Linux adamspi 3.18.5-v7+ #225 SMP PREEMPT Fri Jan 30 18:5
+    212-75687633-5584 I am getting an error as well but different issue, my output is: Node: v0.10.36 npm: v1.4.28 Ins
+    309-75733778-5584 Judging by atom/node-minidump#5 this has already been fixed over on the minidump module, but [build/p
+    118-75737114-5584 Same here, bumping up minidump to 0.9 gets the build process a bit further but then bombs out with th

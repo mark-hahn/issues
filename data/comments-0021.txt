@@ -1,0 +1,111 @@
+
+# page: 21, date: 2014-09-12, count: 30, rateLimit: 4441 of 5000
+
+    548-55119219-3502 Also related: https://github.com/atom/atom/issues/3479 Personally, I'm not sure what the correct b
+    203-55481952-3502 Yeah, there are a few options: 1. Never move the mouse on RMD (current behavior) 2. Move the mouse 
+     35-55534203-3502 I think option 2 would be the best.
+    380-55536544-3502 @1j01 @lee-dohm Thanks for the feedback! In case option 2 or 3 was implemented, what would you exp
+    846-62769374-3502 In Sublime, and soon Atom will do this too (#4148), having no selection would actually mean the entir
+   1061-63202588-3502 Not moving the cursor means I have to worry about where the cursor *was*. Moving it means I have to 
+    228-54900390-3500 Attached screenshot. you can see a small drag-select of lines with just 340 line of code , goes up to
+     52-54984134-3500 Tested with relased 124 too , it happens there too. 
+     68-55073915-3500 Can you replicate when Atom is running in *safe mode*? `atom --safe`
+     51-55574668-3500 Yes i can replicate that. Happens on safe mode too.
+    358-56902471-3498 * Can you reproduce this on the latest Atom release, 0.131? * Can you include a screenshot of the is
+     87-57024607-3498 I can't seem to be able to reproduce it in isolation, it only happens in certain files.
+     81-57024694-3498 Can you include the content of the files it happens in? Or at least a screenshot?
+    343-57157247-3498 It seems that I was able to reproduce it after all. See the following text: ℐ𝒢𝒩𝒩𝒩𝒩𝒩𝒩𝒩𝒩𝒩���
+    230-57157428-3498 I'm guessing that this is caused by the fact that some Unicode characters are slightly too long, and 
+    338-62632850-3498 I can't reproduce this, not even when I throw in some of the super wide Tamil characters. OSX 10.10, 
+     91-62633613-3498 @yongqli Can you check if you still see it on Atom 0.145? I'm not seeing it anymore either.
+     73-54844911-3497 @lukehefson do you know which version of Atom you were on when it crashes
+    121-54845597-3497 It was `0.125.0` but now I've just tried to launch it and I'm getting `The application can't be found
+    104-54845952-3497 Weird. That happens when I 'control-click > Open with' a file. But if I just launch Atom.app it is fi
+     66-54947890-3497 It seems to be fixed in 0.126.0. Tested on 10.10 works fine for me
+x     11-54800633-3493 :thumbsup: 
+    247-54870875-3493 Looked into adding this to the build but I was getting errors running `script/grunt dump-symbols` on 
+    428-54911995-3493 The `msdia80.dll` is needed for generating debug symbols, in atom-shell I used [a script](https://git
+    148-75098810-3480 Pasting large amount of plain text (~8000 lines) into a new file is also very slow. ~15-20 seconds o
+    128-75099797-3480 #5534 should have helped with copy/pasting large amounts of text. Please try it again and let us know
+    294-75125634-3480 Thanks @lee-dohm! I just upgraded to the latest 0.181.0 and can definitely see a significant improvem
+    189-58437119-3479 A screenshot from me to show what doesn't work ![screen shot 2014-10-08 at 6 15 33 pm](https://cloud
+     51-54639701-3466 Related: https://github.com/atom/git-diff/issues/14
+    185-72707320-3466 I also would like this feature. The gutter is crucial for linting, but I don't find line numbers usef
+    109-72709981-3466 This will be much easier when @nathansobo is all done with the editor internal changes / performance 
+x      2-74484703-3466 +1
+     33-54643852-3442 Issue confirmed here. 124 on OSX.
+    304-54713596-3442 Same issue with 0.125 on Windows. An error appears in the dev tools when I try to fold all or to fol
+    203-54269484-3441 There is a related issue that may or may not be what you are seeing: #2831 It seems to have been re
+     58-54385351-3441 I just did test in safe mode --- same behavior replicated.
+    255-54541684-3441 @rcrooks -- thanks for the report! Can you please clarify which version of Atom you're using and whic
+     76-54235603-3437 See: https://discuss.atom.io/t/horizontal-scrolling-bug-with-soft-wrap/11929
+x     69-54542585-3437 Yeah, I can reproduce this as well -- thanks for the report @sylund! 
+    101-53906451-3427 This will probably require some changes to [text-buffer](https://github.com/atom/text-buffer) as well
+    389-54526202-3427 +1 for this. Plus: I think it should add not only Unicode UTF-8 with BOM, but also UTF-16 LE/BE wi
+    140-55063987-3427 Also +1 for this. This also makes copying and pasting painful (eg into SQL Server Management Studi
+    176-76046946-3427 Just filed a related bug. Needs to be able to save as UTF-* (but especially UTF-8) with BOM in additi
+    574-53999365-3426 Thanks for reporting this @LukeMauldin. Just to make sure this isn't caused by a package you might ha
+    275-54138945-3426 If I run `atom --safe` I get a constant cpu usage of 1-2% in the background (for Atom Helper with an 
+    206-54140039-3426 Atom only takes up a small amount of CPU (1%) if I open a blank file. I receive the high CPU usage p
+    744-61399969-3426 With Atom 0.141, on a late 2013 MacBook Air running OSX 10.10, running in safe mode produces an energ
+    247-74717875-3426 I'm seeing this with 0.179.0 still. atom-helper "not responding" and 20-33% CPU in the Activity Monit
+    684-74865968-3426 I experience this issue as well and disabled all community packages (except lang-matlab-octave) and s
+    315-75368302-3426 I disabled every package including the default ones (save for settings-view) and AtomHelper was still
+   1202-76127138-3426 Yeah, this matches what I'm seeing. The background CPU usage seems to be proportional to the number o
+    359-76127580-3426 Running Atom in safe mode, the background CPU usage is less (~10% on average, I'd say). Here's a samp
+    260-77471043-3426 I am also experiencing this issue, it is causing a noticable reduction in the amount of time my lapto
+    103-53892358-3424 You should probably try updating to the latest version first. The current released version is v0.124.
+    180-53950484-3424 upgraded, now on Version 0.124.0 (0.124.0) but same error still persists.. im going to go dig into
+    231-53999655-3424 @stanzheng Hm, that's strange -- I'm not able to find a keybinding for `alt-cmd-/` in Atom, could you
+x     35-53999665-3424 Ooops, didn't mean to close, sorry!
+    190-53756375-3415 Tantalizing! I have no problem on two-monitor setups, but I wonder if anyone else has 3 to test this
+    154-53780747-3415 Ah sorry should have added that to begin with, updated. I have a three monitor setup at home as well 
+    463-56967469-3415 I'm not sure where else to put this. It's probably related so: I'm not sure I'll be using atom, I
+     36-59395875-3415 @zcbenz is this an atom shell issue?
+    846-59406671-3415 Sorry, I used this program for a total of about 15 minutes. To the best of my memory: When I down loa
+     96-59453062-3415 Yeah it should be an atom-shell issue, but currently I can not find a two-monitor setup to test.
+    113-59520512-3415 I'm having the same problem on win8 with 2 monitors -- both are 4K and text size is set to "Extra Lar
+    144-59533078-3415 It happens sometimes with the Chrome Browser as well, though not consistently enough to replicate it,
+    147-71080997-3415 It's still happening. Unfortunately, for me it is extremely consistent. I get it 100% of the time o
+     53-71081379-3415 This bug was never closed. It's still a known issue.
+    121-71086832-3415 Do we know yet where that behavior comes from? Is it definitely a Chromium thing, and if so, is there
+    369-71088673-3415 I think I caused a problem here. When I first entered my post I hi-jacked another bug. So, I am
+    157-71089249-3415 I was referring to the originally posted issue, i.e. the menu opening in the wrong spot. I'm sure i
+     34-53748548-3414 Which operating system is this on?
+    273-53749082-3414 Mac OS X Mavericks 10.9.4 On Thu, Aug 28, 2014 at 12:23 PM, Lee Dohm <notifications@github.com> w
+     96-53796116-3414 IIRC `node-gyp` still has issues with paths containing spaces, so this might be related to that.
+    163-53898155-3414 @robertmiles3 Can you run `script/build --verbose` and see if it produces more output? Wondering i
+    377-53898740-3414 @kevinsawicki With `script/build --verbose` using `/Users/robertmiles3/Projects/atom with space/` it 
+    335-53723556-3410 What version are you using? I can't replicate this in v124, on Win8: 1. I open Atom 2. I close the
+     79-53755368-3410 I see. Latest version on WIn8.1 Pro. But yeah, seems it's only for the folders.
+     69-53688290-3406 Does the problem occur if your start Atom in safe mode? `atom --safe`
+     29-53688488-3406 @thomasjo yep. Same problem. 
+     56-53703033-3406 What happens when you try to open one via the File menu?
+    285-53705222-3406 I can confirm on Windows 7 x64, using 0.124.0. The folder name appears in the titlebar, but the tree
+    376-53706420-3406 @batjko nothing happens. @50Wliu :thumbsup: yeah exactly. Do you have the "Project Manager" packag
+    522-53707236-3406 Alright, I just tried it on Win8 and v125 ![image](https://cloud.githubusercontent.com/assets/72870
+    112-53895190-3406 @keeev so it is just the tree view not opening that is the issue here? Do the files appears in the fu
+    432-53897197-3406 @kevinsawicki: Just tried it out (not keeev, obviously, but this appears to be a universal bug), and
+     37-53897404-3406 @50Wliu okay, thanks for the details.
+    452-72957148-3406 Bump-this is really hurting packages that rely on "properly" opening a folder in order to work. Trav
+    293-53632222-3399 I feel good about this. I'm thinking specific guides and cookbook-type stuff might also find a home
+    105-53632393-3399 Everything here will totally be on atom.io. It'll basically be on this page: https://atom.io/docs/lat
+    242-53632891-3399 Ah, but I was thinking to then remove it from the repository / download bundle (especially since the 
+    341-53633497-3399 I guess I'm not sure on organization at this point. Atom.io generates those pages from the md files i
+    178-53633997-3399 Yes that was my thinking, its own `github.com/atom/docs` repo, which atom.io could generate from, or 
+   1022-61735363-3399 There is not enough plain-English documentation available for globals injected (or replaced) into `wi
+    278-61736365-3399 @eddieantonio You're totally right. We're not great at docs right now. We have talked about and are p
+    143-53589923-3397 @tonycody Can you share more details about the problem you're having? A screenshot which clearly demo
+    262-53659373-3397 ![qq 20140828082539](https://cloud.githubusercontent.com/assets/6773121/4069622/f9157dde-2e49-11e4-94
+     55-53675750-3397 In addition, the atom program to open the speed is slow
+    279-53677048-3397 Alright so, I interpret this as a request to associate file extensions automatically with Atom. Pers
+    146-53677990-3397 Agreed, this should definitely **not** be something that Atom Core handles. This needs to be done as 
+    528-53399358-3377 Being a Windows user, I have never seen the About page, so I don't know what the expected behavior is
+    384-53476036-3377 I've seen it and it already has been useful for me. Personally I don't know if it would be useful t
+    168-53476400-3377 > Do you plan to leave it as it is (the size) or a larger window? I was thinking of making it open
+    224-53530518-3377 > I was thinking of making it open inside the atom window, just in a new tab, like the settings do. 
+    190-53546129-3377 For those like @batjko that haven't seen it: ![screen shot 2014-08-27 at 2 27 46 am](https://cloud
+x     15-53599509-3377 Fascinating. ;)
+    302-59858326-3367 also experiencing this same issue on current production release of Yosemite. here is a link to stack
+     50-62565075-3367 Any update as to when this might be fixed in atom?
+     84-62824731-3367 i will send a pull request, i fix this using a git fetch and merge instead git pull.

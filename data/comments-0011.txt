@@ -1,0 +1,87 @@
+
+# page: 11, date: 2015-01-07, count: 30, rateLimit: 4751 of 5000
+
+    199-68959818-4874 Were you viewing the file that is in the title? Does something in the background rebuild this file or
+    690-69050864-4874  I was not viewing the file in the title. I was attempting to open a .js file. I'm not even sure wha
+     51-69119418-4874 Similar to https://github.com/atom/atom/issues/4805
+    141-71464063-4874 :+1: I'm using v0.175 and this bug is there too. Just for see or navigate to a .js file after a litt
+    248-71511988-4874 @shingonoide So you're saying you just open the file, and it throws this error? Can you paste in the 
+    337-68824295-4851 Reproduced on Atom v0.167.0-a9c0553 on Mac OS X 10.10.1 running in Safe Mode. Also importantly, if yo
+    713-69038582-4851 There are similar issues after click-dragging to make a selection. If you make a selection going righ
+    136-68823714-4849 Have you tried updating to the latest version? Atom released v0.166.0 today. I don't know that this w
+    382-68873415-4849 I will try that at some point. It's just that with the rapid pace of releases I'm not always on the l
+     81-68875668-4849 So is this just a duplicate of that issue? Should we merge the information there?
+    185-68885875-4849 I suppose the `Uncaught TypeError: Unable to watch path` part is a duplicate, but now when I get it i
+    371-68886553-4849 Well, uncaught exceptions tend to cause other uncaught exceptions and since you don't seem to be sayi
+    611-69038257-4849 They certainly appear in tandem, but I don't believe the second error was paired with the first when 
+     35-69053094-4849 I think it's fine leaving this open
+ x    16-69096362-4849 Thanks @benogle.
+    294-69103112-4849 I am having a similar issue as this. Atom is running on Windows and I can edit local files just fine.
+    163-69147663-4849 Does Windows support notify? I know Linux Samba shares do, as do OS X but I don't think Windows has n
+    137-71462450-4849 I have the same issue, I'm running windows 10 technical preview. I'm trying to access a network locat
+   3374-73255266-4849 Just got this again in 0.174.0 (although now Atom usually crashes outright before this error has the 
+    143-68645923-4842 Looks like a duplicate of https://github.com/atom/spell-check/issues/43. If you agree, what do you th
+    230-68646021-4842 Yeah, I do agree that it is a duplicate. Let me see if I can duplicate outside of spell-check to veri
+ x    34-68646200-4842 :+1: You're a :star2:, @lee-dohm! 
+   1322-68654316-4842 Yep, looks like the Decorations API, specifically the `highlight` type. ## Repro Steps 1. Creat
+     88-68654506-4842 I've closed the spell-check bug since I'm pretty certain this is in the Decorations API.
+    195-68756118-4841 Atom does not require redis, express or socket.io. This line: `at Object. (c:\Users\Peter\node_mod
+    310-74425251-4841 Sorry I bit forgot about this. I just got same error after completely reinstalling Atom. I've delete
+    675-68604053-4834 There is API support for choosing what order panels stack in: https://atom.io/docs/api/latest/Work
+    252-68514497-4825 There is a topic on [Discuss, the official Atom forum,](https://discuss.atom.io) that talks about the
+    225-68534273-4825 I knew there was a hackish way to do it--that's [what ease-blink](https://github.com/miraks/ease-blin
+    732-68694716-4808 > >These conflict with activating `File` and `Help` menus in Windows. This problem applies to mo
+     28-69442705-4808 This is a duplicate of #4057
+    208-68375253-4806 Hi @gandhiShepard, can you share the output of `ls -l /Users/812studio/.atom`? It would seem that Ato
+    613-68386413-4806 total 56 drwxr-xr-x 5 Frolko staff 170 Dec 9 00:12 compile-cache -rw-r--r-- 1 Frolko staff 
+    154-68386563-4806 Looks like a bug in the `project-manager` package. My guess is that `project-manager` packages needs 
+    166-68387077-4806 What's strange is that it's using `mkdirp`; it shouldn't be an error for the directory to already exi
+     18-68387766-4806 @maxbrunsfeld yes 
+     72-68395835-4806 @NoahDragon saw this issue and did not have `project-manager` installed.
+    133-68400569-4806 @benogle do you know how the stack trace could end up being `undefined`? That seems to be the case fo
+     51-69119413-4805 Similar to https://github.com/atom/atom/issues/4874
+    217-68297098-4800 @mark-hahn I don't fully understand what makes text selectable or not in Atom, but I've noticed that 
+     96-68295440-4799 @Trudko in your opinion, what should `getShortHead` and `hasBranch` return in that case? Thanks!
+    141-68297464-4799 Well true for hasBranch('master') and master in second case. seems like bug rather then enhacemenet. 
+    135-68298453-4799 I could be wrong, but I don't think that would be correct; the repository doesn't actually have a 'ma
+     89-68298947-4799 What do you mean by has a branch? Because if you do git init you are ON a branch master.
+    579-68303630-4799 `git init` does not create any references. ``` $ mkdir temp $ cd temp $ git init $ git branch 
+    143-68307890-4799 In my opinion it is simpler and better to make the `hasBranch` method match the output of `git branch
+    195-68308902-4799 Simpler yes, but not very intuitive for those that don't understand how git works under-the-hood. 
+    884-68310359-4799 With the current implementation, it is possible for an atom package to do what the `oh-my-zsh` git pl
+     72-68310389-4799 @Trudko, would you mind sharing your use case for `hasBranch("master")`?
+   1046-68311750-4799 @maxbrunsfeld For the record, until the first commit branches are apparently transient. You can run a
+    291-68318153-4799 @mehcode I see your point. So there's no actual `master` branch, but `HEAD` is still a symbolic-ref t
+    523-68318858-4799 I believe the issue lies in [git-utils's `::getHead`](https://github.com/atom/git-utils/blob/master/s
+ x    29-68332228-4799 @maxbrunsfeld :+1: I agree. 
+    105-68335538-4799 @maxbrunsfeld actually I don't have any particular use case I found this just by messing around with 
+    106-68913432-4778 Can you upgrade to a later version of Atom? 0.166 is the latest release and it looks like you are on 
+    119-68198857-4777 Thanks for the bug report, I updated the title. Also of note, Cmd-G doesn't do anything in Chrome's o
+    483-68623099-4776 This looks like an issue with [atom-jshint](https://github.com/sindresorhus/atom-jshint), not so much
+    650-68655569-4776 For additional context: * https://discuss.atom.io/t/links-in-preferences-packages-go-to-xcode/1405
+    146-68655780-4776 I hope you don't mind that I changed the title @silvenon to be more descriptive of the underlying pro
+    443-69331284-4776 @mnquintana from which file is that code coming from? Isn't [this](https://github.com/sindresorhus/at
+    390-69332351-4776 @silvenon Well this just got weird. I took this screenshot from my installed version of atom-jshint's
+     66-69538810-4776 Yep, you're right, I got the same. How does that happen? :smiley: 
+   1570-68488929-4775 Getting a different stack trace here: ``` c:\Users\Vladimir\AppData\Local\atom\app-0.165.0\resour
+   2849-68888596-4775 here is my stack trace ``` TypeError: undefined is not a function at Config.module.exports.Con
+    530-68890920-4775 ``` /Applications/Atom.app/Contents/Resources/atom/renderer/lib/web-view.js:380 TypeError: undefine
+    179-69423382-4775 Guys, `undefined is not function` is probably one of the most common issues in javascript history. If
+ x    26-70805456-4775 :+1: to @abe33 explanation
+    238-73702794-4775 Noticed again in https://github.com/atom/atom/issues/5478. @bigblind can you reproduce the problem
+   1677-77638579-4775 I just installed Atom for the first time and tried to install the "language-batch" package to get syn
+    327-77638956-4775 > Guys, undefined is not function is probably one of the most common issues in javascript history. If
+    106-68304910-4771 I see this when opening files with Atom version 0.165.0, Windows 7, files on network NcFsd filesystem
+    226-68520327-4771 I have this error when I open a file that I'm not the owner of, issue can in my case be solved by doi
+    823-68535424-4771 I am having this problem as well. Ubuntu 14.10 Atom 0.165.0 and 0.153.0 both versions. The above t
+    141-68395322-4769 This is seeming like a bit of a time suck. The `::shadow` selector works perfectly well for the time 
+    218-68596136-4768 Can you reproduce the issue reliably? If so, can you reproduce this in [safe mode](https://github.com
+    104-68148665-4767 @lagora what were you doing in Atom when this happened? Are you able to reproduce it with `atom --saf
+    220-68158007-4767 Sorry, but I won't be able to reproduce the bug soon, and my code did change drastically. All I reme
+     67-68311288-4767 I've had this issue happen reliably while running scss-lint-linter.
+    462-70215071-4767 > unseemly large globs of text Over a megabyte? There is a pretty hard limit of 2 MB in a buffer.
+    295-72361254-4767 I had this happen when I opened a file ( less than 2MB in size) with Atom and another text editor, th
+    159-74223662-4767 I experienced this pasting a large amount of data from excel (>30,000 rows, 1 column). No particular 
+     78-74871272-4767 I got this pasting 209,456 rows of 7 characters per row from LibreOffice Calc.
+     49-68754175-4760 @zcbenz do you think this is an atom shell issue?
+     79-68757604-4760 Yeah, I have created an issue in https://github.com/atom/atom-shell/issues/975.

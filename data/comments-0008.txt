@@ -1,0 +1,78 @@
+
+# page: 8, date: 2015-01-26, count: 30, rateLimit: 4844 of 5000
+
+    222-71512773-5258 Were you currently using isotope ui while updating it? I have seen this while updating UI themes I
+     27-71563893-5258 Yes I was using Isotope UI.
+   1136-71591200-5258 I could reproduce this with two other themes: ![update-theme](https://cloud.githubusercontent.com/
+    202-71513778-5256 Seems like what you really want is a regex filter in the config schema. So you could write ```coff
+     66-72372673-5256 @benogle: Did not know this existed. Is this in the documentation?
+    485-72375498-5256 @arynhard If you mean the config schema, yes it is. You can find the initial reference to it in Creat
+     94-71521207-5252 What are you trying to do? `atom.package.packageStates` is not public and not a supported API.
+    258-71552130-5252 when closing atom I serialize the state and when atom is opened again with blank page..and change to 
+    510-71562541-5252 Ok, so my assumption of the steps is this: 1. open atom with a folder: `atom my-folder` 1. do thi
+    572-71742371-5252 This is the package https://atom.io/packages/preview-plus Open Atom and any folder use command prev
+     52-71342221-5245 Can you reproduce this in safe mode (`atom --safe`)?
+     38-71342546-5245 Yes, i get the exactly the same error.
+    243-71342681-5245 actually at this point of downloading and instaling on my mac, and try... cant see anything.. nothing
+    536-71335057-5243 I can reproduce this 100% of the time with these steps: 1. Select a portion of code on any line with
+    279-71337752-5243 @mnquintana No, it has nothing to do with not releasing the mouse button. I do select the text first 
+    322-71348280-5243 It's not exactly what I've observed (and described in #5200). Here's said that some text after the sp
+     58-71500352-5241 What were the problems that people on Windows were seeing?
+    145-71536081-5241 Mostly problems with node-gyp (i.e. building the native code). Some of the reports are listed here ht
+      2-71299796-5239 +1
+    334-71554534-5239 I also noticed that if you delete the view before you delete the pane. It creates a slightly differen
+    108-71281536-5237 windows 8.1 apm 0.123.0 npm 2.1.18 node 0.10.35 python 2.7.8 git 1.7.11.msysgit.1 visual stud
+     68-71281562-5237 Are you upgrading from within Atom or via `apm` on the command line?
+     12-71281589-5237 command line
+     93-71229936-5234 Are you referring to the `Open With Atom` context menu in the explorer not working correctly?
+    729-71230831-5234 I am not referring to that, I am referring to associating a .txt or .java file to open with atom und
+    279-71233163-5234 It is not a waste of space. The installer only keeps one backup version which is to ensure that you 
+    940-71234412-5234 Well I agree, but atom keeps every version and it has been quite a few releases. I am not saying it 
+     57-71238021-5234 Hmm. Are you using Chocolatey or the new Atom installer?
+    284-71240199-5234 The new installer On Fri, Jan 23, 2015, 1:18 PM Wliu <notifications@github.com> wrote: > Hmm. A
+     57-71114740-5224 **UPDATE:** Reproduced on Ubuntu 14.10 and Fedora 21 too.
+     42-73225524-5224 **UPDATE:** Reproduced in Windows 8.1 too.
+      2-71100316-5223 +1
+      4-71102430-5223 :+1:
+    139-71532693-5223 Thanks for the suggestion, this is a good idea. We'll add it to our list of site enhancements, though
+    139-71067050-5217 Let me know if you'd like me to convert the spec to coffeescript. I was told that JS was okay moving 
+    107-71069491-5217 Please convert the spec to coffee. We'd like to keep all of core in coffeescript for now, especially 
+     60-71072698-5217 Thanks for the coffeescript pointers. Will convert the spec.
+    271-71125019-5217 By the way, my expectation is you'll want to wait for more commits to get an idea of where this is go
+    811-73157620-5217 This is looking like a good start. The biggest design question that remains in my mind is the distinc
+    611-73160986-5217 The priority as position instead of left/right makes a lot of sense. It seems more intuitive to me
+    981-73162103-5217 > It seems more intuitive to me to have negative on the left and positive on the right (like a number
+    659-73589337-5217 @nathansobo I still have to revise the format of the comments, but just pushed an update to address m
+    139-73598425-5217 The `gutterName` of the line number gutter should probably be `line-number`, not `line-numbers` so th
+     19-73600815-5217 :+1: `line-number`
+     65-71057284-5212 I can confirm when I upgraded to 0.174.0 on Windows (refs #4653).
+    196-73943002-5212 This might be a separate issue but on the Mac when I "Install & restart" a new Atom from the menu, At
+     23-73954155-5212 @cthielen that's #1603.
+    159-70981377-5205 This is a feature I would also like as a Windows user. Sublime Text, like Atom, adds a context menu a
+     52-70940749-5200 Can you replicate this in safe mode (`atom --safe`)?
+     41-70941269-5200 @50Wliu Yep. It happens in safe mode too.
+    184-70944502-5200 I was able to reproduce this in OS X 10.10.1 and Atom 0.175.0 but it took like, 30 tries going rapidf
+     60-71335116-5200 This might be related to (or a duplicate of, not sure) #5243
+    111-70937056-5199 What Atom version are you running? This *may* have been fixed in recent versions (cc @benogle, @kevi
+     23-70938247-5199 I'm on version 0.174.0.
+    165-70953386-5199 > This may have been fixed in recent versions I don't think so, I don't believe the recent filesys
+     61-70927937-5195 Can you share the grammar from the converted TextMate bundle?
+    216-70936002-5195 Sure! http://www.ic.unicamp.br/~dfaranha/magma.cson http://www.ic.unicamp.br/~dfaranha/spec.cson
+    214-73378162-5195 This happened to me as well while converting a tmLanguage from this project: https://github.com/6to5/
+    116-70899042-5188 adding/deleting nodes in not free, so I doubt this will improve anything, it also can increase lag fo
+    159-70976357-5188 However.. perhaps if used as a paging system when a *threshold* number of tabs were open. That could 
+    180-74637257-5188 A bit like https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebaja
+     38-70876984-5177 Can you provide the code for the view?
+    119-70924564-5177 ``` <object data="abc.pdf" type="application/pdf"> <embed src="abc.pdf" type="application/pdf" 
+     46-72207467-5177 Please Let me know if you needed any more info
+    255-71814581-5174 The main difference between Sublime and Atom for tab switching is Atom use "onmouseup" event while Su
+    301-76975739-5174 @benogle: could you provide some more feedback on this, please? I tried opening a ton of files (namel
+    317-77020621-5174 This was a ticket to look into it -- profile it and see if there is low hanging fruit. Some people we
+    264-77120532-5174 :+1: I see. To be honest, I cannot notice any slowdown when switching lots of tabs and, therefore, I 
+    432-71052475-5172 Have you tried to install ```glibc-devel``` package? This package is recommended in [build instructio
+    512-71079872-5172 Glibc-devel is installed, version is glibc-devel-2.12-1.149.el6_6.4.x86_64. It doesn't help. Here 
+    261-71150498-5172 Seems like the build version that comes with rpm package is built with glibc 2.14, and that's why it 
+    424-71068657-5168 I'd love the ability to specify a configuration directory on the command line... the use case I have 
+     93-70751036-5167 This behavior hasn't intentionally changed, can you provide some concrete reproduction steps?
+    201-70859753-5167 well, i run a x64 arch linux laptop with xfce as the desktop environment. i'm running atom version 0.
+     78-71548313-5166 http://www.chromium.org/developers/design-documents/software-updates-courgette

@@ -1,0 +1,145 @@
+
+# page: 27, date: 2014-06-07, count: 30, rateLimit: 4255 of 5000
+
+    190-45416854-2545 This is something that is important to us. Deep git and GitHub integration within atom will happen. T
+     32-45423067-2545 This should be good. Can't wait.
+    513-45417304-2540 We definitely can be friendlier on first run. You can help us make this better by explaining where yo
+   1435-45422408-2540 True, I've only started yesterday really. But here are one or two: 1. It would be useful to have 
+   1307-45433965-2540 One can think about two ways to introduce the user to the things that makes the difference between At
+x     25-45520715-2540 Thanks for the feedback. 
+     66-46413499-2539 I have this problem too. Fedora 20 x86_64. atom v. 0.105.0-1975882
+    227-53621553-2539 @marlencrabapple or @underoot Can you confirm this is still an issue on the latest Atom release, 0.12
+     29-53638839-2539 Sill happening unfortunately.
+    161-54826894-2539 I have this problem too. I m using MANJARO 0.8.10 x86_64 with 3.14 kernel and atom v. 0.124.0. Proba
+     34-61239552-2539 Still happening in atom v. 0.141. 
+     15-61671698-2539 still a problem
+     62-63056870-2539 Same problem here. Fedora 20 x86_64 Atom v0.146.0 (2014-11-12)
+    282-66957462-2539 It also erases the file you're trying to save... When I realised I lost about 1500 lines of CSS style
+    152-66995370-2539 this issue is annoying, but never ever work directly on a production environment. Either use git then
+     98-67108070-2539 Of course I would use git if it was up to me, but unfortunately they don't use it at where I work.
+     81-67167156-2539 Just droping by to agree with phaux. Any idea as to what is causing this problem?
+     35-67255660-2539 Can someone paste in a stack trace?
+   2224-67292170-2539 There you go. EDIT: atom 0.161 ``` Error: ESPIPE, invalid seek at Error (native) at Object.f
+    205-67533259-2539 We might be able to use `fs.writeSync` [here](https://github.com/atom/fs-plus/blob/6ac4c265a11e44bdb8
+    282-68394935-2539 Atom 0.165.0 Ubuntu 14.04 Issue still exists. Can you just make ANY workaround that would bloc
+   2395-68755933-2539 Atom 0.166.0 Ubuntu 14.04 ``` Error: ESPIPE, invalid seek at Error (native) at Object.fs.w
+    140-68756310-2539 @kevin-brown try my suggestion in https://github.com/atom/atom/issues/2539#issuecomment-67533259 and 
+     51-45366156-2535 What platform are you on? And what version of Atom?
+     23-45366257-2535 Mac OS X Atom: 0.100.0
+    433-45965528-2535 Does this happen every time you open Atom? If it does, can you try opening the dev tools with `cmd-al
+    121-45975125-2535 Hmm, no it doesn't happen every time. I haven't encountered it now for a while. Let me report back wh
+    121-46120960-2535 I get the same error in version 0.103.0 on Mac OS X. After some time, the developer tools pops up 
+    302-46190303-2535 @qte Thanks for letting us know. Could you try working in Atom with the developer tools open for a wh
+   9037-46328924-2535 Today I got the error again while having the dev tools open. I hope these stack traces are useful. 
+     68-46329126-2535 Could be the cause of https://github.com/Joezo/atom-jshint/issues/22
+    319-46432648-2535 @qte I think atom-jshint might be the cause of this (as you suspect, based on the stack trace). Can y
+     46-46432697-2535 Also, thanks for the full stack trace :metal: 
+x     18-45422522-2533 :+1: Please fix!
+    178-58633734-2533 +1 Here is my implementation of Elastic tabstops and the user script for github.com: https://github.
+    340-45418472-2528 The behavior in TextMate 2 is the same as in Atom. Changing the "end" regular expression in the gramm
+     51-45361657-2525 Can you make a gif of this? What system are you on?
+    240-45377613-2525 OS X Mavericks, I can try to make a GIF. If you're on OS X, it's very visible with the unity-ui theme
+    197-45733383-2525 Here's a GIF of what I see: ![q](https://cloud.githubusercontent.com/assets/38924/3243994/2baceaa4
+     22-45752079-2525 Yep, that's the issue.
+    333-44991929-2490 @JFusco How exactly are you closing the script tag? I'm trying to reproduce this problem, but I'm hav
+    498-44992667-2490 @izuzak All I did was create a new "index.html" page and open and close a script tag in the page. As
+    266-44994721-2490 That's interesting, still can't reproduce this. :smile: Which version of Atom are you using, and on w
+    188-44995400-2490 Atom version 0.100.0 (0.100.0) OSX Version 10.9.3 2.6 GHz Intel Core i7 This happens ONLY insi
+    609-60035106-2490 I am also having this issue with the current version. Even more, it's impossible to ouput the ">" cha
+    163-60117219-2490 @erickgirard will you open the keybinding resolver (`ctrl-.`), type your `>`, and post a pic? Seems l
+    180-60117762-2490 There you go ![image](https://cloud.githubusercontent.com/assets/1326286/4740362/6cabb1ee-5a0c-11e
+    105-60118757-2490 Yeah, your issue is our inability to handle non-US keyboards which we are tracking at atom/atom-keyma
+     24-60119455-2490 Good! I'll follow there.
+    146-70574440-2490 @JFusco are you still having this issue? Do you have emmet installed? Please quit atom completely and
+    772-46370633-2471 @martinjlowm I have a few clarifying questions. In the example below, would you prefer that the cu
+x      2-46132761-2470 +1
+x      2-61630214-2470 +1
+x      2-68492029-2470 +1
+   1011-45897796-2456 I can confirm this however I'm running sshfs connection over vpn and it's extremely slow and crashes 
+    163-48039716-2456 I can confirm this. Also, the editor "hangs" when I try to open a directory that is sshfs-mounted. Pr
+    195-51752473-2456 I have the same perfoamnce issues with Mac OS X 10.9.4 using sshfs for a project. Atom Editor starts 
+    689-52734447-2456 +1 I am using Atom to edit files over an sshfs mount and saving, opening, directory browsing all t
+x     69-58173013-2456 +1 Same here. If project have a lot of files it becomes laggy as hell
+    237-59484332-2456 +1 would like an option to disable git integrations for working over mounted filesystems. This does n
+    111-59541209-2456 Sounds like a possible dupe of #2313. Accessing anything over any kind of network has always been tr
+    164-61435128-2456 I ended up using rsync via acrosync from the app store and have it automatically push local files to 
+    119-61540887-2456 I think the real answer here would be to decouple the UI rendering and the network operations (make t
+     54-69413949-2456 Problem still exists, I'd like to see this fixed :+1:.
+x      3-70682536-2456 +1 
+x     54-71155766-2456 +1, slow for me too. Makes webdev really difficult.
+    146-71171662-2456 this flags for sshfs make it less laggy: sshfs macburybury@localhost:/home/macbury/my_app ~/mounts/m
+x     81-73673793-2456 :+1: Unusably slow for me. Had to go back to sublime. Running on Debian Jessie.
+     65-73759802-2456 @macbury Those flags did help with the performance a bit. Thanks!
+    274-76829079-2456 Had the same issues as everyone here, went into packages and disabled all git related installed packa
+    256-44699537-2454 @BrandonDusseau Thanks for reporting this. How often does that happen for you? Can you reproduce this
+    226-44766433-2454 This happens pretty often. It seems to occur every few minutes, but not with every selection. Unfortu
+    113-44971708-2454 The react editor is turned off. I will test Atom is safe mode throughout today and see if the issue s
+    467-45014822-2454 The bug has started occurring again, even in safe mode. It looks like it's only happening with three-
+    276-45017257-2454 I was able to reproduce this, but only with the Magic Trackpad with Three finger drag enabled. 1. 
+    157-74286147-2454 This is still reproducible. Definitely not a priority, but just wondering if it might be a :bug: we c
+     60-74295838-2454 Probably just as easy to fix. We just need to prioritize it.
+    266-44652305-2451 Thanks @otaran! TextEdit replaces `:` with `/`, while SublimeText doesn't. Do you have examples w
+    430-44655523-2451 @izuzak, TextWrangler (native app) shows slashes, MacVim shows colons, LibreOffice shows colons. Repl
+    151-44894965-2437 I'm okay with any of the three options you presented, do you have a preference? A pull request wou
+    131-46216879-2437 Normally I would just set a umask at the top of the bash file... I shall send a PR today after I fini
+    186-69260428-2437 Just changing the umask before calling `script/{build,grunt}` will still result in a bad `.deb`. It w
+    396-69261452-2437 I've never had a problem when I set the umask ahead of time but that said, {set,get}facl is probably 
+    158-45898932-2412 Thanks for the suggestion! :bow: I think there's a related discussion going on in https://github.com/
+    301-46459348-2412 @izuzak Is there any update for this issue? It blocks writing spec for the dependent packages. Becaus
+    491-46467828-2412 @lijunle No updates as far as I know of. I think https://github.com/atom/apm/issues/120#issuecomment-
+     31-54683587-2412 Are there any updates on this? 
+    166-54684723-2412 @ikatanic These guys are usually quite good with their issue updating. If there are updates on an iss
+    188-44088901-2389 ``` gyp WARN EACCES user "root" does not have permission to access the dev dir "/root/.atom/.node-gy
+x      2-46896453-2382 +1
+     99-58775892-2382 I have this error when installing various packages, but I'm using the compiled release for Windows.
+    533-76955026-2382 I was looking into this old PR and wondering if it's something we should close or clean up and merge.
+    104-76961130-2382 Ahh, there's another PR to add those detailed build instructions: https://github.com/atom/atom/pull/2
+    174-77679014-2382 The clue is in the build output: > (master) /c/OWN/SCM-Store/GitHub/atom/atom$ script/build St
+    107-58735624-2357 I like the idea, but it would have to test a decent amount, if not all of the commands in each packag
+    437-58735952-2357 No, if you have a set of repro steps for whatever the problem is, then this is the procedure: 1. `
+x     12-58758974-2357 That's true.
+    844-58859256-2357 Hey guys, I have a new strategy for finding broken packages. I've wanted to fumble more with the chr
+    136-59630022-2357 FYI: I'm starting a package to bisect the enabling of packages as this thread requested. If anyone e
+x     19-64289890-2357 @mark-hahn Awesome!
+    135-64290951-2357 I was talked out of it by @lee-dohm. He wants to wait and let the core team do it. I could have use
+    116-64310418-2357 I didn't mean to talk you out of doing it ... I just thought it should be part of Atom Core, not a se
+    409-64310780-2357 I'll put it back on my list. Maybe the team will want it to be in core. On Mon, Nov 24, 2014 at 8
+    207-68964408-2357 The bisect package @mark-hahn made is released and it's called [package-cop](https://atom.io/packages
+    767-68964843-2357 @leedohm has pointed out my `package-cop` package and its readme are bloated and overly complex. If
+    108-45901236-2349 I don't believe that's possible. /cc @kevinsawicki @nathansobo in case they can think of a trick to d
+    665-45924381-2349 Obviously you could make a new keymap that swaps the keys for every binding, but that's probably not 
+x      2-69741766-2334 +1
+    647-43728406-2331 When you say opposite case, you mean that if you run `sudo atom` first the, `atom`, the second atom i
+    191-43730142-2331 That what I mean saying opposite. But I notice that I was wrong, when running first with sudo and the
+    604-43752473-2320 @orschiro Thanks for the report. I've never used PCManFM, but I'm wondering if this might be a proble
+    396-43767130-2320 @izuzak Thanks for your feedback! Indeed, you are right. I tested `SpaceFM` and there the file is
+    103-43662449-2314 I'm surprised, I thought that indent guidelines were independant of the text. Nice issue post, thoug
+    325-43733000-2314 I have a feeling they are independent in that they form another layer. However, they probably use the
+     42-43733114-2314 Btw tested on 0.96.0 and it still happens.
+     76-50013285-2314 Still present in 0.117.0 - using React editor now, if that affects anything.
+    381-62467634-2314 The indentation guides are simply a style that's put on the tab or space character (a class on a span
+    282-62523952-2314 Yeah I've noticed this underlying simplicity when I was looking into stuff myself (showing invisible 
+    134-44071472-2313 Actually, I've been having this same issue on mapped network drives as well. But usually after I've e
+     37-44183775-2313 Same issue with build 0.100.0-e7c1d20
+b     94-46514662-2313 Any movement on this? This is a major show-stopper on Windows making the app all but unusable.
+    127-46515182-2313 @willdady no movement on this by the core team yet, we have yet to setup a mapped network drive to se
+     27-48906863-2313 Having same issue on win8.1
+    122-49105889-2313 This also probably causes a selection issue in the tree view, as reported in https://github.com/atom/
+   2471-51070163-2313 This still bit me: ``` Error: /Volumes/c$/BitNami/wordpress-3.8.1-1/apps/wordpress/htdocs/wp-con
+     53-69177284-2313 Why has this been closed? I still see this on 0.166.0
+     55-70566906-2313 Still crashing using network drive. v0.174.00. win7 64x
+     69-70573100-2313 Re-opening because it looks like some people are still having issues.
+b     34-70639836-2313 Any plans for fixing this problem?
+    128-70653160-2313 I'm having the same problem with all my text files. I do however can open images (`.png` & `.gif`). 
+    558-70799163-2313 @jerone commented on [20 jan. 2015 14:32 CET](https://github.com/atom/atom/issues/2313#issuecomment-7
+    133-70800136-2313 I indeed had editorconfig installed. I disabled it but that did not help. Uninstalled it and restarte
+    582-70804401-2313 @okoetter commented on [21 jan. 2015 09:20 CET](https://github.com/atom/atom/issues/2313#issuecomment
+x     81-71376180-2313 Having the same issue as well. Guess I'll give up on trying to use Atom with NFS.
+    581-77650834-2313 I appologize for the newbie question here. I am quite sure I have fs-pluse 2.5 on my system. Atom kee
+    132-77651545-2313 Do you have [EditorConfig](http://editorconfig.org) installed [too](https://github.com/atom/atom/issu
+     79-77652297-2313 no I did not... just actually installed it (I'll laugh if I wasn't supposed to)
+x      2-43617091-2309 +1
+    166-43618590-2309 *Someone* here is the `package.json` from slick itself: https://github.com/atom/slick/blob/fork/packa
+x    103-44558615-2309 +1, same on arch building from AUR. bt @tfga this hack works !! https://github.com/atom/apm/issues/1
+    815-62864959-2309 I tried patching described in atom/apm#106, but it didn't help. URL schema was replaced, but git did
+x     24-77556499-2309 I have the same problem.

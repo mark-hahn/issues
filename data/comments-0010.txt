@@ -1,0 +1,100 @@
+
+# page: 10, date: 2015-01-11, count: 30, rateLimit: 4782 of 5000
+
+    195-69845387-4996 Hmm, having trouble reproducing this on Fedora 20, this is what I'm seeing: ![fedora-open](https:/
+     70-69874617-4996 I'm using kde perhaps thats the difference. Will record a gif later on
+     65-69924446-4996 ![http://www.migaweb.de/atom.gif](http://www.migaweb.de/atom.gif)
+    100-69622185-4983 This might be an issue with the https://github.com/atom/language-javascript regexes. @kevinsawicki ?
+    425-69688069-4983 I'm also having issues using the latest build on Windows. This is the indentation behaviour: ```js
+     87-69977703-4983 @connor4312 That's reported here: https://github.com/atom/language-javascript/issues/77
+     78-69979193-4983 Ah, okay, sorry. Just hopping in, not yet too familar with Atom's systems :) 
+    223-69476101-4982 Could you include the following information? * Which version of Atom are you using? * What OS and
+    244-69477928-4982 @lee-dohm Using `atom --safe` fixed the issue temporarily. After step 6 I switched back and forth bet
+     43-69949599-4982 @benogle What more information do you need?
+    443-69951694-4982 We need whatever information can help us reproduce it, at which point we could consider it a bug. I a
+     96-69996861-4982 @benogle Hmm are you trying this in Windows? I've updated to 0.172.0 and still seeing the issue.
+     42-71498545-4982 @benogle Do you need any more information?
+    212-72735925-4982 I don't know if this will help but I submitted a ticket on the git-utils repo. [Specs failing on Win
+    272-69668451-4978 I can't reproduce this. I tried this snippet with shadow DOM enabled in `Ruby on Rails`, `HTML (Ruby 
+    487-69982451-4978 Hi @maxbrunsfeld , thanks for your answer! Actually I found out that seems like Emmet plugin is messi
+    620-69462480-4966 I guess putting a notice in `Welcome.md` might help, or do what lots of applications do on first star
+    524-69464997-4966 It should atleast be as "opt in", people need to make the choice when using the application the first
+     80-69886785-4966 This needs to be opt-in, not opt-out. This is a massive privacy issue otherwise.
+    494-69941556-4966 Also relevant: https://github.com/atom/metrics/issues/16#issuecomment-36307675 > I guess puttin
+    109-69779091-4957 Does this happen when you quit Atom and then relaunch it in safe mode using the `--safe` command line
+    363-69929008-4957 Yes Even with the `--safe` argument the errors keep coming up. Apparently they happen when Atom try 
+    863-70046563-4957 **Atom Version**: 0.169.0 **System**: Unknown Windows Version (Windows 8.1 pro in fact) **Thrown Fr
+     85-70085224-4957 @AlexanderMisel your issue should be fixed if you upgrade to the latest Atom version.
+     40-69335310-4951 For reference it loaded ok, on 2nd start
+     53-69808051-4951 Do you remember how you launched Atom when it failed?
+     96-69809888-4951 If I remember correctly there was something saying 'a restart is needed, click here to restart' 
+     13-69810046-4951 Great, thanks
+    195-69341331-4950 Not the *exact* workflow you were asking for, but @mark-hahn created the [auto-host-markdown-image pa
+    283-69343345-4950 Kinda off, but even compared with that workflow, it is faster for me to have an github issues page op
+    115-69379881-4936 Doesnt the squrrel icon serve this purpose? Do you ever see a blue squirrel in the bottom right of yo
+    478-69405262-4936 @benogle Does Atom check for updates periodically while open? If it does, I haven't noticed. It seems
+    242-69405530-4936 > Does Atom check for updates periodically while open? Definitely doesn't on Windows, I don't thin
+    143-69406267-4936 Yeah, what @lee-dohm says makes sense for the situation I'm noticing. If Atom isn't checking periodi
+     72-69406489-4936 I hope you don't mind me revising the title, @ultramiraculous :grinning:
+    236-69420909-4936 I like @lee-dohm idea of the color changing squirrel, but I'd rather use blue->red gradient rather th
+    548-69421516-4936 > a blinking animation Arrghh. Please don't. On Fri, Jan 9, 2015 at 3:42 PM, Cédric Néhémie <
+    135-69422560-4936 > I'd rather use blue->red gradient Actually, given the recent discussion about color-blindness, I
+    130-69423147-4936 >I hope you don't mind me revising the title, @ultramiraculous :grinning: No problem! >Arrghh. 
+   1077-69424437-4936 > Arrghh. Please don't. Hahaha, I was sure it would raise objections :wink:. More seriously, an
+   1313-69428993-4936 I abhor any animation on the screen while I'm trying to code. Also, this seems like an attempt to f
+    279-69480146-4936 The turning to red, the further you're behind is a great idea. Maybe with a tooltip how many. @kev
+    305-69380205-4934 This is a legit concern. Thanks for bringing it up. We all talked about this last night. We discussed
+    264-69380764-4934 > tagging all disposables with the package they were created by This is something I thought about 
+    116-69381393-4934 > and the "Your First Package" tutorial Cool. That would be super helpful. The minimum we can do i
+     43-69214631-4924 /cc @schacon who also mentioned seeing this
+     68-69228031-4924 I saw this too sometimes, I believe it is a rendering bug of Chrome.
+    282-69228926-4924 We're getting rendering issues too, though ours are worse; here's a video: http://cl.ly/3q3x2t3F3f
+     86-69248093-4924 @zcbenz So should we try reporting it to Chromium or maybe search their issue tracker?
+    240-69249982-4924 We have to make it reproducible on Chrome browser, otherwise it would be unlikely for them to look in
+    348-69479240-4924 I saw it too on OS X, when I enabled "General > Show scroll bars: always" on a retina screen. But can
+    450-71057503-4924 @simurai I am seeing the tree view artifacts while using Atom Dark for both UI and syntax, on OSX. 
+    123-71152604-4924 @wyand Did you see it happen again just recently? I haven't seen it since making the scrollbars have 
+    173-71220402-4924 @simurai I messed up! I I have not made the scrollbars opaque. Misunderstood the previous comment to 
+    236-71291447-4924 @wyand NP. Yeah, it used to be semi transparent, but got changed to opaque. Not sure when exactly, ma
+     70-72741212-4924 It is still happening to me, on Atom 0.177 on OS X using One Dark UI.
+     77-73144541-4924 Yep - happening to me as well on Atom 0.176, OS X Yosemite using One Dark UI.
+     57-69205971-4923 Does not happen every time, however - seems unpredictable
+     33-69210131-4923 Maybe related issues: #4388 #4892
+     21-69227214-4923 What version of Atom?
+     56-69230958-4923 @kateklemp can you try upgrading to Atom 0.169 or above?
+     28-69198476-4920 Related issues: #4388 #4892 
+     31-69225310-4920 Can you try upgrading to 0.169?
+     88-69212170-4918 It looks like it didn't complete, can you run `script\build --stack` to get more output?
+   1240-69296222-4918 Well, I tried "script\build --stack", it does give me some error infomation ``` E:\code\atom\atom>s
+    220-69446047-4918 It's a bug of node v0.10.34, see [node v0.10.34 causes untrusted cert errors](https://github.com/joye
+    485-69446939-4918 Also notice that the output location of build binary is `"%ProgramFiles%\Atom"`(It's `"C:\Program Fil
+     93-69215065-4915 That's possible cinnamon issue, see here -> https://github.com/linuxmint/Cinnamon/issues/3547
+     60-69216695-4915 I problem just with Atom, so I disable effects and test it. 
+    139-69119421-4902 The most elegant solution to this so far (that I know of) is to add `%localappdata%\GitHub\PortableGi
+    666-69121109-4902 Thank you, Ingramz. I was just coming back here to report my workaround. I found that PortableGit_<so
+    106-70140191-4902 @GGillan You can just run apm from the "Git Shell" shortcut, no need for all of this file copying bus
+    321-70153137-4902 @paulcbetts Thanks for the tip. The errors I ran into are when running Atom and trying to install pac
+    186-70162490-4902 @GGillan Yeah, that is a negative side-effect, though afaik many packages won't require Git to be ins
+    581-70168322-4902 @paulcbetts I had an email exchange with GitHub (they don't have an issues section available for thei
+    191-70168978-4902 @GGillan Yep, I'm the one who set that up in GitHub for Windows long ago :) We were really adamant t
+     55-70170801-4902 @paulcbetts I understand that approach and respect it. 
+    179-70198831-4902 If atom is going to rely on git, why doesn't it do the following during installation?: have a list o
+    101-72410250-4902 I bet that @shiftkey, @niik, and @ammeep could think of a way for Atom to find GH4W's version of Git.
+    127-72489017-4902 Just install the "msysGit" on site "https://msysgit.github.io/#contribute" and restart the PC. Projec
+    139-72489514-4902 I think @kevinsawicki was looking at this the other day. Right now locating the git executable requir
+     48-71666068-4900 Just created another fs.js no trace bug, #5272. 
+     35-70940654-4898 Bump-this would be nice to have :).
+    158-69096304-4893 Have you tried using `C:\Users\hebbet\AppData\Local\atom\bin\atom`? That should be a consistent lo
+    521-69101731-4893 With atom it doesn't work. Tested with Windows 7 and 8. With atom.cmd it works but with an pretty 
+    222-73890920-4893 I tried to use .lnk file in the start menu instead of the .cmd file and it seems to work. The annoyin
+     32-76189942-4893 Thanks @sick51, it works for me!
+    187-69049409-4891 Thanks for the report! @nathansobo might have :thought_balloon: about this (looking at the stack t
+    238-69053411-4891 These kinds of bugs are brutal. The interval skip list that indexes marker locations is getting into 
+     34-69129292-4891 the same thing has happened to me.
+    332-69378298-4891 I think I managed to reproduce it three times. 1. Reboot Windows 2. Open any file with atom using
+     50-69382635-4891 If I disable minimap everything seems to be fine. 
+    427-69422610-4891 @nathansobo You can use the minimap test suite if you need reproducible steps, I had one that appears
+   2683-70062061-4891 _Edit: after I posted this, I enabled the v4 setting in Minimap, restarted Atom and can no longer rep
+    132-70310190-4891 I can't reproduce this currently. I'm just going to leave minimap enabled for a while during work and
+    269-70664292-4891 I can confirm what @Alchiadus said about setting Minimap to v4 preview. After a restart, I can't repr
+     51-68979474-4881 Refs https://github.com/atom/atom-shell/issues/980.

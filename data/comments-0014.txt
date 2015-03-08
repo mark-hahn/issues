@@ -1,0 +1,93 @@
+
+# page: 14, date: 2014-12-08, count: 30, rateLimit: 4658 of 5000
+
+    156-65956296-4441 I agree that the basic support should probably be in Atom Shell. Can you also open an Issue for this 
+     53-65956904-4441 Done: [https://github.com/atom/atom-shell/issues/903]
+   1515-65963681-4436 Hi.. please edit thank you.. On Dec 7, 2014 7:43 PM, "Guilherme Pacheco" <notifications@github.com> w
+    418-65966754-4436 I can't reproduce this on Atom v0.154.0-d69d6bf on Mac OS X 10.10.1. Is there something else that I s
+    200-65970676-4436 @Boying71 what should I exactly edit? @lee-dohm that's exactly what I'm doing, except I'm on Linux
+    120-65970774-4436 @gfpacheco Can you try uninstalling and installing from the latest binary release? https://github.com
+   1201-66148017-4436 Hi @lee-dohm, I removed the installed atom package Removed the apt repository Installed again fr
+     88-66533511-4436 @zcbenz do you think this could be an atom shell issue with regards to the require path?
+    173-66549131-4436 It seems that `app.js` appeared in the require path, it may be caused by a custom `NODE_PATH` environ
+     70-65893235-4419 Looks like a duplicate of #2263. Have you tried the suggestions there?
+     46-65886115-4417 Are you asking for more than what #3684 gives?
+    225-65886285-4417 Yeah, #3684 is a great start, but it really gives very little idea as to a timeline and a priority li
+     81-66167440-4417 Timeline and priority changes often. It's not something we can really commit to. 
+     95-65873881-4415 I know that this doesn't help you, but I have more or less the same setup, and it works for me.
+    103-65828192-4408 What version of Mac OS X are you on? Also, does the Report... button show more detailed informatio
+    210-65828667-4408 Here's what looks to be the important bit of the error message: ![screen shot 2014-12-05 at 12 58 
+    103-65781803-4403 Also the diff highlight on the left hand side (orange) was getting confused, these lines never change
+    132-65783760-4403 Those question marks are typically used when the selected font doesn't support that glyph. Have you t
+    133-65807434-4403 Hmm, I will see what other font there are. Currently the font selection box is empty, so must be usi
+     57-65808418-4403 @lee-dohm do you know what the default font on Ubuntu is?
+    123-66533733-4403 @ljbade if you open the dev tools using `ctrl-shift-I`, you can inspect the editor element and see wh
+    196-66612241-4403 Ok this is what it shows: `font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;` L
+    220-70349431-4403 Not sure if this is a new issue or related: On OSX I'm seeing a square where I'm expecting Unicode. I
+    242-70240723-4400 There is now overflow scrolling when pasting multiple lines. ![overflow](https://cloud.githubuserc
+    257-70241303-4400 @simurai that might be better. Without a scrollbar, it's not obvious that the editor has multiple lin
+    442-70244513-4400 We could force a scrollbar. But looks a bit funny. ![overflow](https://cloud.githubusercontent.com
+     72-70277254-4400 I expect that, it just join each lines as one long string, then display.
+    311-71153021-4400 This issue is technically not "in-progress" anymore. I only did the overflow scrolling as a quick fix
+    103-65519206-4392 Try disabling the `Normalize Indent on Paste` and `Auto Indent on Paste` options and see if that help
+    137-65519511-4392 Turning off Auto Indent On Paste seems to resolve the issue. Thank you for your assistance. Is that t
+    117-65665702-4392 Auto indent on paste should work for HTML in PHP. Maybe this is an issue with indentation regexps in 
+    102-65666392-4392 Is there any other screenshots or information that you would like? Any other tests that I need to run
+    390-66986389-4392 The intent of this bug report was to keep the indentation after pasting right? So this bug report sho
+     99-65448151-4388 Related issues: https://github.com/atom/atom/issues/4213 https://github.com/atom/atom/issues/3593
+    161-66232731-4388 This does not occur on my laptop running Kubuntu -- not sure which version off the top of my head. I'
+     21-69212104-4388 Related issue: #4892 
+     66-69227557-4388 This is fixed for me in 0.169.0 on Ubuntu 14.04.1 LTS. (See #4892)
+     59-69231133-4388 @slackboxster Can you try upgrading to Atom 0.169 or later?
+    538-75583237-4388 This still occurs for me with Atom 0.182 in i3 4.2 on my funky debian system. Atom 0.182 does not hav
+    726-65427894-4386 I try to rephrase your question with unix-style newlines, to see if I understand you correctly: Fi
+    172-65428626-4386 > I try to rephrase your question with unix-style newlines, to see if I understand you correctly E
+    159-65436396-4386 @rumpelsepp Glad that I understood you correctly. Does this workaround fit your usecase or is it unfe
+   1194-65445953-4386 > Does this workaround fit your usecase or is it unfeasible for you to have "ensure trailing newlines
+    388-65358159-4385 @Paranormalcow this is DNS Issue. Please try again may we DNS is not respond for you but it will be 
+    223-65698998-4385 This looks like you dont have git installed. But maybe it's not on your path. Can you try running `gi
+    188-65699371-4385 > is there a nice way to fix PATH issues on windows? The best way is to install GitHub for Windows
+    146-65340522-4377 As far as the text only displaying in half of the view, you're using a proportionally-spaced font. At
+x     24-65261731-4372 Makes total sense to me.
+    229-65344636-4372 This sounds awesome. Undo grouping of typed characters should end on nearly any command. Some com
+x     43-65199675-4366 Can confirm this, also noticed it yesterday
+    199-65171390-4364 Just to add some research, I have been using HaxeIDE/atom-autocomplete-plus-async in my park9140/ato
+    808-65172629-4364 I'm the author of https://atom.io/packages/rsense and https://atom.io/packages/racer, and I've also i
+   1171-65187078-4364 [`omnisharp-atom`](https://github.com/OmniSharp/omnisharp-atom) also makes use of `autocomplete-plus-
+   1944-65203450-4364 > Evolve the autocomplete-plus provider API to be async, preserving the ability for providers to stay
+    484-65287220-4364 Thanks to everyone so far. Keep them coming. > It seems like a prudent short-term course of actio
+    942-65300833-4364 > Evolve the autocomplete-plus provider API to be async... I don't see how this solves anything. 
+    400-65303154-4364 @mark-hahn it's a matter of progressive elaboration. The API needs to support asynchronous suggestion
+    718-65303205-4364 >I don't see how this solves anything. If a provider is synchronous and it takes over a thread the 
+    829-65310659-4364 I have been working with the autocomplete-plus-async package and one of the primary issues that seems
+   2584-65317611-4364 > I'd rather think long term though. I'm not sure if updating autocomplete-plus is the best course of
+   1437-65348916-4364 Code-completion is so much more than auto-completion. It can be achieved with auto-completion but we 
+   1051-65349811-4364 @mehcode Regarding `Context`, there are multiple implementations of `autocomplete-plus` (or derivativ
+    208-65375096-4364 @joefitzgerald I know its fairly language / provider specific. I'm just trying to get people thinking
+    754-66313536-4364 @mehcode, I like the defer suggestion, however, It would be nice if we had a more integrated way of d
+    109-66864623-4364 @benogle I add a wiki page: https://github.com/atom-community/autocomplete-plus/wiki/Suggestion-Provi
+   1208-67019085-4364 @benogle We've (@yongkangchen, @park9140) been making significant changes to autocomplete-plus to mod
+    308-67042585-4364 > At that point, I think I will create a PR to upstream autocomplete-plus to autocomplete, and plan t
+    292-67043598-4364 > We will likely not get to it until Jan. At that time you will have a PR to review then. I unders
+    543-67043948-4364 > I want to be clear that I am not sure this is the best approach. @benogle We now have 4 people w
+    574-67084491-4364 We definitely appreciate the enthusiasm, but none of us have time right now to dig into this, so we c
+   1225-67276350-4364 @benogle I think your concern about upgrading providers and the work involved in switching APIs might
+    121-67277070-4364 > We will likely not get to it until Jan. > At that time you will have a PR to review We are lo
+    877-68237041-4364 @benogle A quick update on the provider landscape: I've significantly updated https://github.com/atom
+    207-68273356-4364 One other announcement: we're using this Gitter room (https://gitter.im/atom-community/autocomplete-p
+    205-68274322-4364 @joefitzgerald it ain't public thought: "You've tried to access atom-community's private organizatio
+     86-68279360-4364 @alkama sorry about that, try here: https://gitter.im/atom-community/autocomplete-plus
+     69-68280692-4364 @joefitzgerald thanks ! now we all can read what happens there too :)
+    283-69973836-4364 @benogle I know it's now January and you're nearing completion of the 1.0 API. If your focus starts t
+      7-69981653-4364 Will do
+    122-76480721-4364 Are there any updates on the direction for autocomplete going forward? (ie. is Atom going to adopt au
+    134-70582015-4361 Work to fix the overflowing is happening at #4400. I changed the title to be a feature request to add
+   5055-74256195-4360 I am on 0.179.0 and facing the same issue on Ubuntu 12.04.5 LTS (precise) with the Trusty Hardware En
+   2133-77260829-4360 If this is the general "doesn't work without DRI GLX", consider this a me-too. Running latest release
+    116-77264964-4360 Updated on Ubuntu 14.04 from v177 to the latest version (186) today without a problem, using the .deb
+    697-65126627-4356 While I think the idea is interesting, it is new to me. Where have you seen this behavior before? 
+    398-65277909-4356 @mark-hahn In terms of IDEs in IntellijIDEA. Then, also in file managers like Nautilus and Finder. 
+    121-65280278-4356 This behavior is also present in Windows File Explorer. Although it does not seem to work in Visual 
+    605-65300520-4356 > also in file managers like Nautilus and Finder. > is also present in Windows File Explorer. 
+    226-65349316-4356 :+1: This is a good idea. One of those features I (and I expect others) wouldn't notice but the o
+    232-65387804-4356 > But those operate on files not text. There is nothing else undo could do. Yes, and Atom operates

@@ -1,0 +1,143 @@
+
+# page: 13, date: 2014-12-13, count: 30, rateLimit: 4689 of 5000
+
+   1003-66926215-4599 Other possibilities to save vertical space are could run Atom maximized (`F11` by default) or use the
+   1354-66932502-4599 IMHO, yup, it would give a nicer first impression when you open the editor. It was literally what sol
+   1028-66945781-4599 > > in a text editor you need to see as much of the file path and name as possible. > > At least i
+    710-67010685-4599 > Try opening two files with the same filename but with different paths. Atom will place the project 
+    343-72138429-4599 Ooooh, this would be pretty cool. I don't know if there should be no title bar by default, but having
+    133-72139945-4599 @mnquintana Yeah it is possible with [frameless window](https://github.com/atom/atom-shell/blob/maste
+    482-73973658-4599 If you want a borderless window now, just add ```js transparent: true, frame: false, ``` htt
+    200-74001942-4599 Yeah but that doesn't uses the gained space nor provides handy close/minimize buttons which defeats t
+    105-74192494-4599 Nevermind, I tried it and I can maximize the window just fine, it also removes the menu bar sadly :cr
+    373-67052936-4597 Pull request on the [vim-mode](https://github.com/atom/vim-mode) module that makes use of this change
+    512-76982940-4597 Wondering what do you think about this pull request, @nathansobo? It doesn't break any specs, so I'm 
+    905-76995135-4597 @izuzak Keep in mind that the line numbers in the gutter are 1-indexed and the row numbers are 0-inde
+    249-77018946-4597 @nathansobo, there's already `Math.ceil` there so I'm not sure why you want to add that `1`. Also, yo
+   2093-77026097-4597 @neojski I think your suggested change does not work correctly. Consider the following case: height: 
+    657-77033349-4597 @izuzak, first thing you're right that we don't want heightInLines at all. It's not even not necessar
+    571-77035550-4597 > I remember that this function might be supposed to return endRow as one past the last (most likely 
+    990-77036836-4597 > should the returned range end in the last visible line or in last-visible-line + 1 ? My understan
+    355-77037220-4597 > My understanding is that everything should be zero-based except when displaying it Everything is
+    642-77040570-4597 IMHO it should obviously be the normal line after the last visible line. On Tue, Mar 3, 2015 at 1:22
+    394-77214906-4597 > IMHO it should obviously be the normal line after the last visible line. I'm not 100% sure (due 
+x     18-77267898-4597 Sounds good to me.
+     50-67253528-4596 I'm pretty sure this is by design. cc @nathansobo 
+    293-68004278-4596 @benogle, I understand that `endRow` might be one after the visible rows (like `begin` and `end` iter
+     47-66878946-4595 This looks like a duplicate of #4007 and #1849.
+    273-66972534-4595 No, they are similar but different issues. #4007 says >in that the cursor position does not alw
+     39-67378625-4595 Can you include the text from that gif?
+    598-67420043-4595 Oh, sorry. ``` 1234567890 // ascii characters １２３４５６７８９０ // multi-byted characters １2３4
+    292-67420526-4595 Here is an expected layout (with a monospaced font [Ricty](https://github.com/yascentur/Ricty) 12pt, 
+    479-66861858-4590 Interesting. I guess the problem is that the keyframes can't be accessed from inside the Shadow DOM. 
+    158-66862163-4590 Yeah, I thought it might be something like that. I'll keep trying with it. I think the separate style
+    415-66863732-4590 I just confirmed that adding this to a syntax theme works as expected: ```less @-webkit-keyframes
+     99-68151764-4590 I've added an issue to track adding the ability to create a context-targeted user stylesheet. #4769
+     12-66836126-4584 /cc @zcbenz 
+     97-66848492-4584 The crash was caused by `com.apple.NSURLConnectionLoader`, seems like a bug of `CFNetwork` to me.
+   4338-66829519-4582 I can reproduce this in an untitled file. Looks like an issue in the bracket-matcher package ``` 
+x     28-66829526-4582 Thanks for the legit report!
+    196-66829529-4582 _From @Trudko on December 11, 2014 11:51_ @benogle my pleasure! I am curious if there are some infor
+     63-66829532-4582 @Trudko, you can dig in in the bracket matcher code if you want
+    190-66829534-4582 _From @kevinsawicki on December 11, 2014 19:29_ @benogle isn't this a core issue? The error look
+    756-66830483-4582 @kevinsawicki You're right. Moved back to core. This is pretty weird, and honestly an edge case. I
+     60-66832596-4582 Might be related to https://github.com/atom/atom/issues/4572
+    102-66815785-4574 :( Can you open the `Console` app from spotlight and filter atom, then paste the crash report in here
+    102-66839300-4574 Sure thing. Here’s the crash report [in a gist](https://gist.github.com/cobyism/cc9c97f2bca74298609a)
+    183-66839491-4574 FWIW downloading a fresh copy from the website worked fine. I kept the broken version around, but aft
+     56-66839575-4574 @zcbenz anything stand out in that Gist @cobyism linked?
+     92-66846414-4574 No, it just crashed at a place that never supposed to crash, I have no idea why it happened.
+     94-67253682-4574 Same thing here in this [gist](https://gist.github.com/stephanebachelier/708e7e7a32d107f5dbfe)
+    783-67254007-4574 By the way the download is successful : ```bash $ ls -l /Users/xxx/Library/Application\ Support/co
+    252-67254530-4574 What's strange is that if I use the following command it works: ```bash $ unzip /Users/xxx/Librar
+    266-71735560-4574 Atom 0.176 editor is crashing for me immediately after the update whenever I try to open a window. 
+     11-71737976-4574 cc @zcbenz 
+     77-66814616-4573 Can you walk me through the steps to reproduce this? What version are you on?
+   1112-66926864-4573 I think I see what is going on here. You have opened a directory in the Atom with the non-untitiled f
+   1555-66927764-4573 > Even more radical, Atom could just start without an untitled file That would be awesome. It is
+    302-66928149-4573 @mark-hahn True, but it isn't exactly hard to press `Ctrl-W` to close the untitled file, either. Both
+    354-72398683-4573 What I'd prefer is for the Untitled tab to get replaced with the first file you select *if you have n
+    384-77166790-4573 It would be better if the untitled editor was only ever opened the very first time that Atom runs (fo
+    186-77192039-4573 +1 for removing it all together, as @mark-hahn said, it's pretty easy to press `ctrl-n`. I can't reme
+    123-66831840-4572 Do you remember what you had folded? Can you paste in the file and outline what you had folded? Can y
+   3868-67972148-4572 Similar error here too. Was editing a coffeescript file with code folded to 2 levels. Quit editor and
+   8068-67977198-4572 @benogle I had the last two functions folded. I cannot reproduce the error. ### File ``` 
+    736-71227353-4572 This just happened to me (Atom `0.175.0` on GNU Operating System). --- **Steps to reproduce (re
+   2746-71560236-4572 Legit repro steps. Though that creates a different trace than the original ``` Uncaught TypeError
+    366-66820470-4568 Looks like something to so with maybe not having permissions to edit `C:\Users\Lewis\AppData\Local\Te
+     85-66870251-4568 I just installed atom with the new installer and have the same issue, using windows 7
+   3414-66895884-4567 I've realized that we may want to keep an `add` method after all so we can be explicit about the casc
+    556-67085096-4567 > The user's settings are associated with a priority of -1 so they always appear last in the cascade.
+    108-67085412-4567 Yeah, I agree with the panel-like priority system. I think the user setting should have priority `Inf
+    171-67101562-4567 As per discussion w/ @benogle, the API changes are being implemented in #4631, which we'll merge firs
+    114-67260458-4565 Maybe the code that gets the editor is no longer working? What does that look like? Is this the whole
+    373-67261197-4565 No there's a little bit more. Do you want me to paste it here? The GitHub repository is [here.](https
+    274-67261488-4565 Can you debug a little more? is `format` getting called? is `formatJavascript` getting called with an
+    218-67269195-4565 `format` gets called and so does `formatJavascript`, and the editor is defined because I can run meth
+    633-67270679-4565 Switching it doesn't actually work. If I am in the middle of the function debugging, and I run this c
+     71-67782841-4565 @benogle any idea on what is going on? I still haven't found the issue.
+    272-72323212-4565 This is all the information I have. The code is running in an Atom package, so anyone can do some inv
+    169-66723553-4562 Can you explain what you were doing when this happened? Looks like you cut some text. Did you hav
+    666-66727082-4562 I only cut this code ``` Template.body.helpers({ tasks: function () { if (Session.g
+    215-66924610-4562 Atom just sent me to this issue saying my bug was already reported. I was having a file up with a sp
+    105-67046355-4562 @xeor can you try to reproduce again, and post the stack trace into this issue? It would be very help
+   2421-67048434-4562 @benogle here it is. If I played with a combination of "View>Panes>Split up", writing a letter in the
+    178-67049034-4562 Definitely make an issue on the linter repo. That would be helpful! The button should prompt you to c
+    124-72589942-4562 Just happened to me as well. I had highlighted some text, and hit cmd+1 to get to another tab. Can
+   2700-74441574-4562 I often get this when simply closing files. My stack trace is here: **Atom Version**: 0.179.0 **S
+    214-74463262-4562 @jacekkopecky I'm 99% confident your problem is caused by one of those packages (most likely candidat
+     17-73899254-4542 Edit: wrong issue
+    547-74193772-4542 I've actually had this happen twice to the `“` character. I am having trouble reproducing the exact s
+   1431-74196180-4542 I can confirm the second part of this (searching for `�` in project find and having it disappear when
+   10335-74328369-4542 Actually, I can reproduce the issue in the comment above (using the same 5 steps) if the content of `
+     37-66672569-4538 What are you doing when this happens?
+     88-67961882-4538 After removed a file, this error occurred while I was searching fora file via command p.
+     49-66568689-4532 Restarting Atom seems to have solved the problem.
+    147-66527591-4524 My (pretty outdated) system: atom 0.153.0-d1e9ad3 apm 0.111.1 npm 1.4.4 node 0.10.33 python 
+    207-69950149-4524 Same problem. Even when there is a folder in Tree View, nothing happened when I press the Reveal in T
+    593-69954319-4524 There are 2 files roll.lua and Leatrix_Plus.lua, the file location is like this ![qq20150115-5](http
+    122-66523657-4521 Hi @mahdera, can you report what packages you have installed? `ls ~/.atom/packages` should give the c
+    996-66488695-4505 I get the same error on Ubuntu 14.10: Uncaught Error: spawn /usr/share/atom/atom.dpkg-new (deleted
+     72-66506578-4505 Seems like the linux version of https://github.com/atom/atom/issues/4509
+    727-66672311-4505 From @jprice in #4450: I am getting the same error. Happens every time I launch Atom, and it keeps
+    572-66795073-4505 I tend to run into this when my machine has been up for a while and I've been using multiple instance
+x     35-66815445-4505 @jschroeder9000 thanks for the info
+    664-67717725-4505 _From @nylki in #4712_ Uncaught Error: spawn /usr/local/share/atom/atom (deleted) ENOENT **Atom
+    152-67718600-4505 I so far have been unsuccessful in reproducing this on Ubuntu 14.04. I opened tons of windows, switch
+    107-67731495-4505 What @jschroeder9000 wrote seems to work ( https://github.com/atom/atom/issues/4505#issuecomment-6679
+    340-71338025-4505 Just ran into this issue. I had one instance of atom open for a few days with lots of open tabs in
+    292-71930915-4505 I get this too. With multiple projects open, it happens every time I switch focus to that window. 
+    255-72997101-4505 Happening for me. I just opened a second folder with another window open with another folder open.
+   2543-73924020-4505 **Atom Version**: 0.177.0 **System**: linux 3.16.0-30-generic **Thrown From**: Atom Core ### Sta
+    934-75735049-4505 **Atom Version**: 0.180.0 **System**: linux 3.13.0-45-generic **Thrown From**: Atom Core ### Sta
+    341-76674178-4505 I just got this and it totally spammed with an error every 10 seconds or so (Ubuntu 14.04.2 LTS). 
+    114-72401984-4503 Perhaps this could be part of the problem: https://discuss.atom.io/t/cannot-delete-files-in-atom-in-
+x     40-68647593-4489 I can confirm this. Incredibly annoying.
+x     55-71172158-4489 I've stopped using full-screen for exactly this reason.
+    326-68015988-4485 @sedrickcz Sorry for delay in getting back to you on this. Do you remember what you were doing when t
+    142-68344889-4485 @izuzak Sorry, I don't remember :/ I will let you know, if it happens again. But I am using it every 
+    218-66358574-4481 Please provide more information like: what were you doing when the error happened? Does it happen oft
+    357-66970668-4481 #### Steps To Reproduce: 1. Select a block of text, or place multiple cursors 2. Press tab to ind
+    416-67091586-4481 @KeitIG Can you try with `atom --safe`? I cannot reproduce. If you can reproduce in safe mode, can yo
+    308-67127561-4481 @benogle I can't reproduce it either, after an update of autocomplete-plus. This is strange becaus
+     21-66341338-4475 When did this happen?
+    333-66384152-4475 Earlier today when I tried to open Phaser.min.js It actually happened numerous times in a row On
+     60-66536674-4475 Potentially dupe of https://github.com/atom/atom/issues/4509
+    137-66343958-4467 Does this happen often? Looks like you were saving, true? Please quit atom completely and run `ato
+     99-66419429-4467 Yes, it happend when i hit cmd+s. It happens not so often, i will try reproduce it with atom --safe
+     74-66583694-4467 I reproduced once this error yesterday, i think it happens only over sshfs
+    184-71668192-4467 Happening for me as well occasionally while using `sshfs`. Usually after the volume has been unmounte
+    243-75453764-4467 Also using sshfs, also seeing this error randomly. I’ve also seen garbage `^@` characters dumped at E
+     66-75453813-4467 Oh, I am using OS X 10.9.5, sshfs from homebrew, and Atom 0.182.0.
+   3524-77386220-4467 Just chiming in with my own bug report below: 1. Saving file, over ssh(fs). 2. Happens rarely. 
+    189-66345627-4461 I think this is expected behavior. You're copying the whitespace in front of the if, and so it is pre
+    248-66345824-4461 Hmm, pretty sure it used to not do this. It would see the whitespace in the pasted block but adjust i
+    340-66347237-4461 This has been a long-running pet peeve, and if this is the expected behavior, it makes me wonder what
+    390-66347756-4461 @maxbrunsfeld is the indent overlord, so I'm not totally sure. This may be the indent behavior with a
+    478-66349677-4461 I never wanted to be the indentation overlord; I just added auto-indent on paste for *non-whitespace-
+    399-66349769-4461 I hope it's not going to be a forever problem because this killed me too and I had to turn off Atom's
+    176-66350749-4461 > Not to mention now it decides to try and screw with my custom indention which happens to be turning
+    452-66351449-4461 @benogle it was hard to replicate so I'll not focus on that (I'll make it a ticket on that issue alon
+    453-68422329-4461 This same problem is happening with PHP files and code as well. It is messing up multi-line arrays an
+     33-66533200-4451 @zcbenz any thoughts on this one?
+    217-66548899-4451 It seems to be caused by closing an already closed child process's IPC channel: https://github.com/i

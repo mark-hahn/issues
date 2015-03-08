@@ -1,0 +1,135 @@
+
+# page: 17, date: 2014-11-09, count: 30, rateLimit: 4565 of 5000
+
+    215-62306267-4120 Failed to locate workspace file mapped to URL file:///c:/Users/Rakka%20Rage/.atom/packages/base16-syn
+     74-62428693-4115 What platform are you on? I thought this was already supported on Mac OS X
+    306-62433820-4115 I just tried that with .144 on Linux. Instead of saving the changes, or maybe warning that the change
+    124-62452272-4115 @kevinsawicki Should this be considered a bug since it is supported on Mac but either not supported o
+x     29-62454488-4115 @lee-dohm Yeah, it should be.
+    125-62461922-4115 Also, please note that I'm not really sure how would that work on Windows, which also requires specia
+    323-69282302-4115 This is currently supported in OSX when writing a file, but not when reading. With the addition of ht
+     90-69284141-4115 Read all at once is a complete no-no. It will be slow and it will block the entire editor.
+    190-69284506-4115 Word. Problem is that because of the privilege escalation, the read needs to happen in another proces
+    700-69284821-4115 That would be an option, yes. Escalate the "reader" process and then send the content of the file to 
+    239-69285236-4115 Btw, having in mind what I just said, this seems just the right moment to think about issue #307 
+    183-62466531-4110 This actually looks like an atom-shell issue possibly. Looks like the window focus isn't changing 
+x     13-62207459-4098 Win. Looking.
+     88-62208039-4098 Thanks for taking the time to do this. I'll look deeper as you write up more stuff :+1: 
+    191-62212942-4098 Should I simply link to the `README` for [jasmine-jquery][jj]? If so, do you happen to know which ver
+    819-62230689-4098 Upon further work and research, it seems that `toShow` is kind of redundant with the `toBeVisible` an
+    302-62464101-4098 > Upon further work and research, it seems that toShow is kind of redundant with the toBeVisible and 
+    549-62467655-4098 I've been meaning to bring up that I'd really prefer the spec-helpers to be something you import as a
+     56-62187860-4095 Can you paste the `.gitignore`? I cant access that repo.
+    144-62188753-4095 Sure. Here is the paste for .gitignore ( http://q.zash.se/bfceaa194d58.txt ) or an alternative url f
+b     17-68113751-4095 any news on this?
+    324-75221230-4095 Hi, has there been any progress on this (still seems to be a bug in the latest), or is there any addi
+    806-62171698-4092 Can you give exact repro steps? I have attempted to reproduce this the following three ways without s
+    897-62195384-4092 I have no idea what a pane is, I never talked about closing tabs. As I said, I am seeing this on 
+   1260-62203964-4092 I didn't mean to offend you. My response was an attempt to characterize the bug. With your additional
+   1109-62204165-4092 I should have also included that I was using OS X. > On Nov 7, 2014, at 11:06 AM, Arnaud Meu
+     60-62302322-4092 > I didn't mean to offend you. Me neither. Rough friday.
+    311-62472633-4092 I'm having trouble reproducing this on 0.142 and later versions. This is what I'm seeing on Windows 
+     65-62475565-4092 I can't reproduce what @kevinsawicki's doing either on Windows 7.
+    120-63206418-4092 i have the same issue on ubuntu 14.04 and 14.10, you click on cancel and Atom closes anyways, I'm gon
+    125-63388508-4092 @kevinsawicki @lee-dohm did it ubuntu 14.10, Atom 0.136.0 [video](https://dl.dropboxusercontent.c
+    104-62183914-4084  I can't repro - is this a problem with all file types? Which version of Atom and what OS are you usi
+    259-62270385-4084 osx-yosemite/atom-v0.143.0 Maybe try it in a longer file? Put your cursor at line 100+. It seems
+     94-62194918-4081 Have you tried setting up your `.apmrc` file? https://github.com/atom/apm#behind-a-firewall
+    164-63093395-4081 @kevinnathan Having this same issue. This is under windows. Guess I'm not sure where I would edit 
+    115-63095069-4081 I ended up finding the file in: `atom-windows\Atom\resources\app\apm\node_modules\atom-package-man
+    234-62097465-4075 I'm not sure what dialog you're talking about. Can you be more specific? Perhaps include a screenshot
+    323-62114362-4075 I'm using the latest version of Atom (currently v0.141.0) and the latest version of OS X. Open the
+   1685-61717660-4059 I've solved package async problems in the past using process.nextTick. This isn't good enough? Prom
+    301-61724202-4059 If `activate(state)` could return an arbitrary `Promise`, there's no guarantee that it would be resol
+    191-61775930-4059 Seems that it might improve a bit if re-done. But it does sound like a headache. IMO Better now than 
+    226-61677211-4058 I'm ok with it not being completely replaceable ... but I think we should know about it and perhaps d
+    261-62191636-4058 > I assume that by changing from a class to an element name in the middle like that reduces its speci
+    183-62191809-4058 I'm sure there are cases all over the packages that use `.editor` that need to be removed. We will be
+    191-64985752-4057 I can confirm the same behavior using Atom 0.152 on Windows 7 x64. All Alt+? combinations open their
+   1907-65702927-4057 I also have this issue on Atom 0.152 on Fedora 20 Gnome x64. The default behaviour seems to be th
+     88-74574160-4057 +1 emacs behavior should not be default, especially for keys related to operating menus.
+    246-61666895-4054 A recap of the steps * open a file with hard tabs, tab type detected as hard tabs * run whitespac
+    109-61682183-4054 @benogle Good to know you're aware of the bug. Do you plan to fix #3719 (and maybe this bug too?) bef
+     33-61683521-4054 Yeah, for sure #3719 before 1.0. 
+    225-61776250-4049 This makes sense. But the functionality might not be there yet. For better reference please provide m
+    121-61783379-4049 Video showing the bug/feature request: https://www.youtube.com/watch?v=TZR2LpiYTOc I'm on Linux Ar
+x     17-61594452-4044 This makes sense.
+    146-63965202-4044 At least for .deb, this should be done automatically by the process that builds the package. What bui
+     63-64011306-4044 @LordGaav https://github.com/atom/atom/blob/master/script/mkdeb
+    782-69897648-4044 Looks like that script actually creates a properly named package, and it gets renamed at the end. See
+    198-61490944-4037 Do you have more information? What version of Atom are you on? What OS and version are you running? C
+b     37-61894846-4037 @marouanopen ping. Questions for you.
+    104-61906634-4037 OS is Windows 8.1 Atom version 0.141.0 I can reproduce this problem if I launch atom with atom --s
+     99-62190807-4037 I am not able to reproduce. You are sure you totally quit atom, and launched it with `atom --safe`?
+     76-62266065-4037 The bug only seems to work on html files the bug is not present in txt files
+    178-62462255-4037 I still cannot reproduce. Are there other steps you're doing? I: * open atom * open html file * 
+    309-62462986-4037 I'm having trouble reproducing this on Windows 8.1. @marouanopen does it happen with all HTML file
+    385-61744240-4036 I never used LXDE, but it seems that it uses .desktop file like gnome does. So I guess it should work
+    318-63170785-4036 I changed definition of Atom entry in Start menu using menu editor. In Atom launcher I changed com
+    380-61670122-4030 How did you install atom? When did this start happening? After an atom update? After a rebuild? Did y
+     98-61670302-4030 Also, what exactly are you doing there? `apm install`? Installing a package via the command line? 
+     78-63957862-4030 I am using chocolatey to install and update atom package. Apologies for delay.
+     77-64010925-4030 Do you have git installed? Is git on your path? Looks like it cant find git. 
+    359-64073304-4030 I do have git installed, and its in path. Thanks, Harshdeep Mehta On Nov 21, 2014 11:29 PM, "Ben
+    240-64924612-4030 I was able to update Atom from 0.144 to 0.150 via chocolaty. And able to one package (Color Picker) b
+     43-65122151-4030 Were there errors? Can you paste them here?
+   1961-65261161-4030 Here you go. I have attached screenshot of my Git installation too. [image: Inline image 1] It's 
+    121-65282118-4030 I cant see the images. Looks like it cant find git. But if it's installed and on the path, I'm not su
+    261-61672854-4026 This has the same behavior as `editor:mode-to-end-of-word` (`option-right`) which is similar to most 
+    595-61675940-4026 Yes, but general text boxes != code editor. Even vim's `dw` command will delete the whitespace proper
+     45-61676076-4026 Or I can fork, and edit the core and do a PR.
+    275-61676820-4026 What I would do is: fork core and make a PR for `editor:delete-to-next-word-boundary`, and `editor:de
+    419-61677229-4026 Don't get me wrong, I don't think Atom should always copy what Sublime does, or mimic OS text boxes, 
+    139-61680475-4026 PS: Wouldn't it make more sense to look at the code for `delete-to-end-of-word` for reference? And ma
+    737-61686188-4026 It's going to be a combination of the two: `delete-to-end-of-word` and `select-to-next-word-boundary`
+    315-61688713-4026 Hmm, I did all of the above (except adding specs, don't understand that). I ran `script/build`, and f
+    319-61690584-4026 You can add it to you keymap file. Open it via command palette, the type `open keymap`. Bind it to so
+    452-61692100-4026 I did add it to my keymap: 'alt-delete': 'editor:delete-to-next-word-boundary' It ignores t
+    881-61693131-4026 So I added this: --- a/menus/darwin.cson +++ b/menus/darwin.cson @@ -78,7 +78,8 @@ 
+    209-61693691-4026 You can run `atom -d` in any directory, and it should pick up the new code. Open the keybinding re
+    479-61694887-4026 But how does Atom in dev mode know where to magically find my fork? It's definitely not picking up my
+    109-61695946-4026 (BTW, I can move to another thread if that's appropriate, since we're getting into troubleshooting de
+     58-61696866-4026 For now, move your fork to `~/github/atom`, and try again.
+    110-61697723-4026 Aha! My GitHub folder was in ~/Documents so it could be backed up. I guess I'll create a symlink or s
+    258-61698006-4026 Great! So the menu item `Edit > Text > Delete To Next Word Boundary` works great. Found a syntax erro
+    412-61699961-4026 There is https://atom.io/docs/v0.141.0/writing-specs which will be of some use. You can run the a
+   3547-61705439-4026 Do I need to install something in order to run the package specs? I get a ton of errors: Error
+     53-61720670-4026 Does `apm test` in the project root work? Same error?
+     63-62191139-4026 @CaptSaltyJack Did you get this working? You should make a PR. 
+     68-62193946-4026 Sorry, got caught up in some stuff. `apm test` shows the same error.
+    141-62461649-4026 @CaptSaltyJack Can you pull master and run `script/build`, then run `npm test` again? Do you have any
+    282-62592252-4026 I ran a `git pull` and it said it's up to date. Which seems strange, because I know there have been u
+    280-62593109-4026 Def strange. Are you on a branch? What is your remote from `.git/config`? Did you fork it or pull fro
+   1213-62597186-4026 Oops. Yes, right. Ok, I merged upstream into my work and tried again. > atom@0.146.0 test /Use
+    329-62599085-4026 @CaptSaltyJack Are you still seeing `Error: Module did not self-register.` when running the package s
+   3574-62600057-4026 Ran the command above, executed without errors. Then ran package specs from within Atom (`atom -d`) a
+     43-62600775-4026 What version of Atom do you have installed?
+     89-62601371-4026 0.145. And the latest commit I have is 658dc8e9c3ed02fef8a4bd16426f49a0848d5bf3 (by you).
+    467-64152601-4020 Currently key shortcuts are handled in editor first and then passed to the application menu when not 
+    194-61400010-4019 This occurs in safe mode as well: #3426. An idle Atom, in safe mode, with a few tabs open and no edit
+    269-63392271-4019 Is this related to #3928 which claims that Atom is not actually using energy, but should be a bug in 
+    206-61321904-4007 @clauseggers I'm seeing how Sublime renders them differently but it looks like Chromium renders them 
+    365-61323411-4007 And just to confirm, you'd prefer it be displayed like this: ![screen shot 2014-10-31 at 1 08 41 
+   1243-61324438-4007 Hi Kevin. Sublime Text renders every *character* as one character, instead of using the OpenType ‘dev
+    126-61324864-4007 > However, that approach renders the text un-readable So when you are editing Devanagari text in S
+    530-61325850-4007 Essentially yes. A reader can spell their way through the text, but it requires some mental gymnastic
+     67-61326541-4007 This looks similar to #1849 in terms of the cursor position issues.
+    123-61329153-4007 Yes, exactly the same, though Arabic and Hebrew adds the complexity of right-to-left text mixed in wi
+    176-61525209-4005 Sadly, I'm not able to reproduce. Can you get it to happen every time you fold that bit of code? 
+     58-62473224-4005 @tomschlenkhoff That dropbox links seems to 404 currently.
+     50-62563357-4005 Fixed the 404, I'll try to paste the file shortly.
+    450-63196363-4005 Steps to reproduce: * Open `text-editor-spec.coffee` in a pane with 96 columns * Fold all * Unfo
+x     14-64716317-4005 Great, thanks!
+    943-61039810-4004 You installed in Dropbox? Have you tried outside of dropbox? BTW, By "Application File method" do
+    597-61042017-4004 Hi Mark, No, actually I already tried installing before directly from my desktop and had the same 
+   1272-61049018-4004 cinst is a chocolatey utility to install packages so 'cinst atom' will install the latest atom. If
+    476-61054421-4004 @mark-hahn Judging from his screenshot, he did install via Chocolatey; the official command these day
+    936-61100208-4004 > he did install via Chocolatey; I didn't mean to make a big deal out of this. I just wanted to 
+x     30-61101464-4004 Agreed, it should be avoided! 
+     93-61323767-4004 @jwchameleoncorp Can you check if that file in the error dialog exists at the path specified?
+    117-62479492-4004 @jwchameleoncorp Just wanted to check in and see if you had a chance to verify the file in the dialog
+     70-60974191-3994 This perhaps is a regression in atom-shell, @zcbenz what do you think?
+     83-60801422-3985 If you delete Atom from `/Applications` and reinstall it, does the problem go away?
+    130-61051606-3985 I still have the problem even after I deleted Atom from `/Applications` and the Atom folder from `~/L
+    806-61054002-3985 First of all try rebuilding *LaunchServices* ```bash $ /System/Library/Frameworks/CoreServices.fram
+    175-62012532-3985 `/Applications/Atom.app/Contents/MacOS/Atom --executed-from="$(pwd)"` worked. But rebuilding LaunchSe

@@ -1,0 +1,236 @@
+
+# page: 24, date: 2014-07-27, count: 30, rateLimit: 4348 of 5000
+
+ x    24-50280498-3103 I want to know too :+1: 
+    390-50282281-3103 There is a package to do that called localization wich makes quite simple to translate here: https:/
+     57-50283754-3103 @wsouto It's not working on my build too, under OpenSuse.
+     47-50284414-3103 @wsouto thanks for the link! I will look at it.
+ x    28-50986192-3103 It doesn't work here either.
+    445-51779920-3103 @alexandrevicenzi What's the exact problem occurred on your build? It would be nice to open an issue 
+    121-51870468-3103 localization just doesn't translate my UI. It doesn't prompt any error. Maybe in a log file? Where ca
+    110-50349880-3093 +1 also on 10.10 but this was happening since the last time I updated atom. It was a big jump from .8
+     82-50413724-3093 Does Atom launch if you run `/Applications/Atom.app/Contents/MacOS/atom` directly?
+     17-50413728-3093 from the terminal
+     34-50429186-3093 Yup! That seems to work just fine.
+    137-51080159-3093 I noticed this happens when you go to open atom from within tmux. Outside of tmux it launches just fi
+    396-51090684-3093 Correct I am also using tmux On Mon, Aug 4, 2014 at 12:05 PM, William Broach <notifications@gith
+     40-51093110-3093 Same! Guess that's the culprit. But why?
+    271-52421278-3093 It seems that if you do not background atom running tmux 1.9a everything is happy. I tried to do a bi
+    146-52602626-3093 This is classic Tmux. Run everything that integrates with OS X with reattach-to-user-namespace. Y
+     57-52645053-3093 Looks like reattach to namespace is busted in Yosemite =D
+    522-52645721-3093 I'm on Yosemitie and when I run atom with reattach-to-user-namespace, it works fine. What version ar
+    185-59783729-3093 I'm having this same issue with tmux and Yosemite. `reattach-to-user-namespace` helps, but I'm not su
+    226-59784274-3093 Add something like this: ``` set-option -g default-command "which reattach-to-user-namespace > /dev
+ x     7-59795132-3093 thanks!
+    145-59817162-3093 This also works for me, thanks @ClashTheBunny! But is there a better solution than having to depend o
+   1319-59881016-3093 There are a couple places along the way where this could get fixed before it gets to atom's bug track
+    257-62032844-3093 I have installed reattach-to-user-namespace and even when I run atom still returns an error within t
+    728-62040590-3093 Did you add it to your tmux.conf like I suggested above? ``` set-option -g default-command "whi
+     17-62040775-3093 Yes, same result.
+    301-62042537-3093 Is this terminal.app or iterm2? Randall Mason clashthebunny@gmail.com On Thu, Nov 6, 2014 at 9
+    642-62043382-3093 iterm2, I uploaded my .tmux.config to https://gist.github.com/JC1738/9616706a83ba7706ab88 
+     31-63143152-3093 how about `atom --foreground` ?
+    177-63547990-3093 > set-option -g default-command "which reattach-to-user-namespace > > /dev/null && reattach-to-user-
+     70-50175466-3090 There is View > TimeCop > Show menu which will list all slow packages.
+    264-50175872-3090 > Would it be possible to separate the package list by core and custom? Really like this idea, may
+     40-50176244-3090 Wow! Thank you about TimeCop - love it! 
+    323-50173528-3088 I was wondering the same thing, but I don't think that's in the cards. The whole thing is based on a
+    128-50173955-3088 @batjko oh, ace is font-end editor,but not have a server support.atom build on atom-shell(nodejs + ch
+    189-50491348-3088 I think major issue with this is filesystem access, node does it in cool non-blocking way, but you ne
+    127-50492508-3088 yeah,HTTP remote APIs or restful APIs?that's so cool.This is a great feat!seems like cloud9,it's has 
+    343-50494661-3088 If I got it right, you mean start some kind of web-server on client machine and send requests to it f
+     81-50495599-3088 @Dream707 yes,you are right.but now,atom font-end code together with node-js code
+ x    28-69531714-3088 +1 for interest. Watching...
+    132-72725784-3088 I'm also interested to install atom on my private vps and edit vps's files from my client computer ov
+     30-72736370-3088 This is not currently planned.
+    264-50161728-3087 Try this in your `keymap.cson`: ```coffeescript '.platform-linux': 'f10': 'native!' ``` It
+    233-50162470-3087 @lee-dohm Makes me wonder: Is it actually possible to control the dev tools via the key mappings, i.e
+    103-50162899-3087 @batjko That's a good :question: but not one I have the answer to. Probably worth investigating thoug
+     29-50162921-3087 @lee-dohm nope does not work.
+    101-50162991-3087 @MasseGuillaume Well, it was worth a shot ... you could always try `unset!` instead of `native!` too.
+    236-50163232-3087 @lee-dohm dont worry ;-). I will post it here if I find a solution. also does not work: ``` cat 
+     25-50164133-3087 no luck with ```unset!```
+     69-50419087-3087 @MasseGuillaume do you know if `F10` opens file File menu in Chrome?
+     80-50423001-3087 @kevinsawicki nope it does open file menu in other applications like terminal
+     84-50425239-3087 So just to confirm, Atom on Fedora is current behaving the same as Chrome on Fedora?
+    289-50430004-3087 In chrome if I press f10 nothing happens. When I have the debugging tool it's the shortcut for step n
+    140-50496686-3087 ``` cat ~/.config/gtk-3.0/settings.ini [Settings] gtk-menu-bar-accel = "" ``` ~~this solved th
+    113-50091936-3074 This is definitely supported, it just doesn't appear to be working on Windows currently, sorry for th
+     56-52502434-3074 just an update that this is still occuring in `v0.123.0`
+    150-52578527-3074 Noticed the same thing. Glad it's not just me misconfiguring things. I'm using another editor for git
+     45-53749851-3074 Just found this too. Still broken in v0.124.0
+     24-56583189-3074 Still broken in v0.130.0
+    168-57192221-3074 oddly enough in Powershell I can do `start-process -wait atom` and the shell behaves correctly. Tho
+     21-60508224-3074 Still broken v0.139.0
+ x    12-61111017-3074 +1 same here
+     54-61814187-3074 Just confirming that it's still an issue in `v0.141.0`
+     98-62986045-3074 I'm seeing the opposite problem as of 146. I don't want it to wait but it is waiting. See #4178 
+    141-62989008-3074 @kevinsawicki You should probably steal the `Update.com` trick from me - all you need to do is copy t
+     61-65153640-3074 on Mac OS X 10.9.5 and atom.io 0.152 I have the same problem!
+ x    33-65300823-3074 152 on windows. :-1: not waiting.
+     79-66654336-3074 Can't use Atom for ` git config --global core.editor` until this is fixed :-1: 
+    341-67952739-3074 I confirmed that paulcbett's `Update.com -> atom.com` trick is a good workaround until this is fixed.
+    626-67979382-3074 This problem went away for me in a recent atom version. On Tue, Dec 23, 2014 at 5:55 AM, crobinson
+    829-67979529-3074 P.S. I switched to the installer from chocolately. Try that. Be sure to follow the blog instructio
+     72-68153798-3074 Works for me with the Installer version for Windows (Atom 0.165.0) :+1: 
+   1068-68387284-3074 For me, it waits if launching `atom` for the first time, but does not wait the second time. This seem
+    101-49995181-3065 And needs to turn off reopen last files (projects) when launch. For someone its need, but not for me.
+    147-50415159-3065 I'm having trouble reproducing this on a Windows 8.1 VM using Atom 0.120.0 If you start Atom with 
+     79-50434092-3065 @BOOMER74 Do you have a package installed which saves your session / open tabs?
+    194-50442320-3065 @kevinsawicki Atom 0.120.0 trouble reproduced. ![image](https://cloud.githubusercontent.com/assets/4
+    274-50211976-3063 Actually, this works for me – using a single click to only select a folder or being in a folder witho
+    126-50218581-3063 @kelunik I'm using Ubuntu 12.10. I _think_ I have the newest updates installed - I'm using a build fr
+    145-53619052-3063 I can reproduce this on Ubuntu 12.04 and opened an issue over on the atom-shell repo to track it h
+     32-71204973-3063 Same for me on ElementaryOS Luna
+    101-49904502-3050 What do you think about `ctrl-alt-t`? That way `alt-t` can still be used to navigate menus on Windows
+    122-49905702-3050 Why is `ctrl-t` mapped to the same thing `ctrl-p` is mapped to (maybe I'm just crazy)? I say transpos
+    688-49906731-3050 @mehcode `cmd-t` was used by the fuzzy finder very early on, probably because `t` was used by GitHub.
+     95-49907197-3050 @kevinsawicki That does make sense, thanks for the explanation. I agree with dropping `ctrl-t`.
+    154-49931278-3050 Well I like `ctrl-t` for fuzzy finder, after all that is how I remapped sublime. (And `ctrl-shift-t`
+    102-49932028-3050 @mehcode How often do you use transpose? How often do you use fuzzy finder? Me: never, 1 per minute
+    269-49939144-3050 @dsandstrom I never use transpose. I don't really care what key binding it gets. I do care that we ha
+    113-49939467-3050 Ok. I like and use both. But I can see your point and a lot more people would complain if you remov
+    133-49940337-3050 Close this and add a different one for transpose. That commit would be too painful for me to do, so 
+    220-50080335-3050 Sorry I should say: If I need to change the binding to something that is not taken, I can do that. 
+    525-72180045-3043 @muchweb I've been tampering with Atom to make the way indentation is displayed separate from the way
+     61-54338709-3030 This is happening for me as well on Windows 8.1, Atom 0.124.0
+     43-59165443-3030 Still happening, Ubuntu 14.04, Atom 0.136.0
+x    363-68166458-3030 I am having the same problem on Windows as well. Microsoft Windows Technical Preview 6.4.9841 (Win
+x      2-68609423-3030 +1
+x      2-70721589-3030 +1
+    204-53202910-3025 I can confirm that the cursor disapperaing bug happens always when executing the key combination for 
+     68-60497363-3025 I can also confirm. Archlinux + Atom 0.139. Happens in vim-mode too.
+    460-60498791-3025 Is the text still focused? I assume clicking in the text will bring the cursor back. Operations t
+    552-60499052-3025 Interesting. It is as you say @mark-hahn. Clicking in the text does bring the cursor back, but typ
+    112-49595665-3023 I can confirm that's the case for v116, certainly on Win8. @muchweb Is that gif from a different e
+    129-49596939-3023 @batjko, yes gif is from Sublime Text to demonstrate how this feature should work. I am running v1
+    425-49633549-3023 Not saying that this isn't a bug for the Windows implementation ... just an explanation: OS X (and po
+    355-49636120-3023 I know exactly what you mean. The only time I ever press the insert key is when it was accidentally p
+    254-49641213-3023 This is not just `Windows` bug, but could you also add `GNU/Linux` label - > If I want to overw
+     97-60481055-3023 I confirm this is also a Linux problem. Is the problem solved in HEAD ? I didn't checked it out
+     65-60481344-3023 @brunetton, I am running `v0.139.0` on GNU and it's not fixed yet
+    108-60501370-3023 Okay, so I did it today (it was raining outside) : https://atom.io/packages/atom-overtype-mode 
+x     92-72829679-3023 +1 for this as a core feature! ...in the meanwhile, thanks @brunetton for the package :-)
+    383-49542460-3015 This seems to have been a known issue in Chromium for years: http://code.google.com/p/chromium/issue
+    509-49543760-3015 @batjko: No, it's not this issue. Your mentioned issue the sRGB and RGB difference between Safari 
+    224-49544357-3015 @zhanzhenzhen Actually the first link specifically talks about the difference between Chrome and othe
+    535-49544696-3015 Ah, I found out your links are related to "color management" in showing an image file (.jpeg or .png)
+    288-49545304-3015 Seems it's caused by anti-aliasing. If you set `-webkit-font-smoothing` to `none`, then the color is 
+    265-49545730-3015 @zhanzhenzhen Fair enough. It just seemed too much of a coincidence that Chrome has issues representi
+    190-49643381-3015 @zhanzhenzhen it might be more beneficial to open this on the chromium bug tracker https://code.googl
+    354-49915698-3015 I've just opened an issue on chromium's bug tracker. But after I installed Atom 0.117, I found the
+    101-49917760-3015 This is my issue page on its bug tracker: https://code.google.com/p/chromium/issues/detail?id=396689
+x     22-49922229-3015 Thanks, @zhanzhenzhen!
+    321-49457825-3010 I'm not sure in this case, but there is a known issue with accessing files across the network (see #1
+    550-49459605-3010 It seems that it's the system's NFS support in the that's causing the BSOD (nfsrdr.sys, as the screen
+x     60-51063010-3010 I have reproduced this in Atom version 0.120.0 on Windows 7.
+x     60-55272947-3010 I have reproduced this in Atom version 0.125.0 on Windows 7.
+    108-50777721-3005 It is reproducible with any file type. OS Windows 7 SP1 x64, atom 0.120.0 installed through Chocolate
+    308-50957360-3005 i'am sorry ,Atom suggests that if I move the file to the recycle bin, and then, system and prompt if 
+    257-50957421-3005 Really, I haven't noticed the delete dialog too. @netmou is right - dialog is shown under Atom window
+    324-51203202-3005 > i'am sorry ,Atom suggests that if I move the file to the recycle bin, and then, system and prompt i
+    536-51359735-3005 Just downloaded Atom, and I'm getting weird locking issues when deleting a file in windows. This only
+    279-51441890-3005 Thanks for the steps to reproduce, @jwoertink. I have tried the exact same in Win8, v 121, and had 
+    370-51482356-3005 haha. Maybe just a win7 issue then? With mine even if I keep clicking "Keep Waiting", I'll just keep 
+    168-51482867-3005 Is it possible you are accessing the file over a network instead of locally, by any chance? There ar
+    114-51483379-3005 Nope. File is locally. Although, the folder I'm working in is tied to a Team Foundation Server repo (
+    167-51483480-3005 For me it is reproducible with local files. Again - this is not a backend / network issue. It is just
+     91-51483917-3005 @ForNeVeR I think @jwoertink 's issue is different then, i.e. not the hiding modal window.
+    106-51484130-3005 Yeah, my modal doesn't hide. The editor just won't delete. Maybe I should create a new issue for this
+    116-51484291-3005 @jwoertink, are you sure that modal window doesn't exist? It is very hard to find it - it is not visi
+    110-51484607-3005 @jwoertink Yes I'd open a new issue. A quick search hasn't given me any existing issues that sound li
+    124-51555590-3005 This has already been fixed in atom-shell with https://github.com/atom/atom-shell/pull/452, which wil
+x     11-51578132-3005 :thumbsup: 
+    181-49402382-3002 ![duplicate](https://cloud.githubusercontent.com/assets/5446019/3623337/b012e3f6-0e4b-11e4-8677-8d83b
+    505-49416996-3002 @philipgiuliani you are duplicating lines not words select few words and try it. ![screen-record-a
+    132-49450556-3002 @valllabh So it should have ended with the line looking like this? ``` $this->types = Config::get
+    347-49500874-3002 @lee-dohm Yeah :fist: As per my observations with Sublime Text following should be the ideal beh
+    371-49501733-3002 Well, the command that <kbd>Cmd+Shift+D</kbd> is mapped to is called `editor:duplicate-lines`. So a n
+    440-49502162-3002 I think new command should be `editor:duplicate` which should handle all these things... because its 
+x     32-74447970-3002 :+1: Would love to see this too.
+     48-74515030-3002 I just feel like I am gonna create this package.
+     64-74524654-3002 Here you go people, https://atom.io/packages/duplicate-selection
+    352-74809391-3002 @steelbrain thanks but I wanted it more sublime style, where it would duplicate the line if there was
+    114-76556978-3002 thanks @nick, really needed this behavior, it's one of the golden things about sublime that I would m
+    478-49306992-2999 @minimalweb I haven't changed my OSX keybindings, and here's what I see in my settings: ![screen s
+    397-49320439-2999 I'm using a german keyboard/language setting. Looks like it's different for that layout (see screensh
+    240-49271811-2998 Can you try opening the Dev tools, either via the menu or `Ctrl-Alt-i`, and post whatever errors it g
+    229-49272123-2998 Unfortunately, this is what the developer tools looks like: Seems to be no difference when running w
+    168-49273585-2998 Well it's... minimalistic. Sounds like an issue at the atom-shell layer rather than with Atom its
+     56-49807559-2998 Updated to v0.117 with chocolaty, still the same problem
+    112-49807674-2998 I'm really not sure what is going on here, @zcbenz any ideas for how to troubleshoot a window that is
+     75-50307382-2998 Updated to v0.119 with chocolaty, problem seems to be resolved now. Hooray.
+x     34-50352075-2998 Great, thanks for letting me know.
+    255-50353577-2998 I hate to say it but it's gone black again. I didn't even reboot since 8 hours ago. I tried re-instal
+    279-50353993-2998 Okay, thanks for the updates, we are in the process of upgrading from chrome 32 to chrome 35/36 and s
+    678-50367887-2998 I have to say, as far as I can tell this hasn't come up twice. Neither on this repo nor in the [for
+    201-50376566-2998 Uninstalled with choco Removed all the version folders in `C:\Chocolatey\lib` Extracted the latest 
+x     35-50377173-2998 Your machine is possessed. Clearly.
+    500-50377940-2998 That does seem like the most rational explanation. On a brighter note, I also extracted the zip in 
+    141-50378569-2998 Sometimes my PATH variable gets funky ( because of the ludicrous 1024 character limit ) , is there an
+    449-50379542-2998 I'm not sure but not on its own I don't think (barring any third party packages). Normally you shou
+    192-52069072-2998 Same issue here. (1.20 Chocolatey, Win 8.1) If it helps; when I run the Atom my computers switchs to 
+     46-52071105-2998 I've also tried prebuild zip and issue states.
+    188-52077113-2998 Well, Mr. Satan... we already speculated that the OP's computer is possessed, so... good timing. H
+    114-52092111-2998 uninstalling and re-installing (aka binary exorcizm) megically solved the problem. I hope this clea
+     95-52094477-2998 I updated chocolaty to latest version and installed 121 and everything seems to work fine now !
+    101-52094582-2998 That is great to hear, Atom 0.121 runs Chrome 36 instead of Chrome 31 so that may have impacted this.
+     56-70554058-2998 Is this still an issue for anyone on the latest version?
+     73-55477790-2991 At least on Windows, I don't see this issue anymore. Do you still see it?
+     92-55492995-2991 This still happens on Mac. It's a little annoying when you try to create a file in a folder.
+    181-55562121-2991 Jeah, on Mac its still present with 0.127.0. It could be that it will be fixed in 0.128.0 because @ke
+    451-55634880-2991 @zcbenz Do you know if there is some way to make sure mousedown handlers complete before the context 
+    141-56002878-2991 We can send the message of showing context menu to browser process asynchronously, so the selection c
+    158-56010426-2991 After some attempts it seems that sending message asynchronously doesn't work too, I'll check how Chr
+b     29-56948041-2991 Already any news @zcbenz ? :)
+    130-60862441-2991 I'm definitely interested in a fix for this, I'm so nervous whenever I try to delete a file (when it'
+x     28-74705427-2991 Interested too. Very useful.
+    741-49111937-2986 @izuzak actually created a package, [the-closer](https://atom.io/packages/the-closer), that covers th
+    649-49225458-2986 It's hard to say without dredging up a bunch of usage data where to draw the line between core behavi
+    169-49228031-2986 I would set the default setting to false, becausw im always closing all tabs, but i want to keep my p
+    631-49545458-2986 The major topic on the board about this is here: http://discuss.atom.io/t/closing-whole-editor-instan
+    322-49545834-2986 Agreed. Unless there is a very clear majority on one specific behavior, in which case putting it into
+     59-50452227-2986 So what about `close:all-tabs` is there a command for that?
+    205-50466203-2986 @firedev No, there currently is no command for that. You might want to implement such a thing as a pu
+    351-50466549-2986 > @firedev No, there currently is no command for that. Interestingly, there _is_ such a command, b
+    226-50469028-2986 Oh interesting. I searched using the Command Palette and didn't find anything. I guess the Command Pa
+   1722-76926435-2986 Here's some more information to help us reach a decision here: 1. SublimeText has an option called
+     66-76983895-2986 I'm ok with this being a dropdown setting now that it's an option.
+    150-76999356-2986 @izuzak Happy to work on it, I just didn't push this because it seemed most of the work was in debati
+    103-76016502-2985 :+1: If I have projects in my favorites bar, I would like to be able to drag them to atom to open the
+    275-49185584-2969 Does anyone have any idea what the problem could be? I tried opening Dev Tools after clicking *Keep I
+   14760-49188700-2969 I don't know if this helps, but I ran `atom --safe` and then went to **View \ Developer \ Run Atom Sp
+x     28-49297650-2969 I have this exact same issue
+     46-49842793-2969 Same problem. Atom version 117 on Windows 8.1.
+    124-49889501-2969 @cobrabr So did it still crash after running `atom --safe`, but you were still able to run the specs 
+    198-49969291-2969 @kevinsawicki Yup. The editor window crashes, but if I click on *Keep It Open*, some things work. I c
+     57-51194997-2969 Same issue for me. Version 120 on Windows 7 Pro SP1 x64.
+     52-52506523-2969 Same issue for me. Version 0.123.0 Windows 8.1 x64
+     73-52614314-2969 This is probably caused by https://github.com/atom/atom-shell/issues/587.
+     87-53335071-2969 Same issue too. Atome.exe File Version 0.15.7.0 - Product version: 0.123.0. Win 7 x64
+    145-53508854-2969 I just updated to Atom version 0.15.9.0, Product version 0.124.0. I am still getting what appears to
+     84-53944036-2969 Updated too, same crash. Atom version 0.15.9.0 - Product version 0.124.0 - Win7 x64
+   6651-54785279-2969 After investigating the crash reports on Windows, I found most of the crashes came from node-pathwath
+     81-55205465-2969 Just grabbed v1.26.0 and no longer get the crash on launch on Windows 7 64 bit. 
+    101-55403853-2969 On my side, windows 8 64 bits, the editor crashes with v0.126.0 and v0.127.0 but not with v0.125.0...
+    202-55419305-2969 > On my side, windows 8 64 bits, the editor crashes with v0.126.0 and v0.127.0 but not with v0.125.0.
+    130-55419811-2969 I just installed 0.127 and the error isn't happening any more. I'll keep on using it for a couple of 
+    514-55422604-2969 It seems like a quite inconsistent issue between versions and windows users... Don't know if it is
+    104-55422862-2969 @ab34 That could be what is causing it for sure, is there a reason you have multiple versions install
+    225-55423333-2969 @kevinsawicki Well that is how chocolatey installed the versions, they have each their own folder an
+    245-55524498-2969 Just tried 0.127, atom.exe 0.16.2.0, on Win 7 x64. I don't get the error message shown in the first s
+    428-56455166-2969 NEWS! I tried 0.129.1, atom.exe 0.16.2 on Win7 x64. I still don't get the error message, and the edit
+    158-56460270-2969 @yunga Thanks for the details @zcbenz Any thoughts on this one? It seem somewhat similar to https:
+     59-56659895-2969 Yeah it looks very similar, I'll see if I can reproduce it.
+    188-67618363-2969 Damn... just got this too. Just before Atom crashed I noticed it gave some errors fetching package a
+     87-53619738-2967 Sorry for the delay in responding to this, are you still having troubles building Atom?
+    204-57538141-2967 Hi, I'm not a linux expert, but would love to try this. I run "linux Mint 16" (32 bit). Can someone
+x     49-49283119-2964 :+1: would be really nice to have this one fixed!
+     56-49301667-2964 cc @zcbenz in case he has any :thought_balloon: on this.
+    102-49911461-2963 Can you run `apm -v` and include the output here? And please make sure you upgrade to `0.117.0` first
+    145-50310650-2963 PS C:\Users\grmsevf8> apm -v apm 0.83.0 npm 1.4.4 node 0.10.26 python 2.7.8 git 1.9.4.msysgit.
+b    251-59071610-2963 Has any progress been made since? I still run into this issue as of versione 0.136.0 apm -v says thi
+     46-59140668-2963 @frabert Are you seeing the same exact output?
+    591-59151191-2963 I see following output on a fresh install of atom with choclatey after trying to install api-blueprin
+    219-59159934-2963 I have to say I have problems installing any kind of package which contains native snippets. And yes,
+    238-59402383-2963 UPDATE: Installing git-plus seems to be working as of 0.137.0 EDIT: All other packages work for me

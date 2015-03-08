@@ -1,0 +1,209 @@
+
+# page: 25, date: 2014-07-14, count: 30, rateLimit: 4317 of 5000
+
+     57-53619785-2959 What errors are you seeing? Can you copy the output here?
+    137-53023976-2957 This would be amazing. I posted a bug here that seemed to be related: https://discuss.atom.io/t/atom-
+    190-58082647-2957 I ran into this issue today. I had a massive text file that Atom would always try to load whenever I
+    544-58083225-2957 When you cleared storage did you lose anything particularly useful? I was afraid to do that when I 
+    178-58084861-2957 @mark-hahn I haven't found any problems yet. Packages and preferences are stored completely differen
+    415-58227726-2957 @mark-hahn, to my understanding the storage directory is what stores the serialization info. So while
+    109-58227848-2957 Another Discuss reference: https://discuss.atom.io/t/how-to-delete-session-storage-tabs-package-di
+     90-60330535-2957 Another Discuss reference: https://discuss.atom.io/t/how-to-get-rid-of-welcome-md/12838
+     94-48924971-2956 It has already been done unofficially: https://launchpad.net/~webupd8team/+archive/ubuntu/atom
+     44-48968464-2956 This is definitely something we'll consider.
+     93-48971863-2956 This repo lacks of maintained, Out of date. So if there be an official PPA, it's good to us.
+    232-49051850-2956 @netroby The PPA @AnotherJoSmith linked to is up to date with the official Atom releases, so I'm not 
+     74-50636878-2956 @wldcordeiro Unfortunately it has not been updated in the last two weeks..
+    778-50889630-2956 A PPA is an Ubuntu specific solution and great for packages, that have dependencies on other version 
+    187-50891980-2956 I highly support Google's way and am kind of suprised practically no other app for linux project doe
+    181-50901101-2956 @jehrhardt I like that approach. I think targeting Debian based distros first would be best since the
+     88-50922098-2956 @wldcordeiro +1 Is there anything concrete, that I could do to make this happen soon?
+     96-50924634-2956 I went ahead and created an account on Launchpad for `atomeditor` so we have a place to do this.
+    376-57840256-2956 Having a proper Chrome-like updater on Linux would be awesome, but at the very least having a PPA and
+    418-58744363-2956 @hendricha Dropbox uses the same approach as Google Chrome and Mendeley does as well. It defeats the 
+     16-58746778-2956 @robertknight 👍
+    233-60399814-2956 Hello everybody, since I needed this where I work as well as at home, I created a deb repository. Th
+    114-60413468-2956 @alanfranz That's great, but @AnotherJoSmith pointed out another repo that's around. Maybe you should
+    299-60415240-2956 @wldcordeiro no, that's not the same. That's a rebuild, and such rebuild is got some documented issue
+    535-63553441-2956 Is there any update on this? Currently I use the `.deb` files to install on Ubuntu 14.10 which wor
+     60-63612924-2956 @jelmerdemaat https://atom.io/download/deb is what you want.
+    163-63615118-2956 @jelmerdemaat I know it's "unofficial" but since I needed it I put up a repository on http://debrepos
+    265-63625499-2956 @thedaniel Thanks! Didn't notice this link on the website as I primarily use GitHub. @alanfranz Thank
+    264-63722316-2956 @jelmerdemaat of course. I have added on debrepos.franzoni.eu the small script that I use to downloa
+    128-63802573-2956 Here is a small update script I'm using until the official ppa is running: https://gist.github.com/pi
+x     87-64811229-2956 +1 ppa:webupd8team/atom works fine though it would be nice to have something official
+x     97-65358653-2956 I'd love for a PPA as well. If you guys need any help implementing this feel free to contact me. 
+x    232-68187968-2956 +1 Although of course it would be even better to be in the official repo for future releases of the 
+x      2-74789945-2956 +1
+     68-74790994-2956 IIRC this is blocked until Atom can be built without network access.
+     77-74791653-2956 How does the Webupd8 PPA do it? Perhaps their method could be used for this?
+    165-74899218-2956 They zip up builds of atom and extract it into the deb. It isn't a great solution. Ideally we would h
+    332-48879097-2953 That's strange -- I'm able to select it and perform the actions you listed. Here's a GIF (I'm first s
+    274-48924908-2953 @izuzak I tried this last night. Here are my repro steps: 1. Fold code 1. Use mouse to attempt to
+    177-48925843-2953 More detailed instructions appreciated, I still can't reproduce: ![fold1](https://cloud.githubuser
+     98-48940156-2953 Unless I'm mistaken, I believe @spascalb meant to actually click on the folded code (aka line 16).
+    206-48940686-2953 @50Wliu Oh man, I totally missed that part in the original report. Thanks for :point_right: that out!
+    408-48984714-2953 Actually, they don't always unfold when you click on them. Here's the behavior I was talking about ea
+    407-49022785-2953 @lee-dohm Ah, thanks for clarifying. :bow: Are you perhaps using the react editor component? I'm unab
+    317-49043850-2953 The old editor unfolds when the folded lines are clicked, but the react editor unfolds on double clic
+    448-49054533-2953 @izuzak Yes, I'm using the React editor. I'm trying to help you guys get it ready for prime time :gri
+     81-48741074-2930 Should this be on the [Text Buffer package](https://github.com/atom/text-buffer)?
+    114-48749399-2930 @lee-dohm I don't know. However it appears when I develop a Atom [package](https://github.com/ibigbug
+    143-48760933-2930 My assumption is this: * You call `setText()` * The file changes outside of atom * The content 
+     85-48799329-2930 yeah. * I call `setText()` * __No one touch the file__ * The content is replaced
+     80-48761395-2928 @zcbenz Should these keybindings be usable in the dialogs that Atom shell opens?
+   1167-49129595-2928 I have done some digging, however can't get much further (don't have C++ experience). From what I 
+    194-51908378-2928 Just for completeness: the same would be nice for this dialogue as well. ![move-to-trash](https://
+    296-52132134-2928 I have checked and version 121 on Windows now listens for ESC for Don't Save (*See Edit). I couldn't
+    233-52167735-2928 I think, the "ESC is no Decision" is the right way to go. That's what i would have expected, and it's
+    223-52167927-2928 OMG i just noticed that keyboard navigation (left/right) is also working! THANKS! There's one more
+    316-52272834-2928 Chromium had removed the feature of showing mnemonic in buttons (https://chromiumcodereview.appspot.c
+    106-58846952-2928 Just noticed this on Ubuntu, no mnemonic, but the right/left keys work. Came to file this, and found 
+    110-58847698-2928 I wonder if it is possible to use a different type of dialog/window inside Atom to provide this funct
+    372-48514211-2887 i.e node = if process.platform is 'darwin' # Use a helper to prevent an icon
+    189-48547263-2887 I'm seeing this as well. It seems that Atom is supposed to expose node on Windows to run these child 
+    104-48547745-2887 @zcbenz Is there currently a way to run `atom.exe` as node on Windows the same way it is handled on M
+    123-48549000-2887 @zcbenz More to the point, is `ATOM_SHELL_INTERNAL_RUN_AS_NODE` currently supported on Windows and co
+    366-48549988-2887 Scratch that. Setting the `ATOM_SHELL_INTERNAL_RUN_AS_NODE` env variable and then running the Atom pr
+    989-48551391-2887 Alright, so some more digging. It seems that a call to `console.log` causes the Atom / Node proces
+    128-48556308-2887 `ATOM_SHELL_INTERNAL_RUN_AS_NODE` is supported on Windows, but it seems that `process.stdout` doesn't
+     60-68460132-2887 process.stdout not work for me too, Windows 8.1, atom 0.165 
+    727-72356620-2887 @zcbenz, I'm trying to execute a `BufferedNodeProcess` on windows, and it doesn't seem to work at al
+    324-72357023-2887 @zcbenz, http://strongloop.com/strongblog/whats-new-node-js-v0-12-multiple-context-execution/, out of
+    407-72387971-2887 > Even a simple script that doesn't use stdout doesn't work. I believe `console.log` is still stdo
+    167-72388781-2887 @basarat, I also tried the same code without the console.log(), it fails there as well. I also tried
+    101-72389136-2887 @park9140 I think any form of non-error output even `atom.exe -v` would still go to `process.stdout` 
+    219-72391078-2887 @basarat, true however a long running script with continuos timeouts keeping it open would not have o
+    621-72966536-2887 I definitely get this error on `spawn` but I don't get this manually running it so something weirder 
+    376-73305582-2887 I had the same issue with this, doing something like the following fixes it. ``` child_process.fo
+    498-75683436-2887 What is weird is that I get `C:\Users\basaratsyed\AppData\Local\atom\app-0.177.0>hello world ` inste
+     84-75683634-2887 @csnover can you try similar commands for a mac. Does it hang after `atom test.js`? 
+    258-75684566-2887 Here is a bit more context. Using *atom as a node REPL* behaves weird compared to the standard node R
+    418-75691370-2887 ``` $ ATOM_SHELL_INTERNAL_RUN_AS_NODE=1 /Application/Atom.app/Contents/Frameworks/Atom\ Helper.app/C
+    183-75699024-2887 @zcbenz why is conversion done to utf8 *only on windows*: https://github.com/atom/atom-shell/blob/mas
+    135-48513951-2886 In addition, some people prefer a block cursor and the current system of drawing cursors suffers from
+b     21-55886372-2886 any progress on this?
+    383-48531672-2880 @i-tu I would have made an issue on [Hasklig](https://github.com/i-tu/Hasklig) about changing the REA
+    161-48533338-2880 He shouldnt change the readme. The react editor will the default soon, and the old editor will go awa
+     65-48621735-2880 Yeah, ligature support was why I switched from Sublime to Atom :(
+    238-48635669-2880 For now, you can try unchecking the 'use hardware acceleration' in the settings under editor: ![sc
+     24-48637422-2880 oooh, that works I think
+    108-58872330-2880 I seem to be experiencing this on 0.136.0 (OSX) disabling hardware acceleration appears to have no ef
+    128-48498558-2879 This might need to be fixed in chocolatey unless we can find a workaround https://github.com/choco
+    139-48498644-2879 @kevinsawicki this is a bug with shimgen (chocolatey) and will have a pretty quick turnaround. New fu
+     95-48498905-2879 @ferventcoder thanks for the update, just wondering, where is the shimgen source code located? 
+    172-48499491-2879 Shimgen is closed source with a proprietary license. It's a free as in beer type of tool. https://git
+    219-48693098-2879 @themaninthesuitcase can you install the prerelease of chocolatey that should have fixes for this in 
+    368-48703199-2879 @ferventcoder That seems to have fixed this issue and I now get the file I am expecting. If I just
+    431-48707383-2879 @themaninthesuitcase Nope, standard behavior is to open a new window with an empty file (and no tree 
+    145-48708720-2879 In that case I'm happy. Close now or wait for the fix to hit the non pre release? (also how do I s
+    101-48724221-2879 To switch to a particular version of choco: ```sh choco install chocolatey -version 0.9.8.25 ```
+     72-48745422-2879 @themaninthesuitcase `atom` and `atom .` should behave exactly the same.
+    194-48752943-2879 One thing added to the shims - if you pass --shimgen-log you can see the arguments passed to the targ
+    157-48823927-2879 Just tested on my mac and @kevinsawicki is correct ```atom``` and ```atom .``` should do the same thi
+    859-48872976-2879 Ran ```cup``` and ```cup atom``` this morning both provided updates to newer versions. ```atom``` 
+    636-49903227-2879 I can confirm this is fixed on chocolatey 0.9.8.27, thanks so much @ferventcoder :+1: The remaini
+   1093-49962010-2879 Check the working directory passed? On Wednesday, July 23, 2014, Kevin Sawicki <notifications@gith
+    230-49962784-2879 @ferventcoder The working directory when launching from the start menu is `C:\Window\system32`, was h
+x      2-50037070-2879 :/
+    164-50044934-2879 The system32 folder has an environmental path you could consult against the working directory. ht
+    221-52284433-2879 Just updating that this is still an issue in 122. If some one could give me a pointer to where the
+    357-52290970-2879 It works for me on Win7, v122: ![image](https://cloud.githubusercontent.com/assets/7287076/3931955/e
+    148-52294033-2879 Seems like a different issue. The one I am highlighting is ```atom``` and ```atom .``` should be hav
+     62-70554737-2879 Is this still an issue for anyone on the latest atom version??
+     70-71085043-2879 Can't reproduce this on v174, Win8. Then again, I never could before.
+x      2-61795836-2871 +1
+x     24-64503304-2871 :+1: please fix this :(
+    457-48432174-2870 This doesn't fix the issue you're asking about, but you can close the pane. If you have the Ask Stack
+    551-48432457-2870 I know I can close the pane using `cmd+w` but I'd rather have more control on the pane. I never teste
+    215-48452252-2870 > I'd rather have more control on the pane @Chris911 Can you clarify what this means exactly, i.e.
+    395-48512045-2870 Something similar to `registerOpener` but for split would be nice. Using something like this I could 
+    345-48512978-2870 Thanks @Chris911! I was more interested in your needs and goals, rather than the potential implementa
+    671-48513834-2870 The only use case I see right now is for packages that have "special" panes were the HTML is all cust
+    326-48514478-2870 The Tree View doesn't suffer the issue that the Markdown Preview pane does. Perhaps if you added the 
+     55-48382351-2864 Do any errors show in the dev tools (`ctrl-alt-I`)? 
+    128-48382856-2864 when i then do ctrl-alt-I, nothing shows up in the console as an error. I then try re-opening the sam
+     51-48382967-2864 Can you include a screenshot of the messed up tabs?
+    234-48383582-2864 sure. i blanked out some of the names of files and stuff though. but you can see the repeating patter
+    197-48416897-2864 Is this a MAX_PATH problem where Atom doesn't use the special 32k-capable file handling API methods? 
+     70-48788573-2864 Huuuge tab fixed in atom/tabs@4d4e6304b07779644a1198f4b1840d61eaabce42
+    112-48399854-2860 @pbhogan Sorry for the trouble! Can you clarify which version of Atom you're on currently? cc @pro
+    527-48400530-2860 I'm on 0.110.0 I did some experimenting and found that it works if placed in ~/Applications instea
+    208-48410372-2860 It looks like squirrel (the updater we use) [fixed this](https://github.com/Squirrel/Squirrel.Mac/pul
+     64-48726952-2860 Which version of Squirrel.Mac are we bundling in Atom currently?
+    235-48752415-2860 We build and store the external frameworks on https://github.com/atom/atom-shell-frameworks/releases,
+     57-49732274-2860 Do we have the sha that was built for the Apr 28 release?
+    291-49761343-2860 @keithduncan, I'm not sure of the exact sha, but it is most likely https://github.com/Squirrel/Squirr
+    202-51310852-2860 Sorry I took so long to get to this, I’ve confirmed there is an issue when updating an app when runni
+    229-59449298-2860 I'm also having this problem and I think it occasionally trashes launchd because my computer won't bo
+    437-59515652-2860 > I think it occasionally trashes launchd because my computer won't boot up and I have to trash /var/
+   8710-59517219-2860 Okay, well it's pretty odd. Basically, what happens is I try to reboot and my system just gets stu
+    234-59546801-2860 @ioquatix thanks for the detailed write up, I’m particularly interested in the contents of the `/var/
+   1249-60171715-2860 With the latest update, the same thing appears to have happened again. I haven't rebooted my computer
+    121-60172541-2860 Okay, so didn't have any problems this time (running 10.10 now which is different). But, also Atom ha
+    136-60191315-2860 @ioquatix Silly question, but just to cover all bases: are /Applications/User/Atom.app and /Applicati
+    200-60196143-2860 I don't think that's a silly question at all. The applications directory by default is not world w
+    673-60218981-2860 Same Problem here. /Applications/User/Atom.app and /Applications/User are not writable by my account.
+    424-60284456-2860 > /Applications/User/Atom.app and /Applications/User are not writable by my account. Why should they?
+   4376-66718139-2860 I am having this same issue on 10.10.1. I have to manually update. My daily user account is a non-pri
+   1086-72142306-2860 Still having this problem: 30/01/15 2:13:42.514 pm Atom[5958]: Download completed to: file:///User
+    115-48401991-2854 This is actually pretty bad in both editors, so I'm removing the `react-editor-bug` label and adding 
+     92-48402216-2854 We seem to be spending a lot of time scanning to expand the selection over the nearest word.
+    207-48152976-2839 Select `File > New Window`: ![screen shot 2014-07-07 at 1 34 27 am](https://cloud.githubuserconten
+    186-48154197-2839 No. You don't understand me . i mean i want to add different panel on screen so when i click the atom
+    345-48154748-2839 @mervekaya I'm sorry, I still don't understand what you'd like. Could you clarify for what you'd like
+    431-48157010-2839 sorry my mistake. I have two choice.Either i embed Atom in my project or i add palette section like e
+    306-51711631-2839 I still don't get it. Are we talking about another sidebar, similar to the tree view, which you can
+     87-51716959-2839 in short i want to add button on editor.if user click button , source folder will open.
+    233-48087822-2833 Thanks for the report! Can you clarify which version of Atom you're using, which theme, and if you se
+    465-48087985-2833 I'm on version 0.107 here: ![image](https://cloud.githubusercontent.com/assets/7287076/3486803/f2def
+    186-48088455-2833 Thanks, I was thinking it might be related to this issue https://github.com/atom/tabs/issues/62, but 
+     67-48090463-2833 Do all tabs have blurry titles like this or just the selected tab? 
+   1003-48091591-2833 Alright, update: I just found, after starting up the laptop again, putting the scaling setting back 
+    103-48212569-2833 @zcbenz what's the capability of atom-shell on high DPI displays? Can we do this? Is it on the roadma
+    360-48259240-2833 High DPI support for Windows is on the road map, see https://github.com/atom/atom-shell/issues/161, 
+    130-49868936-2833 Since https://github.com/atom/atom-shell/issues/161 was merged and made its way into Atom, I'm guessi
+     51-49889746-2833 @izuzak master isn't on atom-shell 0.14 yet, #3032 
+     59-49890087-2833 Ooops :see_no_evil: Thanks for setting me straight, Kevin. 
+    376-49968671-2833 Actually, just saw this is a dupe of #2219. That ticket was closed in favor of the Windows to-do lis
+    539-51712444-2833 Ok, so since Chromium had high DPI support brought in, and atom-shell now makes use of it, I find the
+    114-51816231-2833 That font-size option is only for the editor view. There is no ui font-size option, it's controlled b
+     98-51817772-2833 So does that mean it's the themes that should compensate for this over-scaling that Chromium does?
+    237-51818727-2833 Not sure yet. I havent dug into this at all. If this compensation is something websites will have to 
+    320-51820067-2833 Yea I figured we'll have to wait for this to be fixed on Chrome. It's not a huge issue, mind you. Pu
+    100-52163280-2833 I have this issue, not sure if it's related: https://discuss.atom.io/t/blurry-text-on-windows/11501
+    102-55110971-2833 I am also affected by blurry text in the text-editor view (the rest is just fine) version : 0.125.
+    193-55674975-2833 I am getting a blurry screen as well on Windows 7. Version: 0.127.0 ![atom-windows7-blur](https://cl
+     54-61176137-2833 Is this issue still present in the Atom 0.141 release?
+     71-63674153-2833 @kevinsawicki I'm currently on Atom 0.147.0 and it's still present.
+    239-63688589-2833 Depending on how you have your DPI settings set, many applications are going to have blurred text - y
+    313-67209934-2833 This still happens with the latest windows version. It happens randomly, not always, so it's not an i
+    682-67346286-2833 Here's how to always reproduce this bug: * Have a laptop with Hi DPI screen, Windows 8.1, default 
+    253-67349229-2833 @DiThi This is by-design. Unless your app is specifically Windows 8.1 DPI aware, your apps are going 
+    227-67351162-2833 @paulcbetts Take a better look: some things are sharp and some are not, in the screen where *everythi
+    250-68285675-2833 I just noticed my screenshots don't show the issue because it's scaled for some reason. In any case I
+    220-70420703-2833 I fixed blurry fonts problem by adding /force-device-scale-factor=1 to app shortcut. UI is now very 
+    161-70958570-2833 @darklow That creates a new file with name `/force-device-scale-factor=1` to me. I have `atom.exe` in
+    107-70979135-2833 @DiThi yes, it opens new tab for me too, but at least it fixes blurring. I haven't found any other wa
+     54-48198879-2825 same here @maschs your solution worked thank you :+1: 
+x      4-48782304-2822 :+1:
+x      2-60781634-2822 +1
+x      4-60996555-2822 :+1:
+x     10-63279407-2822  :+1: 
+x      4-63846890-2822 :+1:
+x      6-66774331-2822 :+1: 
+x      5-66939576-2822 :+1: 
+x      4-70739208-2822 :+1:
+x      4-72554704-2822 :+1:
+x      4-72939793-2822 :+1:
+x      5-73565856-2822 :+1: 
+     75-73896990-2822  ![](https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png) 
+x      5-74256800-2822 :+1: 
+x      5-76690392-2822 :+1: 
+x      7-77379956-2822 Please.
+    203-50216372-2802 I would love to see this implemented. I have made [a feature request for this](https://discuss.atom.i
+    421-47820362-2798 I started to work on a package that is supposed to just add the git directory to the path in the same
+     60-48022768-2777 I approve of the most efficient nature of this error report.
+     95-49200146-2777 I would like to try fixing this. Should I look at this repository or `atom/language-c` package?
+     73-61547995-2777 this is still a problem for me, not sure if it has been addressed or not.
+    234-63971967-2777 I also have this bug in my atom. If someone got the time, please fix this bug. Can someone tell me w

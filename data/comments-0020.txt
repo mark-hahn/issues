@@ -1,0 +1,195 @@
+
+# page: 20, date: 2014-09-28, count: 30, rateLimit: 4472 of 5000
+
+   1335-57088719-3650 Can you make a PR with a test? On Sunday, September 28, 2014, Timo Sand <notifications@github.com>
+    417-57290184-3646 I think I may have figured out what happened, I just tried to paste some text when the current docume
+    348-56903220-3636 You can boost the font size by editing your `~/.atom/styles.less` file. Adding the following might be
+    226-57021957-3636 Thank you for the workaround, @kevinsawicki, that helped me :) I created that file and it increased 
+    167-60300993-3636 @jcarmena Is this still an issue for you on Atom 0.139? Chrome 38 was recently upgraded to and I b
+    334-60341651-3636 I see some differences in 139, but not sure these are improvements :) . Menu became unpinned from top
+    141-60350233-3636 @puzrin This is Chromium's bug on HiDPI support on Linux, and you can track it at https://code.google
+    159-60935921-3636 Hello @kevinsawicki with Atom 0.140 the font size is too small too, but with some ~/.atom/styles.less
+    137-61391796-3636 Workaround https://github.com/atom/atom/issues/3636#issuecomment-56903220 was effective, except for s
+     44-61396999-3636 Related workaround for scrollbar size: #4033
+    354-61398152-3636 For status bar: ```css .panel-bottom { font-size: 18px; height: 28px; } ``` Settings: ```
+    435-62817593-3636 Chromium works on my Ubuntu (or worked, in facts, but the only problem is too big fonts in menu since
+    242-75157082-3636 This seems to get everything I care about for now: ```less html, body, .tree-view, .status-bar
+    856-75684574-3636 "ackalker" in [this discuss](https://discuss.atom.io/t/how-to-set-the-font-for-the-settings-ui-and-th
+    317-75686027-3636 > Works fine for me to just "scale up" the whole UI. I think it's the same as zooming in a browser. N
+    100-75691582-3636 ```coffee require('web-frame').setZoomFactor(1.25) ``` This is perfect for me. Thanks @simurai.
+   1007-69472930-3634 This error ``` error MSB8008: Specified platform toolset (v120) is not in stalled or invalid. P
+    246-56842529-3629 Could this be related to https://github.com/atom/tree-view/issues/201 and try this theme: https://at
+    202-56844749-3629 Yeah it does seem related, in the sense that it's really very hard to click the bar to drag. Using t
+    151-56846967-3628 There could definitely be leaks, can you reproduce the issue with a low number such as `8192` when st
+    483-56851083-3628 I've rebooted since (thanks Shellshock) and Atom now starts with `8192`, with and without `--safe`. 
+    217-56790348-3627 Upgraded from version 0.125.0 to 0.131.0, the same issue remains. Trying to open a file that has a gi
+    158-56790570-3627 @matthewpennell Does starting Atom in [safe mode](https://github.com/atom/atom/blob/master/docs/debug
+     29-56790732-3627 Also, which OS are you using?
+    245-56791294-3627 Mac OSX 10.9.4. Starting with atom --safe enables me to open the files successfully. Oddly, starti
+    405-56791839-3627 Thanks for that information, @matthewpennell. Just to make sure I understand what you're doing, wo
+    278-56791898-3627 I tried uninstalling each package and restarting, but it made no difference. Now have no packages ins
+    444-56792392-3627 Steps to reproduce: * Open Atom. * File > Open > navigate to folder within a git repo hosted loca
+     73-56792706-3627 Crash report: https://gist.github.com/matthewpennell/260f5f21c1109aab78d2
+    228-56793197-3627 Note that I've been happily using Atom for several months with no issues working with git repos. This
+    501-56794354-3627 Thanks for those details. I'm still unable to reproduce the issue, even after following the steps you
+    187-56795102-3627 * Moved the ~/.atom folder somewhere else. * Restarted Atom (get the default "Welcome to Atom!" mess
+x     22-56796903-3627 Thanks for confirming.
+    199-56840786-3627 > Crash report: https://gist.github.com/matthewpennell/260f5f21c1109aab78d2 This appears to be a l
+    153-56841337-3627 @matthewpennell Can you share the modified file by any chance? Both the raw contents and the diffs be
+    153-56947538-3627 @kevinsawicki Sorry, afraid not. I can tell you it was mostly simple HTML or HTML-like tags. The diff
+    614-64954253-3627 I have this same issue. Thought it was the new 'omnisharp' package I installed but still occurred af
+    320-64957447-3627 @mike-marshall Just for future reference, Atom has a "Safe Mode" where it will only load the default-
+    904-64957696-3627 I just attempted to reproduce this error. ## Versions * **Atom:** 0.153.0-b28a1aa * **At
+    407-64970772-3627 Well I was getting a crash literally every time I loaded that file. Now after following your steps t
+    294-65261572-3627 I can confirm this, too. Crash LOG: https://gist.github.com/ClemensSahs/ccfa4497549a343defbc Test
+    331-65722946-3627 From My home mac I can confirm this, too. SafeMode, disable packages and all enabled. Each of them cr
+   1262-65845894-3627 Sorry for write more and more, but I think I have found a possible reason. For the moment Atom crash 
+    149-65851269-3627 From the [crash report](https://gist.github.com/ClemensSahs/ccfa4497549a343defbc) the crash encounter
+    269-65855468-3627 Yes, as I said earlier I am almost positive this is related to the following issue which references a
+   1026-69472680-3627 I am getting this issue as well. Steps: - `$ atom --safe` - new file | rename file std outputs
+    156-73785423-3627 @daithi-coombes is the repository you are seeing this issue in public? If so, can you share a link an
+    339-57165637-3623 could you elaborate, please? I am using the windows version, and i don't really know what you mean. A
+    122-57168910-3623 Yes, I mean that the command menu items are not very sharp compared to the tabs title text. Will try 
+    240-56758364-3622 Would it be possible for you to record a GIF of this happening? I'm having trouble reproducing thi
+     87-56759328-3622 Honestly I'm not sure how to record a GIF. I'm using XFCE4 if that makes a difference.
+    139-56760573-3622 Never mind, got it. ![atom_bug](https://cloud.githubusercontent.com/assets/5640055/4398052/576f2
+x     47-56846621-3622 Okay, thanks for the gif, will try with Xubuntu
+     41-57067378-3622 @kevinsawicki were you able to reproduce?
+     68-60003211-3622 I have the same issue on Debian using Mate Desktop (a Gnome 2 fork).
+    149-60003502-3622 Sorry, haven't gotten a Xubuntu VM setup yet. Atom did recently upgrade to from Chrome 37 to 38, a
+     65-60003707-3622 Yes, I keep it updated and can confirm that the issue persist :-(
+    384-60016960-3622 Ok, I'm at home now and this issue doesn't happen here. Is also a Debian installation but the differe
+     94-60017304-3622 > Here, I use sid+experimental and Atom works fine What do you mean by `sid+experiemental`?
+    459-60022687-3622 I mean that the installation is mostly sid (up-to-date) with some few packages from experimental, bu
+    101-63688723-3622 You might want to check the issue I just closed (#4237) which has a video and it was tested with .147
+     62-63689006-3622 This also sounds a lot like #3025 and #2122, but I'm not sure.
+     79-64099166-3622 v0.148.0 here on XFCE 4.11 Gentoo. Issue persists. Could it be related to XFCE?
+    837-64104939-3622 Not really. I'm using Mate Desktop with 0.150 and the issue persist too. The strange thing is that i
+     87-64107586-3622 ATI X open source drivers here. Previous desktop (Gnome 3.14) didn't have this problem.
+    679-64475006-3622 Ok, what I discovered today (can't remember if is already reported) is that, at least in my case, th
+    356-64810359-3622 Fedora 20 with XFCE 4.10 has the exact same problem. Atom version v153. Tried these settings recomm
+     60-64924759-3622 same problem Atom 0.153.0.de619a7 (git) Linux, Fedora, KDE
+     56-66580096-3622 same problem Atom 0.156.0 OSX Yosemite, English locale
+   1806-68203388-3622 Same problem ubuntu 14.10, with the latest atom 0.161.0. (happened with older versions too, I starte
+    379-68615044-3622 @klaszlo @kevinsawicki on xubuntu 12.04 I can reproduce it with alt + tab. To reproduce: 1. Use alt
+    330-69437037-3622 same Problem. Atom 0.169.0, Arch Linux + awesomewm Any Function that changes the focused window wil
+     73-72077821-3622 Reproduced with Atom `0.174.0` on Arch Linux using gnome-shell `3.14.3-2`
+    756-73421592-3622 I'm having the same issue (Atom `0.174.0` on Arch Linux with i3 WM `4.8`): When Atom loses focus (I 
+     99-73445726-3622 Nice workaround @artiifix. At least we've got a stop-gap until the underlying problem is addressed.
+     49-74489753-3622 Related: https://github.com/atom/atom/issues/5318
+    444-75369143-3622 @artiifix's workaround works great for the regular cursor, but this issue also causes vim-mode's comm
+     90-76391574-3622 :+1: Have this on arch with i3wm as well. Thanks @chrippa for the vim-mode workaround. 
+    334-56567952-3607 @itzurabhi Could you please share the exact steps which reproduce this? I just tried copy/pasting the
+    402-56570962-3607 The file contained text from Chinese I suppose... I opened the project directory in atom.I hit save o
+    696-56309723-3594 Atom already does that, as far as I know. What you're describing is not default behavior. When I cha
+    266-56594476-3594 I just had a similar situation. I had a todo.txt file open on my desktop which I'm syncing via dropbo
+    672-58701176-3594 @batjko The issue actually occurs when the file is already open during the external change, not when 
+    216-72044126-3594 I found that Atom does track this, so I wrote a small package that shows a confirm prompt when the fi
+     73-72044691-3594 yes. NOW, atom can track this :D as this ticket was created, atom couldnt
+    202-72058154-3594 Ah, I only found this a few days ago. However, it still does not show a prompt, just fires the event 
+     49-72074959-3594 I updated the title to reflect the actual issue. 
+     89-56288091-3593 Just for information, on Atom v0.130.0-5cc62b2 and OS X v10.9.5, this does not reproduce.
+     65-56309402-3593 Can't reproduce this on v130 on Elementary OS either, I'm afraid.
+     69-56309800-3593 I suspect it's related to running Ubuntu's Unity desktop environment.
+     57-56741119-3593 Just tested against v0.130 on Ubuntu and it still occurs.
+   2154-57899546-3593 Same behaviour here. Also reproducible every time. **Environment:** * Ubuntu 12.04 * Unity deskt
+   3542-57928828-3593 Full stack trace: ``` #0 0x00007fffeff650e0 in _XError () from /usr/lib/x86_64-linux-gnu/libX11.
+    135-67493329-3593 I'm currently running `GNOME Shell 3.10.4` on Ubuntu without unity installed and can confirm that thi
+    268-69153493-3593 Atom version 0.158.0 OS: Ubuntu 14.10 Desktop: XFCE 4.10 100% reproducible. Definitely not Unity
+    794-73409407-3593 Atom: 0.1770 OS: Arch Linux Desktop: GNOME Shell 3.14.3 Same thing, every time. Note that reprod
+    133-75924630-3593 Atom version 0.181.0 OS: Ubuntu 14.10 Desktop: KDE 4.14.1 Same behaviour with KDE. (crash when 
+    160-56084372-3579 @nathansobo Does anything about this stand out to you? Could there be a moment in time where the curs
+    510-56087888-3579 @kevinsawicki This seems like it could be related to #2882, which is a position translation issue whe
+     67-56088093-3579 Yeah, all the stack traces seem to be stemming from an undo or redo
+    466-56125722-3578 You might be able to add this already by updating the `foldEndPattern` in the [language-java package]
+    463-56596926-3578 It seems this isn't possible, because the folding in Atom is based on indent rather than tag structur
+    323-57108278-3578 It would definitely be useful if Atom could fold non-indented Text. For example in Markdown: ``` 
+    141-55991250-3572 This sounds like a great idea for a package, and following the Atom approach, this would be a package
+    443-55997669-3572 I haven't tried it, but [this package](https://atom.io/packages/sync-settings) seems to aim at this, 
+    105-57392356-3572 @kevinsawicki are you guys willing to accept a PR to create a core package that does something like t
+    515-72059747-3572 I think it'd be interesting if there was a websocket connection between Atom and atom.io on sign in. 
+    763-72081182-3572 :+1: I want this, but IMO if we are going to support it as an official package, it will require inte
+    246-72085661-3572 Agreed. One other thing Atom will need before that gets implemented is an official Auth package. Sett
+    116-72086032-3572 Pretty sure there's already keychain support, and the apm client definitely stores tokens securely on
+    105-72091368-3572 I'll have to look into that. It'd just be nice if there was built in support for doing that with GitH
+    172-73219314-3572 :+1: this would be the killer feature for me ... I'm so bored of managing .vimrc in dotfiles reposito
+     43-55908022-3563 I assume you got really angry at your code?
+    110-56032154-3563 Lol no. I saw a little lag while inserting new line so tested. It dosent happen on Ace editor or cod
+    215-56046949-3563 I think large buffers still pose some problem, and 1000 lines may start to hit some ceilings, althoug
+    131-56052666-3563 @batjko 1000 empty lines shouldn't be a big deal, that would be less than 1K (2K on Windows because o
+    281-56055971-3563 I know it won't make the file big enough to matter, but I wonder if the number of lines has an impact
+    289-56225856-3563 I tried with all the window splits being closed , and theres no problem. But when i open 4 editor sp
+    239-56226417-3563 @v3ss0n Could you profile it? Open the dev tools, click the profiles tabs, select Collect JavaScri
+     13-56226472-3563 Ok i will see
+    102-56226513-3563 @v3ss0n I updated my previous comment, I hit the comment button before finishing all the steps, sorry
+    255-56229515-3563 https://gist.github.com/v3ss0n/821db315a149eb878954 I tested with 129 build , which i updated yest
+    400-56239359-3563 @kevinsawicki Tested on latest master commit , same performance with 129 , no crashing , tested up 
+b     21-56417355-3563 Anything new on this?
+    433-57355419-3563 Accidentally closed , CPU still hits > 100% as of latest commit , 443df292366f56985d31365412c35197d68
+    299-55884529-3560 For reference, this has also been [discussed](https://discuss.atom.io/t/change-location-of-atom-direc
+    235-55817848-3553 Wont this noise up the command palette? I dont think we should do this. The command palette seems lik
+    402-55818354-3553 > The command palette seems like a good place for things that might be toggled / used on a daily basi
+    382-55851878-3553 Are there any performance concerns around adding more items to the command palette? People love that
+    424-55977650-3553 There's a package that implemented this already: https://github.com/Zren/atom-package-manager-command
+    104-55988923-3553 Personally, I think having enable/disable package commands in the Command Palette would be a good thi
+     64-55679025-3547 This is easily reproducible with atom-light-syntax in comments. 
+    174-55685716-3547 it the cursor is going over it from left to right using the arrow keys, this happens. going from righ
+     76-55698866-3547 Is this something that should be reported to the syntax theme creator maybe?
+     84-55777600-3547 No, this is a rendering issue. Likely a chrome issue that we'll need to work around.
+     93-55614743-3542 Currently single click opens but does not focus it, but double clicking opens and focuses it.
+     99-55615062-3542 so this is not a bug, its a feature?^^ i have never double clicked on a file in an editor before^^
+    125-55615530-3542 in other words... why do you need the focus on the folder view? isnt it senseless? you always need th
+     75-55617032-3542 Arguably, you might want to open several files before focusing one of them.
+     84-55618483-3542 yeah but what is more likely? to open a file among others or to open a file to edit?
+    190-55618917-3542 well... now i know that i have to double click. but maybe this issue will come up more than once? sta
+    225-55620456-3542 Well, there was [one issue](https://github.com/atom/tree-view/issues/140) raised on the tree-view rep
+    113-55622082-3542 I'm definitely up for revisiting this, perhaps I closed https://github.com/atom/tree-view/issues/140 
+    260-56360386-3542 +1 here. I submit that the sheer amount of use cases that require immediate editor focus far outweigh
+    827-57109950-3542 +1 I found that behavior odd. Perhaps it would be enough to swap the click and double click actions? 
+x      9-57112547-3542 @Bengt +1
+    272-57567410-3542 +1 found this counter-intuitive, especially after having used Sublime for the past few years where op
+    319-57583925-3542 @YemSalat Opening multiple files quickly, perhaps. Not sure if that was the original reason for the c
+    164-57588502-3542 @thomasjo I can't see how keeping the focus on the sidebar can help with opening multiple files. Am I
+    267-57593267-3542 @YemSalat I thought perhaps opening files by pressing `enter` would retain focus as well, but it does
+    314-57682255-3542 @thomasjo Thanks! Indeed it could be somewhat useful if the focus was retained on the sidebar after 
+    369-65941222-3542 I've found that just closing the sidebar with `Cmd-\` shifts the focus back to the file tab to edit. 
+    470-65945097-3542 @andrekibbe Thanks for posting this workaround. It might be useful for people who use the keyboard to
+    361-65946665-3542 One thing I recently noticed when navigating the tree view with the keyboard is that hitting `enter` 
+    145-65948100-3542 <kbd>Ctrl+0</kbd> also toggles between the editor view and the tree view, for those of you that prefe
+     70-71908137-3542 Couldn't this be an easy configuration setting? It is rather annoying.
+     51-72138525-3542 @lee-dohm shouldn't `Ctrl + 0` reset the font size?
+    168-72159961-3542 @YemSalat On OS X <kbd>Cmd+0</kbd> resets the font size. But yes, it does appear that there is a coll
+     98-55509964-3533 Try starting atom through the command line with `atom --safe` (that will disable all the plugins).
+    102-55510063-3533 Hello, Okay, i will try to code for a day in safe mode to see if it's really a plugin or not, thanks
+    261-55519549-3533 It takes a lot for something to crash the explorer. By itself I would be surprised if Atom was causin
+    255-55520967-3533 Yes, you're right, i have coded all the night in safe mode, nothing happened. And i have trying to co
+    341-55521409-3533 @Xety The Linter is currently very actively under development, getting updates all the time. Probab
+    279-55522043-3533 Yes i will doing this,but the thing that i'm sure, it's happen when i code in php. And i use linter-p
+    405-55530813-3533 Now sure if this is related, but Atom uses `wmic` on Windows when you call `kill()` on a `BufferedPro
+    338-55531037-3533 ~~@kevinsawicki `wmic` only kills `cmd.exe` processes (and its child processes), judging from the `@p
+    356-56635295-3533 @Xety I've exactly the same problem as you. But it isn't always the `explorer.exe` who crashes. Somet
+    326-56667216-3533 Me too, my Google Chrome crashed sometimes. That is due to the Linter package and i'm not sure but i 
+    151-56685198-3533 @tortuetorche, @Xety when you say "crash" do you mean you see the Windows dialog for application has 
+    210-56723751-3533 @kevinsawicki When i said "crash", that mean it stop and close the process of the application. (So it
+    355-56784685-3533 @kevinsawicki @Xety When I reopen Firefox (closed by Atom) it opens the restore tabs window. Basical
+     75-56843409-3533 Okay, I'm reopening this and will spend some time today trying to replicate
+    539-56857630-3533 I'm having trouble reproducing this using the linter and coffeelint linter packages on Windows 8.1 
+     80-56929084-3533 @kevinsawicki Thank you for your time. I'm going to try your patch this morning.
+    142-57400574-3533 @kevinsawicki I have tried your patch and coded 2 days with it and nothing happened, so it look good.
+    222-57400832-3533 Okay, thanks for letting me know, I now need to figure out why the wrong processes are getting killed
+     54-57401648-3533 Okay, if you need help to test something, let me know.
+    102-58475096-3533 @kevinsawicki FYI the patch works fine with Atom 0.135.0 (and also 0.139.0) on Windows 7 64 bits. :+1
+     83-60764118-3533 Any new about this issue ? Because it's still the same with the version 0.140.0. 
+    135-60780714-3533 @Xety Sorry, no updates, I've still been unable to reproduce it myself to try and find out what proce
+    139-60787966-3533 It append to me and @tortuetorche with the phpcs linter. Maybe you should try with the phpcs linter :
+    164-60790656-3533 @Xety does it happen consistently or intermittently using that linter? Trying to figure out if there 
+    310-60793048-3533 @kevinsawicki By intermittently. And that's why it's hard to find what is the cause of the problem. B
+     51-60793867-3533 @Xety thanks, and which windows version are you on?
+     25-60794066-3533 Windows 8.1 Atom 0.140.0
+     78-60889562-3533 @kevinsawicki With Windows 7 SP1 64 bits and Atom 0.139.0 I've the same issue.
+    131-60906556-3533 I've also got the same issue with Windows 7 SP 1 and Atom 0.140.0. The only linter I have enabled is 
+    205-62376020-3533 Same problem (explorer.exe crash) here, also Windows 7 64bit SP1, but on Atom 0.142.0. I also had th
+x    216-59217293-3525 Sorry for taking up space with a "I agree" comment, but I think this is a really essential feature. 
+x      2-64404542-3525 +1
+x      4-75625012-3525 :+1:
+    115-75681205-3525 @postcasio created a [package for printing from Atom](https://discuss.atom.io/t/printing-support/760/

@@ -1,0 +1,87 @@
+
+# page: 22, date: 2014-08-23, count: 30, rateLimit: 4410 of 5000
+
+x    146-63221883-3365 Thanks for this explanation, doubt I'd have found a solution to this (very simple) issue without such
+    312-63464646-3365 I guess this issue is referring to the same problem which was described here https://github.com/atom
+    129-63465002-3365 I haven't tried it with the current version yet though. I'll let you know the results if I have the c
+    255-53127772-3362 @aerouk Which OS and Atom version are you using? What happens when you hit ctrl+del? Nothing or you g
+    256-53129146-3362 @izuzak Oops, forgot to give that info. **OS**: Windows 7 x64 **Atom Version**: 0.123.0 When I
+x   1155-57667279-3362 +1, if I understood you correctly I am experiencing the same issue In Sublime text pressing Ctrl +
+     33-57667397-3362 This is not a windows-only issue.
+     68-57668069-3362 @YemSalat Thanks for providing more details, I've updated the labels
+    235-53123680-3359 > I need to change the width of the space character in front of each =, depending upon the position o
+    196-53170513-3359 It's not currently possible to change the width of a *specific* character in Atom. Maybe someday it's
+    391-53638412-3359 Thanks for the reply. Markers look promising... Is there any way to display the content of a marker a
+    400-53640691-3359 Unfortunately no. Markers are used to track folded row ranges, but the folded lines are omitted via c
+    371-52897708-3347 You can find the documentation right in the atom repo, e.g: https://github.com/atom/atom/blob/master
+    164-52900939-3347 Ah yeah my bad. I could have used that way. That's probably right, let's see if someone of atom dir
+    194-52942955-3347 Did your `package.json` file have a `theme` key? If you forked atom-dark-ui, it should have, https
+    135-52953267-3347 Is this your package? https://atom.io/themes/enhanced-dark-ui https://github.com/keeev/enhance
+    510-52962550-3347 @kevinsawicki yep it had exactly that package.json because I forked the latest version of the officia
+    439-53163318-3347 @keeev I'm having trouble reproducing this. Have you perhaps been able to reproduce this? If so, it w
+    416-53189860-3347 @izuzak * https://github.com/keeev/atom-dark-ui/blob/master/package.json (it says "ui") * and here
+   3546-53196949-3347 @keeev Ahhh, thanks so much! I somehow missed the part that you forked an existing theme :grimacing:,
+    856-53202247-3347 @izuzak hehe it's okay. Sure, I did exactly what you did + one more thing: after I failed a f
+    193-54723826-3347 > Can I delete my forked dark-ui-theme or do you work on your fork from this time on to show the issu
+    214-52841128-3346 Amusingly enough, we were *just* talking about this last night in terms of "wouldn't be cool if". Cer
+     81-52830133-3345 The issue is that the measurement doesnt currently work well for var width fonts.
+    187-53364607-3345 I was having this same issue (same theme), so I applied this little quick hack to my stylesheet until
+     78-56273724-3345 Lucida Grande completely fails using Atom, any ETA for supporting it properly?
+    147-67846122-3343 Yeah, this happens to me all the time. I click to open a file from the tree then `ctrl+k+right` to sp
+    296-52636335-3333 I can confirm this behavior, here on Javascript: ![image](https://cloud.githubusercontent.com/assets
+    333-52637168-3333 Yes, sorry. I was just browsing for answers and saw [this post](https://github.com/atom/atom/issues/3
+    406-52651169-3333 If the issue is with the grammar engine and not with the individual languages, then the issue should 
+   1047-52883801-3333 The method that handles increasing and decreasing indentation is [`LanguageMode:: suggestedIndentForB
+x      5-61305730-3330 :+1: 
+     32-52574566-3327 How did you generate that graph?
+   6127-52576164-3327 Manually generating a timeline. I saw you could save/load a timeline by right clicking it. Then I rev
+     72-56284816-3327 @Zren this looks really interesting, I would love to see this merged in.
+     21-77567419-3327 Any progress on this?
+    262-77597703-3327 Looks like this pr has conflicts now. I wouldn't mind fixing them if there's a change it can be merge
+    372-53209611-3324 I've reopened this because I'e found that scroll doesn't work right even when scrolling to center. I
+   1232-53456953-3324 We have two concepts here. One is scrolling to *reveal* a position and the other is scrolling *to* a 
+    249-53467847-3324 I would vote for just adding *center*, *top*, and *bottom* to the *options*. And one more called `
+    365-52534743-3322 I'd be interested to see this, just for shits'n'giggles. But is anybody actually doing any developme
+    217-52592748-3322 @batjko Why do you believe, it is not fast enough? Any stats on this? I guess, using it as a text 
+    705-52597731-3322 Atom right now, is a performance hog. It needs a fairly beefy machine with a decent GPU to behave wel
+     70-59597042-3322 Wth? What's node on android have to do with a nice sftp-based editor? 
+    131-61368810-3322 What's so bad about <a href="https://play.google.com/store/apps/details?id=com.aor.droidedit.pro">Dro
+     47-61373554-3322 Who said there is something wrong with them? :D
+    397-61423687-3322 > What's node on android have to do with a nice sftp-based editor? Atom is based on a fork of Chro
+    746-61703894-3322 Oh, OK. Well perhaps a different editor is a better bet then. I don't find I'm editing any code on m
+    235-54779918-3306 What's your OS? There are a few issues already regarding working with files over a network: #3010 ,
+     90-54932858-3306 Just tried with 0.125 — totally the same problem. OS X 10.9, NFS-server on Ubuntu 13.10
+    150-52394213-3297 cc @nathansobo @benogle Any tips on not triggering the `EditorScrollView scrolled when it shouldn't h
+    220-52671213-3297 I get this sometimes, but I dont know how to reliably reproduce it. There is currently a hack to set 
+    671-52673087-3297 I can produce it reliably with my package, live-archive, which is going to be released later this we
+    380-52675833-3297 Yeah, this isn't super high priority, but thanks @mark-hahn for the tip on reproducing it. I mainly p
+    967-52677961-3297 BTW, my app does scrolling calls a lot. I've also got a problem where scrolling isn't accurate abou
+     87-65314559-3297 Any updates on this because my log has filled with thousands of these messages today...
+    339-65319906-3297 It's safe to ignore for now. We perform all scrolling in the editor synthetically by moving layers on
+    187-52286004-3279 @netmou Do these two issues cover your report? https://github.com/atom/atom/issues/1722 and https://g
+     16-52292202-3279 They met, I met 
+     54-52292486-3279 @netmou I'm not sure I understand -- what do you mean?
+     54-52374471-3279 yes, the two issues #1722 and #1886 cover my report
+    402-52189073-3272 I'm not sure if it can "cause" Chrome to have the same effect. Chrome is based on the same underlying
+     69-55622339-3272 @vladovidiu Can you try out 0.127 and see if it looks blurry for you?
+    323-55715208-3272 @kevinsawicki Actually, I got it fixed before this version. I am using a laptop with 3 other monitors
+x     43-52377829-3262 :+1: I find myself hitting it all the time.
+    123-54646614-3253 Sorry about the delay in reviewing and merging this, I'll definitely take a look early next week, tha
+    244-52046685-3249 I found this discuss post as well, seems like there's probably nothing that can be done. https://di
+    283-52047868-3249 @tollus I don't have an answer for you, but just on that link to the post on Discuss: That was back i
+    228-52115396-3249 It would be great to have this feature. I only need to see the whitespace characters every once in a 
+    218-52118529-3249 Currently there is no indicator on the actual text that it is selected. Atom does not use the dom
+    456-52139434-3249 An admittedly ugly workaround for this is to set the color of invisibles to the same colour as the ed
+    576-52187289-3249 Thanks, I tried that, but it wasn't obvious enough for me. I ended up doing this, I think I found the
+    589-52197173-3249 That works, unless you're using indent guides. Then the indent guides go invisible everywhere. This 
+    405-51975729-3238 Run the following from a terminal (after you've copied something onto your clipboard from within Para
+    840-51978352-3238 Sparing you from more tiny screenshots, `pbpaste > test.txt` from a `\r\n` document also resulted in 
+    103-51982442-3238 So do you think Atom should normalize `\r` with no following `\n` to `\r\n` or `\n` in empty document
+    395-51986532-3238 For the sake of Atom I would see it either being platform-specific (\r\n on Windows, and \n elsewhere
+    113-52307593-3238 I'm seeing this as well. Copying from Atom on OSX and pasting into Parallels Windows VM results in do
+    400-52314806-3238 It doesn't help everywhere, but that can be resolved by keeping the files on the OSX-side as `\n`-onl
+     54-51948007-3235 It is possible. And I agree. I hit this all the time. 
+    141-51842519-3224 Re-install might help. If you did fuddle up some folder permissions I suspect the installation will
+     48-51995680-3224 Is it still located in `/Applications/Atom.app`?
+    259-52307028-3224 I'm installing Atom through homebrew cask, so no it's not in /Applications. That being said I set th
+    105-52329252-3224 If you use `brew linkapps`, it will symlink to ~/Applications, you can symlink manually to /Applicati

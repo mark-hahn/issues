@@ -1,0 +1,155 @@
+
+# page: 29, date: 2014-05-07, count: 30, rateLimit: 4193 of 5000
+
+    108-42433119-2029 I confirm the same behaviour / output / errors for Ubuntu 14.04: http://pastebin.com/raw.php?i=4Q7
+     80-42433521-2029 Latest batch of errors, fpasted due to length: http://fpaste.org/99885/13994728/
+   2414-42434377-2029 Interesting, noticed the note about it being a possible with issue with runas, so I ran the build scr
+    380-42435357-2029 @ResidentBiscuit I notice in your output above you have a `#` in the prompt, are you still building 
+    200-42435592-2029 @george-b, yes I was running as root. It was the only way I could get past the npm errors. Had someth
+    655-42436301-2029 It appears to be building now. From reading other issues, it sounded like people were having luck by 
+    152-42437511-2029 @ResidentBiscuit uninstalling gyp also uninstall npm in Ubuntu 14.04... without npm the script just w
+    122-42437666-2029 @rhoconlinux that's where I was confused. I have no clue why it worked without npm. I'm just gonna ru
+    204-42438842-2029 Did it, just writing a post on the steps I followed. It is a combo of this https://github.com/atom/
+    492-42440491-2029 OK, recreated the build again. Some of these I don't understand, namely step 9. Final steps: 1) B
+    180-42441110-2029 I do still get the warning npm WARN package.json github-url-from-git@1.1.1 No repository field. rig
+    127-42441187-2029 > npm WARN package.json github-url-from-git@1.1.1 No repository field. This warning is "normal" an
+    136-42539349-2029 @ResidentBiscuit I can't reproduce the installation in a brand new machine (ubuntu 14.04 through virt
+    310-42559793-2029 @ResidentBiscuit @rhoconlinux I'm with this trouble: ``` events.js:72 throw er; // Unhan
+     93-42584686-2029 @rhoconlinux nope no ppa. @allanfreitas not sure. Try looking into that missing dependency
+    223-42658504-2029 @rhoconlinux @ResidentBiscuit @kevinsawicki @jonrohan @george-b I've found the PPA http://www.webup
+     78-42943641-2029 @allanfreitas, I had the same error as you, about the Unhandled 'error' event.
+    326-42951266-2029 @Videl I recomend you to use the PPA http://www.webupd8.org/2014/05/install-atom-text-editor-in-ubunt
+   1025-63985572-2029 I tried to follow steps 1-10 from ResidentBiscuit. darko@darko-Lenovo-G570 ~/atom $ node -v v0.10.3
+    744-42558048-2020 Same problem here, on <pre>Linux taiar-lnx 3.2.0-4-amd64 #1 SMP Debian (Crunchbang Waldorf) 3.2.41-2
+    125-42601058-2020 i was able to install it on crunchbang (debian 7) after installing `libc6` + `libc6-dev` from the deb
+     23-42605758-2020 @xero tips to share? :)
+     31-42707572-2020 @xero command list to share? :)
+    352-42726125-2020 i posted install instructions on [my blog](http://blog.xero.nu/atom_editor_linux_install) and have be
+    438-42775752-2020 You can use the libc6 from testing, it's 2.18-5, is enough to let it run. ``` echo 'deb http://ftp.
+    177-43114799-2020 For a proper solution chaps based on glibc2.13: http://discuss.atom.io/t/compilation-on-debian-wheez
+    523-43648013-2020 So, @nulld1g1t made some magic and his solution really works without install/update glibc. It's descr
+    476-45041506-2020 Debian-64 Wheezy packages by @nulld1g1t: * v0.100.0: http://nulld1g1t.yourprog.com/wordpress/?p=291 
+     55-47089459-2020 Thankyou @ikks. Worked perfectly strait out of the box.
+    471-47140534-2020 On 25/06/14 12:29, Grant Perry wrote: > > Thankyou @ikks <https://github.com/ikks>. Worked perfectly 
+   4510-48904370-2020 If you want to use the latest version of Atom as fetched by a fresh "git clone...", yet not compromis
+    743-57048781-2020 I actually followed the instructions [here](http://axiacore.com/blog/atom-editor-debian/) and it seem
+    785-64676416-2020 @nulld1g1t Following your excellent YT walkthrough, it seems something in libchromiumcontent ALSO req
+   1404-65313611-2020 On 26/11/14 16:56, Nik Martin wrote: > > @nulld1g1t <https://github.com/nulld1g1t> Following your exc
+    331-71699942-2020 Thank you @vellerefond for fully and well documenting a solution that doesn't require hacking up a st
+    262-42401757-2015 It looks like something has gone wrong with your build the apm directory is only populated after runn
+     84-42402740-2015 I've just noticed your building using sudo, this should be done as your normal user.
+    287-42433921-2015 I ran ```script/build``` without sudo after ```script/clean``` and it just hangs. After a lifetime
+    149-42436046-2015 All I had to do was follow the items in the issue in my first comment. You don't have any root owned 
+     40-42448808-2015 No, I ran ```sudo script/clean``` before
+    404-42451768-2015 Bizarre, it's mentioned that the error you mentioned above is normal by one of the github devs https:
+    111-42579165-2015 Here's the logfile https://gist.github.com/a9entropy/183e594f6d637e419070 Day 3 and I still hav
+   1038-42591754-2015 Yup I have no idea about the output :confused: I miss good old `make` Step by step I did the foll
+    178-42593727-2015 https://github.com/webwurst/docker_base_files/blob/master/atom/README.md `sudo ln -s /lib/x86_64-l
+    125-42389932-2003 using this ppa https://launchpad.net/~chris-lea/+archive/node.js/ it build correctly, but it still cr
+     97-42390040-2003 I might try in a while. I may as well mention I'm using built-from-scratch node 10.28, npm 1.4.9.
+     49-43369921-2003 @Zekka Are you still having this issue on master?
+   1442-43374693-2003 Yes: here's the output. zekka@zekka-yk:~/code/atom$ script/build npm WARN unmet dependency /home/
+   4400-44406801-2003 I'm having a similar problem, building on Ubuntu 14.04 x86 with Node installed from the prescribed PP
+     55-45306196-2003 Having the same problem as dlewanda on fedora20 x86-64.
+     12-47874601-2003 subscribing.
+    103-45897182-1982 @dlee I think https://atom.io/packages/word-jumper provides the core functionality you are asking for
+     86-46132948-1982 Word Jumper tries. I've found it to be an extremely buggy package and I cannot use it.
+    166-47426168-1982 I think we should keep `alt` modifier with the current behavior: `editor:move-to-beginning-of-word`. 
+    165-53383221-1982 I made a package that does this: https://atom.io/packages/subword-navigation. It's similar to word-j
+     29-43664951-1970 +1 Arch Linux, KDE, Atom 0.96
+    278-54893640-1966 I have started work on a project management package called project-ring that supports using a regular
+     31-42352110-1959 Could you include a screenshot?
+    111-42358895-1959 Sure, my bad for not having done earlier. --- EDIT: moved the screenshot to the top post for vi
+     61-42458657-1959 Got the same problem, on the same OS. Quick fix works for me.
+    234-43559871-1959 For some reason, the fix posted above doesn't work any more in recent Atom builds. Even if the menu i
+    187-43615041-1959 @hotice I just compiled 0ad26c337 and the menus seem to work as before when they are displayed inside
+    362-43615472-1959 Weird. I use Ubuntu 14.04 on my main computer but I tested some old build a while back in VirtualBox 
+    620-45800651-1959 It is indeed a VirtualBox thing. It happens in Chrome on a Virtualbox install of Ubuntu also. It has 
+    178-45985094-1959 I am also seeing this issue on 13.10. The quickfix work, some things just look plain bad now, like sc
+    238-56001837-1959 I have the same issue. Ubuntu 14.04 + Unity, atom 0.130.0-72b92fc. The "quick fix" doesn't work. T
+    275-42977871-1934 As you may or may not know, you can change the keybinding. Here's what I settled on after encounterin
+     95-42978606-1934 I am aware, I just thought it would be good to notify maintainers to change the default :wink: 
+    167-76193390-1918 Per #5754, and @izuzak's request to update this issue, I am noticing the same problem with the quick 
+x      2-44426715-1909 +1
+    202-47473919-1909 I think that this is extremely necessary, if not on its core, at least as a plugin. All Mac OS X edit
+     32-48343806-1909 +1 OSX: 10.9.3 Atom: 0.107.0
+x    227-48983605-1909 +1 Win 8.0 Atom 0.115.0 It's been available on every programming editor I've used for the last
+x     66-51700248-1909 +1 (Sorry, somehow I was not able to find this when opening #3210)
+x      2-53829356-1909 +1
+x    193-62158788-1909 +1 It's a very nice way to have a "second clipboard", so you can easily copy stuff with ctrl/cmd+d'n
+x      2-62761817-1909 +1
+x    163-63171285-1909 +1 This is a very useful feature of all the other Mac text editors I have used, and I was very annoy
+x     48-63474459-1909 +1 Would love to see this in core or as a plugin
+x    171-63531325-1909 +1 For me this is absolutely essential, every text/code editor I use both on Windows and on the Mac 
+x    188-67005929-1909 +1 This is essential before I can switch from Sublime (which I want to do, but make too much use of 
+x      2-67352538-1909 +1
+x     36-67780432-1909 +1 Would love to have this feature.
+x      2-68337895-1909 +1
+x     85-69181408-1909 +1. I'm with JayQuerido, this is the only feature preventing me from leaving Sublime.
+x     31-69692455-1909 +1 Badly missing this feature
+x     26-73711573-1909 +1 I need this feature.
+x     46-74843146-1909 +1 Every other text-editor has this behavior.
+x     26-75248852-1909 +1 I absolutely need this
+    290-75732786-1909 **It is now possible to drag and drop text.** https://atom.io/packages/drag-drop-text Besides t
+    668-75761392-1909 First-off a big thank-you for implementing this feature! I do have a few remarks though: - In the c
+   2837-75887320-1909 Thanks very much for the comments. I have worried about the same things. Let me explain how it ende
+   1039-75923133-1909 First: Thanks for your initiative on the topic! From the UX expert perspective, you should strive 
+x     26-75925009-1909 +1 to @pbihler 's thoughts
+    243-76040565-1909 > the default behavior for drag'n' drop in editors, Yes that sounds correct for when my crazy cut
+    215-76064710-1909 I'm going to make it a separate package. I hope it doesn't confuse people. The new one will be `sim
+    225-76521474-1909 I think I've got it now. Let me know if it still has any weirdness. It is at https://atom.io/packag
+    343-76545284-1909 OK, **now** I've finally got it. I removed the delay and red line in the `simple-drag-drop` package
+x     42-76594071-1909 Seems to be perfect! Thanks @mark-hahn :)
+    109-41829485-1897 This sounds good to me, just not sure which menu to put it in, do you know of any apps with split men
+    303-41830778-1897 Sublime puts it in `View > Layouts`. We could do ``` View Panes Split Up Split Down 
+x     16-41832863-1897 That sounds good
+    142-76385673-1897 Probably stupid question, but was this ever added? I can't see anything related to splitting views in
+    259-76388130-1897 @ricardograca It was added. You don't see this? ![screen shot 2015-02-27 at 13 33 58](https://clou
+     71-76389279-1897 Nope. Only: ... Toggle Full Screen Toggle Menu Bar Developer ...
+    108-76389454-1897 Looking at the commit it seems this change was only implemented for OSX. @probablycorey Any reason fo
+    137-76393034-1897 Great eyes, @ricardograca - I completely missed that. I don't see a reason not to have those in the L
+    395-46127365-1894 I can confirm this problem. Might be a duplicate to /atom/markdown-preview#92. ![md-bug](https://
+x      2-46515659-1894 +1
+    190-50527356-1894 Similar issue. Wrap does not work on Chinese. ![f0af30bc-a293-4f03-82d0-696bf372ebdf](https://clou
+     69-50531107-1894 @zhuochun There is a separate Issue for soft-wrap and Chinese, #1783.
+     46-65727972-1894 Is this still an issue? Can anyone reproduce? 
+    284-68015349-1894 @benogle yes, it is an issue. I see it occasionally and am seeing it now - unfortunately I can't scre
+    343-41053151-1890 Uhh, just noticed that `git status` also reports the file as new: ``` $ git status # On branch m
+    156-41054910-1890 Hmmm, after running `$ git config --global core.precomposeunicode true` Git no longer shows the file 
+   1942-74082314-1890 Some updates on this. First some pieces of information about my machine: **Git version**: 2.3.0 *
+     89-74822674-1890 As mentioned in the now closed duplicate #4637 it works fine under Windows, but not OS X.
+    190-42325861-1887 Woah, this is a OSX feature? I hate the stupid flashing! I always thought it was an bug (but not b
+x      4-48782238-1886 :+1:
+x      5-50252123-1886 Agree
+    210-60234985-1886 You should also be able to drag a finder folder or non OS X equivalent into the current open atom win
+    198-68255970-1886 and (on linux) you should be able to open a folder in a clean atom (just started, no file or folder o
+    281-41953004-1885 @nathansobo Was this the intended behavior? Looking at the code it appears to be, https://github.c
+    555-41960623-1885 The idea was that if you just put the cursor on the folded line and hit delete, that it would delete 
+    359-48016646-1885 Hi, i just wanted to report now the same "bug". I expected that it just will delete the newline, and 
+x     41-53124876-1884 +1 on the analysis and suggestions above.
+   13948-41137958-1874 support/590972eaca7c11e39d4817927bcfbe55 -- package installs fine with apm in the console, but blows 
+    194-41215275-1874 I think this may have been fixed via https://github.com/atom/apm/commit/9859059b7be0c93a6de77a62d61b6
+     77-41228617-1874 @izuzak Can you check if you still experience this yourself on 0.91.0? Thanks
+    414-41251977-1874 @kevinsawicki Sure thing -- just upgraded and gave it a try. If I start Atom from Spotlight, I'm stil
+    108-41953505-1874 Hmm, this must have something to do with the environment then being different depending on how you la
+    203-42002403-1874 support/590972eaca7c11e39d4817927bcfbe55 confirmed that the same approach works for him -- starting A
+   8281-58618375-1874 I confirm can this problem npm http GET https://registry.npmjs.org/q npm http GET https://registr
+     64-46809638-1865 Possibly related issue: https://github.com/atom/atom/issues/2717
+     61-43880351-1853 Possibly related to: https://github.com/atom/atom/issues/2051
+    357-40868431-1849 Got another support/2fbade76c7be11e3823522fac0cfe591, which I think is related: > Highlighting RTL
+    397-50087298-1849 @nathansobo This still seems to be an issue, even with react (but in a different way): ![woot](htt
+   1262-57937866-1849 Is there any progress on this bug? It's almost 6 months. This issue with RTL text prevents many persi
+    138-58035783-1849 @kamyarinfinity Can you include the raw text from those gifs? Just to make it easier to reproduce and
+    553-58059159-1849 @kevinsawicki Sure: 1.For the first test, the behavior changes from case to case. Sometimes the cu
+x     50-58104701-1849 @kamyarinfinity Great, thanks for all the details.
+    144-61411241-1849 @kamyarinfinity Thanks to you, my first problem solved using Dejavu Sans Mono font, but didn't you fi
+    414-61411848-1849 @miladsafaei You're welcome. Unfortunately, the second problem seems to be the internal way sublime c
+     93-65928362-1849 Guys you're doing very well in this amazing application <3 Any updates in this issue please?
+    742-40341938-1847 More feedback about this: * support/4f46fa96be5d11e3871d6aae6fd3a010 > One thing I found was that
+    653-40478223-1847 Another report that seems like it's related to this: * support/d13f7ae4c49a11e3972e6483649ce759 >
+    272-40844075-1847 [More](support/d9b776c4c61411e38b56d07ffeb68f9a): > I have a folder with 1000s of json data files 
+     96-42521114-1847 Would be nice to be able to disable automatically opening the parent folder when opening a file.
+     73-48457740-1847 https://github.com/atom/atom/pull/2863 resolved this, hope be merged soon
+     94-41530799-1842 More: * support/65c175a6ce8111e39d7b1a1d644c32f8 * support/63d25312cfaa11e38fe0b0fad2f10ecf
+    100-71643202-1839 This has bitten me once already. (I had a control character in an html file which threw off Firefox)
+    233-73819259-1839 FYI - The [Info](http://www.gnu.org/software/texinfo/manual/texinfo/texinfo.html#Info-Files) format u

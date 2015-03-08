@@ -1,0 +1,156 @@
+
+# page: 9, date: 2015-01-20, count: 30, rateLimit: 4813 of 5000
+
+     79-75117360-5164 Link: https://github.com/atom/atom/search?q=deprecated&type=Code&utf8=%E2%9C%93
+     37-70859843-5163 possibly related to scrolling: #3154 
+    999-74926411-5163 Good to see you're planning on improving the typing performance :) It can take many seconds to type 1
+    148-74937395-5163 @gregersrygg It probably doesn't. Would you be interested in playing around with some optimizations? 
+     54-74940149-5163 I really wish I had time to contribute, but I don't :(
+    264-74955902-5163 @gregersrygg That's okay, just investigating things is helpful. One big issue is probably that mergin
+    115-77431060-5163 @nathansobo can this be closed for now? I assume the rest of the optimizations will come from the wor
+    113-70677087-5160 How were you updating Atom (before you tried running `apm update`)? Could you paste the full error / 
+   1127-70685336-5160 It has never worked... Here is the code: `npm ERR! install Couldn't read dependencies` `npm ER
+    445-70687064-5160 So wait, have you only ever tried updating Atom with `apm update`? As far as I know, `apm update` 
+    160-70687902-5160 Oh really? I thought `apm upgrade` updated packages while `apm update` updated atom. Either way
+    109-70688292-5160 Can you post the full stack trace (or a screenshot) of the error you get when you try to update from 
+    218-70688746-5160 Here is the screen shot (not sure how to do a stack trace via the GUI): ![screen shot 2015-01-20 a
+    338-70690701-5160 I don't really know enough Obj-C to parse this, but I found the line of the Squirrel updater Atom use
+     86-70716102-5160 @paulcruse3 when this happens, is there any corresponding output in the `Console` app?
+     52-70717478-5160 how do I access the console for atom? @maxbrunsfeld 
+     48-70717855-5160 @paulcruse3 Check the OS X Console (Console.app)
+    202-70719040-5160 @mnquintana @maxbrunsfeld anywhere I can find/install an older version of atom? I got tired of the er
+    584-75870754-5160 I am running into this too. Same screenshot & symptoms. I can't find anything Atom related in console
+    194-76188295-5160 doing a ```` sudo chown -R $USER ~/Library/Application\ Support/com.github.atom.ShipIt ```` shou
+    174-76799267-5160 Thanks @slartibardfast, that fixed it for me too. root also owned that dir on my system: ``` d
+    225-70659762-5155 While I can't speak for the maintainers of course, my understanding is that they don't do that becaus
+    198-70674617-5155 @mnquintana , If that's the case. Then the atom teams owns the APM project, maybe they could support 
+     78-70704053-5155 apm does not currently support the `latest` keyword as the dependency version.
+    142-70704458-5155 @kevinsawicki Lets add it then :wink: Adding support for `latest` keyword would be waaay better than 
+    108-70660809-5153 Oooh this would be cool. Are you thinking it would be implemented with extra option flags in the `ato
+    286-70689199-5153 Here's a related chromium bug https://code.google.com/p/chromium/issues/detail?id=74812 apparently OS
+    139-73873904-5148 Hi, the v0.178.0 (on Linux Mint) is affected too, same problem when trying to install new package : <
+    111-73930553-5148 Did you build it or use a `.deb` file? No problems with the `.rpm` on Fedora 21 x64 or building it on
+     34-74405596-5148 I'm using the the downloaded .deb.
+    335-70419341-5138 > ```javascript atom.open({'pathsToOpen': ['test.txt'], '.newWindow': false}); Correct me if I"m 
+    100-70427120-5138 @mnquintana you are correct, but behavior is same without typo too. I fixed the type in description.
+    478-74994041-5138 I am getting the same issue. Only happens in some circumstances and its unclear why. E.g. you can see
+     74-75001509-5138 workaround : use https://atom.io/docs/api/v0.181.0/Workspace#instance-open
+    106-70661179-5130 :grimacing: I wonder if this is more of an Atom or [atom-shell](https://github.com/atom/atom-shell) i
+     91-70702163-5130 I have no idea, but I can file this bug there instead if you think that's more appropriate.
+    133-70707490-5130 This is Chromium's bug on HiDPI support on Linux, and you can track it at https://code.google.com/p/c
+     59-70464321-5126 Same happend to me. All the same but I'm on OSX 10.8.5 
+    128-70359888-5121 You might want to update to the latest version of Atom. I think these error messages have been improv
+     65-70743033-5121 I am on 0.174.0 Linux (official deb bins) and still seeing this.
+    281-72490143-5121 Hi, I'm facing this issue when opening files on a network folder (\\vboxsvr\vagrant), it also fails t
+    161-72573464-5121 If this is always in reference to being unable to watch network paths, there are other issues open to
+    286-72852454-5121 I'm on Ubuntu 14.04 LTS, with most recent version of Atom, and have experienced this problem. I haven
+   3502-72948913-5121 I am using Linux Mint 17, version 0.177.0. All I did was save an untitled file to a new directory (th
+    297-72949202-5121 Incidentally, this issue-tracking feature of Atom is definitely in my top three favorite things about
+    224-73105676-5121 > this issue-tracking feature of Atom is definitely in my top three favorite things about this editor
+   3519-73195312-5121 Haha @benogle that made me laugh. :) Totally understood! On this issue, for some reason I am now u
+    671-73309642-5121 And just to follow up. This morning when I got into the office, I fired up Atom and I'm not getting t
+    754-73354705-5121 Interesting. So I had the same problem when I started using the regular display versus using multiple
+   4552-74881848-5121 I'm having this problem using 0.179.0 on Fedora (I used official rpm package to install) (the path i
+   2579-76125317-5121 I'm also having this problem on Linux Mint 17.1 when trying to any file, whether it be on the same pa
+    280-76200492-5121 @Enkouyami @mrtdoulaty Have you tried increasing the `fs.inotify.max_user_watches` from 8k to 32k as 
+     74-76253656-5121 @curtiszimmerman I have upgraded to v0.184.0 and your suggestion fixed it.
+    189-76988061-5110 I think this is okay. What do you think, @kevinsawicki? Some info on these: http://apple.stackexc
+     82-76992011-5110 > What do you think, @kevinsawicki? I haven't tried it out but it seems useful.
+     90-77024102-5110 If/Whenever you would like to merge this if you let me know I can rebase if you would like
+    132-77038914-5110 > If/Whenever you would like to merge this if you let me know I can rebase if you would like Rebas
+     23-77049393-5110 @kevinsawicki I rebased
+     68-70284564-5109 Refs https://github.com/atom/atom/issues/4583#issuecomment-70177540.
+     40-70386586-5109 Same issue on my machine Windows 8.1 x64
+    143-70396841-5109 I also get this issue. The install ran fine on my personal Windows 8.1 x64 machine, but my work Wind
+   10567-70409678-5109 I am too facing the same issue when installing Atom: Program: Starting Squirrel Updater: --insta
+     38-70413959-5109 Same issue on Windows 7 Enterprise x64
+   10650-70754038-5109 I'm hitting this as well - only work around is to install an older version. ``` Program: Starting
+     84-70754613-5109 This should be fixed once #5175 is released-there is no need to add additional logs.
+    193-70820440-5109 Thanks @50Wliu for the confirmation. Any idea when the next build containing the fix from #5175 will
+    162-70843722-5109 Once it gets merged, you'll be able to get the fix if you build Atom youself. Otherwise, it'll be in
+     51-71153133-5109 It works great now in version 0.175.0. Thanks guys!
+     61-71676563-5109 I'm seeing this issue again with 0.176.0. Can anyone confirm?
+     51-71686309-5109 @zephraph what is the path it is complaining about?
+    200-71687624-5109 Worked for me: I had 175. It worked. I used the Help|Check for update then install. that all worke
+   3772-71696204-5109 I've included the relevant part of the log below. I suspect it's not Atom's installer but rather 
+     51-71974000-5109 @zephraph I have run into the same issue just today
+   5151-71992397-5109 Just downloaded the Windows Installer and I get the same error: ``` Program: Starting Squirrel Upda
+   4745-72060223-5109 Got the same issue... ``` Program: Starting Squirrel Updater: --install . Program: Starting inst
+     16-72071573-5109 Same issue here.
+     73-72077443-5109 Why is it that in 2015 Windows still limits a path to 260 characters? -_-
+     60-72146543-5109 Any solutions? Can it be installed in a different directory?
+    219-72154130-5109 I think this change was caused by our fix for memory usage; NuGet extracts the file out to a temp dir
+     97-72410168-5109 Hey guys, I believe that the latest incarnation of this bug should be fixed in the next release. 
+   4944-72804264-5109 Got this error when trying to install 0.177.0, which seems to be the same error; ``` Program: Sta
+     63-73018690-5109 Same issue here, windows 7, trying to install or update to 177.
+     51-73046478-5109 This will be fixed for good when #5382 is released.
+   4721-73892684-5109 ``` rogram: Starting Squirrel Updater: --install . Program: Starting install, writing to C:\Users\e
+   4890-74034868-5109 ``` Program: Starting Squirrel Updater: --install . Program: Starting install, writing to C:\Users\
+     29-74842198-5109 Seems to be fixed on 0.180.0.
+     27-75511376-5109 happening in latest 0.182.0
+     69-75517861-5109 I can confirm that this problem is solved with 0.180, 0.181 and 0.182
+     58-70250013-5103 What versions of OS X and GitHub for Mac are you running? 
+     65-70303350-5103 Can you report the exact error message that GitHub for Mac shows?
+    247-70325387-5103 I can confirm this behavior and was collecting data for a bug report. Currently I am trying to reprod
+     91-70326921-5103 Huh, I've never experienced this on OS X 10.10.x. @achalatsis I'd like to see what you find
+     82-70331483-5103 OS X 10.10.1 Github for Mac Honourary Brit (194) Chrome 41.0.2272.3 dev (64-bit)
+    324-70361377-5103 Here's a screenshot. When I want to commit, Github for Mac tell me file exists. Restart Atom will 
+    220-70300243-5096 Can you post your list of installed plugins (`apm list`)? Also, could you open the developer tools an
+    148-70300445-5096 > However, cpu usage always kept high since 0.166.0, I've no idea what happened 0.167 was when chr
+    514-70443606-5096 Except for built-in plugins, I installed other 6 ``` C:\Users\xxx\.atom\packages (6) ├── atom-be
+    185-70112685-5081 Which version of Atom are you using? Can you reproduce the problem in [safe mode](https://github.com/
+    208-70113873-5081 0.165.0 I "broke on exceptions" the this.grammar.tokenizeLine property IS defined the line v
+    113-70114932-5081 It would be good to know which steps to follow to reproduce this error. What exactly do you do when 
+     60-70214477-5081 I also just got this one upon waking my computer from sleep.
+    343-70067867-5074 No idea. I mean the path resolve error seems to indicate some issue with finding a location or file.
+    701-70070709-5074 I don't see anything wrong with my directories... I've checked a little more and the error comes fro
+    221-70073603-5074 I assume you've been opening atom without any parameters, right? I remember a while back there was an
+    382-70076198-5074 I've tried: - opening atom on terminal by typing atom - no error, nor on the console neither 
+    249-70078501-5074 `atom -s` is for running specs, and expects a directory to load the specs from, which is why that err
+    486-70084181-5074 Oh, my bad, thanks. The outputs you requested: C:\Users\Miquel\AppData\Local>atom --safe 
+     22-70190653-5074 Same thing I get now 
+    234-70191610-5074 > (_ref = args.executedFrom) != null ? _ref : process.cwd() Can you edit this line to log out the 
+     49-69960370-5058 My System & Version Mac OS X Yosemite Atom 172
+    190-69960666-5058 Yeah, the window title always show the format "filename - projectPath - Atom", it isn't currently mea
+     29-77174266-5058 Does this overlap with #5585?
+     98-69860775-5046 :+1:. On Windows and Linux the keybinding would be <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>.
+    110-69926165-5046 :+1: This is pretty much what I had configured in Sublime (<kbd>Cmd+Shift+V</kbd> for Macs of course 
+   4522-69839064-5038 This looks good. I just monkey-patched the DOM to add breakpoints to the gutter. So there is at le
+   1576-69871053-5038 Here's a draft of what an API might look like: ### Gutter ### Don't create an instance of this di
+   1471-70018447-5038 Based on a little discussion with @nathansobo, what we're thinking right now is similar to your sugge
+    180-70321491-5038 Is there any ETA on this? My line-number code I am using has blown up in recent versions. I'd love
+    338-70322084-5038 > Is there any ETA on this? There is not. It looks like a considerable chunk of work, so don't exp
+    180-70326550-5038 I've been in contact with @benogle about this (with @nathansobo in the loop). I am planning to work o
+    312-70850278-5038 @jssln Are you on board with the decoration-oriented approach to getting content in the gutters that 
+     55-70853182-5038 Yeah, I'm on board. What's the best way to contact you?
+    123-70853768-5038 You can ping me via `@nathansobo` on this or any other thread or email me at the email address listed
+    710-71552310-5038 While working on this, I realized we'd also like to specify handlers for when a user interacts with t
+    622-71642596-5038 @jssln Any reason why you couldn't just register the click handler on whatever view you added to the 
+     26-71912122-5038 Gotcha. That's a good way.
+     72-73014597-5038 Another use case for this API is https://github.com/alexcorre/git-blame.
+    190-76479963-5038 This would really be a useful addition. I'd like to drop an img into the gutter which can only be re
+    407-76495503-5038 There is a new api to do exactly what you want. **Edit:** I had a brain fart. I just meant the di
+     45-76497094-5038 @mark-hahn Is the API documented or merged?
+    156-69780003-5029 System setting support is not likely to be added in the near term. You can however style the curso
+     49-69819167-5025 Probably related to issue #2078, if not the same.
+   3399-75783329-5025 Bringing the discussion from #5678 (that's a nice number! :wink:) > Fantastic work here. @natha
+   2253-75844494-5025 I like your thinking on making all incremental updates as minimal and optimal as possible first. The 
+    506-75847080-5025 @as-cii Another thought... I noticed that the `add-selection-below` command is really slow as the num
+   4930-76022083-5025 > I like your thinking on making all incremental updates as minimal and optimal as possible first. Th
+   3880-76027899-5025 > This would update only the rows that changed, but unfortunately it has to update subsequents lines 
+   4625-76149168-5025 > Not sure how big a savings that represents over just scanning all the lines, but in simple cases li
+   2077-76272227-5025 > This routine needs to update every line on screen if a newline was inserted because their top value
+   2950-76521740-5025 > We dealt with ordering in version 1 of the text editor, and it was a nightmare. Also, I ultimately 
+   2343-76535864-5025 > Quick aside: have you already considered to use `<canvas>` in order to take advantage of GPU's hors
+    102-69635749-5014 Can you click the `Console` tab from the `>>` icon in the dev tools and see what error displays there
+    392-69636269-5014 Here is the error it displays: ![atom3](https://cloud.githubusercontent.com/assets/3340958/5710010/5
+    115-69636489-5014 Can you keep that tab open and click Reload from View menu and see if it displays a more comprehensiv
+    158-69622973-5009 Looks like a duplicate of https://github.com/atom/tabs/issues/86 and/or https://github.com/atom/tabs/
+     59-69623076-5009 This is actually a core issue, I'd rather leave this open. 
+     23-69623137-5009 Also, updated the title
+    105-70248747-5009 Yup, I can reproduce this in Yosemite: 1. Hide tree-view 2. Hover over file tab until tooltip pop
+     45-69572552-5003 try to disable emmet if you have it installed
+    236-69598068-5003 Yeah, this has come up a lot in relation to the [emmet package](https://github.com/emmetio/emmet-atom
+     52-69617617-5003 See https://github.com/emmetio/emmet-atom/issues/186
+    257-69601125-5001 @mizchi We would like to do this, but as you have mentioned, it would be a very big change. I would n
+    492-69882089-5001 Sorry to say that you won't be able to replace oniguruma with JS Regexp, if a grammar use a positive

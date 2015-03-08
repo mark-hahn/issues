@@ -1,0 +1,222 @@
+
+# page: 30, date: 2014-04-03, count: 30, rateLimit: 4162 of 5000
+
+    477-39452109-1827 I also just noticed that Atom seems to be chewing up a ton of juice too. I have ~50% of my battery re
+    392-39465779-1827 I've just fixed a memory leak in the whitespace package that could be causing the memory consumption 
+     77-39466152-1827 @nathansobo Ok cool. I’ll post a snapshot next time I see it revving up :+1: 
+    509-39713504-1827 FWIW when I opened my computer up this morning, my memory consumption for Atom is up to ~2.8GB (1.57G
+    271-39750836-1827 Yeah. @zcbenz just added the ability to *save* heap snapshots to disk, which will really help us dig 
+    131-39758001-1827 @nathansobo I closed that instance of Atom hours ago—sorry man! it’s hard to do live-debugging like t
+    398-42768622-1827 I can confirm an excessive power use with the latest -git build on Arch Linux 64Bit. This is particul
+    504-45003545-1827 I seem to be getting this bug whenever I open/close a file whenever I have a lot of tabs open.. Below
+    258-47730554-1827 I've noticed this, too. I frequently see my memory going down to ~200MB on a 16GB machine. Looking in
+    587-47731021-1827 For clarity, the chrome helpers are chrome tabs, not atom. So atom is using about a gig in your case
+   1089-47731250-1827 Oh, right! I keep thinking the Chrome stuff is related to Atom. I still see the main Atom instance an
+    349-52966573-1827 I've not experienced too much issue with memory consumption but CPU usage is excessive, it sucks the 
+    672-59625115-1827 I also like to report that CPU usage feels quite extraordinary in many circumstances. My rMBP gets, a
+    490-59642181-1827 Atom by default uses hardware acceleration (i.e. the GPU) for most of its rendering, and Chromium shi
+    757-59658004-1827 @ivanreese Yeah, I hear you. We are aware that we need to improve in this area and are actively worki
+    150-59661692-1827 @nathansobo Just ran a few tests now and it seems you're correct, Sir; Atom no longer switches over t
+    271-63646240-1827 A Atom Helper just needed 900MB ram and the Editor became unresponsive. Is there any memory leak sinc
+    349-63892849-1827 @philipgiuliani There was indeed a memory leak that was fixed in v0.150.0. Thanks very much for the a
+x     24-63893400-1827 Many thanks for this! :)
+    326-64745566-1827 Greetings, im getting lots of atom helpers resulting to fork failed: resource temporarily unavailabl
+    211-64754175-1827 @Hokutosei, It might be helpful to see the flags passed to those Atom Helper processes. Can you post 
+    304-64754568-1827 Greetings, oh, thanks for the reply. I hope I did not include sensitive information. [update: Atom V
+b     46-64872402-1827 Greetings, any updates on this pls? thank you
+    836-67445434-1827 I've been having the same issue. Using `ps ax | grep Atom` and some experimental process killing, it 
+    119-69503063-1827 I'm also having the 'fork resource temporarily unavailable" problem. I'll do the same grep thing when
+    161-77429220-1827 Is someone looking into this? I'm on Ubuntu and this is how Atom looks like after an hour or 2 of edi
+    254-77430076-1827 The work @nathansobo and @maxbrunsfeld are currently doing to fix #307 should reduce memory consumpti
+    105-44278681-1825 https://github.com/atom/atom/issues/1407 is a related issue and there's some discussion about this th
+    111-39346022-1823 Doesn't this already work when the element has the `native-key-bindings` class which the markdown pre
+    193-39377302-1823 It does but people are creating other subclasses of `ScrollView` and don't know they need to add that
+     39-42252374-1812 @keithduncan are you still seeing this?
+     32-42290430-1812 Not seeing this anymore :metal: 
+     23-46379181-1812 Just began seeing this.
+    166-46429202-1812 @bhgames Which version of Atom are you using, and which OS? How are you starting Atom (from the termi
+   1675-46430632-1812 0.103.0 Mac OSX 10.8.5. I closed it and reopened it one or two more times and it kept showing the er
+     88-46667758-1812 Thanks @bhgames! Wondering if @zcbenz has any ideas about why/when this might happen?
+    222-46947181-1812 It seems that the OS was unable to assign a correct stdio stream to the application. It could be a ra
+    135-46953214-1812 It would be easier to debug if `createWritableStdioStream` included the `tty_wrap.guessHandleType(fd)
+    295-42643665-1807 The same is true for the linux version. I've set my proxy via environment variables following the for
+    163-43014556-1807 Worth mentioning that I can't work around this with `tsocks` either. We go from `ECONNREFUSED` to `tu
+    158-43023109-1807 Based on this issue https://github.com/atom/atom-shell/issues/183 it looks like we have to manually s
+     55-43036061-1807 Yes, manually setting proxy for node calls is required.
+     40-43048790-1807 Relevant upstream PR: mikeal/request#844
+    114-49852963-1807 https://github.com/mikeal/request/pull/844 has been merged in a while ago, any updates on setting pro
+    360-50500141-1807 on windows: add in `Atom\resources\app\apm\node_modules\atom-package-manager\.apmrc` this line (ho
+    154-51932203-1807 I don't think apm has leverage the merge mikeal/request#844, which is merge on July 8. But apm is sti
+     95-53088479-1807 this works in the .apmrc for me, thanks @lijunle proxy = http://HOST:PORT strict-ssl = false
+x      5-54904210-1807 :+1: 
+x     42-58345277-1807 @duncanmapes Thanks!! this work for me too
+     56-39077991-1783 Another report: support/f362892cb61211e39df45686cfed1b84
+     46-41055367-1783 More: support/ce87b354c9fc11e384d02a11a8594098
+    135-42858602-1783 I have encounter the same issue. But I'm not familiar with CoffeeScript/JavaScript, any guidance on h
+   4727-47052370-1783 The same issue I found in current git version of Atom(Version 0.106.0-781a51a) compiled from source i
+    150-47057023-1783 But, it seems there are spaces between Korean characters, the Atom still can't soft wrap Korean chara
+   1581-47075211-1783 But, I found Iceweasel browser, Gedit, Kate and Leafpad editor still soft wrap at every single Korean
+    310-47075745-1783 I attach the screenshot of view the test text above in Dillo3, Iceweasel browser and Leafpad, Atom ed
+x     37-50559197-1783 :+1: I have encountered same problem.
+    264-52484770-1783 Still not fixed. I recommend: 1. Treat every CJK character (except punctuation characters) as a wo
+    220-52493278-1783 There's this recently released package for handling Japanese encodings, it is still a work in progres
+    188-52498436-1783 Korean corpus does not need special word wrapping handler -- there ARE spaces between them. Japanese
+   1197-52514218-1783 My proposal: Group all CJK punctuation characters into 3 groups: suffix: ``` ，。”！？、’：；》…）］｝』」
+    205-52548690-1783 The regular expression `/[$£¥‘“〈《「『【〔＄（［｛｢￡￥]*[&#x3000;-&#x9fff;][!%,.:;?¢°’”‰′″℃、。々〉》」』】〕ぁぃぅぇぉっゃゅょゎ゛
+    496-56319201-1783 Hi. Note that some characters including `☆` can also be double-spaced. [Some fonts even disagree](
+    383-56326198-1783 In fact, CJK characters even in monospace fonts are not double-spaced. It takes approximately 1.6-1.7
+    263-56404687-1783 I built [a quick JavaScript sample](http://embed.plnkr.co/39EDIf4inEHPsQ10BWwm/preview) using `measur
+    374-56405323-1783 @SaschaNaz Well... you break up words? There is no Kinshoku Shori at all. As @zhanzhenzhen metioned,
+    243-56407760-1783 @be5invis Well, this sample loads and breaks each text line and tests its width by HTML5 measureText 
+    125-56408563-1783 @SaschaNaz We should calculate the width using "words" instead of characters, and place "words" inste
+    168-56412357-1783 @SaschaNaz: Thanks for the example! Seems measureText works! @be5invis: I think this example just se
+    785-56416013-1783 @be5invis: That's right, but I think it can be achieved by some more tweak on this sample. I posted i
+    141-56416567-1783 @SaschaNaz Well, the wrapping problem of Conemu is more complicated, due to the character matrix natu
+     94-61175876-1783 Can someone provide a text snippet that is still failing to soft wrap correctly on Atom 0.141?
+     96-61187914-1783 @kevinsawicki この木なんの木気になる木名前も知らない木ですから名前も知らない木になるでしょうこの木なんの木気になる木見たこともない木ですから見たこともない花が咲くでしょう
+    132-61193419-1783 @kevinsawicki 这上面的夜的天空，奇怪而高，我生平没有见过这样奇怪而高的天空。他仿佛要离开人间而去，使人们仰面不再看见。然而现在却非常之蓝，闪闪地睒着几十个星星的眼，冷眼。他的口角上
+    131-61210731-1783 @kevinsawicki 이런들 어떠하리 저런들 어떠하리 만수산 드렁칡이 얽혀진들 어떠하리 우리도 이같이 얽혀 백년까지 누리리라 이몸이 죽고죽어 일백번 고쳐죽어 백골이 진토되어
+    584-62262654-1783 I tried building [my first Atom package](https://atom.io/packages/atomicchar) based on [japanese-wrap
+x     34-62287614-1783 @SaschaNaz Nice, it works on Linux
+x     20-62300219-1783 @SaschaNaz Good Job!
+    134-62307870-1783 @alim0x @be5invis Thank you! It just replaces the current wrapper with the new one, so integration
+    126-38298309-1780 As a workaround, I wonder if we could load themes prior to attaching content to the window. That woul
+    213-49672215-1766 After investigating this it looks like node's `fs.realpathSync` is pretty slow for network drives and
+    120-51474192-1766 Please this is a blocking issue for those needing to edit files over sftp. I'm on Ubuntu 14.04, atom
+    141-56956362-1766 Slow on afp shared folder. Intermittent becomes almost irresponsible. Connection is about 50mb/s, an
+    307-56957149-1766 Im also a OSX network user, so my working directory is on a server. Atom is running compared to at-ho
+    270-56957979-1766 @philipgiuliani sometimes it works for me as slow as usual, but another time words appears after a fe
+    164-56978003-1766 I use sshfs for network access on OS X and it is a little bit slower, but only noticeable on *really*
+     95-57772070-1766 I noticed it is working much faster now, on sshfs network mount, both linux and mac os. Thanks
+x     54-71155808-1766 +1, slow for me too. Makes webdev really difficult.
+x     24-72826803-1766 Same for me with 0.177.0
+   1023-72271807-1763 Can we revive this conversation, or at least provide some news on any progress made for developers? 
+    225-72272580-1763 Any module has full access to the filesystem, any attempts to sandbox plugins without restricting fs 
+     45-72274328-1763 Surely there's _something_ we can do though. 
+    239-72274695-1763 @zephraph In my opinion, the best thing to do is to start running static / sandboxed execution analys
+     76-72275082-1763 That should probably be done regardless. I guess this kinda ties into #1013.
+   2147-72276642-1763 My main idea for a better security model is to load each package in its own JS context and use [Secur
+    209-72282676-1763 This might be completely useless, but I did just run across [jailed](https://github.com/asvd/jailed).
+    175-72286021-1763 @zephraph Jailed looks interesting. I'll take a look. Security isn't on our 1.0 roadmap currently but
+    632-72286117-1763 I haven't looked into JS jailing in depth (i.e. I'm definitely no expert). So, can someone who has lo
+    941-72286293-1763 FWIW, none of my 17 packages could run in a sandbox/jail. On Fri, Jan 30, 2015 at 3:03 PM, Patric
+    284-72302287-1763 @ptoomey3, after reading that link I think contexts are definitely what we should be investigating. T
+    838-72302973-1763 > , taking the approach where security is an afterthought is really, really unhealthy. I don't un
+    233-72304352-1763 Which is why open source software is so great. You and I might not have any good ideas to solve it, b
+    983-72305061-1763 I worked on the package `bug-report` with @lee-dohm. He demanded that any credentials not be stored 
+    226-72318350-1763 We'll see. We wouldn't implement anything that made it suck to hack on Atom but I'm keeping an open m
+    379-72572287-1763 As a temporary stop-gap solution, would it be possible to make a package, atom-shell add-on, or somet
+   1402-72573920-1763 Having visibility is good. Very few packages talk to the internet so that might be feasible. It ne
+   1832-72574466-1763 It occurs to me that the evil package could corrupt the policing package. If it went to the trouble 
+    322-72581503-1763 @mark-hahn Isn't the application keychain on OS X designed to protect against access to credentials v
+    362-72581782-1763 > the only way to get the credentials would be to go through an official API They could just requi
+    759-72584326-1763 > Isn't the application keychain on OS X designed to protect against access to credentials If th
+    438-72586980-1763 > They could just require keytar, and request creds. We could disallow them from requiring `keytar
+    390-72588149-1763 @mark-hahn, It doesn't have to go to the internet to get your credentials, but if a package you're no
+   1143-72589914-1763 > We could disallow them from requiring keytar or any other non-whitelisted native library. If you
+    586-72594307-1763 I tend to agree with @paulcbetts on this one. I feel like Emacs has a good model here, being that 
+   1048-73140968-1763 The logging idea is fine but only if it's in the users face with a whitelist for certain URL's but it
+    643-73153169-1763 I'm starting to feel like this is really just a moot point. I've decided I'm going to write a git
+     35-74774516-1763 /cc @gregose @mastahyeti @oreoshake
+   1054-74778211-1763 Disclaimer: I know very little about Atom's model. Has a more granular model been discussed? I see
+   1734-74782437-1763 > What is the specific issue preventing your package from running in a sandbox? Mostly node features
+    204-63516075-1743 I still need the fix for the issue... I need a way to reference code lines to make possible using Ato
+    169-75754658-1743 This doesn't quite work yet. When opening a file to line 0, Atom will just try to open a file called 
+    179-75757794-1743 Thanks for reporting this, @scwe -- I can reproduce this as well. I'm pretty sure this was working, s
+     63-37178282-1737 Also, possibly related: https://github.com/atom/atom/issues/574
+x     21-44375427-1737 I'm getting this too.
+x     10-48069467-1737 Same here.
+x      2-64767494-1737 +1
+x      2-64940031-1737 +1
+x      2-71839750-1737 +1
+x      2-75309920-1737 +1
+     22-36942899-1718 Not sure I understand.
+    294-36943085-1718 They could make a dummy language that with the extension and includes the grammar they want to extend
+     41-36943666-1718 @probablycorey Yup, something like that.
+    124-48879399-1718 +1. It's *really* sad that Atom doesn't support this... Case in point: adding `Podfile` to *Rub
+    220-49563855-1718 If somebody wants a little StackOverflow reputation bounty, implement this and [reply here](http://st
+     39-52173250-1718 And with UI described in #1784 is nice.
+x     36-55813398-1718 :+1: this would be a great feature. 
+x      2-57702360-1718 +1
+x      2-64534925-1718 +1
+x      2-65002483-1718 +1
+    216-66894573-1718 Would be nice to add the following filetype to [language-json](https://github.com/atom/language-json/
+x      2-72386232-1718 +1
+x      2-73013976-1718 +1
+    116-73138523-1718 Would love this feature. All my `.tag` files are seen as "Java Server Pages" when I want them as "Jav
+    177-73141447-1718 Somebody replied on [StackOverflow](http://stackoverflow.com/a/28142113/269753) pointing to the *file
+x     41-73218095-1718 Thanks @rsanchezsaez. That works form me.
+    956-36918453-1691 > Since we're in a web browser, theoretically accessibility should be a given I just wanted to cla
+    155-36918962-1691 (Further, Doug is going to be in SF next week if anyone would like to meet up with him for coffee or 
+    214-36933337-1691 Given the scope involved in making this compelling for users that need it, I don't think we'll be rea
+   1127-69582700-1691 I for one can +1 this, given that I'm a blind programmer. I'm going to see how it performs on Window
+    128-44261467-1687 Wondering if @zcbenz has any pointers on how to make this happen? I'm happy to poke at this, but not 
+    259-44281780-1687 @izuzak I don't know if it'll help, but I once complained that the package specs output window wouldn
+    154-74530255-1685 Will this also solve the issue of autocomplete creating `linear-linear-gradient` after you typed `lin
+     53-46822839-1677 Related: https://github.com/atom/atom-keymap/issues/3
+     40-37485112-1669 support/017442dea9df11e387482476e9ad32e7
+     53-37485142-1669 /cc @zcbenz Any ideas on where this sound comes from?
+    171-37493909-1669 The text input would only beep when it could not handle the keybinding, I think it is somewhere in Ch
+    361-40864981-1669 Still getting [questions](support/24e76714c7a311e3983e683c1a7576f5) about this: > Whenever I use c
+    241-41106990-1669 This seems to be an OS level thing, because if I do `ctrl-cmd-down` in my journal program Day One, I 
+    122-44141562-1669 I have this issue too :/ I'm using OSX btw. Please let me know if there are any information I can pr
+    211-46735563-1669 Apparently this is because "typing an unmapped key command will result in an audible bell". More info
+     93-52648847-1669 FWIW this audible beep does NOT happen in Sublime Text 3. The line shifts down with no beep.
+    192-76700722-1669 Same behavior for me on OSX 10.10.2 and Atom 0.184.0. The same key mapping in SublimeText does not pr
+    151-47167993-1667 This is a result of a parsing optimization that only [parses X tokens](https://github.com/atom/first-
+    252-47424970-1667 Just for reference, the max 100 tokens per line limit is defined in Atom [here](https://github.com/at
+    331-49151492-1667 This is a complicated issue, because until token parsing is sped up this will need *some* limit. May
+    425-51544598-1667 I'm not sure if I am experiencing the same issue, but I am seeing similar behavior in a shell script 
+    178-51610461-1667 @zacharyowen Yeah, that seems to be the same issue -- it's a long line and syntax highlighting breaks
+x    167-55612103-1667 I have the same issue. ![screen shot 2014-09-15 at 9 58 26 am](https://cloud.githubusercontent.com
+x     81-56688202-1667 Similar problem here... any solution ? ![](http://puu.sh/bLX9Q/0650ea1b3b.png)
+    155-59027029-1667 This breaks the syntax highlighting in the Markdown preview pane, too. Might not be all too surprisin
+b    308-61032769-1667 Bumping this — perhaps a good temporary workaround for the meantime would be to allow users to set th
+    148-61156811-1667 :+1: If this isn't going to be changed, then some way to adjust and persist the value is required. Pl
+x     44-61157244-1667 +1 on making it configurable as a workaround
+    176-64744065-1667 In case anyone else is fixing this manually with every Atom update (ugh), the source has moved to her
+    107-65569904-1667 I've created a simple package to make this limit configurable: https://atom.io/packages/grammar-token
+x     29-65649493-1667 @postcasio Excellent, thanks!
+x     28-66945285-1667 @postcasio Much appreciated.
+x     25-67771885-1667 @postcasio great thanks !
+    177-69776121-1667 Is there a way for this limit to only affect the offending line and not the rest of the document? In 
+    269-69800463-1667 @jonathandelgado I agree... this seems to be how some other editors handle it. If a line is longer t
+    128-69903766-1667 @jonathandelgado @bendman this is actually the intended behaviour, it just doesn't work in some cases
+    106-71568511-1667 @postcasio Thanks for doing that. I don't see your pull request in this repository. Where might I fin
+     31-71570521-1667 @andrewpcone atom/first-mate#33
+x     82-72146739-1667 Thanks guys, this really helped me out.. Makes my work such a pleasure, thank you!
+    161-36539442-1661 Sounds like a good idea. Reading it should be no problem. Assigning it could be a little trickier for
+    240-46176194-1654 Bumping this up with a better screenshot so the devs can see the issue. ![untitled5](https://cloud
+    116-49892870-1654 I've created a package, [white-cursor](https://atom.io/packages/white-cursor), specifically to deal w
+x     48-49941993-1654 @lee-dohm that is awesome, thank you *installs*
+x     42-49966350-1654 @tekkub You're welcome. I'm glad it helps!
+    244-50188538-1654 I can see this being in the default install. We can sample the syntax background, and swap based on i
+    437-50218748-1654 @benogle I could put together a LESS mixin solution that theme providers could use to easily select w
+    455-50219140-1654 I cant decide if I want to specify the white cursor in the theme or in core. I like the simplicity of
+    141-50219360-1654 Oh yeah, I like that idea. And if it is available as a mixin, then it is still available to the end u
+x      2-70140988-1654 +1
+    641-48554505-1650 Using Atom on Windows with a normal DPI display, I have to raise the font size for my code to be read
+    232-53178561-1650 It appears that the hardware acceleration option bypasses this setting and once again forces grayscal
+    202-54091817-1650 So, in order to get the font rendering to look how it does in chrome browser, I have to turn off hard
+   1420-55890620-1650 When we compare Atom's (Webkit's) font rendering with Sublime Text 3's on a standard 1080p resolution
+    247-55934378-1650 @AndreasBackx In all three of your anti-aliased images the hardware acceleration version is using gra
+     83-56194892-1650 @retep998 Yes. Try it out yourself. That's what I get when I change those settings.
+    532-74545813-1650 @kevinsawicki @nathansobo Care to take a look at this issue? Duplicates of this issue have been repor
+    415-74904325-1650 If someone could hound the Chrome team about using subpixel anti-aliasing on GPU layers with opaque b
+     54-42668498-1612 This would be a _huge_ boost to anyone using vim-mode.
+b     17-43248742-1612 Any news on this?
+    149-43249008-1612 I don't think anyone's working on it at the moment. PRs welcome! Maybe someone from @atom/vim-mode-ma
+    194-45252175-1612 I stumbled upon the [relative number](https://github.com/hongymagic/atom-relative-number) project but
+     50-49822303-1612 Would be huge to have this in Atom for me as well.
+x      5-50704045-1612 :+1: 
+x      5-53298451-1612 :+1: 
+x      4-54789093-1612 :+1:
+x      2-61589279-1612 +1
+x      2-67356957-1612 +1
+x      2-68634287-1612 +1
+x      2-70378346-1612 +1
+x      5-70606339-1612 :+1: 
+x      2-70611623-1612 +1
+x      2-72866517-1612 +1
+x     71-76564965-1612 :+1: :+1: I use this all the time in vim and really miss it in Atom.
+x      5-77676987-1612 :+1: 

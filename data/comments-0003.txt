@@ -1,0 +1,195 @@
+
+# page: 3, date: 2015-02-26, count: 30, rateLimit: 4999 of 5000
+
+    290-76243928-5769 In the state where this happens, can you report the output of this command in the console? ```java
+     55-76249162-5769 The path: ["/Users/Nathan/Brightmd"] Output: 25401
+    101-76250697-5769 That's a lot of files. Does this happen for any directory, or just when you open your home directory?
+    151-76252404-5769 It is just the home directory. I don't need to open the parent directory for project I'm working on, 
+     62-76272380-5769 Similar report: https://github.com/atom/fuzzy-finder/issues/76
+     90-76477709-5769 It is also getting stuck for me at 2,700. ``` $ find . -type f | wc -l 3473 ```
+    117-76477831-5769 Ignore my previews comment... it's because of .zeus.sock mentioned in https://github.com/atom/fuzzy-
+     67-77684621-5769 @nathancooper Can you still reproduce this problem in Atom 0.186.0?
+   5704-76242118-5767 same here, Windows 8.1 ``` Program: Starting Squirrel Updater: --install . Program: Starting insta
+     15-76242594-5767 /cc @paulcbetts
+    176-76244534-5767 For reference: https://discuss.atom.io/t/atom-installation-error-on-windows-8-1/15050/6 https:/
+    143-76273134-5767 Is this happening all the time? Usually this happens when you try to uninstall then immediately reins
+    133-76374219-5767 I rebooted and repeated the install of 0.184. Again I saw the 'Install has failed' message box shown 
+     47-76443957-5767 Do you have an Antivirus product? Does it suck?
+    127-76481009-5767 got the same Problem with the same logmessages. After killing the hole "%LOCALAPPDATA%\Temp" folder a
+   2924-76514193-5767 Getting the same error. Only since yesterday. ``` Program: Starting Squirrel Updater: --install .
+     66-76514593-5767 The following worked: Delete the whole of `%LOCALAPPDATA%\Temp`
+    352-76514619-5767 Actually, I got the same error when I tried to install on Windows 7. Have no AV running, no other pro
+    266-76524759-5767 The issue was fixed by purging the ```%LOCALAPPDATA%\Temp``` folder. In my temp folder there were a 
+    628-76525910-5767 PS: I cam up to the solution of purging `%LOCALAPPDATA%\Temp` by looking at the callstack. `System.IO
+    860-76531397-5767 Well, I wouldn't say it's the solution, since the actual root cause is unknown and still needs to be 
+     65-76571800-5767 Windows Defender should be fine, you do *not* need to disable it.
+    208-76666731-5767 I purged the temp directory and it still doesn't work... Not sure what is causing the problem. 
+    177-76668130-5767 @vgturtle127 which version is it. I had trouble with updating before 182. That's why I uninstalled on
+    160-76671550-5767 @vgturtle127 Can you paste the actual error you receive? A lot of people on these threads are self-di
+     88-76702325-5767 I got also problem with installation https://gist.github.com/Trudko/cc5e18102664c7da1842
+     71-76740654-5767 Deleting the contents of "%LOCALAPPDATA%\Temp" fixed this issue for me.
+    928-76816865-5767 I am using the 184 installer now. I tried running CCleaner and restarting my computer. It still doesn
+    274-76832981-5767 @vgturtle127 Can you paste the actual error you receive on clean install please? You don't have to r
+    319-76883551-5767 Program: Starting Squirrel Updater: --install . Program: Starting install, writing to C:\Users\Turtl
+   2234-76883692-5767 I also have the crash log if you would rather have that. <hide> [7244:6540:0302/010927:VERBOSE1:cra
+   1958-76884148-5767 Squirrel Updater log: ``` Program: Starting Squirrel Updater: --uninstall Program: Starting unin
+    252-76943671-5767 Are you saying you right-clicked-->"Run as Administrator"? If so, please don't do that (in fact, in 
+    128-76970927-5767 Even if I don't, it still fails. Why will it run as a normal user in the next release? Is there a pro
+    157-77039157-5767 Go to your system preferences and start the disk-cleanup tool on c: After the program closed itself 
+     81-77048351-5767 I have used that as well. I guess maybe I should try checking in my event viewer.
+     78-76181737-5763 Can you share how exactly you're running specs and what output you're getting?
+   11319-76181863-5763 For what it's worth, I just tried running the specs and got one failure: ``` $ apm test [19159:0
+   11801-76195185-5763 In atom, under Yosemite, I go to view -> developer -> run atom specs. It's 2000s and still going, bu
+    334-76207760-5763 Still running... the spec suite window is very slow due to the list of issues being _really_ large. 
+     11-76231864-5761 cc @zcbenz 
+    215-76132076-5758 After uninstalling atom yet again, removing the atom folder, then installing atom, I only got one of 
+     70-76132403-5758 @Enkouyami Can you please post the output of `ls -lah /home/ely/.atom`
+    639-76132899-5758 @steelbrain Here's the output: ``` ~ $ ls -lah /home/ely/.atom total 44K drwxr-xr-x 5 ely ely 
+    121-76250273-5758 What other information can I add? Atom didn't give a stack trace or specify what kind of error "unabl
+     64-76256301-5758 @curtiszimmerman's 6th comment on issue #5121 fixed the problem.
+     81-76480565-5758 @Enkouyami The one about running atom as superuser? That is not a fix, obviously.
+    189-76489593-5758 @Moter8 Uhh, I'm not sure where you get the "run atom as superuser" idea. The one he references -- an
+    465-76490040-5758 That's not really the 6th comment :P Nevermind this. El 28/02/2015 00:05, "curtis" <notifications@gi
+    133-76664664-5758 @Moter8 I meant the sixth occurrence of when curtiszimmerman commented on that issue when I said "cur
+   3499-76113775-5756 That is good news. There was a vacuum for new package developers. On Wed, Feb 25, 2015 at 6:38 PM, 
+    450-76116309-5756 I am using [RiotJS][RiotJS] in some of my projects and I love it, It's about 3.5kbs only and gives yo
+    377-76118750-5756 [Mithril.js](http://lhorie.github.io/mithril/index.html) saved JavaScript for me. Like many others fr
+    870-76119196-5756 > no arbitrary html-ish templating languages I think there should be a blessed template syntax as p
+    523-76119687-5756 > IMHO it should be a simple noise-free template syntax like that of space-pen. This conflicts wit
+    348-76120551-5756 > I personally am strongly against anything like space-pen's syntax, or HAML I don't see how Atom
+    797-76120570-5756 > recognizable markup (allow users to write 'normal HTML') This is definitely not a requirement. T
+     29-76120896-5756 The television link is a 404.
+     47-76121213-5756 @mark-hahn it should work now. Sorry about that
+    323-76121458-5756 Perhaps I let my opinions leak into the requirements - we're evaluating some options that don't use n
+    196-76122652-5756 Television looks awesome. It looks cleaner and less-noisy than space-pen. And the custom element ha
+    346-76123252-5756 Mithril's out of the box syntax is very similar to virtual-dom/television, but you can also get HTMLy
+    286-76123271-5756 I like the template+data-binding approach. I think it would be awesome if the template language was p
+    590-76226468-5756 If anyone out there is interested, one way to help speed this along is to do some experimentation wit
+    144-76226842-5756 * How does it interact with web components, both in terms of creating new ones and using existing com
+     78-76228303-5756 I added a section in the body about helping out and answering these questions.
+     71-76281752-5756 I'm [taking a look at Vue](https://github.com/lee-dohm/vue-experiment).
+    175-76282489-5756 > I'm taking a look at Vue. :heart: Thanks. I briefly looked at it to see if it supported Object.o
+    233-76283548-5756 :bow: You're welcome. This is my opportunity to dig deeper into the DOM and rendering, so I figured I
+    775-76496307-5756 Things that make me prefer React: - largest community of the proposed options - battle-tested with 
+     31-76514635-5756 Focus on performance? Me likey.
+    323-76519248-5756 This framework is for packages and almost no package has any performance issues. On Fri, Feb 27, 201
+    786-76524885-5756 @mark-hahn Hmmm, I have like 40 packages installed. A lot of small slowdowns also results in a large 
+    329-76537504-5756 @abe33 Would you consider switching mini-map to use `atom.views.pollDocument` to coordinate polling w
+    471-76540634-5756 > . A lot of small slowdowns also results in a large slowdown... I'm arguing that slowdowns aren't
+    852-77371631-5756 Regarding React alternatives there is a [good thread on Reddit](http://www.reddit.com/r/javascript/co
+     73-77025138-5742 PS: I am also curious if this isn't possible, are there any plans for it?
+    903-75971225-5737 @Phorce Changing the button order now might be equally confusing for all users of Atom that are used 
+    494-75972937-5737 @izuzak I've never really noticed it on other operating systems. At work I have to use Windows (N
+    143-75979734-5737 Thanks, @Phorce. If this is the default in most other Windows apps (especially editors), I'd be :+1: 
+    147-75981452-5737 @izuzak - Aha! Thanks. It was just that I was working on a project today and found it really annoying
+    367-76039667-5737 This is an MS design pattern. For example https://msdn.microsoft.com/en-ca/library/windows/apps/hh738
+    602-76040294-5737 I think that it should be the same on a PC but obviously leave it for Mac Linux etc.. I assume that 
+    189-76056530-5737 :+1: As a native Windows user (and never having used Sublime), I find the current Save,Cancel,Don't S
+    413-75991674-5734 > any whitespace at the beginning of the following line should be removed before it is added to the l
+    131-75939130-5731 I have same errors, it came from atom-shell but it seems like there is nobody who find solutions . I 
+    108-75951524-5731 <s>Isn't this the same issue as #2177?</s> Never mind...helps to read the first line of the issue. 
+    271-75968143-5731 Really? this issue end without solution, just a lost guy who speak about NW, don t think i haven t se
+    493-75970022-5731 Ubuntu is a popular Linux distro, so if software is developed on dependencies that exist in Ubuntu an
+    276-76637076-5731 If you upgrade your compiler to gcc 4.8 by installing devtoolset-2 (see: http://superuser.com/questio
+    235-76670309-5731 That is a good point. When I was initially trying to solve this problem, I did install devtoolset-2. 
+     33-75900276-5730 Related atom/markdown-preview#178
+x     46-75888771-5729 +1 :laughing: Sorry, couldn't resist :wink:
+     28-75889139-5729 I should have expected that.
+    230-75889242-5729 Part of me kind of likes them now. It shows interest. It separates the popular or painful issues from
+    158-75889290-5729 `the conversation to date` sounds a bit weird to me. Why not just `the conversation`? Also, how abo
+    140-75889384-5729 Adding on to @benogle, +1 comments *are* helpful to a new/empty issue, but once multiple people have 
+    115-75889833-5729 > then it becomes useless Maybe after an insane amount. But difference between 1, 10, and 50-100 i
+    777-75889914-5729 I agree that +1s have a definite diminishing returns facet to them. Also, I feel like many +1s are no
+    271-75907524-5729 I personally do not mind the :+1: comments, though I wouldn't mind having them aggregated into the bo
+    361-75911915-5729 Voting for issues can be a useful feature indeed. It's used to great success in Jira for example. Bu
+    424-75913333-5729 > Voting for issues can be a useful feature indeed I disagree. Everyone seems to agree that "desig
+    422-75913786-5729 There's really no need to go to the extreme. Like @benogle said, it can be very useful to gauge the 
+    708-75917356-5729 > People will come in with the expectation that the folks working on the software full time are behol
+    132-75955911-5729 Worth pointing out that Google Code has issue starring, but Chromium *still* gets the occasional issu
+    248-76015375-5729 > Everyone seems to agree that "design by committee" is bad, but still wants issue voting at the same
+    629-76042259-5729 If the majority ruled we'd still have slaves in the US. Or at least for many more years. It's obvio
+    615-75889157-5728 I was too late to comment on the original tree view PR, but I guess I'll do so now here. Would the
+    249-75889617-5728 @50Wliu Yeah, I agree with your naming suggestions. The `New {File,Folder}` bit is already done (at l
+     87-75890522-5728 [Mentioned this on Discuss](https://discuss.atom.io/t/rfc-multiple-root-folders/15096).
+    790-75907870-5728 This might only be tangentially related but when I was trying out multi-folders, I was surprised the 
+    434-75924425-5728 I noticed some bugs, not sure If I have to create a separate issue or if it is ok here. ``` |- my
+     97-75940386-5728 @KeitIG I have experienced the first issue, but I can't figure out what exactly is happening.
+    176-75956636-5728 @KeitIG @nikolaydyankov I believe it's because the rename operation may do something like `atom.proje
+    604-76036594-5728 My suggestions are related to `atom` CLI helper: * when multiple paths are given to `atom`, all of
+    461-76038371-5728 @D-side I believe all of your suggestions are implemented in Atom's latest release. The multi-folder 
+    238-76039412-5728 > When I rename myfile.js to something else, it goes in myrootfolder-1 root. @KeitIG Thanks for th
+   1034-76045732-5728 @maxbrunsfeld okay, just installed the latest build. Yeah, great! One thing is missing though, if 
+    434-76046948-5728 Yeah @D-side I'm glad you brought that up. That's the current expected behavior, as our logic is curr
+    530-76047935-5728 > Persist combinations of root folders via an explicit project file, not based on which paths were or
+   1020-76056179-5728 @maxbrunsfeld CLI is expected to do what it's told to. Most of the time. If the state is saved, Atom 
+   1583-76059178-5728 > project files have a lot of potential. As long as they are optional and the current behavior is st
+    115-76060893-5728 IIRC you need to explicitly *save* a project in sublime. I'd be fine with that. And the current behav
+    135-76062278-5728 > As long as they are optional and the current behavior is still available. Yes, except for that i
+    550-76375157-5728 I agree with @mark-hahn as well. One of the early tenets and remaining strengths of Atom is its hybr
+    246-76422566-5728 @batjko @mark-hahn Absolutely 100% get what you are saying, and the philosophy of simplicity for simp
+    293-76468180-5728 I like the idea of project files as a method of defining a complex root structure that can be shared 
+    172-76495169-5728 Couldn't these project features be implemented without having an actual project file? I haven't thoug
+    735-76497903-5728 @mark-hahn You could technically just store the project files in `~/.atom` and boom, no project file 
+    465-76499446-5728 > that we don't sync projects (or workspaces, etc.) This gets back to my main complaint with proj
+   1196-76504050-5728 @mark-hahn I have different projects at work and at home. I don't want to have to scroll through work
+    359-76510047-5728 There are two issues I have seen, one is it won't allow to to add a root folder if a parent folder is
+    253-76510069-5728 It would also be very helpful it you can drag and drop the order of the root folders / rearrange them
+   1065-76512037-5728 @lee-dohm Loving the RFC terminology, and agree with your requirements. I think things can be kept co
+    696-76533118-5728 Thanks @nathansobo. I agree with your additional requirements. I also thought of one more: * Proje
+    516-77362657-5728 What I (and I suspect many other CLI-lovers) do most often is have terminals open for a number of rep
+    408-77384991-5728 Open `file` in whatever atom instance has project `project-name` open (and if there isn't a window op
+    173-75886737-5725 > Edit $HOME/.atom/.apm/.apmrc and add: Your `.apmrc` file should go in `$HOME/.atom/.apmrc`, `$HO
+x     39-75893719-5725 Ah, thanks, edited my original comment.
+    155-75895005-5725 It appears the http_proxy/https_proxy env vars are used by whatever grabs the avatar icons, so you do
+    286-75956029-5725 +1 Also my system uses a .pac file for internet access meaning when I'm not on the corporate network
+    869-76008696-5723 Thanks for the report, @mMerlin. I tried really hard, but couldn't reproduce this. @maxbrunsfeld 
+    585-75824726-5713 I don't think there's a command for that, @stijnsanders. I think that most of these commands were ins
+   1137-75848502-5713 I don't have experience with SublimeText, but with Notepad++. There you can switch to 'rectangular se
+    883-75832210-5712 > I expect that a ctrl-right with the cursor at the end of the line, selects the end-of-line and the 
+    511-75849809-5712 I'm on Windows. Yeah just try it on a plain textarea here: write this aaa bbb ccc 
+    287-75956006-5712 I think I understand what he means. Let's suppose `|` is the caret: somevar = (| t
+x     26-75974037-5712 Yes, that's it. Thank you.
+    664-75987940-5712 @stijnsanders @Yajo -- thanks for explaining. :bow: Could you please also answer these other question
+    234-76002563-5712 It is the default behaviour in most, if not all, other editors. I doubt any users are used to this be
+    168-76004077-5712 > It is the default behaviour in most, if not all, other editors. For completeness, could you give
+    530-76077983-5712 Examples of popular text editors that select up to the start of the first word on the next line with 
+    757-76139170-5712 Every editor I ever used did this. I can remember Netbeans and Enki. In fact, when I considered using
+    257-75739748-5698 Isn't this the intended behaviour by your window manager? Displaying the menu directly below the Edit
+    449-75786973-5698 This is indeed related to a *Window Manager*. The only other way to fix this would be to "scroll" the
+     85-75627269-5696 Hi, what version of Atom is this? Can you reproduce it in safe mode (`atom --safe`)?
+     65-75628273-5696 0.182.0, on Mac OSX Mavericks. behaves identically with `--safe`.
+    143-76018937-5696 I was able to reproduce this: ![double](https://cloud.githubusercontent.com/assets/38924/6376850/b
+     81-76020203-5693 cc @nathansobo @benogle for :eyes: -- is this a bug or should we change the docs?
+     62-76020928-5693 I think it's a bug. We could just move that line into the try.
+     22-75559321-5692 Which version of Atom?
+    163-75560578-5692 I've noticed this on the past few releases and have just gotten around to submitting the issue. In
+    136-75490974-5683 Note: BSOD (Blue Screen of Death) not always appears because of low memory. It usually appears when s
+    294-75528590-5683 Agreed, Atom _is_ more resource-intensive than N++, but it certainly won't crash your system, unless 
+    115-75529907-5683 Okay, I'll try it again. I hope atom more more lighter. So it can handle more more and more tabs lik
+     35-75535500-5683 What version of Atom are you using?
+     91-75538838-5683 version 0.182.0 I download it from atom.io website. and fyi, I'm using 64bit windows. 
+     28-75691871-5683 win 8.1 64 bit, works well. 
+    596-75420132-5674 The reason mapping the <kbd>Y</kbd> key to `core:copy` doesn't work is because of specificity: htt
+    280-75423805-5674 @lee-dohm I changed `keymap.cson`, but it does not work. ``` 'atom-text-editor': 'y': 'cor
+    183-75431644-5674 It does not occur to be using the debugger... :cry: I think the timing of dispatchEvent is causing .
+    220-75450608-5674 That screenshot is showing that `core:copy` *is* being called. Did you have anything selected? ![g
+    332-75460051-5674 Yes, I did. The selected text was replaced by "y". select ![20150223_061518](https://cloud.githu
+     78-75461115-5674 @lee-dohm Could you re-open this issue? I think this is a bug to be corrected.
+     95-75462101-5674 @bouzuya, I can't reproduce either on Atom 0.182.0 on Windows. I'll try later on Ubuntu 14.10.
+     62-75465084-5674 fmm... Maybe I will not reproduce in Mac OS X. I'll try today.
+     66-75466348-5674 Looks like it may be OS-specific. I'll re-open and tag with Linux.
+     43-75486189-5674 I can't reproduce on Mac OS X 10.9.5. :cry:
+     82-75491089-5674 Guys, a side question :stuck_out_tongue: How do you generate all those fancy gifs?
+    200-75492849-5674 @steelbrain There's a [FAQ on Discuss](https://discuss.atom.io/t/draft-faq-lets-improve-it-together/1
+    144-75631353-5674 I can reproduce on Ubuntu 14.10. Pressing <kbd>y</kbd> to copy will copy the selected text but also 
+    382-75398003-5669 For the first part of your question (about Metrics), please see [this comment](https://github.com/ato
+    258-75399034-5669 Beta, aha. Well if beta is the excuse make sure the installer has a glaring warning explaining that "
+    380-75399178-5669 There is at least an option in Settings (albeit a bit hard to find, but that's another issue that's b
+    471-75399486-5669 BTW, Atom metrics do not fit the definition of spyware. From wikipedia ... "*Spyware* is software <
+    199-75400838-5669 It absolutely fits the definition of without their knowledge and without their consent. There is no r
+    609-75401629-5669 > no clear information given to the user that this is happening. For some reason I was well aware of
+    566-75402289-5669 @50Wliu Thank you for pointing me to the pause button in the tree. And indeed welcome.md has as its v
+    965-75402639-5669 > It's just horrible manners According to whom? Manners are defined by social convention and almos
+    208-75402896-5669 Yes, I'm projecting my convention. That's how feedback and criticism often works. I hope the develope
+    670-75403076-5669 > That's how feedback and criticism often works. Definitely. I was just objecting to the use of the
+    227-75411624-5669 @50Wliu Squirrel does no automated checking of its own in Atom, the code in atom/atom explicitly invo

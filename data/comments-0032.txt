@@ -1,0 +1,97 @@
+
+# page: 32, date: 2013-03-07, count: 8, rateLimit: 4100 of 5000
+
+x     75-14578942-380 :+1: here too. I've been bugging @nathansobo about this since Hawaii :grin:
+     72-15396546-380 With the new panes refactor @nathansobo did, I bet this would be easier.
+    925-15396760-380 The big issue is that the emacs guys want a buffer list that doesn't depend on the lifetime of panes
+    228-15401991-380 > The big issue is that the emacs guys want a buffer list that doesn't depend > on the lifetime of p
+    491-15425838-380 SEE HA IT'S NOT JUST AN EMACS THING On Mon, Mar 25, 2013 at 8:59 AM, Mutwin Kraus <notifications
+x     27-29228501-380 I still hit this every day.
+    235-29231650-380 I do too. I can get "Pane: Close" out of the command panel, sure, but gosh I'm an emacs guy and it's 
+    162-29237159-380 Still committed to fixing this. We're restructuring this whole area to support replication. After tha
+x     60-48856286-345 Relatively minor issue, but would be nice none the less, +1.
+x     41-50432867-345 Would very much like to see this addition
+x    460-72155883-345 :+1: This issue is ancient at this point, but I managed to resurrect it in [Discuss](https://disc
+    245-72265648-345 @mnquintana If we want to implement native elastic scrolling the editor view has to be a native `NSVi
+    108-72282849-345 Could you instantiate a NSScrollView in the background and throw events at it and measure the scroll 
+    271-72304173-345 Does standard Chrome / Chromium implement native elastic scrolling, or is it simulated with JS and CS
+    514-72342490-345 > Could you instantiate a NSScrollView in the background and throw events at it and measure the scrol
+    191-72345231-345 @zcbenz if the algorithm is exposed some other way then sure it should be used. I've never looked. If
+     80-74712436-345 #5588 has an animation, for people that are not clear on what is being discussed
+    821-14081922-309 We should be able to address it in the rendering engine. We just need a mapping from Unicode to imag
+   1212-14082639-309 Related Chrome issue: https://code.google.com/p/chromium/issues/detail?id=62435 On Monday, Feb
+    162-18181984-309 There are four emoji characters hiding in this p tag. ![atom-emoji](https://f.cloud.github.com/ass
+    130-66203371-309 [Chromoji](https://github.com/robjdavey/Chromoji) is used to patch the chrome issue. Might be a good 
+    113-67027083-309 Now that seems to be possible in Chromium :bowtie: https://code.google.com/p/chromium/issues/detail?i
+     44-67042857-309 What version of chromium will the fix be in?
+    188-67158033-309 @benogle looks like Chrome 41 will fix this ![bildschirmfoto 2014-12-16 um 14 18 39](https://cloud
+   1662-14058547-307 Yeah, we currently do a blocking read to load files. We need to switch to something event-driven. I 
+   1405-14338358-307 I just tried opening a 124MB JSON file directly from the CLI and got this: ``` RangeError: Maximu
+    211-26546208-307 This moved forward after #939. But there is still some telepath work to get the rest working. Adding 
+   1558-46593948-307 I'm failing to open up a 1.4MB HTML file with the same ``RangeError: Maximum call stack exceeded`` 
+    598-48525797-307  Opening files larger than 2MB is an edge case that most users don't run into, but I wanted to invest
+    359-48552131-307 I modified [window-bootstrap](https://github.com/atom/atom/blob/cj-minimal-setup/src/window-bootstrap
+    134-48562681-307 I'm thinking we probably need to store the `TextBuffer` data off the v8 heap using a C++ extension, o
+     62-48562710-307 But there's also a ton of other data such as tokenization etc.
+    169-48685632-307 Node's [Buffer](http://nodejs.org/api/buffer.html) stores data in C++ heap. But if we want to support
+    238-48685971-307 Interested in any ideas you have about the design of that @zcbenz. The hardest part might be a bunch 
+   1190-48688172-307 The basic idea is to only draw the file on needed, but it will need a good caching strategy to make t
+     60-50142925-307 I tried to open ~8gb text file, but nothing just happened :)
+    524-50146712-307 I'm not sure how they do it, but [Baretail](http://www.baremetalsoft.com/baretail/) is a pretty impre
+    459-50181927-307 @batjko Thanks for the tip. Long term we definitely want to support files of arbitrary size, but an a
+    249-50182857-307 @nathansobo Personally, I'm happy with it as it is. I have no use for extreme file sizes in an *edito
+    140-50183351-307 Yeah, I pretty much agree. I'm confident we'll get there eventually, but there's a lot of other thing
+    288-50996094-307 @batjko I don't think this is a rare use case, given the amount of text editors which advertise this 
+    256-51286130-307 The other aspect to this is the failure mode while it isn't supported. If viewing and editing large t
+    189-51349598-307 The failure mode is currently an error message displayed in the console for files exceeding 2mb, whic
+     44-51426957-307 Yes. This is a 1.4M (generated) Python file.
+    332-51915985-307 > Yes. This is a 1.4M (generated) Python file. @detly Can you share the file for which this is hap
+    289-51927087-307 > Can you share the file for which this is happening? Actually, I just tried this myself and Atom 
+    266-55156911-307 I can't believe this doesn't seem to have a very high priority given there have been numerous release
+b    426-57195942-307 Any news or progress on this? I love atom and everything, but I regularly have to open files bigger t
+    479-57196245-307 > And if it requires making things asynchronous, its better to do it now than later, as you gain more
+    224-57196632-307 Check out view-tail-large-files. It is read-only with no syntax coloring but it opens multi-gigabyte
+    127-60489503-307 How come this is a problem on powerful computers that have the amount of RAM to retrieve this large k
+    349-60489642-307 @karloluis Because the limit should always be the harddrive, not ram. Nobody wants to use up all thei
+    424-60492936-307 If you're running so many VMs that memory is a concern even with 32gb then you shouldn't be using Ato
+    424-60496185-307 @simonzack @toadwarrior This is pretty worrisome, but I feel like there should be a pretty straight f
+b     42-34125709-274 Bump! I miss this feature of sublime text.
+x     42-35665246-274 Yup - just asked about this in chat. :zap:
+     95-35676002-274 I'm renaming the issue from panels to panes, since I think that's what we're referring to here?
+x      6-35677989-274 Indeed
+x      4-35683813-274 yep!
+     47-39607544-274 support/a00d6feabc1f11e385d80dfdd159e9eb?page=1
+b      4-46213516-274 bump
+x      2-46726947-274 +1
+x      2-46771763-274 +1
+x      2-47373899-274 +1
+x     10-49382724-274 +1 on this
+    287-49424436-274 You know, until this is part of the core code, feel free to make use of [this package](https://atom.i
+     82-50079625-274 @batjko good work. I think it should also be implemented to resize with the mouse.
+    107-50135413-274 @MasseGuillaume I think the package does that? I haven't used it yet, but that's sort of a given, ri
+    102-50149605-274 @batjko nope saddly is only with the keyboard shorcut. https://github.com/santip/resize-panes/issues/
+     57-50159802-274 Ah. I suppose that's not as easy as one would hope it is.
+     55-50160154-274 @batjko if you implement this I will send you a :beer: 
+     90-50161322-274 I don't think I could, so I'll leave it to the package author to snap up that :beer: then.
+     66-50241763-274 @batjko suggested: https://github.com/santip/resize-panes/issues/7
+     85-54914814-274 Atom is unusable without drag able panes. Horrible to have launched it without them. 
+    385-54928911-274 To be fair, @SpeakInCode , it's certainly not "unusable". Some people don't use split panes at all, o
+    191-59639675-274 > You know, until this is part of the core code, feel free to make use of this package that appears t
+x     83-63750056-274 :+1: as a nice to have. Its one of the major things missing from switching from Vim
+     93-64092447-274 Please implement this one. It is one of the most annoying things in Atom compared to Sublime.
+    236-66107206-274 I might have some time before Christmas so I am happy take a look at it. Can anybody please, give me 
+    349-66149106-274 The panes are currently divided using flexbox. I believe you can adjust a flexbox distribution by ind
+    171-68040106-274 I'd like to tackle this issue. I am playing around with pane.coffee and pane-axis.coffee and it seems
+b     44-69586415-274 :+1: @yjw9012 Achieved any progress on this?
+     72-70636548-274 http://codepen.io/pprice/pen/splkc/ Here a demo of a resizing flexbox :)
+    186-70639137-274 I'm in the waiting queue too: I really need this feature please!!! In the meanwhile...is there any
+    274-13251053-249 I saw this first hand... looks like a rendering artifact in Chromium, associated with the cursor blin
+    288-16535999-249 This looks like a webkit bug https://bugs.webkit.org/show_bug.cgi?id=12607 Italicized letters aren't
+    582-16540934-249 Can we try having them *not* overflow out of their container? On Wed, Apr 17, 2013 at 3:11 PM, C
+   1309-16541204-249 From what I've read, I think certain italic glyphs overflow their container and there is nothing you
+    138-73935936-247 This hasn't been implemented, nor it has received any attention lately. Does it need to be addres
+     54-73938263-247 I'd like to leave it open. We'll get to it eventually.
+x      6-12482798-148 +:100:
+    215-12501112-148 We need to finally live in a world where this is a thing. On Jan 20, 2013, at 9:42 PM, Daniel Hen
+     92-13851235-148 This is one of the first things I missed coming from Vim. Excited to see it on the roadmap.
+    195-47000844-148 This is a must for package developers. Any idea how this should be implemented? I'll look into this b

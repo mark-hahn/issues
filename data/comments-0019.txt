@@ -1,0 +1,145 @@
+
+# page: 19, date: 2014-10-10, count: 30, rateLimit: 4503 of 5000
+
+    133-58684392-3786 FYI I also posted this on the atom discussion forum: https://discuss.atom.io/t/proxy-settings-not-
+    154-58653420-3783 also I've already seperately built apm successfully. Might I be able to use that instead? If so, ho
+    183-58805889-3783 As I'm guessing the x86 prebuilts are cross-compiled, it would be great to have some available for ar
+     95-68916820-3783 I need this too. Wished I'd bought an Intel Chromebook, these ARM processors are troublesome :(
+    137-75737259-3783 Would the contents of `apm/npm-debug.log` assist with fixing this bug? I was going to post it before 
+    707-75738747-3783 [hmm I swear I commented this just now, before opening that issue on apm but it appears to have vanis
+    161-75817419-3783 > the only options would be to switch to iojs Atom-shell recently switched to io.js, and so did A
+    117-75819664-3783 Not in https://github.com/atom/apm/blob/master/script/download-node.js it didn't, which is what's cau
+     41-75823448-3783 Ah, the node bundled with apm, of course.
+    105-58490193-3772 Created an SO post, too: http://stackoverflow.com/questions/26275881/atom-editor-node-gyp-rebuild-cra
+    175-58463981-3770 I don't think any of those packages are Atom core packages. You might want to search for the packages
+    418-58464051-3770 Please click the link in the messages and install python + visual studio. On Wed, Oct 8, 2014 at 1
+     63-58778847-3770 i have this problem too,but i have already python gcc vs tools.
+    102-58927634-3770 I assume both of you are on windows, correct? @netmou did you install them and did it work for you
+    108-59013805-3770 yes,i have installed the Visual C++ 2010 Express,Visual Studio 2010 Service Pack 1 , python 3.4 , nod
+    389-74852868-3770 I'm having this problem with 0.180.0 on windows as well, with packages that previously updated with n
+    443-60213576-3767 I have the exact same issue with a fresh atom installation on Windows 7. I have a multi monitor setup
+    295-65463896-3755 With the popover class you need to position your view correctly. I just did this in AtomLinter htt
+    220-58163658-3741 In addition, the package generator could set the current Atom version as the minimum version in the c
+    770-58205556-3741 > When installing a package with apm install <package>. If the package engine version doesn't match t
+     55-58215443-3741 Nice :) to read! Is there anything I could do to help?
+    250-58217612-3741 Nothing currently I can think of, I hope to have that apm PR merged this week, and I opened an issue 
+    434-67173481-3741 This would be super rad! Any ETA? I just updated my themes for shadow dom which is a breaking change 
+    275-67193737-3741 > I've been getting lots of bug reports from people who updated the theme (but not Atom) complaining 
+    415-67270501-3741 Sure thing, thanks @benogle! I think it seems to be related to shadow dom updated, folks on old versi
+    264-72253882-3741 This would be super useful, had many issues on the repos for both `linter` and a `autocomplet-plus` w
+    712-58131142-3736 Cannot duplicate on Atom v0.136.0-d7efa9b and OS X v10.9.5: ![screen shot 2014-10-06 at 8 11 59 pm
+    233-58092757-3730 What is happening when you try to add the class? Here is what I'm seeing which appears to be behaving
+    114-58094125-3730 That makes me think this is related to a plugin. Let me disable my plugins and see which one is causi
+    167-58094790-3730 If you quit Atom, and launch with `atom --safe`, it will temporarily disable all installed packages s
+    180-58095393-3730 With `--safe` I still get the same thing: ![aubreypwd-results-atom-js mov](https://cloud.githubuse
+     67-58096322-3730 Do you have some custom invisible settings? Look like it is `=`?
+    347-58097906-3730 Indeed it was my custom `==` on my **Invisibles Tab** setting. So, if I set it to `1` character I'm f
+     22-58098296-3730 Thanks for the details
+    255-58098587-3730 I'd like to also note that the reason I did the `==` was so I could see a space right after the tab a
+     46-58105552-3730 +1 for loading the default config in safemode.
+    339-57896247-3719 Discuss Topics: * https://discuss.atom.io/t/soft-tabs-are-harder-than-they-should-be/1472 * https
+x     55-58293640-3719 Thanks @lee-dohm that's exactly what I was looking for.
+    106-58294275-3719 Removing from the API freeze roadmap as it is not necessary for the api freeze. Will happen shortly a
+     67-68074720-3719 Also please add support for per language soft tabs support somehow.
+x     36-71349050-3719 +1, I would really appreciate a fix!
+    112-77594872-3719 +1 on getting this actually working properly, since certain file extensions do not respect the tab/sp
+     85-65358858-3717 Is this something you need help with? I'll implement this if you would like the help!
+x     22-65363968-3717 That would be awesome.
+x     51-65452253-3717 @Joshua-Anderson Awesome, help would be great :+1: 
+     60-65534513-3717 I'm taking a look into it. Expect a PR coming your way soon.
+    151-66938573-3717 Still working on it. I'm trying to get launchpad to cooperate, but I'm running into a lot of strange 
+    379-69137471-3717 Ok. I have confirmed that the [launchpad builders have no internet access](https://answers.launchpad.
+     86-77620159-3717 Would also love to see this, or at least pointers on how we could help it move forward
+   1075-57805135-3715 What version do you have? This changed a bit between 134 and 135. If 134, upgrade to 135. 135 should
+    929-57808651-3715 I'm running off a fairly recent build from master (so more recent than 135, but it also happens if I 
+     85-57826555-3715 Make sense now. Some kind of alert box with steps to fix would likely be sufficient. 
+    117-77279608-3709 Update: I have created an updated PR which includes a config item for disabling folding, and disablin
+     67-66921648-3705 Generally displaying a changelog for package updates would be good.
+x    297-66922339-3705 +1 On Sun, Dec 14, 2014 at 9:55 AM, Benjamin Staneck <notifications@github.com> wrote: > > Gene
+    605-66922539-3705 It is possible to view the `CHANGELOG` of a package in the Settings View if the file exists in the re
+    988-58728677-3695 Hmm. So, I've hit this issue again. I think the important thing from the rather long comment above i
+    507-58729276-3695 You might want to take a look at my tabs-to-spaces package to see how I sped up load and activation t
+    274-58729714-3695 @lee-dohm Thanks! Yeah, that will definitely work, for now. I do still think it exposes a limitation
+    482-73314190-3695 I think maybe related is the fact that serialization happens before packages are activated. In Atom.s
+    245-57732860-3692 I'm having trouble reproducing this, can you reproduce it when starting Atom in safe mode `atom --saf
+    215-57768988-3692 ![bug](https://cloud.githubusercontent.com/assets/6118156/4503417/aae45b3a-4ad7-11e4-858e-fa84494ccce
+     90-57826711-3692 I'd argue that is not a bug. It's pasting them in the order in which you created cursors. 
+     25-57826739-3692 I'd say this is a wontfix
+    220-57827186-3692 I know it seems like a cool thing with the example provided, but when you have a big document and you
+     53-57828588-3692 Can you pick them in order that you want them pasted?
+    101-57834176-3692 +1; I would definitely opt for top-to-bottom order, not click order. Or maybe a setting to change it.
+x    344-57839189-3692 +1 for click order On Fri, Oct 3, 2014 at 11:22 AM, Caleb Place <notifications@github.com> wrote:
+    633-57839452-3692 BTW, the way it is set up now allows you to choose. You can use click order or you can select from 
+x     16-57839474-3692 @mark-hahn :+1: 
+    294-57841030-3692 I understand your reasoning, but the problem is, if you miss a section in the middle of your code, wi
+    683-57848910-3692 > to get the correct order, you've got to deselect everything and restart your selection from the t
+    317-57851417-3692 IMO though it might seem like a cool feature it is an unexpected behaviour. When you select one at a 
+    644-57851565-3692 @mark-hahn: You can, but it slows down your workflow: ``` - Select section 1 - Select section 2 -
+   1010-57887709-3692 When confronted with things like this, I go looking for prior art ... I feel like in other applica
+   1754-57890496-3692 > let's take an email client for example, What mail client supports multiple selections? > it s
+    532-57896501-3692 > What mail client supports multiple selections? What mail client doesn't support selecting more t
+   1072-57898978-3692 > What mail client doesn't support selecting more than one message to move from folder X to folder Y?
+    640-57902360-3692 BTW, here's the "Holy Grail" of text editors :smile: (Sublime) doing it: ![sublime](https://cloud.
+     73-57420931-3684 Are these things you'd like to handle yourselves, or are you open to PRs?
+     48-57421176-3684 Open to PRs for sure. What did you have in mind?
+    105-57421570-3684 Thinking I might give https://github.com/atom/atom/issues/3683 a go, since it's a feature I really mi
+    148-57421740-3684 I do know @kevinsawicki was looking to implement that one soon. If you really want to do it, you migh
+     43-57445461-3684 What does "Exception user experience" mean?
+    596-57481755-3684 > What does "Exception user experience" mean? Trying to improve the options when uncaught errors o
+     43-58031469-3684 How about soft wraps problems #1894 #1783 ?
+    413-58677515-3684 Could I make a request to add to the roadmap? I'd like to nominate #2357 for inclusion in v1.0. This 
+     73-58689643-3684 We definitely need a way to figure out which package is causing a problem
+    121-58900642-3684 > I'd like to nominate #2357 for inclusion in v1.0 :+1: I think this fits with the *Exception user
+     53-59085716-3684 The version with this feature it is already released?
+     73-59085822-3684 > The version with this feature it is already released? Which feature?
+    110-59086059-3684 Ops, wrong topic, sorry about that. I was referring to this feature: https://github.com/atom/atom/
+     58-60382990-3684 Is Linux binary releases (deb/PPA, RPM, ...) on the table?
+    152-60409188-3684 @thomasthorsen Yup, the next release will have an official RPM available from the releases page #3942
+x     27-60410594-3684 I'm waiting for #3673 :+1: 
+     88-60419998-3684 @Macsch15 It's an ongoing process. There were some large speedups pushed in 138 and 139.
+    196-60489587-3684 I'm really happy of how it's all coming together. I don't know where I might be of assistance but let
+    244-60489706-3684 You're always welcome on [Discuss](https://discuss.atom.io), @karloluis. If you want ideas on how to 
+x     57-60496410-3684 @lee-dohm This is awesome. I'll be sure to check it out. 
+    280-60687082-3684 I added https://github.com/atom/atom/issues/1806 to this list. With the work in https://github.com
+     53-61369667-3684 Are there any plans for a working version of freebsd?
+    265-61505229-3684 > Are there any plans for a working version of freebsd? @kolgotko Not currently, I'm not sure anyo
+     67-61596866-3684 Should "revisit view system" be linked to any existing pulls/repos?
+     18-61668699-3684 @thedaniel updated
+    172-61969346-3684 As discussed [here](https://discuss.atom.io/t/what-can-we-do-to-improve-autocomplete/13001), are you 
+    103-61994982-3684 @asantos3 I've replied there: https://discuss.atom.io/t/what-can-we-do-to-improve-autocomplete/13001/
+    459-62028485-3684 @lee-dohm and I are working on a beyond-state-of-the-art autocomplete. My goal is to release before
+     87-62028689-3684 @mark-hahn Before you guys get super deep into it, give us some time to talk about it. 
+    747-62029521-3684 Sure. I'm proceeding because it is so much fun, but I can change course anytime. Also I'm only wor
+   1436-62336190-3683 I'm trying to understand the status of this since there are multiple issues for it, and at least a co
+    155-62433405-3683 @swinbank thanks for compiling all this. We'll get to this, but we're still working on the api-freeze
+x     20-70988850-3683 oh yes please! :+1: 
+     61-57733017-3682 Can you try using npm 1.4 and see if that makes a difference?
+     99-57753057-3682 I'm not sure how - I'm using Arch, and the npm that comes with the Node.js available in AUR is 2.0.
+     99-58775638-3682 npm install npm is a good way to try and fix npm. It worked for me on Ubuntu for some other errors.
+    155-61382925-3682 You can also you [nvm](https://github.com/creationix/nvm) (node version manager) to get specific vers
+     45-57382794-3681 We can roadmap this when it's getting closer.
+    110-57441245-3673 You can also take a look at https://github.com/atom/atom-shell/issues/251, maybe you can get some spe
+    135-57578593-3673 Looks really awesome so far. Are these changes available in the latest releases of Atom, or are they 
+     88-57625014-3673 The listed changes have already been merged, and I'm pretty sure they're all in 0.133.0.
+     39-57649761-3673 Yup, they are all in the latest release
+     94-58091016-3673 Moving this back to on-deck since nothing specific to this issue is being worked on this week.
+     99-60336074-3673 Startup-time is my biggest and only serious gripe with Atom. All improvements are much appreciated.
+    243-60340455-3673 You may want to look at fast.js. Many parts of coffeescript use push where direct assignment is fast
+     52-60410938-3673 @backspaces Thanks for the tip, looking into fast.js
+     21-64194162-3673 Check this out: #4293
+    226-64843255-3673 If you like fast.js style of overriding built-in functions, try [Lo-Dash](https://lodash.com/). Mode
+     28-68406894-3673 Hope speed will come soon :)
+    272-69502523-3673 :+1: me too! The main problem I have at the moment: I start atom (which takes a bit) and then select 
+     95-69616982-3673 I hate the fact that I have to wait seconds for my editor to open a file; all I do is editing. 
+    375-71086250-3673 How is everyone's impression these days, both compared to a few months ago and to other similar edito
+    903-71086847-3673 When I started using atom 9 months ago I was getting 6 to 8 second loads. When the big fix was made 
+    150-71097252-3673 I've noticed that it still runs slower than Sublime/N++ or other native editors, and it cannot handle
+    240-75211057-3673 Yep same here - really like Atom Text editor, but the only thing so far noticeably worse compared to 
+    135-75334330-3673 On my PC: - Notepad++ starts up <1s - Atom v0.181.0 starts up ~3-5s (clean install) Noticeably i
+    202-57733309-3660 Opened the following libgit2 bug to track this: libgit2/libgit2#2595 The tree view uses libgit2 fo
+    744-57838125-3656 @gmmeyer Thanks for the detailed description! :sparkles: I'm having trouble reproducing this prob
+   1495-57844762-3656 I've updated Atom since I was using it, but when I posted it it was whatever version was stable on th
+    109-57853361-3656 There you go! :) I thought updating a comment would send a notification, but here's one for the notif
+    256-57855557-3656 @gmmeyer Thanks for the instructions, I'll try to reproduce again. Can you please confirm that you
+    206-57857921-3656 @gmmeyer Here's what I'm doing, but still having trouble reproducing. Did I miss a step? :smile: 
+   6092-57270871-3653 I've tried again after having made the following change in my init script ``` javascript process.en

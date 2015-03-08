@@ -1,0 +1,89 @@
+
+# page: 16, date: 2014-11-19, count: 30, rateLimit: 4596 of 5000
+
+    180-67048262-4241 Documents on related atom-shel APIs can be found at: https://github.com/atom/atom-shell/blob/master/
+    517-70249659-4241 :+1: This would be an awesome addition. I think the issue title and tags should be updated though bec
+     73-70271341-4241 I think I do have a "Most recent" on Ubuntu when I do File-->Open Folder.
+    138-70274437-4241 @50Wliu Isn't that "Recently Used" Place in the File > Open Folder dialog on Ubuntu just "recently u
+     24-70275027-4241 Ah, yes, you're correct.
+     91-63891444-4236 What specific failure are you seeing when installing Atom packages using the `apm` command?
+     83-64139579-4236 It says dependencies not met. Because of the package version distributed by ubuntu.
+    111-63236620-4201 Does Noto have a fixed-width variant? I believe Noto only exists in proportional fonts (i.e. not good
+    108-63570504-4201 @wutong is the noto font not rendering correctly or are you asking that we include the noto fonts wit
+    244-63617344-4201 @kevinsawicki wish u can include a default font with Atom, just like brackets. I use brackets befo
+   1802-63222349-4200 My gut says this is likely because on initial editor measurement the web font is not available yet, 
+    154-63224269-4200 Thanks, I'll read up on what the measurements are doing. Might also shine some light on why or when t
+    481-63242721-4200 Your gut seems to be right, fonts are being loaded only when it renders text, which is way later than
+    140-63083665-4187 It appears to be added by GitDiffView subscribing to the event: https://github.com/atom/git-diff/b
+    216-63119529-4187 Yeah, `commands` should only show up so since the git diff view uses `@subscribe` instead of `@subscr
+    143-63127312-4187 @kevinsawicki It's because I'm shimming `$::trigger` for the switch to `atom.commands`. Probably need
+     76-63685689-4173 I'm seeing the same problem, but with all folders (folded or not), on Linux.
+    684-62884570-4168 A couple of packages do spin up new Atom Helper processes for background file scanning tasks, but Ato
+    115-62996026-4168 Hmm, I always seem to have at least 5 Atom Helpers running on my Mac. Packages don't get their own pr
+     64-62996897-4168 > Packages don't get their own process in Atom? No, they dont
+    115-62997233-4168 Too bad, I guess this will be less useful than I thought. Is there any way to profile cpu/memory usag
+    112-62997338-4168 > Is there any way to profile cpu/memory usage per-package? Probably not without a significant amo
+    160-63210533-4166 I have the same issue. Also no admin privileges. I think the privileges are the culprit here as the p
+     48-63905532-4166 Yep, installing the app to ~/Applications works.
+    153-73940507-4166 I am also experiencing this behavior, with Atom being installed to `/Applications`. I'd rather not m
+x      2-62782470-4161 +1
+    278-62784176-4161 @darkdragon-001 Did you report the crash? If on OSX, you can open the `Console` app, and look for ato
+    247-62784604-4161 @benogle There is no such thing as a crash-free application, just a rare-crashes application, and not
+     91-62785332-4161 Very very infrequently then ;). A crash report from @darkdragon-001 would be very helpful. 
+    488-62805906-4161 Actually this time it was not Atom's fault. My whole system froze because of a different reason - so 
+    137-62841251-4161 Sounds like you want the [live-archive package](https://atom.io/packages/live-archive). I also fee
+    679-62841889-4161 As the author of live-archive I hate to say it won't help. It only archives a file when it is saved
+    753-68236523-4161 Power outages, accidental unplugs, large files ([???](https://github.com/atom/atom/issues/307)), 73 K
+   1229-68237169-4161 How would automatically saving on every change work for you? That is the way webstorm works and I l
+    483-68478844-4161 Ideally there should never be a time where your changes aren't saved or at least safe. [Scratch](http
+     84-69616274-4161 Thought we already have that in Atom. If not yet (such as now), it really is a must.
+     87-71353168-4161 Atom has crashed at least 5 times, in several different ways since I've last commented.
+    329-67950233-4160 IMHO, a highly desirable feature. Like in SublimeText, an automatic detection of BOM for UTF files, 
+     89-62751814-4158 What keyboard layout are you using? Refs https://github.com/atom/atom-keymap/issues/35
+    222-64240714-4158 I can not reproduce this with: atom 0.150.0-00027e8 apm 0.111.0 npm 1.4.4 node 0.10.33 pytho
+   1197-62669137-4156 Both the C and C++ grammar definitions list `.h` as a possible match. There are two ways to resolve t
+    149-62705075-4156 Something to notice is that C++ is kind of a superset of C, while C is a subset of C++. In other word
+    122-64329460-4156 @lee-dohm Thanks, I've removed `h` from the C grammar and it works great. You're right though, that's
+    223-64330420-4156 Another way is to add the following to the top of each file: ```c++ /* -*- C++ -*- */ ``` Yea
+     77-62652920-4154 I'm noticing that it's saying that it's replacing *18* out of **15** files...
+    290-62527042-4145 A bit more testing shows this is to do with having a custom invisible tab character. In my config it 
+    383-62893124-4140 I have a similar problem with lines starting with "//" (no whitespace in front). The whole function 
+    112-62942324-4140 @fkraus folding is indentation based currently. Though we should be able to get the newline case pret
+     91-62475694-4138 Also see the discussion here: https://discuss.atom.io/t/package-request-mercurial-diff/2866
+x      2-62512012-4138 +1
+    653-62524853-4138 +1 from me. Although github obviously only supports Git, for an editor I feel it's not logical to re
+x      2-62525873-4138 +1
+   1751-66355577-4138 I looked into this. Instead of only opening projects with `GitRepository`, we could discover more 
+    246-67053844-4138 Here's a pull request: https://github.com/atom/atom/pull/4624 I also created an example package to
+    138-62462141-4134 So your physical keyboard has dead keys? Do you know if there is a way to simulate this using the 
+    298-62471171-4134 @kevinsawicki "Dead keys" are a thing on some keyboard layouts that allow for entering accented chara
+x    340-62523807-4134 @lee-dohm, thanks for the explanation. I assumed everybody would understand what a "dead key" is :-) 
+     28-62470181-4133 What encoding are you using?
+    291-62475754-4133 UTF8. I think i played with the encodings and saved with the changed encoding. But right now, I can'
+   1459-62478124-4133 I opened the file with the hex editor from the [hex package](https://atom.io/packages/hex) and this i
+    402-62524187-4133 > Perhaps you had UTF-8 text but then modified it and saved it as UTF-16 or something? Thats possi
+    699-62557105-4133 Well, it doesn't display it "properly", but it does display it readably. I noticed that when I opened
+    543-77402646-4133 This issue is related to this [Discuss thread](https://discuss.atom.io/t/viewing-non-printable-charac
+    117-62456527-4132 Does this happen with all files or only some? Can you include/link to the contents of the file tha
+    291-62457595-4132 @kevinsawicki It happens with the same file as in https://github.com/atom/atom/issues/4133 I tried i
+    185-62414910-4131 @omarmeky Just checking: When it's not working, are you sure the editor is focused? We should probabl
+     80-62420417-4131 @nathansobo Yes, keep in mind the global find works so it's definitely in focus 
+    312-62420687-4131 @omarmeky Very sorry for the trouble. When it stops working could you check if the command is availab
+     45-62429575-4131 @omarmeky What version of Atom are you using?
+     11-62431608-4130 cc @zcbenz 
+    478-63008276-4130 From the descriptions all crashes seem to happen when there is a file deleted or renamed, I guess som
+    370-64021333-4130 I've got the exact same crash. Happens consistently. I cannot rename or move an open file at all. 
+    181-64021667-4130 I am able to reproduce this reasonably reliably. * open file * rename file from tree view Som
+    113-64023863-4130 try atom --safe and then post your plugins list. I cannot get it to happen when I'm in safe mode 
+    169-64536258-4130 I can also reproduce this reliably (https://github.com/atom/atom/issues/4150 for details). List of
+    805-64537592-4130 Just came to report that its no longer crashing for me ! on 0.152.0 here are the version changes i
+    192-67337965-4130 After comparing my own plugins to the plugins listed in the previous comments, I updated the "linter"
+     69-62427648-4122 Can you include a screenshot of the error? Are you behind a proxy?
+    369-62458321-4122 Hello, Here is the screenshot you asked for. No, I am not behind a proxy. -- Dominic Ross Hom
+     54-62458526-4122 Sorry, I'm not seeing any images in your last comment.
+    305-62543065-4122 Sorry, is this better? -- Dominic Ross Home: 01702462303 Mob: 07738382996 Twitter: @young
+     57-62578335-4122 @youngdad33 Nope, can you try uploading it from the site?
+    151-62706297-4122 ![screen shot 2014-11-10 at 21 26 51](https://cloud.githubusercontent.com/assets/5068651/5009601/d2e5
+    105-63197703-4122 Hi Kevin, Any update to this problem? I still can't access the themes or Packages via the settings m
+     66-63213719-4122 Check out this answer on SO: http://stackoverflow.com/a/22089950 
+   4858-69271350-4122 This error is really sinister for me. I'm on version 0.169.0 for Windows. I'm behind a proxy at wor

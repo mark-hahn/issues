@@ -1,0 +1,109 @@
+
+# page: 5, date: 2015-02-17, count: 30, rateLimit: 4937 of 5000
+
+     59-74665090-5576 @shinyatto, could you please share some steps to reproduce?
+    296-74665499-5570 I wonder if this isn't actually a node bug because this happens to me a lot without Atom but my syste
+    308-74423389-5566 Personally, I feel this is a duplicate of #2654 because Atom reads a ton of files on startup. (And re
+    209-74423725-5566 Ok, I'll have a look. Just one point which I think is different: in my case atom is up and I ca
+    170-74403959-5564 I believe the canonical way is: ```coffeescript atom.commands.dispatch(target, event) ``` see t
+    522-74403984-5564 It's likely that you don't want to execute commands programmatically. Commands are essentially a way 
+    268-74404089-5564 @lee-dohm, I agree that this won't come up often, but I did come across a non-testing use case for `a
+    646-74404324-5564 * I stumbled upon `atom.commands.dispatch ` but ignored it since it said 'simulate', which I interpre
+   1282-74404609-5564 The Atom team is specifically attempting to remove Atom's dependence on jQuery. But, like any other N
+     88-74723234-5556 Just curious, if you try a path like `SET ATOM_HOME="E:\Atom\.atom"`, does it work then?
+     61-74892430-5556 @kevinsawicki Just tried that, still brings up the same error
+    149-74519170-5555 @lincleejun Can you share more details about the problem you're seeing? https://github.com/atom/at
+   1353-74338906-5554 If the update is being done with squirrel then you are pretty much out of luck. Squirrel refuses to 
+    580-74339616-5554 Well then it sounds like squirrel is a pile of expletive and should be thrown out for a competent sol
+   1084-74340150-5554 > it just shows an animated splash image and tells me to trust that it's actually working That is a
+    235-74340862-5554 It's never too late, it just may take some serious overhauls which, in my opinion, are necessary. Git
+    703-74343063-5554 This was discussed before in Squirrel/Squirrel.Windows#137 which got closed with none of the suggesti
+    987-74343955-5554 Whoa whoa whoa, I think we're conflating two things - most of this thread is talking about the *initi
+    738-74344735-5554 There should be no particular difference between initial install and updates, I should be given progr
+    352-74344786-5554 > This isn't how GitHub for Windows works, the update will be installed regardless of whether you cho
+    176-74344883-5554 > Why aren't we doing this sort of auto update-in-the-background workflow for atom? Just a "will be d
+     94-74344919-5554 Atom does have background updates just like Github for Windows. Fake edit: Beaten by Paul ;P.
+    303-74345061-5554 I have a hard time believing that. Atom never seems to update unless I manually trigger it, and when 
+    686-74347892-5554 > It just sits there and says "Updating" I started using the command line a long time ago because o
+    184-76038239-5554 Regarding install, I would like to see the progress data shown in some way. Regarding updates, cli
+    487-76043805-5554 > clicking update tells me 0.182 is the latest one The delay can be up to a day or two. On Wed, Feb
+    752-74290705-5543 I disagree that all classes documented in the API *must* be exported. There are valid reasons that an
+    597-74294189-5543 > I disagree that all classes documented in the API must be exported. There are valid reasons that a
+    970-74295712-5543 Yeah, I didn't quite grasp the qualification there especially given the title of the issue. I think t
+    101-74175122-5533 P.S. My suggested fix is to always check when opening a folder and make sure it is one of the paths.
+    127-74159145-5530 cc @paulcbetts - this issue might belong on the https://github.com/Squirrel/Squirrel.Windows repo (th
+     97-74160479-5530 @pcolby Can you attach the log? It's in `C:\Users\YOUR NAME\AppData\Local\atom\SquirrelSetup.log`
+    334-74166247-5530 Thanks for the very fast responses :) `SquirrelSetup.log` attached below. It's ~4MB, so I've zipp
+    130-74174304-5530 @pcolby I don't think that trick works. Can you host it on Dropbox or some other service? Or just Ema
+    221-74178269-5530 Right-click, save-as: https://cloud.githubusercontent.com/assets/5195222/6178279/78ebde6c-b361-11e4-9
+     54-74109057-5517 Running with the `--stack` option can also be helpful.
+     53-74112156-5517 @kevinsawicki What all does the `--stack` flag show? 
+    109-74113084-5517 > What all does the --stack flag show? The stack trace for any uncaught exceptions during the grun
+    316-74054591-5512 @horvan Which version of Atom are you using? Can you upgrade to the latest version please? And in ca
+    121-74073414-5512 @steelbrain I am using the latest one because this happens after grunt install is finished after bui
+    315-74233762-5512 after some testing and trying the deb packge for ubuntu, too I figured out that the .atom folder in t
+    325-74018809-5509 ```coffee atom.workspace.open(f).done => neweditor = atom.workspace.getActiveTextEditor() 
+    190-74073418-5509 @liugangnhm That works for me. Can you try updating to the latest version of Atom (0.179.0) and provi
+    213-74073903-5507 @i32ropie Can you share more [debugging information](https://github.com/atom/atom/blob/master/CONTRIB
+     58-74074348-5507 Possibly related: https://github.com/atom/atom/issues/4708
+    269-76431825-5507 I've also experienced the linked issue (and commented there with my experience). Currently using Atom
+    530-76529767-5507 Atom Version: 0.184.0 OSX Version: 10.9.5 For me I received the error because the "clang-format" 
+    247-77320249-5507 Got same problem when saving. Uncaught Error: write EPIPE events.js:94 Error: write EPIPE a
+    911-77332002-5507 I guess this is caused by [atom-clang-format](https://github.com/LiquidHelium/atom-clang-format/blob/
+    117-77378462-5507 @ChrisKdon Finally I got it. In the settings for the clang-format you should be able to change the 
+    113-73984144-5506 What version of Atom are you using? Also, did you run `atom` with `sudo` by any chance before you saw
+    155-74184810-5506 Atom: 0.179.0, I may of run atom with sudo at one point to edit a file that only root can edit. But i
+    117-77149029-5506 Got the same prb, solved by running ``` sudo chown -R `whoami` ~/.atom ``` Haven't noticed any 
+    336-73958988-5503 Do you think it's too late to invert the defaults for these options on the normal editor and make all
+    300-73959418-5503 More thoughts: * `autosize` should be `auto-height`. But really I'd like to find a better way to d
+    943-73960091-5503 > Do you think it's too late to invert the defaults for these options on the normal editor and make a
+   1282-73962012-5503 > Would we want the other gutters on these standalone editors? I definitely would. I could use it i
+    761-73966832-5503 > Adding a new attribute allows us to give the editors emulating a textarea a default height. I think
+    363-73967416-5503 > They don't grow with their content, right? No they dont. > I'd rather not have a special stan
+    601-73968268-5503 > I'd like to have some kind of indicator for the styles that a text editor is not a pane editor, but
+    794-73969828-5503 > Are you thinking that themes would provide distinct default styling for these kinds of editors? Wha
+    181-73970124-5503 Also, in some cases, we are showing code and want the editors to be styled with the syntax colors (li
+    185-73970364-5503 Are you down to make these changes or would you like me to do it? We need to hammer out a finalized s
+    389-73976787-5503 I can make these changes soonish, but not right now. Not super high prio. I still want a way to c
+    298-73978293-5503 I'm open to an attribute, just searching for the word. Another idea is a completely different tag nam
+x     16-73978595-5503 Ooh, I like that
+     41-73978733-5503 Mini editors could be `atom-text-input`s?
+     52-73978863-5503 > Mini editors could be `atom-text-input`s? :+1: 
+     23-73979019-5503 Sweet lets do that then
+    729-76754681-5503 I ran into difficulty this weekend trying to use the `atom-text-editor` as a standalone component in 
+     84-73958329-5502 Did the `D:\portable_programs\Atom\ATOM_HOME` folder exist before you launched Atom?
+    336-73958623-5502 > C:\Users\ <user> \AppData\Roaming\Atom was created in the same place This is expected, ATOM_HOME
+    542-73960592-5502  > Did the D:\portable_programs\Atom\ATOM_HOME folder exist before you launched Atom? yes, i've cr
+    343-73961443-5502 > now i've deleted first the folder D:\portable_programs\Atom\ATOM_HOME Yes, this folder is only p
+    881-75169244-5499 Besides ease of use, atom throws when I add a pathwatcher to my package that is a different version t
+     29-73812842-5488 What Atom version are you on?
+     25-73812934-5488 Version 0.177.0 (0.177.0)
+    610-73880486-5488 I'm able to reproduce this in Atom 0.179.0-090561e on OSX after installing that font: ![screen sho
+    292-73902784-5488 I just looked at the line numbers in the Inspect Element after enabling this font: ![screen shot 2
+    128-73911506-5488 @nathansobo maybe knows why this changed recently (maybe related to Chrome?) and if there's anything 
+    373-73915607-5488 @izuzak Yikes, that is brutal. We may be able to avoid padding line numbers with `&nbsp` and instead 
+    149-73920773-5488 This is where I found the font for my tests: http://www.spacerogue.net/wordpress/?p=356 Seems t
+    183-73973457-5488 Add one to the problem children, and it is specifically an issue with the "Glass TTY VT220" font. I'
+    263-73979471-5488 @phphphp Maybe see if you can open the font in a font editor and fix that glyph? It's going to be a p
+    117-73994850-5488 There's also a Discuss topic related to this: https://discuss.atom.io/t/atom-displaying-weird-char
+    121-74002962-5488 Chromium bug: [`&nbsp;` in some fonts is displayed as symbol](https://code.google.com/p/chromium/issu
+    139-74075503-5488 Great, thanks @simurai! :zap: Gonna mark this as wontfix for now, but keep it open so that we can kee
+    150-74078712-5488 @nathansobo I deleted the offending character in FontForge and the problem went away, but I'll keep a
+     66-74080683-5488 @nathansobo @phphphp fontforge solved the problem for me as well. 
+    256-73769200-5482 @benogle Hi, I see you added needs-reproduction label. Is that something that I can help with or is i
+     74-73770087-5482 Yeah, we need to reproduce it. Can you make a public repo, and link to it?
+    237-73770543-5482 Here's a dropbox link, hope that's OK: https://dl.dropboxusercontent.com/u/153385/encoding-test.zi
+   1414-73892424-5482 I'm able to reproduce this by just running the commands in the JS console: ![screen shot 2015-02-1
+    705-73897828-5482 Here's a related tidbit: 1. Create a new file with content: ``` <li>ê</li> ``` 2. Save it,
+   1101-73900087-5482 Definitely something to do with the web inspector/console or the bridge between Chromium and io.js. R
+     91-73942669-5482 Correction, the first example does actually work. The `console.log` call is what causes it.
+x      4-73668112-5476 :+1:
+     55-73627046-5474 This will be fixed in v0.178.0 (see #5405 for details).
+x     89-73627329-5474 @50Wliu Thanks, and sorry I didn't turn up that answer myself before opening a new issue.
+    259-74192865-5474 it looks like #5405 only affects RPM, not debian builds? I'm now on 0.179.0, the screenshot above st
+     54-73624182-5473 What version of Atom is this on? /cc @maxbrunsfeld 
+    671-73625571-5473 Oops, should have included that. I'm using Mac 10.10.2 with Atom v0.177.0, but I've been experiencing
+    781-74282792-5473 @NatalieWolfe I'm having trouble reproducing this in the latest version of Atom: ``` $ atom -v 0
+    486-74298499-5473 @izuzak: The link you provided goes to 0.179.0, which is what I have installed on my Mac at the momen
+    179-74298859-5473 I notice on your gif, @izuzak, that you are using a plain text file. I don't think Auto Indent on Pas
+    249-74299179-5473 > I notice on your gif, @izuzak, that you are using a plain text file. I don't think Auto Indent on P

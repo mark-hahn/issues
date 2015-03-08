@@ -1,0 +1,163 @@
+
+# page: 23, date: 2014-08-10, count: 30, rateLimit: 4379 of 5000
+
+    195-54204442-3213 Reproduced here, but I started it from the .desktop. ![screenshot from 2014-09-02 16 26 41](https://
+     82-56960179-3213 just checked version 0.132 and the title is now set to "Atom Shell" in both cases.
+    144-60685122-3213 Just checked on version 0.139 and the title is Atom when I launch it from terminal. Can't check from 
+    243-51851054-3212 Adding a keybinding to move the current buffer seems reasonable. `f2` cannot be used as it is used to
+     63-54875060-3212 Personally I think ctrl + shift + R would be a good keybinding.
+    319-51685344-3205 When I press <kbd>Ctrl</kbd>+<kbd>O</kbd> under Fedora's GNOME3, the default open dialogue appears. I
+    119-52375643-3205 @Bengt - true, but would be nice to have it as a set feature in Atom, not just rely on the OS, especi
+    474-52378077-3205 Under Mac OS X Atom should (I do not have a Mac at hand now) use the Finder to open files and directo
+    255-52802799-3205 hi @Bengt , re: “How do you think Atom could help with that?” — by having a checkbox option in 
+   1190-52849482-3205 Atom could not possibly have a checkbox to toggle showing hidden files in the open dialog, because th
+   1988-55051428-3205 hello @Bengt , thank you for the response and your explanation. while i do appreciate your expl
+    462-55054884-3205 The problem here is that usually the average user doesn't need to see those hidden files, which are w
+    331-55344436-3205 hello @50Wliu & @Bengt, understood. however, as you yourself point out, it's a bit harder to figur
+   1855-55428566-3205 @50Wliu Opening hidden files might not be average Mac OS X or Windows user, but certainly the average
+    279-55468487-3205 @Bengt , thank you for responding - i would be fine with the Open File... dialogue in Atom on any 
+    175-53316927-3204 @zcbenz Any ideas what it would take to enable this menu? I tried just adding a stub `Services` m
+    167-73604110-3204 I know this issue has been marked fixed, and I can indeed see a Services menu, but it is empty. It sh
+     48-75445303-3204 Confirmed on 0.182.0 as well, still no services.
+    318-76125670-3204 This is indeed not fixed; we need to implement support for this. Maybe I'll find some time over the w
+    191-76207357-3204 The Services menu shows up under `Atom > Services` and those services work, but nothing in the contex
+    103-51538012-3201 Confirmed. I've seen the same issue with the Hermit font. All others monospace fonts seem to work fin
+    295-62623733-3201 No longer seems to be an issue (0.144, OSX10.10). Menlo: ![menlo](https://cloud.githubusercontent
+    145-62626844-3201 Thanks for the update @braver , going to close this out, there have been several Chrome upgrades sinc
+    192-62945826-3201 Still happening for me, with v0.146.0, OSX 10.10, and `--safe` on and off. ![hermitfont](https://clo
+    249-63056452-3201 <del>I'm now able to reproduce this as well, with a number of fonts. If you quit and reopen Atom, all
+    562-63104448-3201 Did a clean install. It's mostly doing fine now with Hermit: ![aaa](https://cloud.githubusercontent.
+     69-51495763-3198 Looks like to be similar to https://github.com/atom/atom/issues/3005 
+    167-51499633-3198 Well, that's where I first post the issue, but this one is a bit different. On that issue, it's that 
+     63-52314400-3198 For what it's worth, I'm getting this quite frequently as well.
+     60-51468793-3195 Second part seems to be already known (atom/atom-keymap#16).
+    277-51652221-3194 I'm unable to reproduce this on the latest master branch, we've upgraded chrome versions recently on 
+     46-52099605-3194 0.121 is out, are you still seeing this issue?
+    278-52107686-3194 Unfortunately, it's still happening on my machine. I've also found that if I have a window that's sho
+    140-51306239-3190 How did you install it? Since on Linux you have to build the thing from scratch, did you notice any 
+    369-51313131-3190 I installed atom as described in https://github.com/atom/atom/blob/master/docs/build-instructions/lin
+    149-51444178-3190 I've had the same problem and it appears to have been resolved by the update to atom-shell 0.15.3 in 
+     75-51446242-3190 @tribut updating to atom-shell 0.15.3 didn't fix the launch problem for me.
+    143-51450345-3190 Interesting. It works on one of my machines, but still hangs on another. `strace -f` suggests it's wa
+    224-51514708-3190 When I wanted to install it my friend sent me the build but when I double clicked it, it just opened 
+     88-51520381-3190 @lnanglin yes, maybe I should install it from the PPA to have a somewhat stable version.
+    555-52890077-3190 I have installed atom from the PPA long time ago and always updated it when my Ubuntu 14.04 reported 
+    624-54941612-3190 In the meantime I also installed atom from the unofficial PPA, it never worked for me though. Today w
+    113-55522189-3190 Atom version 0.127.0 can be launched on Ubuntu 14.04. Can you confirm @jurgenhaas? If yes, I'll close
+    169-55529321-3190 Unfortunately, it still doesn't seem to work for me (with 0.128.0-54c1dd5). From the debs I kept, v0.
+    109-55705574-3190 I can confirm that last week 0.126.0 and as of today 0.127.0 are both working fine on my Ubuntu 14.04
+    245-56292331-3190 My Atom wouldn't start - so I launched it from Terminal. This launched an instance named Atom-Shell i
+    155-58147424-3190 For more than 3 weeks now I have no problem starting atom on Ubuntu, so I'll close this now. If this 
+    140-59904978-3190 Still cannot get a recent atom to launch on one of my machines (just tried g4867e3e). 8918a42 starts 
+     78-70555737-3190 @tribut is this still an issue with the latest version? What was the solution?
+    126-73379491-3190 Yes, still a problem with v0.177.0 built from git (5cae6f20c448fddea5dd8beeae1b26df77b05919). The deb
+     99-51024864-3174 This will also be very helpful in recognizing spaces and tabs when "Show Invisibles" is turned off.
+    246-51201816-3174 Wondering what @benogle and @nathansobo think about this and if this is an easy change or not. I gues
+    140-51218326-3174 This could be implemented by making leading whitespace tokens non-atomic. It's something we could add
+     62-51228618-3174 I wouldnt consider this a bug. I think it should be a wontfix.
+    234-52596529-3174 Not being able to position my cursor is not a bug?? I turned of soft tabs in settings - shouldn't th
+    576-52597332-3174 @laktak A bug is an error in the code. If this is behaving as intended, it is indeed **not** a bug. 
+    338-52607276-3174 @thomasjo I'm not using tabs at all. Aren't soft tabs spaces that behave like tabs? - I've soft ta
+    490-52679537-3174 @laktak Yes, soft tabs *are* spaces that behave like tabs. Part of our implementation of this is to t
+    484-52689746-3174 @nathansobo I spend half my time in Atom and the rest in various IDEs. I usually turn all the "auto" 
+    102-52690314-3174 "I usually turn all the "auto" features off because I want the input exactly as I type it." Me too
+    251-52699512-3174 Please, let the Principle of Least Surprise be your guide here: I'm +1 for either making 'quick jump
+    353-56485703-3174 From https://discuss.atom.io/t/cursor-jumps-over-indented-whitespace/11618 ![a6e58d85212b8055](https
+    274-61542825-3174 My personal take is that backspace should delete a "whole softtab", but cursor movement should treat 
+    495-51205870-3160 > we end up with confusing guides that don't seem to match up with blocks. @dmnd While I see the d
+   1592-51246295-3160 @izuzak sorry for the confusion and thanks for bearing with me as I attempt to explain this :smile: 
+    565-51669210-3160 IMHO there should not even be an indent guide at line 7 where the imaginary `end` would be. Since the
+x     65-51669354-3160 Agreed @Bengt. (FWIW that was what I intended to communicate)
+    568-52041582-3160 @dmnd @Bengt Thanks for explaining, that's helpful. :+1: Also, I think that this would have been e
+   1138-52090842-3160 @izuzak I created those screenshots by adding whitespace to control whether the guides show up or not
+   1190-52095473-3160 > As of now, this is how things behave: > * If lines 7 and 8 have whitespace, guides don't appear. 
+    590-50967495-3158 It sounds like when Atom saves the file that it just saves directly on top of the original, so perhap
+    599-50967783-3158 `Editor.save()`: https://github.com/atom/atom/blob/master/src/editor.coffee#L429 Which leads to
+    143-50971461-3158 Makes sense. Thanks @lee-dohm . The behavior seems pretty unsafe besides my concrete issue, I gues
+    367-50971725-3158  Atom opens the file for writing, but not append ... thereby truncating the file to zero I don'
+    902-50972033-3158 http://msdn.microsoft.com/en-us/library/windows/desktop/aa365430(v=vs.85).aspx Right in the first 
+   1015-50972084-3158 Since it is not every day that I open a file in write mode and write nothing into it, I tested it jus
+    124-50972102-3158 The file is not deleted, but it is definitely truncated. OS X is POSIX after all so I guess this appl
+     96-50972167-3158 Another reference: http://www.cplusplus.com/reference/cstdio/fopen/ See the behavior of "w". 
+    841-50972251-3158 @lee-dohm I suppose my confusion comes from never ever having observed that behavior in any Windows a
+    513-50972453-3158 At that: `fs.writeFileSync` https://github.com/joyent/node/blob/master/lib/fs.js#L980 to `fs.o
+   1670-50974719-3158 > The behavior of the "w" operation seems to me like what should explicitly not be used if just openi
+x     53-50976524-3158 Ok.... now it makes sense to me too. We may move on.
+    187-50976649-3158 @batjko Thanks :grinning: And also this might get handled as part of the [large file support](http
+    648-65301017-3158 I got hit by this issue as well =(. Lost a file that I'd been working with over a couple of days. 
+   1109-65302582-3158 > Lost a file that I'd been working with over a couple of days. Shameless plug: The package live-
+    962-65303114-3158 I meant that if, in order to support large files, Atom moves to a memory-mapped file type of system, 
+     30-65493155-3158 Is there any plan to fix this?
+   2143-68254567-3158 ``` At /opt/atom/resources/app/node_modules/pathwatcher/lib/file.js:311 Error: EIO, i/o error 
+    283-51535161-3154 Just an update on this. Moving to tiling broke a lot of our assumptions pretty dramatically, so I've 
+    365-53438843-3154 Hi, is that feature still planned? I find it very promising. I have a low-end computer and atom is qu
+    345-53440671-3154 Hi @jrouviere. Yes, this is still in the plans, but it's been delayed a little bit because I need to 
+x     37-53448556-3154 Ok thanks @nathansobo that's awesome!
+x     59-53721117-3154 This work is fantastic @nathansobo. Very very clever stuff.
+x     46-53743281-3154 :heart: Thanks @Fidelix. Excited to resume it.
+     35-58147237-3154 Is this going to be a part of 1.0 ?
+     21-58216629-3154 Yes, that's the plan.
+   1096-69918555-3154 @nathansobo Hi, thanks for your work on this. I'm working on refactoring my repo https://github.co
+    326-69949821-3154 I'm not sure that the highlight decoration will help you because we don't currently support vertical 
+x     29-69950062-3154 @nathansobo Got it. Thank you
+     68-77567706-3154 @nathansobo is there any update on performance/progress with tiling?
+    602-77607745-3154 It hasn't even started yet and is going to be back-burnered for a while longer. Are you still experie
+    223-77624264-3154 I have a file with a varying amount of lines but always greater than 5000, so it's pretty slow to scr
+    202-77632773-3154 @ilanbiala I think the problems with a file like that are probably due to the long lines, in which ca
+    189-77640522-3154 Is there anything in the works for horizontal tiling? What's the slow part with long lines, the rende
+    423-77664333-3154 The DOM can only handle so much data before performance degrades. We restrict content vertically, but
+    349-50850962-3147 I don't believe that the space in the volume name is what caused this issue. I just installed the ato
+    166-50851247-3147 I suppose I should also mention that my user directory is on disk2, while the rest of system is on di
+    208-50852213-3147 This is not an Atom bug. This is a bug in `node-gyp` (or one of its dependencies). There's an [open i
+    416-50842721-3142 Another idea that crossed my mind. I wonder if we should bite the bullet and prefix private instance 
+    751-50845350-3142 @nathansobo I agree on the ugliness. I really don't like the "name decoration" kind of practice in ge
+    628-50848289-3142 > I wonder if there is a way to do some sort of static checking on https://atom.io or low-cost run-ti
+    674-50859779-3142 Quick question then: If users are to be allowed to spelunk as they please, would it be possible to cr
+    240-50893520-3142 @batjko It would definitely be possible, but with regard to the use of private instance methods, I wa
+    635-50894732-3142 @lee-dohm Yes, but I figured using a linter for this would allow you to "suggest" following certain g
+    433-50911771-3142 > prefix private instance methods with _ I think the costs here outweigh the benefits. We would ha
+    400-50957491-3142 At the moment biscotto is bugged and does not show these nice little badges that say 'internal' and '
+    107-75336846-3142 @benogle just looking at old PRs and came across this, it this something we want to :ship: or :snowfl
+     53-75339256-3142 It would be nice to eventually update it and ship it.
+    334-75344995-3142 Sorry for an off-topic stupid question, but what does the snowflake mean? On Fri, Feb 20, 2015 at 3:
+    100-75345345-3142 Ice. Put it on ice, stop working on it. ![](http://www.oc3.ca/wp-content/uploads/2014/04/ice.jpg)
+    281-75347272-3142 So icing means what? I thought an issue could only be open or closed. On Fri, Feb 20, 2015 at 4:42 
+     45-75347450-3142 Yeah, he was asking if we wanted to close it.
+    113-75350931-3142 > Sorry for an off-topic stupid question, but what does the snowflake mean? the opposite of :ship:
+    342-50750916-3137 This has nothing to do with Atom. Your problem is most likely caused by a broken line ending configur
+    140-50755253-3137 Thx @thomasjo for the hint. But there are 4 lines left out and only while atom was running. When i st
+    160-50760303-3137 Do you have a package installed by any chance, which automatically applies changes to a file (e.g. re
+    265-50760634-3137 Building on what @batjko said, you should start Atom via `atom --safe` and see if you can replicate. 
+    435-51209615-3137 @DennisAhaus Can you please provide the **exact** steps that reproduce the issue for you, and explain
+   1226-51211418-3135 Thanks for the reports @ehuss! > move-line-down with cursor in column 0. Then press undo. The curs
+    266-51293158-3135 Sorry for the confusion on the version number, I should have been clearer that I was using the latest
+   1943-52154350-3135 @ehuss Sorry for the delay in getting back to you on this. The GIF and examples are **very** helpful 
+    369-50663128-3130 Have you followed the suggestions in the [Debugging document](https://atom.io/docs/latest/debugging)?
+    136-50681148-3130 I am using Atom 0.120.0 on Mac OS X Mavericks (10.9.4) and I have the React Editor enabled. I can rep
+x     40-50938387-3130 :+1: I can reproduce the problem as well
+     62-51211745-3130 cc @nathansobo @benogle in case you have any ideas about this.
+    128-51218567-3130 @izuzak Can you reproduce? Blinking should be paused while typing, which removes the `blink-off` clas
+    525-51224991-3130 @nathansobo Nope, wasn't able to reproduce this one -- was hoping you had some ideas how to approach 
+    191-51287200-3130 Here is a low quality gif of the issue, but it's enough to see what happens. ![atombug](https://clou
+    136-51549792-3130 Seeing the same thing on Atom Version 0.120.0 (0.120.0) on OSX 10.9.4. I've tried with and without Re
+    108-52170771-3130 @jBot-42 @jamtur01 Are things looking any better in Atom 0.121.0? I'm still unable to reproduce this.
+    261-52496399-3130 The cursor stops blinking here after an alt-tab (Atom 0.124.0, Ubuntu 14.04). After throwing focus ba
+    144-52669730-3130 @mcrisc That sounds like a different issue -- possibly https://github.com/atom/atom/issues/3309 and/o
+     42-53171362-3130 @izuzak Same issue with 0.123 I am afraid.
+    697-53184188-3130 @jamtur01 Sorry to hear that. :( It's frustrating not being able to reproduce this. I was wondering i
+    152-72374950-3130 A temporary solution will be pressing Ctrl + space to show suggestions. It will show the cursor again
+    103-55726150-3119 how exacly I can set up proxy (server and port) in this file. I can install packages in settings wind
+    217-55737503-3119 for the record under windows7: C:\ProgramData\chocolatey\lib\Atom.0.127.0\tools\Atom\resources\app\a
+    184-63095417-3119 Also it would be good to detect if proxy authentication is required and to prompt the user for those 
+x     33-64033476-3119 +1 Please, please implement this.
+    538-69344042-3119 Please implement this. Ever since updating to roughly `0.165.0`, I can't even view my packages that a
+    420-71465628-3119 Hi, please consolidate proxy settings among other modules as well. For example Atom editor itself ca
+   1720-71467327-3119 Still there is some issue with proxy. I set it form apm and npm as well: ```npm config set https-pro
+    217-50479559-3113 Thanks for the report, @martinlindhe. Just to confirm -- if you rename the file `test.php` to `foo.ph
+    157-50480436-3113 I can confirm this bug. It just happens when you change the case of the font. If you rename it to som
+    112-50481283-3113 Ahhh, I can reproduce it as well -- I wonder why I didn't try that myself. :sweat_smile: Thanks @phil
+     47-50491309-3113 @izuzak, yup other renames work as expected :-)
+    554-50450890-3110 Said another way: if a user opens a file that happens to reside somewhere underneath a symlinked fold
+    145-52266110-3110 I encountered the same issue. My .lintrc files in my project root are not read since those are just s
+    277-50480737-3107 I can't reproduce this on the latest master if I select `aa` initially, but I can if I select just `a
+    231-50500663-3107 @benogle, thanks for taking care of this. I have created an animation, demonstrating how I believe

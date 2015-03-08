@@ -1,0 +1,127 @@
+
+# page: 15, date: 2014-12-01, count: 30, rateLimit: 4627 of 5000
+
+    132-65029670-4355 It may also make sense to upgrade to Chrome 39 first since it's been stable for a couple of weeks now
+    136-65037040-4355 it could also perform better. (I mean both Chrome 39 and DW). Also, reasonable defaults are great, b
+    528-65083156-4355 > it could also perform better. (I mean both Chrome 39 and DW). @YuriSolovyov Yeah, that's the tri
+    212-65092447-4355 some performance problems seems to be [fixed](https://code.google.com/p/chromium/issues/detail?id=365
+    497-65008015-4351 > Atom goes into a white screen dev mode type of environment. I'm don't think I've seen such a thi
+    128-65013679-4351 @jakepark This is definitely not by-design, this means Atom blew up during startup. Does this happen 
+    141-65014847-4351 Sorry guys, it happens very intermittently. I will try and screenshot the next time it occurs. I'm no
+    452-65071767-4351 This behavior happened again, please see the album. Closing and reopening opens normally. It's not in
+    143-65156311-4351 @jakepark when the errors occurs, can you run the following code in the console tab? ```js requir
+     50-65156388-4351 And comment here with the path or error displayed.
+   1226-65237810-4351 This comment box deletes whitespaces, but the slashes indicate the sources. Also, I have expanded the
+     62-65256580-4351 @jakepark do you have the atom/atom repository cloned locally?
+    206-65258784-4351 not sure I understand the question; if you meant, did I download a clone from github, then no. i just
+    272-65259092-4351 > if you meant, did I download a clone from github, then no. Yup, this is what I meant, atom dev 
+     84-65259217-4351 @jakepark are you launching Atom from the desktop shortcut or from a command prompt?
+     38-65259675-4351 desktop shortcut, without any switches
+    105-65260376-4351 @jakepark can you include the contents of your `%UserProfile%\AppData\Local\atom\SquirrelSetup.log` f
+    298-65263072-4351 I do not have a folder in this path. I have %UserProfile%\AppData\Roaming\Atom but no SquirrelSet
+    148-64957892-4346 Did you follow the same process as I posted here? https://discuss.atom.io/t/validating-atoms-insta
+    473-65023016-4346 TL;DR. I know I should, as a developer, but on the other hand, I really don't want to. I filed an iss
+    451-65023393-4346 > I download a .deb file, run it, it installs, I run the app under my own credentials and it works. 
+   1002-65553068-4346 It'll work unless you "secure" your temp folder and prevent execution which is quite common (which I'
+    171-65617475-4346 Or even better, in `$XDG_RUNTIME_DIR`, which is to be used exactly for “user-specific non-essential r
+    273-77153059-4346 The socket in /tmp also makes using atom on a multiuser system harder. There is an undocumented argum
+x      5-65315214-4335 :+1: 
+x      6-66770383-4335 :+1: 
+     36-74329669-4335 :+1: Also for Debian Jessie Please.
+     58-64823210-4334 This might be a style issue. Which UI theme are you using?
+     55-64824561-4334 I use my own theme: https://atom.io/themes/dark-flat-ui
+    171-64825553-4334 I just checked with another ui theme selected, and it still happens. Also, it looks like it's a syste
+    167-65121652-4334 It does look like a system dialog. Atom doesnt style the system dialogs, though. What system are you 
+    326-65297192-4334 Yes I'm on Linux. I use a custom system theme. Could very well be that it's something to do with that
+    166-66537950-4334 Can you switch back to the original theme and tell me if there is an issue? @zcbenz is there atom 
+     68-66549252-4334 The dialog is drawn by atom-shell, so it should an atom-shell issue.
+     94-66611568-4334 @benogle I tried that, but the dialog doesn't change at all, so it looks like @zcbenz is right
+    152-64740546-4330 You can find the binary installers for each release on the [releases page](https://github.com/atom/at
+    120-64788894-4330 It is not posssible to install any of these packages on linux without sudo privileges. I have tried a
+    149-64802073-4330 @franciscovargas, if the dependencies are satisfied, you can extract the package in your home directo
+    100-64805435-4330 Which package would I extract though ? because both rpm -i (.rpm) and dpkg (.deb) -i require sudo ? 
+    165-64805721-4330 From the source code for example [piangi]s1235260:./atom.sh [piangi]s1235260: nohup: failed to ru
+   1770-64807684-4330 If done from the extracted rpm (rpm2cpio atom.x86_64.rpm | cpio -idmv ) the following happens: [pia
+    154-64848707-4330 You can install atom to your home directory with `INSTALL_PREFIX` environment variable: ```bash $
+    381-64877540-4330 Npm is not the right version On 28 Nov 2014 03:10, "Cheng Zhao" <notifications@github.com> wrote: 
+     28-65376043-4324 this also happens in windows
+    272-74305044-4324 At first glance, I'm guessing fix for this will probably be in the various openPath() methods in http
+    296-64725608-4311 +1 This is definitely something I would use. In Python, there are conventions about placing spaces
+    119-64730001-4311 Invisibles are already configurable per language, @Bengt. http://blog.atom.io/2014/10/31/language-
+    297-64731506-4311 @lee-dohm So each of the language packages would need the "show invisibles" checkbox to be expanded t
+   1118-64732251-4311 Almost all of what you're asking for @Bengt already exists. These are my global Invisibles settings: 
+x      2-65935304-4308 +1
+x      2-66634266-4308 +1
+b     19-68109101-4308 Any update on this?
+    240-64548239-4300 I came across another bug with the drag&drop feature : sometimes, when I drop a file in Atom, it just
+    409-68117477-4300 I can reproduce the drag and drop "open the file as if it was a real browser" issue on 0.161.0 under 
+x     42-64184243-4299 I can confirm that it happens also for me.
+x     20-64464135-4299 I can repro as well.
+x      2-64404166-4298 +1
+x      2-64544192-4298 +1
+x     21-64154022-4293 Great! THANKS A LOT
+     63-64173727-4293 It is not working under win. I installed atom with chocolatey. 
+     33-64174388-4293 @picibucor I update the win8 path
+     79-64844901-4293 Updated, use `_this.themes.activatePackages();` replace for specify theme name.
+     94-64845005-4293 Also add a gist about the hack code: https://gist.github.com/yongkangchen/86f0284291584d0b7c78
+     99-66258233-4293 Mac (10.10.1) says that my Atom app are broken and suggest me delete it after modified atom.js... 
+    155-66260382-4293 @xpol `Apple menu > System Preferences… > Security & Privacy > General tab under the header "Allow a
+     32-66271365-4293 @yongkangchen That woks, thanks.
+x      4-67315638-4293 :+1:
+    171-68075506-4293 Thanks for posting this. Extremely helpful. This decreased the package loading by 200ms. I'm usi
+     39-68405924-4293 Will this go into an Atom version soon?
+x     51-68437018-4293 Decreased load time significantly for me :thumbsup:
+x      8-68444018-4293 Goody :)
+    128-68601809-4293 Thx! But why is Atom loading the whole recursive file structure if I click only on one file, that's 
+x     33-70451520-4293 helped me out greatly, thank you.
+     15-72286119-4293 @kevinsawicki ?
+x     47-75366881-4293 Thank you, this does improve things for me too.
+    115-64071244-4284 Hmmm ... can't reproduce it in `atom --safe`. I should have tried that first ... Still, this is re
+    309-64071404-4284 Ah ... I figured it out. And this one is reproducible in `atom --safe`. I've updated the repro steps 
+    301-67219945-4283 I've got this too. I have a tab completion snippet for an anonymous function in JS tied to "f" but it
+    103-64061553-4281 issue connected with https://github.com/atom/atom/issues/3701 The context menu sub menu is still brok
+    636-64063180-4281 I did some addition and deletion and looks like the regular object would work for submenus ``` 'con
+     98-64035914-4278 :worried: This is all I've found so far that looks similar: https://github.com/npm/npm/issues/3639
+    152-64040942-4278 So, it's a waiting game for npm changes to flow downstream, then? I read through the npm issue and
+    257-67519113-4278 I'm not sure if this is still a problem for you, but I was able to resolve this same error by: ```
+x     35-67569702-4278 That worked for me, too! Excellent!
+   3849-67570549-4278 Well, perhaps I spoke too soon... I can search for packages and show packages that need updates, but 
+    484-67572868-4278 The plot thickens...I can install Minimap from the command line just fine with an `apm install minima
+    721-67586769-4278 > So, I believe it's something that Atom is doing wrong when using git to update packages. The err
+    811-67594021-4278 On hindsight, I was unable to install certain packages, even with the suggestion. In particular, the
+   2558-67662018-4278 That's strange, I can do a `sudo npm install -g emissary` with no problems. I'm also getting the same
+    233-67662357-4278 @thedaniel Thanks to [@m4b's workaround](https://github.com/atom/atom/issues/4278#issuecomment-675191
+     71-67689925-4278 Please do! Package-related stuff in atom generally shells out to `apm`.
+     96-64197720-4274 +1 I think tabs should snap strongly to horizontal axis and have increased unsnapping threshold.
+    768-64430906-4274 I'm not sure snapping to the horizontal axis would be the best option. If you're dragging a tab from 
+    160-64436304-4274 I agree, there is a lot to be improved here. Maybe start from the basic stuff, like the animation in 
+    143-63930686-4271 Actually [most stars](https://atom.io/packages/list?direction=desc&page=1&sort=stars) might be better
+     69-64010437-4271 It could be nice to have a link to this page on the `/packages` page.
+    269-63953567-4270 I think it is calling the opener, but Atom is mangling the URL... With a simple opener: ```coffees
+    148-64006550-4270 So would it be ok for me to take out the `^` in my regex to find the url later in the string? I can'
+    276-64101506-4270 > I think it is calling the opener It apparently is not getting to my opener. I put in a `console
+     85-63918823-4269 I did not read atom-shell source code, but i test and feel 200ms make me feel better.
+    408-63919417-4269 > 200ms make me feel better. What happens if you try to do something before it really loads? > 
+     87-63925944-4269 It save all the package time for window load time. And you can see window shown faster.
+    155-63959454-4269 A better solution than this, is that `ipc.send('call-window-method', 'show');` move to first of `
+    673-64102479-4269 I record a screen video to show what I mean. Before modify:https://drive.google.com/file/d/0B8i7zRr2
+     55-68406213-4269 Please pull it sooner rather than later if it is ok! :)
+x      5-69502106-4269 :+1: 
+    178-74053145-4269 Would be really nice if you could figure out how to solve that puzzle. Having Atom open windows fast 
+    276-63979572-4262 Hm, that works with fs.inotify.max_user_watches=131072 131,072... that's enormous. My machine isn't 
+    267-64020536-4261 Interesting. It looks like the editor is in the settings tab, not in the changelog tab. When in this 
+    876-64032210-4261 Yes, when in that situation, I can switch tabs by clicking on them. The "Open Changelog" button was n
+   1535-67396359-4261 This behavior reappeared for me when I installed some packages with the latest Atom. It happens with 
+    150-67397262-4261 When I restart Atom and down-/upgrade a package, this behavior does not occur. Equally so, when I dow
+x     26-67397563-4261 Thanks for all the details
+     83-67398672-4261 You are welcome. Hopefully, some detail will hint to what is causing this behavior.
+    160-63862759-4260 An Atom core package affected by this is [atom/metrics](https://github.com/atom/metrics): When I appe
+     72-63863069-4260 atom -v 0.149.0-46ff794 apm -v 0.111.0 uname -r 3.17.2-200.fc20.x86_64
+    290-63863336-4260 None of the mini editors show the invisibles, as they do not respect the settings. For example, type 
+     98-63870719-4260 For the moment I'd like to leave it, but we can leave the issue open and discuss it in the future.
+    495-63898928-4260 @benogle Are you implying the mini editors of Atom's settings are manually set to show invisibles? In
+    232-63899342-4260 @Bengt We would need to add a second option I think... `editor.mini.showInvisibles` or something alon
+    168-64021224-4260 @Bengt, the main reason you want to show them in mini editors is so a space is visible in your settin
+    606-64029071-4260 @benogle I noticed it in the settings at first and I think that has the most value since there is an 
+     70-63837943-4252 @zcbenz Anything we can do about this? Seems like an atom shell thing.
+x      5-64186259-4252 :+1: 

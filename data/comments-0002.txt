@@ -1,0 +1,56 @@
+
+# page: 2, date: 2015-03-04, count: 30, rateLimit: 4933 of 5000
+
+    128-77275744-5844 @izuzak I have recreated the PR for disabling folding, which works with the current master branch. 
+    214-77683314-5840 @oclbdk I want to work on this issue. But i am a newbie contributor and this is my first bug. Can yo
+    134-77099075-5833 It's possible that you're on a case-insensitive file system so the tab isn't notified of the change (
+    186-77100167-5833 Yeah, that's possible. I tried digging into atom/atom, atom/tabs, and atom/tree-view, but couldn't tr
+    112-77101016-5833 Also, for clarity, this is when renaming something from the tree-view, not simply renaming it from ou
+    315-77154025-5826 A few bugs relating to multiple root folders have been fixed since v0.182.0. Please upgrade to the la
+    133-77184255-5826 Issue exist in safe mode as well. I'm not sure why I am on an old version. Atom does not seem t
+     63-77184419-5826 To clarify, it actually tells me 0.182.0 is the latest version.
+x     11-76988564-5820 Good point.
+     66-77025040-5820 This is exactly the behavior that I'd like :smile:. Refs #4573.
+     25-76899569-5813 Working on the tests now.
+    395-77024841-5813 OK, this is now in a state where things work. Now I'll see if I can backpedal and remove the `getHost
+     74-77062253-5813 Moving to new, simpler approach in https://github.com/atom/atom/pull/5830.
+     72-76751645-5810 @lee-dohm Could you share more details and add an example + motivation? 
+     90-76751808-5810 Yeah, sorry ... I accidentally hit <kbd>ENTER</kbd> and was typing all that out :laughing:
+x    46-76752029-5810 :+1: Thanks, should have guessed that :smile: 
+    366-76615210-5804 Do you have any more information? Anything special you did when installing? Have you followed the sug
+   1342-76612136-5803 You can get the scopes at the cursor much more easily using <kbd>Alt+Cmd+P</kbd>. Are you meaning 
+    787-76615721-5803 @lee-dohm thanks for the shortcut tip :+1: I'm not sure whether this is a grammar or tokenizer is
+    843-76618363-5803 You're welcome :grinning: There's also this additional wrinkle: `<div s|>`. In this instance, the 
+    142-76644594-5802 Kind of guessing here, but could you try renaming `~/.atom` to something like `~/.atom-backup` and tr
+     28-77434818-5802 @50Wliu that actually worked
+    304-77435483-5802 All right, then I'd suggest for you to take a look at your config files (`config.cson`, `init.coffee`
+    185-76643895-5801 What version of Atom is this? Can you reproduce this in safe mode (`atom --safe`)? If not, could yo
+    686-76802077-5801 I am using Atom 0.184.0. /Users/dylan/.atom/packages (1) └── open-recent@2.2.0 I was having tro
+   2306-76807032-5801 Additionally, here is the error report (clicked on in safe-mode): I am posting it here, instead o
+     12-76807581-5801 /cc @benogle
+     72-76482922-5793 Fix: Remove the config.cson file and it gets generated again on startup.
+     81-77280266-5793 Would it be possible to include the exact contents of the file in a comment here?
+     72-77280386-5793 Was all the whitespace on the same line or broken across multiple lines?
+    184-77290774-5793 > Would it be possible to include the exact contents of the file in a comment here? Off-topic: I 
+    309-77317989-5793 > Off-topic: I haven't been able to add file attachments to these issues. Am I missing something? 
+     51-77331135-5793 @kevinsawicki All the whitespace were in one line. 
+    217-76489351-5792 Here's what I do ``` cmd-t ...find file ctrl-shift-\ in fuzzy-finder ``` Then move focus be
+   1222-76495399-5790 I assume you ran out of memory. You might be able to reproduce it by limiting your memory somehow. 
+    104-76500649-5790 Chrome won't crash due to low memory. Instead it'll shut down each tab with a "Page has crashed" err
+   1046-76494489-5788 What package are you using to do this? You should really post this question at the package's repo. 
+     54-76557603-5788 yea sorry i thought this were a base feature from atom
+    194-77129128-5788 I only see this feature in linux (ubuntu 14.10), on windows i can't use this feature. I removed all 
+    380-77152881-5788 @Fank could you explain what's going on on that GIF in the issue? I've watched it 5 times and I'm not
+    530-77155932-5788 Ok sorry i thought a gif may be better. So the main issue is that if you use a vertical text selectio
+   1084-77204018-5788 > Ok sorry i thought a gif may be better. It is better and thank you for posting that GIF, it's j
+    273-76365100-5782 Well, it's a rich client application that people are supposed to be able to install without having no
+    338-76379357-5782 Of course I think about this as an alternative install. I was about to install from source and I didn
+    629-76494068-5782 The node (ioJS) is customized so I don't see how this could work. On Fri, Feb 27, 2015 at 3:14 AM, N
+   1320-76346921-5779 I would suggest making a package to do this but I happen to know it can't be done . I wanted to open 
+    379-76344671-5777 Do you have a consistent repro or a package that is causing this behavior? Also, could you give the f
+    154-76282136-5774 A spinner wont work. It will lock up as it is on the same thread as the style recomputation. Some
+    185-76327471-5774 In addition to the ideas above, I think it would be a nice touch if there were a transition between t
+    291-76265619-5771 @davepeck Is this the behavior you're observing? (Including a GIF is always helpful. :wink:) ![fon
+    196-76266094-5771 @izuzak Yes that's the behavior. Thanks. ~~(Related: what tool does everyone use to create these GIFs
+    144-76273403-5771 Yeah, I've seen that too. Not sure if I introduced it via recent changes but we can prioritize it to 
+     65-76282998-5771 I was able to reproduce it as well and that's exactly what I saw.

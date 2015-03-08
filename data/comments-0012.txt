@@ -1,0 +1,106 @@
+
+# page: 12, date: 2014-12-23, count: 30, rateLimit: 4720 of 5000
+
+    112-67948762-4747 I feel like this is intended since it's keeping the indentation. Maybe try disabling Normalize Inden
+     80-67950072-4747 I already disabled all auto indent things including "Normalize Indent on Paste".
+    139-67973298-4747 @zhanzhenzhen, currently there is no way to disable this behavior. Out of curiosity, why would you pr
+    349-67976181-4747 @maxbrunsfeld: Because I want to manually control all things. So I disabled all auto (i.e. intelligen
+    105-67976818-4747 Maybe one reason: I want the behaviors of typing the same characters in different editors to be the s
+    161-68431686-4738 :+1: splitting without duplicate files would be very nice. There is https://atom.io/packages/pain-spl
+    221-67848899-4737 Which version of Atom are you using? Are you able to reliably reproduce the issue? Can you find a Win
+    994-67860305-4737 0.165 is version. I can't seem to replicate the issue, but for clearity I had selected 2 .js files i
+    116-67880279-4737 @ceridian Can you run `require('crash-reporter').getLastCrashReport()` in the devtools console and pa
+    108-67883057-4737 giving me null when I run that. I haven't been able to replicate it so probably a windows hiccup on 
+     99-67872823-4735 To fix, we should make this message show as a warning with nice verbiage rather than a fatal error.
+b      7-68155056-4727 Anyone?
+b      3-68476813-4727 ...
+    639-68916481-4727 > To get the point, my question is: is there a supported way to fetch dependencies of the build scrip
+    416-68965553-4727 This is almost right, but the issue now is that it still compiles with `script/bootstrap`. All resour
+    214-68966466-4727 > but the issue now is that it still compiles with script/bootstrap. Yeah, npm, which is what Atom
+x      5-68969830-4727 Dang.
+     36-69272668-4727 #3717 needs this as well, apparently
+    119-77620096-4727 So, is there a related npm issue that allows building 'offline'? Would really love pointers into how 
+     92-67751422-4725 @park9140 what happens if you run `'asdf'.localeCompare('sd')` from the dev console in Atom?
+    193-67751562-4725 @maxbrunsfeld, Works fine from the console. I also just finished installing the new os patch, and it 
+    125-67751591-4725 @maxbrunsfeld, also forgot to include that the point where I'm encoutering the issue, is while runnin
+     11-67909234-4725 /cc @zcbenz
+     74-68939613-4725 @zcbenz, @maxbrunsfeld, Is any more information needed to figure this out?
+    123-68949528-4725 I can reproduced this bug, but I have not figured out the cause yet. Refs https://github.com/atom/
+x     55-68949831-4725 Thanks @zcbenz, let me know if you need any other info.
+    159-70730537-4725 @maxbrunsfeld, I confirmed this is fixed in `atom-shell@0.20.7`, by `atom/atom-shell/pull/1019`. An
+     65-67666386-4710 @SamuelMoy, what were you doing in Atom when this error occurred?
+     49-67806502-4710 I was trying to connect with a Salesforce project
+    199-69119712-4710 Can you give us a little more info? What packages were you using? Can you try in safe mode (quit atom
+    191-72110597-4710 I just hit this too and wasn't doing anything. I was fullscreen mode in OSX and I had moved to my chr
+     79-73304350-4710 Happens to me all the time. How best to capture logs/debug info and share here?
+     71-67666509-4708 @Xatpy can you describe what you were doing in Atom when this occurred?
+    341-67858499-4708 I'm frequently receiving this same error. As far as I can tell, it is occurring when I began to refer
+    243-67858945-4708 Thanks @djpowers! Are you able to reproduce this when you start Atom in [safe mode](https://github.co
+    154-67859562-4708 I wasn't converting a file from .md to .pdf when it returned this error. I was using a customized CSS
+    379-67861348-4708 @izuzak, I'm using Mac OS X 10.9.5, and the problem occurred using Atom 0.161.0. I actually just rest
+    615-70937003-4708 Back again! Currently able to reproduce reliably. In an .html.erb file here is an example of the s
+     62-71063178-4708 @djpowers is this file local? Can you save the file just fine?
+    367-71070948-4708 @benogle, yes the file is local. I can save, however, if the syntax error that caused the initial 
+     49-72022893-4708 I am getting this error when I save a c++ file :(
+   1767-72244622-4708 From #5320 cc @gttiankai **Atom Version**: 0.174.0 **System**: Mac OS X 10.9.5 **Thrown From**:
+     88-72598594-4708 Happened for me. Turns out my bug. I was writing to a child process that was terminated.
+    158-76440504-4708 @djpowers What packages do you have installed? can you `apm list`? Try `atom --safe`. it sounds like 
+    634-76442483-4708 @benogle, here are the packages I've installed: ``` /Users/[user_name]/.atom/packages (9) ├── co
+    114-67574848-4696 It totally needs a progress indicator of some kind. I've changed the title to better reflect that fea
+x      4-67936670-4696 +1 
+x      2-70872308-4696 +1
+x     44-69540567-4695 :+1: Could be very annoying for some people.
+    206-69600529-4695 To cite @leranus: >[There should be] a preference where it can be turned off or on entirely, or ju
+    173-69601915-4695 And as was pointed out, the specific code which adds and removes the "Open with Atom" item is in http
+x      5-72257706-4695 :+1: 
+     37-67484582-4680 Would atom/atom-keymap#37 cover this?
+    127-67486703-4680 Hm I am not shure. The Neo Layout is something completely different from the classic German Layout. B
+    109-67413445-4674 What is your login name on your machine? This sounds very similar to https://github.com/atom/atom/iss
+    507-67751601-4674 Maybe it's that. I don't have a non ascii character in my home folder path but i symlinked c:/users 
+    180-67751720-4674 yup, it was that : somehow atom doesn't follow symlinks ? It needs the real path. Right click open
+    445-67751936-4674 okay, found it : i had to change the path to the real path in the registry in keys : HKEY_CKASSES_RO
+    208-67402158-4673 Eventually we would like to have a sanctioned view framework, but we're not there yet. I did make 
+   1274-67404640-4673 I guess you didn't make this the example because you want to discourage using space-pen? I'm happ
+    216-67411826-4673 > Is there anything other than custom elements you would like to see in the output of the framework
+    975-67419039-4673 > I guess you didn't make this the example because you want to discourage using space-pen? Well, 
+    693-67419146-4673 I want databinding and the ability to create the markup with real HTML. No globals is an important re
+   1489-67424626-4673 Space-pen-2 would be much simpler than rivets. Rivets puts logic into the element properties which i
+    107-67425024-4673 > I have a framework in my mind [...] I will put a proposal up on the forum Cool, looking forward 
+   1985-67425120-4673 Oops. I misunderstood the "... ability to create the markup with real HTML." requirement. I don'
+   2252-67425500-4673 I guess my requirement is that 100% of the logic be in coffeescript (or JS). I don't think that is 
+    236-67426124-4673 > I guess my version will have to be a separate module installed like you do with the latest space-pe
+    221-67444825-4673 A *very* preliminary spec is at https://gist.github.com/mark-hahn/3f9ee0ba4945a285fb38. I will post 
+    600-67533037-4673 The gist https://gist.github.com/mark-hahn/3f9ee0ba4945a285fb38 now has a new version. It includes t
+     90-67533220-4673 @mark-hahn You're going to need to pick a new name ;) https://github.com/atom/space-pencil
+    123-67542365-4673 :laughing: Oops ... I suggested the name based on the urban legend. I guess great minds think alike .
+    132-67558597-4673 > I did make this space pen version of the sample package templates: Thanks. I'm using that unti
+    226-67495834-4663 I can't reproduce this with Atom 0.162.0-48f6392 on OSX (I followed the exact same steps). Can you tr
+    151-67510907-4663 @gidoca Can you also include which distribution of Linux you're using? bug-report doesn't detect Linu
+    716-67529094-4663 @izuzak I will try that, yes. 0.158.0 is the most recent version in the PPA, but I will try to manual
+    245-67531327-4663 Actually, Atom 0.161.0 was pushed to the PPA in the meantime, and I can confirm that the issue is sti
+    497-67335125-4661 You mean like UTF-16 BE or UTF-16 LE? ![screen shot 2014-12-17 at 7 06 12 am](https://cloud.github
+    324-67336042-4661 No I meant a CUSTOM encoding... I want to be able to generate, say, an ascii-incompatible variable-wi
+    178-67360362-4661 Good to know. Now I'm familiar with HTML, CSS, JS, but not with Atom-Shell... So as I ramp up, can so
+    234-67371634-4661 > So as I ramp up, can someone give me a quick run down on how the Unicode handling is done currentl
+     72-67247160-4653 Hmm, is this the first run from the installer? or how did you launch it?
+     46-67247402-4653 `Restart and Install Update` from within Atom.
+    228-75396737-4653 This is back. Just updated to 0.182.0 from 0.179.0, though I'm pretty sure it also happened 0.174.0-
+    201-67283250-4650 > You could also technically get at it with NodeObjC, but that seems like overkill. More realistic
+    296-67255380-4643 Please quit atom completely and run `atom --safe`. Is the issue still there? Can you reproduce thi
+     90-67062742-4625 Can you upgrade atom to the latest version and try again? It should be fixed in 157 or 158
+     79-70866713-4625 Just happened on `v0.174.0`, while using <kbd>Ctrl+Space</kbd> 'auto-complete'.
+     69-70872683-4625 Does it happen all the time you autocomplete? What system are you on?
+    157-70874550-4625 @benogle, no just once. I was pressing and cancelling 'autocomplete' *really* quick :smile_cat:. I
+   3208-73205042-4625 **Atom Version**: 0.176.0 **System**: Ubuntu 14.04 LTS Happened again while using Ctrl+Space 'aut
+    235-67083349-4624 This is interesting. I'm not sure reaching into the package and requiring a file is the right thing. 
+    426-67384905-4624 @benogle, thanks for taking a look. I borrowed this technique from [AtomLinter](https://github.com
+     88-67504560-4624 Good idea, with this change i also could add SVN support since we are using SVN at work.
+    435-67512680-4624 @oclbdk You can look at this abandoned status-bar PR for an example of how the services API *might* b
+     30-66967675-4619 Hmmm, can't reproduce anymore.
+    211-67092138-4619 This is at https://github.com/atom/text-buffer/blob/081d6022689ec1de383bfedc49611ad33364aca4/src/text
+     62-67981505-4619 Similar issue over in https://github.com/atom/atom/issues/4749
+    331-67250132-4618 Can you reproduce this easily? Do you have steps to reproduce? Looks like you just hit backspace, but
+    354-67749461-4618 I just run into this. I was editing an XML file with linter package enabled hitting backspace inside 
+    477-68474347-4618 Atom Version: 0.165.0 System: Mac OS X 10.9.5 I ran into this issue while editing a SVG file, hit
+    107-77340844-4618  <a> <b> <c><!-- Caret was here and I hitted Enter --> </b> 
+    229-67250576-4614 Looks like you did a redo when this happened. Do you remember what you were doing? Does this happ

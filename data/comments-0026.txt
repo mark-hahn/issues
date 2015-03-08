@@ -1,0 +1,155 @@
+
+# page: 26, date: 2014-06-29, count: 30, rateLimit: 4286 of 5000
+
+    312-47676823-2745 When you do `atom ./spec/features/some_spec.rb:271` do you see the right cursor position in the statu
+x     46-47770671-2745 Yup, looks like I'm having those same results.
+x     38-72759747-2745 I'm also having this issue. Any clues?
+     55-47309619-2743 Just FYI this also repros when using the React editor. 
+    528-47086738-2741 Thanks for the report @samuela! Just to get a bit more information on this: * Can you reproduce this
+    205-47171012-2741 @izuzak This has only happened to me once and I'm not exactly sure how to reproduce it. I've updated 
+    153-47836033-2736 @m3hr Are they just not showing up or rendering incorrectly? Can you provide more details on what you
+    180-47840514-2736 "Terminus Regular," a .fon font installed on my machine, shows up as Times when I type the name in at
+    108-47840622-2736 And do you know if Terminus Regular can be used inside the Chrome Web browser as the default monospac
+     17-47840906-2736 Yes, just tested.
+     34-47841061-2736 Great, thanks for letting me know.
+    115-47007559-2734 Looks like the HTML grammar is selected. Would it help to select the PHP grammar? (click `HTML` in th
+    101-47007922-2734 This is embarrassing... But is it intended to open a file with the ".php" extension as a html file? 
+    417-47008340-2734 Might be a bug in the grammar? Grammars are choosen based on a 'score' that is calculated from readin
+    284-47008844-2734 It is fixed. But i assumed if the file ends with ".php" and there is actual PHP code in it, it woul
+    386-47010618-2734 Looks like the contents match (well, the first line) is more heavily weighted than the path: https://
+     91-47011189-2734 @nathansobo wrote the scoring algorithm I believe, me may know why it is weighted that way.
+    611-47019588-2734 I just scored it that way because I was trying to preserve the previous synchronous behavior of the [
+    249-47022659-2734 So a quick solution would be to add `<?php ?>` at the top of the file until it's fixed? Or could an 
+     86-53644984-2734 @nathansobo: This should be changed. I cannot see any benefit of the current behavior.
+     69-46987934-2731 Can you try running `script/clean` and then run `script/build` again?
+   1098-47009509-2731 Here goes: ```bash [wei2912@localhost atom]$ script/build Node: v0.10.29 npm: v1.4.14 Installi
+     82-47682664-2731 Does the folder `/home/wei2912/Workspace/atom/atom/build/node_modules/npm` exist? 
+     96-47682745-2731 And also does the `/home/wei2912/Workspace/atom/atom/build/node_modules/npm/bin/npm` file exist?
+     73-48902187-2731 `/home/wei2912/Workspace/atom/atom/build/node_modules/npm` doesn't exist.
+     64-50069078-2731 I have exactly the same problem .. what is the correct solution?
+    147-53620666-2731 @wei2912 and @nicolasdanelon Are you still seeing this issue on the latest master branch when runnin
+   8971-55289216-2731 @kevinsawicki Sorry for the late response. The build still fails. ```bash [wei2912@localhost atom
+    276-55290092-2731 @wei2912 That seems like the issue here: https://github.com/TooTallNate/node-gyp/issues/363 where the
+    145-58263903-2731 I'm seeing the same issue on Fedora 20, and sounds like it is not easy/recommended to have a co-insta
+    121-61383451-2731 Also you may have `gyp` installed which conflict with `node-gyp`. You may want to remove it first bef
+    489-62313638-2731 as ardeshirj said, it is necessary to remove gyp before building. Build instructions should be upd
+    500-62315474-2731 I understand you may want to build and install from scratch, but just FYI now there is a [rpm package
+    100-62411488-2731 The rpm package is x64, people running x86 systems (like myself) can't install unless they build it.
+    399-46938621-2728 From what I can tell, the `201d` results in nothing because the last keystroke `alt-d` gets matched t
+    259-46998297-2728 I tried the "Unicode Hex Input" keyboard layout and was able to insert right quote by holding `option
+    224-46999676-2728 This works for that particular character but then with the default key bindings it is impossible to e
+    258-47001128-2728 We'll need see if the operating system and Chromium provide any indication that a hex character is be
+    287-75480046-2728 Just in case anyone else comes across this issue, I made a package to get around the original problem
+    143-61326240-2712 Sorry for the long delay is responding, do you still have this issue in Atom? Also, can you includ
+     54-69682130-2696 +1 Same problem when using Atom 0.170.0 on Windows.
+    223-46813654-2695 @siannopollo I _suspect_ that you're hitting this issue: https://github.com/atom/atom/issues/1867 Cou
+    745-46841730-2695 @izuzak That issue seems to be separate from this one, since I can reproduce this error without remov
+    133-46842441-2695 Ahhh, thanks @siannopollo -- totally neglected that fact because I was focused on the other issue. Ap
+     80-67307509-2695 I have this problem too. Any workaround except `cmd+shift+p opsnip enter cmd+s`?
+    809-46812980-2685 Yeah, it seems like that's how things work currently: https://github.com/atom/atom/blob/e13cf19daa
+    706-46843457-2685 I was looking at this the other day in the context of wanting to wait for all grammars to finish load
+     81-59167987-2677 This path is used in things like https://github.com/chuckhendo/project-quick-open
+    583-46580948-2670 Hey @schmurfy, some off the things you want are possible: > move to left/right/top/bottom You c
+    248-46660116-2670 thanks ! I am currently using sublime text 2 but this editor is really starting to get interesting :
+    225-46662194-2670 Would it be possible to map a shortcut to multiple commands ? (something like "move to right pane AN
+    909-46664964-2670 > Would it be possible to map a shortcut to multiple commands ? Composing commands in such a way i
+    173-46665506-2670 Thanks, I was thinking about this to provide a temporary solution for my last point (close panel on t
+     46-48551831-2670 +1 for shortcuts to move the active tab around
+    239-46477244-2654 This is important to us, but we're not actively working on it right this second as we are focused on 
+    148-46487357-2654 Great, Where i can learn more about the project structure? Should i dig into the code or there is s
+    633-46489036-2654 Before you start digging into this, you might be able to speed it up by disabling some packages. 
+    214-46489361-2654 So add those lines, and open a dev window (`atom -d` in a code directory). Profile a couple different
+x     35-46491861-2654 Thanks Ben, i appreciate your help!
+    646-46495498-2654 Also, this is probably death by 1000 paper cuts. There will be no one thing that is a huge slowdown. 
+   1104-46497865-2654 Yeah, im looking into that right now. There are 67 core packages loading here. With atom --safe, 223m
+    227-46514942-2654 Async loading of the packages has been talked about a lot in the past. There are some strong opinions
+    803-46518588-2654 One thing that I've done with a few of my packages (even the small ones) is I've lazy-loaded everythi
+    915-50089080-2654 I just decided to try Atom on OS 10.8 on an (older) Macbook Pro and it is very slow. Opening a new wi
+    266-50089381-2654 @countergram The window load time is the time for that render process to load, there is a parent proc
+   1467-50137294-2654 I think this issue also adds to the perception that Atom is not good enough to be used as a full-fled
+    396-50153873-2654 Great point batjko. The thing Atom reminds me off is Sublime Edit. Which is very fast. It also wouldn
+    655-50168276-2654 A splash screen would only really "work" against application startup time. The issue here is that eve
+    250-50169469-2654 > Is this a design decision or a limitation of Chrome? Each window runs in its own "render" proce
+    185-50177044-2654 I can't contribute much other than giving my *+1* to whoever tries to fix this *issue*. I really want
+    277-50179509-2654 Would chrome let you compile/parse things in the browser process and pass the resulting objects out o
+    150-52001224-2654 (Tried on Windows) The current version 0.120.0 is still too much slow. It's no match for Sublim
+   1897-52105782-2654 Totally agree with batjko. Theres a whole world of difference between these 2 mindsets. I couldnt
+     79-52221428-2654 Opening a file in the active window should give the appearance of speed. #1722 
+    122-53169180-2654 Just saying, Atom takes ~12 seconds to open an editor window on my machine. Sublime Text, in comparis
+    393-53779972-2654 Also just wanted to chime in and add a +1 here. The current startup time compared to other editors
+    385-53996578-2654 Don't want to be annoying but; i have reported similar issue about 3 months before, when i was alrea
+    138-54870514-2654 Indeed, I've just installed v0.125.0 of atom and is slow (windows). Pressing a single keyboard charac
+    603-57454243-2654 How about priority based plugin loading? Some plugins HAVE to be loaded on startup, others could be l
+    100-57455420-2654 Is it possible to pre-load a render process with the configuration, then fork that for new windows ?
+    509-57455606-2654 >Some plugins HAVE to be loaded on startup, others could be loaded sometime after, and then there's a
+    173-57456351-2654 I often end up with 3 instances open as I click multiple times to open Atom. It's really frustrating 
+     80-57457054-2654 This gives me an eerie feeling similar to when i use Grunt for processing files.
+    226-57457083-2654 Not sure which Atom version and OS I was using when I joined this discussion but I must say performan
+     47-48450882-2646 Atom-> Preferences -> settings -> Ignored Names
+    119-48466687-2646 Yes, it is there as I mention in the issue. But please read the issue more carefully - especially the
+     95-46304713-2625 Noticed the same issue on win7 x64 (Atom x32). Also it uses a lot of RAM like one chrome tab...
+    391-46181192-2622 @CaptainHayashi Thanks for the report. I'm having trouble reproducing this on OSX, though. Can you
+    115-46698410-2613 /cc @zcbenz do you think this an atom shell issue? full screen mode and pressing alt does not show th
+     36-59396646-2613 @zcbenz is this an atom shell issue?
+     73-46199874-2607 :link: a somewhat similar issue: https://github.com/atom/atom/issues/1870
+   2194-46066844-2599 Error log from that paste bin: ``` [harshvardhan@hari-rudra] ~/Dev/atom% script/build Node: v0.1
+     86-47465890-2599 Oops, I opened a ticket, 2765, effectively a duplicate of this one but for FreeBSD 8.4
+    140-48836084-2599 Same errors on vanilla FreeBSD 10 Amd64, FreeBSD 9.2 Amd64. In readme should be mentioned full tool-
+     46-49275613-2599 Who successfully build the atom under freebsd?
+    212-49331300-2599 I highly doubt anyone could build it successfully. If it could have been built successfully in the p
+    201-49361602-2599 Broken modules at least: - minidump - breakpad - grunt css - grunt less - atom-package-manager 
+     35-49397117-2599 bcadieux. Will be very upset if so.
+     70-50973289-2599 Is there a way to make this build for FreeBSD 10, or one in the works?
+b     24-60499561-2599 Anybody working on this?
+     67-60948905-2599 today tried again to compile. all to no avail, the problem remains.
+     52-60949567-2599 forgot to clarify. freebsd 10 amd64, atom v0.140.0
+    146-61291528-2599 Can somebody really understand that the problem is??? Atom is a JavaScript program which run over Chr
+     95-61371830-2599 https://github.com/atom/atom/issues/3684 Wrote here, maybe the developers will pay attention.
+    391-61385129-2599 Some modules not available on FreeBSD, for example, breakpad and minidump. Some packages have a c++
+     38-61385205-2599 Oh, and bugs in c++ code also here ;-)
+     73-68555710-2599 So, have people actually succesfully built this on FreeBSD at this point?
+     79-46025234-2598 Which platform are you on? I'm running OS X and I do not experience this issue.
+     79-46041700-2598 I'm on OS X 10.9.3. Is there any more info I can provide that would be helpful?
+    603-46814871-2598 I can't seem to reproduce this myself. @dmnd which version of Atom are you using? Can you reproduce t
+   1103-46907983-2598 I'm using 0.103.0. I can reproduce this by running `atom --safe --wait` from Terminal. Since this see
+   1092-47457361-2598 Thanks for the detailed instructions, @dmnd! I can reproduce the issue now -- it indeed happens only 
+     77-45940965-2594 +1 `CMD + K + (arrow)` not working for me to to open up split panels, either.
+     58-45944462-2594 Are you still holding down `cmd` when you press the arrow?
+    131-45945104-2594 I am. Just tried again right now, just to be sure. **Update:** `CMD+K`, release, THEN `<arrow>` wo
+    102-45945197-2594 Try pressing `cmd-k` and letting up the `cmd` and then pressing the arrow key. Does that work for you
+    204-45945227-2594 Yeah I was. This is a rather annoying way of doing a shortcut when it isn't mentioned in the `cmd + s
+     47-45945282-2594 @Frozenfire92 Good point, it should be clearer.
+    152-45945399-2594 This issue really should be about making the shortcut display clearer. That's definitely the problem 
+    100-45945592-2594 Agreed :) Thanks for the help, I was getting annoyed at why the keyboard shortcut wasn't working lol
+    219-45948334-2594 I'm going to leave this open here, but the "humanizing" of the keybinding is done in the [underscore-
+     77-48384736-2594 I had the same problem and was super annoyed by it. Glad I found this issue.
+    135-56977044-2594 Ran into the same thing here. Thanks for the explanation. Also, the keyboard shortcut is not listed o
+x     51-63324911-2594 +1 to fix it or make shortcut instructions clearer.
+x     64-68523823-2594 +1 to make shortcut instructions for split screening clearer. 
+    154-71103187-2594 +1 I was trying to make it work for 5 minutes before I stumbled upon this issue. It's really not clea
+     60-71103854-2594 @simurai might you have any ideas on making this more clear?
+    187-71115354-2594 I think that instead having it written all in one rectangle [Cmd K ->] it could be in two rectangles:
+    837-71295219-2594 I was wondering if there is some sort of convention about this.. From [Wikipedia](http://en.wikipedia
+   1406-71295450-2594 None of these, including the separate rectangles, would clue me in. I don't think this is possible 
+    339-71295905-2594 > None of these, including the separate rectangles, would clue me in. Yeah, I'm with you. > Wa
+    534-71296806-2594 I think the main issue is that currently the space between the `K` and the `→` is quite small and cou
+    130-71323066-2594 I like the two rectangles better than the 'extra spaces' method-the rectangle method might alert me, 
+    928-71462629-2594 @mark-hahn I couldn't figure it out. Only when I Googled it I found this issue and on it I discovered
+    312-71772986-2594 @mark-hahn I couldn't figure it out either. And the [docs](https://atom.io/docs/v0.176.0/getting-star
+    133-45914473-2591 Can you try opening the keybinding resolver using `cmd-.` and then retyping the `cmd-shift-p` keybind
+    152-45917454-2591 Nothing. It wont pull anything up. In fact it doesn't let me put the P it stops at cmd-shift I al
+    285-45917902-2591 This has happened in the past for certain keybindings when another application is taking it over so t
+     89-45918138-2591 Im running OS X 10.10 (Yosemite) I will poke around and see what may be binding to it.
+    252-45918503-2591 Also I don't see this issue happening on Sublime Text. The same command will open the Sublime Text 
+    202-46237909-2591 Actually I am experience the issue on Sublime Text as well. It looks as though the new OS X 10.10 may
+     53-46694291-2591 I'm seeing a conflict w `cmd-\` under yosemite too :(
+     91-47872940-2591 I'm having the same problem on Mavericks :( edit: upgrading to 0.107.0 fixed it for me
+     16-71706955-2591 space-keys issue
+     76-45644495-2572 Not currently. We can leave this open though as a placeholder for adding it.
+    277-50996620-2572 Are you sure, this is normal? ![image1](https://cloud.githubusercontent.com/assets/4272432/3791248/d
+x      5-67204263-2572 :+1: 
+    102-45428850-2554 I propose this pull request because it's probably simpler than purging node, gyp, and rebuilding node
+    108-45433350-2554 You should include the right answer (with some modifications) in the file rather than using a link, I
+    247-45458925-2554 Thanks, the instructions are relatively short so I didn't want to make it so long; also I wanted to s
+    601-45523085-2554 This is a surprising to me. Not only is 2.6 deprecated in favour of 2.7 (which is why I doubt gyp wou
+    279-45704091-2554 It's because the version of a gyp from **apt-get** and used by **node-gyp** is different. The issue i
