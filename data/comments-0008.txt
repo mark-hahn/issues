@@ -19,7 +19,7 @@
     322-71348280-5243 It's not exactly what I've observed (and described in #5200). Here's said that some text after the sp
      58-71500352-5241 What were the problems that people on Windows were seeing?
     145-71536081-5241 Mostly problems with node-gyp (i.e. building the native code). Some of the reports are listed here ht
-      2-71299796-5239 +1
++      2-71299796-5239 +1
     334-71554534-5239 I also noticed that if you delete the view before you delete the pane. It creates a slightly differen
     108-71281536-5237 windows 8.1 apm 0.123.0 npm 2.1.18 node 0.10.35 python 2.7.8 git 1.7.11.msysgit.1 visual stud
      68-71281562-5237 Are you upgrading from within Atom or via `apm` on the command line?
@@ -32,8 +32,8 @@
     284-71240199-5234 The new installer On Fri, Jan 23, 2015, 1:18 PM Wliu <notifications@github.com> wrote: > Hmm. A
      57-71114740-5224 **UPDATE:** Reproduced on Ubuntu 14.10 and Fedora 21 too.
      42-73225524-5224 **UPDATE:** Reproduced in Windows 8.1 too.
-      2-71100316-5223 +1
-      4-71102430-5223 :+1:
+x      2-71100316-5223 +1
+x      4-71102430-5223 :+1:
     139-71532693-5223 Thanks for the suggestion, this is a good idea. We'll add it to our list of site enhancements, though
     139-71067050-5217 Let me know if you'd like me to convert the spec to coffeescript. I was told that JS was okay moving 
     107-71069491-5217 Please convert the spec to coffee. We'd like to keep all of core in coffeescript for now, especially 
@@ -44,7 +44,7 @@
     981-73162103-5217 > It seems more intuitive to me to have negative on the left and positive on the right (like a number
     659-73589337-5217 @nathansobo I still have to revise the format of the comments, but just pushed an update to address m
     139-73598425-5217 The `gutterName` of the line number gutter should probably be `line-number`, not `line-numbers` so th
-     19-73600815-5217 :+1: `line-number`
+x     19-73600815-5217 :+1: `line-number`
      65-71057284-5212 I can confirm when I upgraded to 0.174.0 on Windows (refs #4653).
     196-73943002-5212 This might be a separate issue but on the Mac when I "Install & restart" a new Atom from the menu, At
      23-73954155-5212 @cthielen that's #1603.

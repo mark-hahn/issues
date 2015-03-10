@@ -4,29 +4,29 @@
     100-36298676-1608 oh i was noticing that all the styles are inline in the head, may not be possible? close if it isn't
      36-44226563-1608 +1 on this. Would be really awesome!
      37-56292471-1608 i need this too, to use sass or less 
-      5-44154763-1603 :+1: 
-      5-44163963-1603 Nice!
+x      5-44154763-1603 :+1: 
+x      5-44163963-1603 Nice!
      37-44197188-1603 I hope to see this working very soon!
     191-44352773-1603 It looks like this is mostly ready to go, even. Atom already keeps track of what was last open, and d
      64-46129833-1603 This feature is also in Brackets, the text editor I used to use.
     118-47436496-1603 I was missing that option to!! finally I found package that do just that :) https://atom.io/packages/
-      2-47965428-1603 +1
-      2-56686696-1603 +1
-      2-57828759-1603 +1
+x      2-47965428-1603 +1
+x      2-56686696-1603 +1
+x      2-57828759-1603 +1
     361-58202099-1603 Isn't there a package which would just support switching between `~/.atom/storage/editor-*` sessions?
      42-58805731-1603 Is this issue in a milestone somewhere? +1
-      2-60717535-1603 +1
-    206-64178908-1603 +1 As far as I found there is no solution yet when having multiple projects open. Very important a
-      2-65186682-1603 +1
-    114-65612108-1603 @Mil0dV +1, reopening unsaved files (i.e. saving their state into a temp folder) is very important to
-      2-67659010-1603 +1
-      2-67773579-1603 +1
-      2-68286510-1603 +1
-      4-68308670-1603 :+1:
-      2-68754809-1603 +1
-      5-68819425-1603 :+1: 
-      2-70273366-1603 +1
-     36-70326048-1603 Astonishing. This is 2015, not 1995.
+x      2-60717535-1603 +1
+x    206-64178908-1603 +1 As far as I found there is no solution yet when having multiple projects open. Very important a
+x      2-65186682-1603 +1
+x    114-65612108-1603 @Mil0dV +1, reopening unsaved files (i.e. saving their state into a temp folder) is very important to
+x      2-67659010-1603 +1
+x      2-67773579-1603 +1
+x      2-68286510-1603 +1
+x      4-68308670-1603 :+1:
+x      2-68754809-1603 +1
+x      5-68819425-1603 :+1: 
+x      2-70273366-1603 +1
+x     36-70326048-1603 Astonishing. This is 2015, not 1995.
     100-70387299-1603 I haven't been here for almost 6 months. And yes, it is 2015. Meanwhile, I have been using Brackets.
     270-70545013-1603 Not only is this a feature of competing editors, it's actually standard expected behavior on Mac OS a
     195-70551204-1603 Not only is this "a feature of competing editors, and expected behavior on Mac OS as of Lion", it's p
@@ -49,18 +49,18 @@
      79-33719949-1490 A randomly selected example from the API and/or a fortune cookie would be cool.
     101-71266109-1490 :+1: Could need some more to it though. Should it be some Ascii logo and a fortune cookie? Ideas? 
     127-32568581-1433 Perhaps when atom is launch in `--wait` mode it should close the window and return to the terminal wh
-     17-32568669-1433 :+1: to that idea
+x     17-32568669-1433 :+1: to that idea
     327-32569292-1433 Cool. If we do this new behavior we just need to ensure it's always opened in a new window as you wou
     418-43788838-1433 > Perhaps when atom is launch in --wait mode it should close the window and return to the terminal wh
     242-43791413-1433 > Would it be :cool: to close this issue in favor of that one, or do we want to keep this open to tra
      81-43794273-1433 > I'd :heart: to keep it open for that reason. For sure, thanks Jason! :+1: 
     887-45167062-1433 This performance issue is killing me too. It takes ~ 5-8 seconds to show the commit message editor, e
     122-45169381-1433 This is probably due to #1230 (opening a new window, ~ 4 seconds here), but with a few more seconds a
-     58-45173431-1433 :+1: to this. I'm suffering from the same delay as others.
-     54-46687267-1433 +1 Not using atom as main IDE because the slow opening
-     82-50661106-1433 :+1: wait should return on ⌘-w and should open git commit message a **lot** faster
+x     58-45173431-1433 :+1: to this. I'm suffering from the same delay as others.
+x     54-46687267-1433 +1 Not using atom as main IDE because the slow opening
+x     82-50661106-1433 :+1: wait should return on ⌘-w and should open git commit message a **lot** faster
     469-50674354-1433 It seems that part of the problem is that Atom opens a new window when you pass `-w/--wait`, I suppos
-    371-50809782-1433 +1 to opening in a new tab by default. Editing commit messages is the most common case for me, but I 
+x    371-50809782-1433 +1 to opening in a new tab by default. Editing commit messages is the most common case for me, but I 
     223-54097219-1433 Is this slow because the Atom editor scans + populates the folder tree even if you are only trying to
     185-54097722-1433 I don't think so, it's the same 10 second delay I'm getting when I open any new window. If we avoid o
     340-76688536-1433 Any updates on this issue? I am currently giving atom.io another try to use it as my main editor. Bu
@@ -103,34 +103,34 @@
    1706-77729881-979 @prasoon2211, Changing to a faster regex engine is one of possible solutions. But as @excaliburHisShe
     435-77734754-979 Is there a reason why Atom couldn't break parsed lines into smaller chunks for parsing? If the issue 
     632-77735538-979 @hokein I checked on emacs - it highlights the whole line, at least without any configuration changes
-     86-50151218-967 1+ for me. Sublime also provides a option for this via "use_simple_full_screen": true.
-      2-50597212-967 +1
-     86-51500220-967 +1 omg plz. This is related: https://discuss.atom.io/t/simple-full-screen-mode/1243
-      2-58752676-967 +1
-      2-63849920-967 +1
+x     86-50151218-967 1+ for me. Sublime also provides a option for this via "use_simple_full_screen": true.
+x      2-50597212-967 +1
+x     86-51500220-967 +1 omg plz. This is related: https://discuss.atom.io/t/simple-full-screen-mode/1243
+x      2-58752676-967 +1
+x      2-63849920-967 +1
     320-66699891-967 The zoom behaviour (i.e. old school full screen) is always available by holding alt before clicking t
     307-66734373-967 @braver for me, that just fills the space under the title bar. So, the system title bar shows and the
    1037-66741982-967 @nrw since @omarramos referred to the setting in Sublime, I checked there. All Sublime 3 does with th
     234-66743514-967 @braver > I think you mean for it to *look* just like a full screen application in a new space, 
-    237-66795821-967 +1. OS X Terminal app has the same _"issue"_. Thankfully iTerm2 has the simple full screen option.
+x    237-66795821-967 +1. OS X Terminal app has the same _"issue"_. Thankfully iTerm2 has the simple full screen option.
     140-66874754-967 @beltex […]It is possible to speed up the full screen animation (via an OS X system setting)[…] 
     278-66880993-967 http://apple.stackexchange.com/questions/128717/how-to-disable-full-screen-animation-on-os-x-10-9 
-     12-68735098-967 :+1: Please!
+x     12-68735098-967 :+1: Please!
      56-69367732-967 +1 Been wanting this in Atom since I stated using it.
     574-69372276-967 FWIW with [hyperswitch](http://bahoom.com/hyperswitch) (free) it's possible to have a keyboard shortc
-      2-70322305-967 +1
-      2-73079904-967 +1
-      2-76363118-967 +1
-      2-77147981-967 +1
+x      2-70322305-967 +1
+x      2-73079904-967 +1
+x      2-76363118-967 +1
+x      2-77147981-967 +1
     362-26272852-962 Thanks for writing this :100:. I've had the exact same thought sitting in my head but I hadn't spent 
     298-26425590-962 I would love to have this in Atom as well. This was one of the biggest issues with the old vim plugin
      46-36304553-962 Another user request for this atom/vim-mode#55
-     42-43529342-942 +1 for this, I'd love a feature like this.
-     73-52847121-942 +1 ... this is one of the features I'd need to fully leave Sublime behind
+x     42-43529342-942 +1 for this, I'd love a feature like this.
+x     73-52847121-942 +1 ... this is one of the features I'd need to fully leave Sublime behind
     135-52851037-942 We might be able to consider this as part of some upcoming refactoring on how projects work in genera
     108-54202883-942 The plugin "autosave" for notepad++ does this as well and is my only reason for not fully switching t
-     28-72088144-942 +1 I will love this feature 
-      2-76676637-942 +1
+x     28-72088144-942 +1 I will love this feature 
+x      2-76676637-942 +1
      27-76682575-942 I agree that it'd be great!
     399-76755170-942 FYI ... I've been using the community package save-session by mpeterson2 which has the ability to res
      33-29668957-929 @zcbenz any thoughts on this one?
@@ -165,11 +165,11 @@
     102-25633041-770 Wouldn't the multiple projects solution also solve the "project can contain multiple folders" problem
      79-43884518-770 Related issue in Tree View package: https://github.com/atom/tree-view/issues/63
     173-44614952-770 Any updates on this? Is there anyway to have multiple repos on one project and have git diff on file 
-    242-47722264-770 +1 I have tons of very cross-dependant projects, so I often need to have several open at a time. I
-     66-47842901-770 +1 This is almost the only reason I don't use Atom exclusively.
-      4-48091751-770 :+1:
+x    242-47722264-770 +1 I have tons of very cross-dependant projects, so I often need to have several open at a time. I
+x     66-47842901-770 +1 This is almost the only reason I don't use Atom exclusively.
+x      4-48091751-770 :+1:
     603-48786297-770 Me, too. I'm very keen to see projects that can contain multiple unrelated files and directories (lik
-      4-52777347-770 :+1:
+x      4-52777347-770 :+1:
     783-53571029-770 Until the multi-folder tree view is official one could use the following in their ~/.atom/init.coffee
      61-53899294-770 +1 Atom would be my editor of choice with this functionality.
     454-54893018-770 For anyone interested, I have started work on a project management package called project-ring and I 
@@ -177,17 +177,17 @@
     148-54941785-770 @batjko I agree about the readme, but this plugin is really awesome. Just try it and spend some time 
     327-54942570-770 @batjko Thank you for your interest and the truth is that I plan to fix the documentation once the fe
      78-55013791-770 I'm definitely looking forward to trying it out, and to see the final version.
-      2-58032729-770 +1
-     57-59304124-770 +1 This would make me switch to Atom as my primary editor
-      3-59682992-770 +1 
-      2-59804057-770 +1
-      2-60041122-770 +1
+x      2-58032729-770 +1
+x     57-59304124-770 +1 This would make me switch to Atom as my primary editor
+x      3-59682992-770 +1 
+x      2-59804057-770 +1
+x      2-60041122-770 +1
     200-60622366-770 As soon as projects are added I'm unistalling Sublime as my project editor! I love Atom (it's the bes
-      2-64488586-770 +1
+x      2-64488586-770 +1
     178-64935501-770 The need of this really can't be understated. I use opening folders in Sublime as a disposable action
-      2-64985620-770 +1
-      2-65060656-770 +1
-    146-65201851-770 +1 - My project root locally contains plenty of git repo's, but because of this issue not one of the 
+x      2-64985620-770 +1
+x      2-65060656-770 +1
+x    146-65201851-770 +1 - My project root locally contains plenty of git repo's, but because of this issue not one of the 
     433-22446524-672 We should be able to have different `PaneContainer`s as pane items, but I'm not sure it would work pe
     182-43950720-672 Any updates on this piece? I'm looking for the same functionality as I'm currently manually manipulat
      53-44302723-672 We don't currently have any work in progress on this.
@@ -205,12 +205,12 @@
     140-26009540-579 Thanks @benogle! I made a gif! ![delete](https://f.cloud.github.com/assets/1305617/1301796/0cd0
     670-46790516-579 I can still reproduce @cobyism's [report](https://github.com/atom/atom/issues/579#issuecomment-192812
      22-67100623-579 Still happens on 0.158
-    432-22816188-461 :+1: to this with a slight twist. Here's my workflow: * `EDITOR` is set to `atom -w` * `git commi
+x    432-22816188-461 :+1: to this with a slight twist. Here's my workflow: * `EDITOR` is set to `atom -w` * `git commi
     971-22816348-461 You can `cmd+shift+w` to close the current project window. It will select the next open project wind
      38-22816365-461 :metal: thanks. Exactly what I needed.
-    712-69958424-461 :+1: This seems to have been left open for a while, so I'm not sure if anyone's still looking at 
+x    712-69958424-461 :+1: This seems to have been left open for a while, so I'm not sure if anyone's still looking at 
     644-74793279-461 Before switching to atom, I was using TextMate as my git editor (mate -w -l 1). It sounds like TextM
      33-30007716-441 @zcbenz Any thoughts on this one?
     299-30604720-441 Chromium would only popup the dictionary if the text are really "selected", e.g. the `document.getSel
     260-30623379-441 I wonder if we can create a dummy selection on the text box or something to convince it to work. It's
-     28-50811178-441 +1 it's really bothers me :(
+x     28-50811178-441 +1 it's really bothers me :(
