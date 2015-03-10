@@ -1,0 +1,135 @@
+
+# page: 4, date: 2015-01-14
+
+     782-05197-08909-002 I'm of mixed feelings on this one. Personally, I think this is a misfeature ... it's like putting an 
+     206-05197-08920-003 I agree with you. Not just Vim, Atom, or others.Just likes editorconfig, Front-matter.You can define 
+     196-05197-08953-004 Oh ... also if this were a thing, I'd expect Atom to be able to infer syntax from a shebang line too:
+     107-05197-09441-005 I believe that there is already a plugin with at least partial editorconfig support. edit: correcting
+     175-05197-29808-006 Do you think we'll get grammar detection via shebang out of this thread? Should I file a separate fea
+     735-12564-25214-002 The canonical topic on the subject is here: discuss.atom.io Browser live preview Hi, When I work with
+     915-12564-25216-003 leedohm: the gap from there to even the bare minimum of what people expect from a browser is a yawnin
+     126-12564-25217-004 mark_hahn: I guess I'm a lot more optimistic than you. It's entirely possible! I'll be interested to 
+     554-12564-25231-005 It's going amazingly well. I spent a couple of hours coding and I got browsing with a location bar wo
+     183-12564-25237-006 I think there's some features that can't be enabled like local storage. But apart from that there's n
+     371-12564-25245-007 postcasio: Looks great btw! Thanks. Apple deserves some of the credit. (grin) I saw errors in the con
+      82-12564-25248-008 Never mind, after testing it does appear to work correctly with the sandbox flags.
+      71-12564-25309-009 Great! The sandbox flags.were the trick to fixing all the errors I saw.
+     166-12564-25324-010 I'd want to display documentation using functionality like this. Given the word under the cursor, loo
+     121-12564-25326-011 If you're on OS X, there's Dash and there's even Dash integration packages for Atom. If you're not on
+     284-12564-25328-012 leedohm: If you're on OS X, there's Dash and there's even Dash integration packages for Atom. If you'
+x      10-12564-25329-013 Good point
+     303-12564-25331-014 kgrossjo: I'd want to display documentation using functionality like this. I have been thinking about
+    1044-12564-25337-015 kgrossjo: So why would I display the docs in some other program? I have been asking myself why I want
+     668-12564-25339-016 mark_hahn: I have been asking myself why I want everything in one place. Yeah. Window management in y
+     696-12564-25341-017 mark_hahn: It would be awesome to be able to have a customizable web browser. I can immediately think
+     674-12564-25345-018 andML: http://breach.cc This looks very interesting. I thought it was pretty much the same architectu
+     568-12564-25355-019 I've run into my first gotcha. Some sites, including atom.io, cause this ... Refused to display 'http
+    2974-12564-25363-020 I've released a preliminary version here ... https://atom.io/packages/web-browser web-browser package
+     151-09578-16709-002 The short answers are "yes" and "no", respectively. What would be your suggestion for how to manage e
+     970-09578-16715-003 You'll need a permissions system of some sort. For permission requests on the open web, we've been le
+     670-09578-16719-004 jyasskin said: You'll need a permissions system of some sort. All of your suggestions are great as fa
+    1382-09578-16720-005 I don't trust any random developer with full access to my computer, so I can't currently install any 
+     608-09578-16730-006 jyasskin said: I don't trust any random developer with full access to my computer This means you cann
+    1315-09578-17487-007 This means you cannot use any editor or IDE on "the market" today that supports the concept of plugin
+     826-09578-29706-008 As Atom becomes more popular this will become a bigger issue. Even just from a stability point of vie
+      60-02383-29669-002 Closing this topic in favor of the recent more detailed one.
+      60-02383-29670-003 This topic is now closed. New replies are no longer allowed.
+     118-12437-24855-002 That would be awesome. I'll put it on my list. I hope that music is optional when using it. It would 
+     355-12437-24857-003 Pretty sure this is a duplicate of this topic: discuss.atom.io Brackets Like Quick Edit Brackets edit
+     219-12437-29572-004 I would love to hear about whether anyone is working on this. This and live preview are the two huge 
+     536-07245-12475-002 I think that one of the major problems with this approach is going from the storage format to the dis
+    1702-07245-12476-003 Well, it isn't like we're destroying the storage format. If the user doesn't change anything in the f
+     380-07245-12480-004 To be clear, I wasn't suggesting that there would be a performance problem. Because the editor knows 
+     153-07245-12482-005 mythmon said: but I also think it would be difficult to pull off I agree. It will take some thought a
+     344-07245-12492-006 Just my 2 cents regarding implementation: It actually wouldn't be necessary to maintain some sort of 
+     362-07245-12505-007 This is a good point. You can take it even further and say that whenever the editor saves a file, it 
+      87-07245-12507-008 The downside to that would be that uglifying would not preserve change histories in vcs
+     212-07245-12509-009 That's true. Perhaps there is another method of compression that would work. Or having it beautified,
+     352-07245-12518-010 Yes, uglifying might have its place ... but I think that would be the same place we use it now, compr
+     491-07245-12522-011 I'll have to agree with you there. I think it's very probable, however I think you'll have to make a 
+    1793-07245-17758-012 To add my 2 cents, I just opened this: discuss.atom.io Indentation/TabWidth as Encoding, not style dr
+     387-07245-17943-013 I've been thinking along the same lines. In most programming languages, some text characters are synt
+    1146-07245-29555-014 Sorry for reviving this, but I stumbled into it and I think the idea is awesome A big part of my day 
+     241-07245-29557-015 If you really want editor independence then make the file format the AST in json. There have even bee
+     131-07245-29559-016 This would be the holy grail, and would be one of those features that could let atom move from "a coo
+     347-07245-29561-017 Sure the promise seems awesome, but I'm rather sceptic about how an implementation can deal with that
+     199-07245-29564-018 mark_hahn: If you really want editor independence then make the file format the AST This is the one a
+     327-14111-29447-002 I don't think there is a concept of a "focussed block" that you can work with without writing a packa
+     276-14111-29470-003 There is the .cursor-line class that gets added to the currently focused line. So you could change th
+     194-14111-29501-004 Not quite. The idea is to highlight all guides that match the current indentation level. Not just the
+      89-14111-29505-005 Oh.. ok. Now I understand what you meant with "focussed block". Yeah, that would be nice.
+     140-14099-29405-002 Pretty sure this is actually intentional. See http://stackoverflow.com/questions/729692/why-should-fi
+     119-14099-29407-003 You can also tweak this behaviour right now. Just look for the Whitespace package in Settings and fli
+      85-14099-29430-004 As @braver said ... specifically turn off the Ensure Single Trailing Newline setting:
+x      27-14099-29499-005 Thanks @braver and @leedohm
+     161-02461-03643-002 You can add this code to your styles.less file .editor .gutter { .line-numbers { width: 2px; min-widt
+x      45-02461-03666-003 Nice! Exactly what I was looking for. Thanks!
+     110-02461-23503-004 this does the same as the "show line numbers" option?hides everything in gutter not just line numbers
+      92-02461-23560-005 Opened a bug to change the behavior of the setting: https://github.com/atom/atom/issues/3466
+     180-02461-29277-006 Any pointers on updating this now that views are using Shadow DOM? I tried changing .editor .gutter t
+     462-02461-29280-007 If it is in your styles.less file, it should be atom-text-editor::shadow .gutter. I would recommend t
+      91-02461-29298-008 Ohhhh, that makes sense. (Scoping in CSS? You kids these days...) Thank you for explaining.
+     142-02461-29299-009 leedohm: because the styles.less is loaded outside the Shadow DOM But don't style sheets work inside 
+     798-02461-29302-010 Yes, style sheets can be loaded either inside or outside of a Shadow DOM. If you want a style loaded 
+     233-02461-29303-011 leedohm: must be loaded inside the Shadow DOM I'm not sure what this means. Do you put a style tag in
+     246-02461-29304-012 mark_hahn: Do you put a style tag inside the shadow template? Yes. If you look at the DOM in v0.165.0
+     735-02461-29305-013 mark_hahn: Do you put a style tag inside the shadow template? You often hear that all style tags shou
+     528-02461-29346-014 If I'm understanding correctly, the new .gutter (using Shadow DOM) doesn't inherit rulesets from outs
+      92-14038-29183-002 There's a package that does this if I recall correctly ... https://atom.io/packages/max-tabs
+      76-14038-29209-003 And zentabs. I have not used either, so I couldn't tell you which is better.
+     475-13974-29047-002 I'm not sure I understand what you're asking for. Atom isn't meant to be used as a normal web browser
+     626-13974-29048-003 On OS X, many applications support the "back" gesture (two-finger swipe to the right by default) beca
+     296-13974-29049-004 There is already a shortcut (if I understand correctly what you're after). The function is pane:show-
+     133-13974-29051-005 Oh, and if you want next/previous cursor positions within a file, there's a Last Cursor Position pack
+     161-13974-29052-006 I use last-cursor-position and it functions nicely with the exception that it harmlessly throws an ex
+     135-13974-29179-007 That just shows the next tab. It doesn't actually show that last file that was accessed. If you look 
+     246-13974-29184-008 Yes, I know what you're after, but am new to Atom and misinterpreted what previous/next item is doing
+     364-11146-20619-002 I think this is a duplicate of this older topic ... discuss.atom.io Switch between last used panes Is
+x      37-11146-20630-003 +1 for adding this option in Settings
+     106-11146-29122-004 +1 And it should display a small list to show switching files (like Windows Alt+Tab list or IntelliJ 
+      77-11146-29123-005 Like the Fuzzy Finder: Toggle Buffer Finder command? Cmd+Bby default on OS X.
+     154-11146-29124-006 Fuzzy Finder is less efficient than ctrl+tab, it needs Up/Down keys to cycle items, a Enter to confir
+     332-11146-29125-007 The Buffer Finder command only shows files that are currently open, which is why I mentioned it. But 
+      40-07329-12599-002 All you have to do is press the ESC key.
+x      66-07329-12607-003 That's great, thanks that's not very obvious to a new user though.
+      90-07329-13730-004 Agreed, this is what brought me to the forum, never would have guessed to use the Exc key.
+     257-07329-13731-005 I'm not sure how that could be made more obvious. I use ESC in other applications to close the find w
+     666-07329-13732-006 Can you find an app that uses Esc to close a find window or sub-window that does not also give you a 
+    1803-07329-13735-007 swelshh said: Can you find an app that uses Esc to close a find window or sub-window that does not al
+x      45-07329-13744-008 Got it, thanks leedohm! Atom looks very cool.
+     155-07329-14204-009 leedohm said: I use ESC in other applications to close the find window I usually just hit Cmd+F again
+     303-07329-15666-010 How about an "X" close button on the find window that displays "Esc" in a popup when you hover? (Some
+     228-07329-28981-011 I agree; [Esc] is not intuitive, especially there are no real tutorials out for Atom AFAIK. Similar t
+      83-07329-29033-012 Now it says "Close this panel with the esc key", I think that should be sufficient.
+     144-01570-02164-002 I agree! Sadly we need this to be added to Chromium. They have an issue about it open https://code.go
+      58-01570-28977-003 Fixed in Chromium as of Dec 11, 2014. Only took 3 years...
+     361-13758-28504-002 If by offline installation you mean something like Download a package bundle (including all dependenc
+     152-13758-28506-003 just install the package on a machine with internet access and copy the package folder to your machin
+x      43-13758-28952-004 Thanks. Oldschool method (copy) works fine.
+      52-09640-28949-002 I made it.https://atom.io/packages/fuzzy-finder-plus
+     435-13927-28925-002 Something else you might also try from this Issue: github.com Issue: Font rendering looks poor on non
+     224-13927-28928-003 Thanks, that does seem to help, although as a further down post shows with screen shots, there is sti
+     737-13903-28880-002 See this other topic for a discussion of the current state of autocomplete in Atom and where we want 
+     101-13903-28912-003 This topic was automatically closed 24 hours after the last reply. New replies are no longer allowed.
+     161-13863-28803-002 You can use the language-css-plus package, which includes quite a few of these as snippets. You can a
+     539-13863-28804-003 To define your own you can paste something like this into your snippets.cson (File - Open Your Snippe
+     533-13813-28667-002 You might want to look for packages that offer this feature: discuss.atom.io Autoclose HTML tags I've
+     116-13813-28741-003 Thanks for the reply, I downloaded that package, but it still isn't working. Not sure if I am doing s
+     220-13813-28744-004 Again, thanks for the input. But apparently after you install a package, I was unaware that I had to 
+      50-13745-28451-002 https://atom.io/packages/search?q=open+in+browser?
+      86-13615-28056-002 I seem to remember a package to do this. If there isn't one it would be easy to write.
+     145-13615-28083-003 Isn't that a standard feature? On OSX, I can hit cmd-1 for the first tab, cmd-2 for the second, and s
+      75-13615-28086-004 Yeah, works for me too on OS X. So maybe keybindings just need to be added.
+     127-13615-28288-005 The default keybinding doesn't exist on Ubuntu in the current version, so is there a way to manually 
+     156-13615-28295-006 If it is set in the darwin.cson in Atom, then you can just copy those entries and modify it. If it is
+     941-13615-28312-007 On Linux the default bindings are on alt and not ctrl: github.com atom/atom/blob/278a507653ee4774c7ef
+     406-13700-28285-002 Duplicate of this recent topic: discuss.atom.io Ctrl + x = tab selection Hello everyone! I had an ide
+      60-13700-28286-003 This topic is now closed. New replies are no longer allowed.
+      27-13640-28122-002 Maybe the notebook package?
+     329-13640-28144-003 The notebook package looks like it's meant for notes about a project. If you just want a general coll
+     536-13640-28147-004 Thanks, @Terrycloth, but what I don't see is how does fuzzy search help me get the list of things I n
+    2082-13640-28172-005 I used Notational Velocity (NvAlt), writing the notes in Markdown and synching them via Dropbox/Googl
+     478-13640-28180-006 @kgrossjo To be clear, I'd been thinking of fuzzy search as a way of quickly searching the contents o
+     240-13640-28225-007 I'm sorry. When you said fuzzy search, I automatically assumed you meant ⌘T, which does a fuzzy searc
+     323-13640-28232-008 It looks like there are a couple of in-progress attempts on GitHub to make Atom work more like Notati
+     262-13640-28241-009 That's pretty cool stuff. Thanks for the pointer, @dmerand! I've glanced at the code briefly, and I m

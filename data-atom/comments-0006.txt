@@ -1,0 +1,187 @@
+
+# page: 6, date: 2014-05-15
+
+     677-09373-16278-002 Seems nice to me, but I'd rather have an option object instead: class Config get: (keyPath, {editor, 
+    1066-09373-16280-003 I like the concept, and is something I really feel that Atom needs. That being said, I'm against chan
+     431-09373-16285-004 thomasjo said: A plugin author should neither need to, or be allowed to, specify where configuration 
+    1060-09373-16287-005 My initial thought is, if the user wants to override that per directory, then why shouldn't she be al
+     490-09373-16303-006 thomasjo said: My initial thought is, if the user wants to override that per directory, then why shou
+     728-09373-16306-007 Sure, but personally I'd prefer the EditorConfig class. Supporting the editor config concept makes mo
+     358-09373-16330-008 abe said: Seems nice to me, but I'd rather have an option object instead: I like your idea for the si
+    2281-09373-16332-009 thomasjo said: I believe this is the simplest, yet most flexible and common pattern for solving this 
+    1532-09373-16336-010 I think you might be misunderstanding the point of EditorConfig (but I also might have misunderstood 
+     541-09373-16338-011 leedohm said: If you have ideas @thomasjo or @sindresorhus on how to make my layered config design pl
+     972-09373-16353-012 thomasjo said: A project typically only ever has one .editorconfig file, so there's no need to edit e
+    1002-09373-22172-013 So I have finally gotten back to this concept and rather than trying to keep up, in my spare time, wi
+     529-09373-22856-014 I've gotten the code and the README to where I think it is really ready for feedback and ideas. The b
+     176-09373-22858-015 Given that the concept of multiple projects in the same instance of Atom, is probably going to be com
+     474-09373-22866-016 Yes, the underlying approach is sound and it doesn't matter how complicated the list of layers is, ju
+     517-09373-22887-017 leedohm said: the concept of multiple root folders in a project does not necessarily equate to multip
+     410-09373-22888-018 That's something that will have to be decided when this change is made. Personally, the concept of a 
+     597-09373-26977-019 abe: Except that every packages and configs aren't related to the active editor and its grammar. What
+     353-13048-26626-002 Could you please describe what you want to do in detail as in step by step. It's really hard to grasp
+     353-13048-26627-003 You can use something like this atom.workspace.observeTextEditors (editor) - editor.buffer.onWillSave
+     589-13048-26628-004 Slight improvement (thanks for making me realize I still had the old way of subscribing in my init sc
+      89-13048-26630-005 Yes, sorry, i want to overload ctrl+s to indent the whole file. ... and then save. Thanks
+     112-13048-26631-006 I'm trying to learn Atom. I do not know where to put these codes. What part of the atom docs you reco
+     227-13048-26632-007 In Atom: File - Open Your Init Script. This will open your ~/.atom/init.coffee file, just append the 
+      76-13048-26637-008 Thank you all. @thomasjo your version is awesome!. oooh, sublime text, die!.
+x      21-13048-26638-009 you're right. thanks!
+      55-13048-26651-010 Well it seems it's all fixed. Glad to know. Keep at it.
+x      41-13048-26964-011 Awesome! Thank you very much for the tip.
+      98-09325-16161-002 This is not a complete solution, but you could tell Atom to ignore it, in "Settings/Ignored Names"
+      82-09325-16169-003 thanks for the tip. I would prefer having the possibility to remove it explicitly.
+     256-09325-26946-004 This is something that make handling with folders a bad thing. In Sublime for example you can add mul
+     300-09679-20875-002 I am also very interested in debugging. Expecially Node.js. Since Atom is built using Node.js it feel
+     421-09679-24518-003 Just built (an early version of) an in-atom node.js debugger. Currently only has breakpoints and step
+     120-09679-24550-004 anandthakker: now called just 'debugger' First 'atom-node-debug', then 'node-debug', now 'debugger'. 
+     318-09679-24561-005 Hah! Yeah, I guess got a little carried away once I discovered the "--rename" flag while working on y
+     402-09679-26501-006 I think it could be good if we could create the frontend of the debugger as a standalone module and h
+     481-09679-26570-007 Yes, I do want some debugging API for any languages it supports - on a personal side I'd love to be a
+     370-09679-26885-008 @nickdima I'm totally with you on this, and have been thinking about separating this out from the JS/
+     215-09679-26887-009 Yes, let's get the discussion going. Maybe create a github repo with a to-do list to get the ball rol
+     516-00806-03293-002 It would also be nice to have something to make API calls "atomic", such that an undo will undo them 
+      74-00806-03659-003 https://atom.io/docs/api/v0.62.0/api/classes/Editor.html#transact-instance
+     241-00806-03750-004 Thanks. I have updated my package as soon as that was released. However, I think OP's expectation is 
+     215-00806-04927-005 +1 The current undo-functionality is basically useless. And if the API already contains transactions,
+     169-00806-14845-006 Two months ago Matt Colyer mentioned on GitHub that there was an issue open in Core to fix this behav
+     112-00806-20546-007 The thing that bothers me the most is that a save blows away the undo buffer. I get killed by that al
+     133-00806-21056-008 I just tried out Atom, everything else was great but this really turned me down.It's such a basic fea
+     208-00806-21059-009 mark_hahn said: The thing that bothers me the most is that a save blows away the undo buffer. I get k
+     175-00806-21154-010 I tested and save didn't kill it. What was bothering me was reload. I'm used to web development where
+     167-00806-22675-011 I just want to chime in to say that I also feel strongly about this getting fixed. This is one of the
+      71-00806-23577-012 to fixing this. It's a huge pain when undoing a lot of changes at once.
+x      20-00806-25542-013 I agree. Please fix.
+    1248-00806-25543-014 If you look at the pinned topic describing the Atom Roadmap: discuss.atom.io Atom Roadmap to 1.0 We w
+     136-00806-26886-015 This is now fixed in v0.143.0: https://github.com/atom/atom/releases/tag/v0.143.0 Closing in 24 hours
+     105-00806-26935-016 This topic was automatically closed count} hours after the last reply. New replies are no longer allo
+     307-12111-24070-002 I've found a way to do the display part, but it completely messes up the editor's lines of code. If I
+     191-12111-24072-003 I just don't think that Atom is ready for this kind of thing. Perhaps when support for proportionally
+     146-12111-24073-004 Thought so, I was mildly impressed by that I could even get the display part working though. That's m
+     281-12111-24074-005 True. I'm impressed you got so far as well. Perhaps if you dug in to how the rendering of individual 
+      45-12111-24075-006 I'll take a look at it, could be interesting.
+     140-12111-24097-007 This really look like some kind of folding to me, isn't there something to do around that? (maybe the
+     192-12111-24105-008 It does kind of look like folding, but folding can be turned on or off for each folding opportunity. 
+     196-12111-24130-009 I was thinking that maybe the folding feature could be built upon a more generic code substitution fe
+     101-12111-24135-010 Yeah, that is a good idea. That might get rid of the complaints how the folding is formatted as well.
+     375-12111-26881-011 leedohm: It does kind of look like folding, but folding can be turned on or off for each folding oppo
+     968-13126-26878-002 For the specific case of Haskell, there are certain fonts that offer ligatures to mimic some of the t
+      60-13126-26879-003 This topic is now closed. New replies are no longer allowed.
+     221-13105-26807-002 Not sure of the side effects of inserting images in the code directly (the layout assume that all row
+     176-13105-26809-003 Yes, it could have side effects... but I think the benefits are worth discussing it. The image could 
+     271-13105-26813-004 Not so shameful plug: It should also have the hosting feature from auto-host-markdown-image. You just
+     192-13105-26834-005 Yea! this is really cool! I feel like it's almost there I like the idea of having the image in a pop 
+      67-12875-26060-002 @zcbenz @kevinsawicki Is this something that can be easily enabled?
+     481-12875-26061-003 One other thing though @swrobel, I noticed this comment by @zcbenz the other day regarding AtomHelper
+     254-12875-26708-004 Thanks. It seems like the Chromium issue has been fixed and targeted for M40. I don't want to nag the
+     179-12875-26741-005 swrobel: the Chromium issue has been fixed and targeted for M40. In my experience the "atom guys" hav
+     423-12875-26749-006 Perhaps I wasn't clear enough - that fix is rather superficial. It just prevents Atom Helper tasks fr
+     170-13083-26702-002 A package search on atom.io yielded a few promising candidates: https://atom.io/packages/auto-copyrig
+x      52-13083-26725-003 Hello there, Am really thankful to you. That did it.
+     109-13080-26701-002 Submit a PR? This is the file you need to change: https://github.com/atom/atom/blob/master/keymaps/wi
+     225-13080-26706-003 PRed. Thank you for the suggestion, @thomasjo! Sometimes you just don't think of simple things like t
+     104-13080-26709-004 The PR hasn't been merged yet. If you update the topic when the PR is merged, then I'll close the top
+      25-13080-26710-005 Merged a few minutes ago.
+x      22-13080-26713-006 Thanks for the update.
+      60-13080-26714-007 This topic is now closed. New replies are no longer allowed.
+     136-06971-12059-002 Not sure if Atom can do that, but if you want QuickLook support for markdown files you can try this h
+x      26-06971-12067-003 Thanks. It is very useful.
+     266-06971-26704-004 It would be great if Atom supported QuickLook in general, rendering previews and thumbnails using the
+     159-09676-16964-002 Hey, there are the events core:page-down and core:page-up so you could add "body": "ctrl-up": "core:p
+      65-09676-16969-003 Hi, there is no method to scroll by one line (e.g. core:line-up).
+     199-09676-16974-004 Hi! Sorry, i apparently misunderstood something. I checked the functionality of ctrl-{up,down} in Sub
+x      29-09676-17058-005 +1 This is a helpful feature.
+     115-09676-19319-006 +100I don't understand how could this feature be omitted!It's in CodeMirror by default and even Brack
+      75-09676-19341-007 You can always submit a PR if you think it needs to be in there by default.
+     452-09676-19345-008 Yea I think it is important to remember that Atom is still very young, heavy development still ongoin
+     174-09676-19689-009 I made a package to replicate this functionality. Tested on Windows. While I agree that this should b
+      99-09676-19986-010 Thanks so much. I used this constantly in webstorm, sublime, and every other editor I've ever used.
+     227-09676-26683-011 Add the following to your keymap.cson 'atom-workspace atom-text-editor:not(.mini)': 'ctrl-up': 'ctrl-
+      71-09676-26686-012 Add the following to your keymap.cson Isn't that the original behavior?
+     320-09676-26687-013 Edit Oh sorry I see what you're talking about. I copy pasted the wrong code. I've edited it now. If y
+     602-02566-03820-002 Yeah, I couldn't find a way to disable it either. And I have some troubles with this behavior in my k
+     132-02566-06084-003 I'm surprised this wasn't done in a package as feature, but in the core. Sublime Text allows us to di
+     256-02566-06572-004 I have the same trouble, as well as with the autopairing of quotes. I tend to go back and edit things
+      27-02566-07042-005 So... no replies after all?
+x      20-02566-07077-006 +1 need to disable..
+     162-02566-07097-007 You can disable the Bracket Matcher package. This will also disable highlighting and jumping between 
+     109-02566-07124-008 I'd like to disable autoclosing of quotes and parentheses without losing the ability to match existin
+     127-02566-07131-009 That's great. Pity that we lose highlighting. Apparently you have to restart atom after disabling thi
+    1023-02566-07179-010 I've disabled bracket-matcher and manually re-enabled just the syntax highlighting.Basically bracket-
+     470-02566-07230-011 Even better, use styles.less ~/.atom/init.coffee BracketMatcherView = require '/Applications/Atom.app
+      85-02566-07443-012 Yeah, It would be great if the package allowed you to toggle which features you want.
+x      28-02566-09686-013 no solution?i crazy here! rs
+     954-02566-10518-014 I'd like to add in my 2 cents here: I've manually disabled this auto-completion multiple times but At
+     109-02566-13706-015 I've created a pull request for this to atom/bracket-matcher: https://github.com/atom/bracket-matcher
+     267-02566-25823-016 I like (and need) bracket highlighting. So how do I configure Atom to NOT insert a 2nd quote when I t
+      81-02566-25825-017 Looks like it is in the Bracket Matcher settings: smart-quotes.png840x367 41.4 KB
+     247-02566-26624-018 In version 1.62.0 the Autocomplete Brackets setting rules both brackets and quotes, while Autocomplet
+      75-02566-26641-019 If you have a repro case, please file a bug on the bracket-matcher package.
+     200-12997-26402-002 You should open an issue on the repo for this. It'd definitely be better to have a default encoding s
+     126-12997-26543-003 I created an issue for that. Is not a bug report, but an enhancement https://github.com/atom/encoding
+     282-12997-26549-004 I did some research on character encoding autodetection over the weekend. It isn't simple at all. UTF
+      23-13016-26467-002 What package does this?
+     542-13016-26481-003 Not sure what you mean by "this" You may be referring to surrounding the selection with parentheses.S
+     268-13016-26484-004 kgrossjo: when I do atom --safe . and open a random file and select a random word and hit the open-pa
+     333-13016-26489-005 Quite possible it's Mac only. Hm. The keybinding resolver doesn't tell me what ( does. Hm. Ah! When I
+     135-13016-26490-006 To be honest, I think surrounding the selection with parens seems like a useful behavior on all syste
+     881-13016-26493-007 Atom definitely does this on Ubuntu 14.04 as well. I opened a plain text file, selected some text, pr
+     104-13016-26497-008 As @StenV said, it is the bracket-matcher package that provides the smart quotes and brackets behavio
+     153-13016-26506-009 leedohm: it is the bracket-matcher package That makes sense. I don't run that package. @kgrossjo, you
+     430-13016-26508-010 mark_hahn: you must be mistaken about it happening in --safe mode. That's a package that does stay en
+     187-13016-26509-011 StenV: stay enabled if I start in safe mode I probably disabled it. So --safe mode doesn't re-enable 
+    1060-13016-26514-012 The bracket-matcher package is a default-installed package: github.com atom/atom/blob/master/package.
+     390-13016-26517-013 StenV: I also tried it on Windows 8.1 and Atom doesn't do it there. Even if I type a single ", it wai
+x      43-13016-26519-014 Ah, that's why... Thanks, didn't know that!
+     123-13037-26511-002 A package to do that would be pretty easy to make. I'll put it on my package to-do list, which unfort
+     250-12930-26218-002 I've added this to my list of packages I'd like to do. I'll post here if/when I do it. Before Atom I 
+     193-12930-26456-003 Those on OSX can install Flycut to get this system-wide. Those on Windows can install Ditto to get th
+     166-04578-07910-002 Looks like atom:// is registered in OSX to Atom.app as a URL handler however it's only being used int
+     312-04578-08908-003 I've configured Better Errors to build Sublime-like URLs such as: atom://open?url=file://%2FUsers%2Fs
+     288-04578-12495-004 I've attempted to create a URL handler atom-handler, similar to TextMate's and Sublime's. I've used a
+     242-04578-12559-005 I was thinking this'd be really nice for installing packages. For instance, on a package page like th
+     197-04578-12604-006 @WizardOfOgz Works like a charm, thank you! However, I hope Atom will register a handler itself in a 
+     117-04578-12606-007 Oh, I see now that it works almost like a charm. The file is opened, but the cursor is not set to the
+     172-04578-12686-008 I've logged an issue about the cursor and scrolling when a file is opened. http://discuss.atom.io/t/f
+     499-04578-26447-009 Exactly. This would be so helpful. Sorry for bumping this thread. I want to promote my package on my 
+     549-10616-19051-002 All of the custom settings that you're mentioning are stored in the ~/.atom directory, specifically: 
+     218-10616-26427-003 Is there going to be a import/export feature, so we don't need to worry about things in ~/.atom/ dir 
+      55-12986-26370-002 @thomasjo didn't you run across this request on Issues?
+     340-12986-26371-003 Sure did! https://github.com/atom/atom/issues/3892#issuecomment-59661993 Until this gets fixed (assum
+      79-12984-26360-002 leedohm: all Atom repositories Do you mean all in the packages list at Atom.io?
+     100-12984-26362-003 No, all GitHub repositories under the atom user: https://github.com/issues?q=+is%3Aissue+user%3Aatom
+     149-03498-05865-002 I think atom will open files other than UTF-8, but it defaults to saving them as UTF-8 now. This is s
+     187-03498-05919-003 Great. Unfortunately I have to deal with utf-16 files on a daily basis (e.g. os x .strings files). It
+     166-03498-12640-004 It does open files but can't handle the char encoding of specific chars and if can only save in UTF-8
+     379-03498-14399-005 I have some older projects which heavily rely on ISO-8851-1 / ISO-8851-15 file encoding. I really hop
+     267-03498-14687-006 I couldn't open CSV files encoded with SHIFT-JIS. Atom was clashed when trying to open those files. S
+x     104-03498-18003-007 +1The only reason this is not my first choice editor is the lack of support for non-UTF-8 encoded fil
+     114-03498-19673-011 yes, i am a developer from China. there are many files encode with GBK/GB2312.we need this function l
+     286-03498-19676-012 Seeing as this hasn't had any real commentary since the 28th of April (and has been the target of spa
+      60-03498-19677-013 This topic is now closed. New replies are no longer allowed.
+     122-03498-26358-014 Just wanted to let everyone know that this is now fixed as of v0.141.0: https://github.com/atom/atom/
+      28-01446-04273-002 Following image explains it:
+      89-01446-09213-003 This is a great feature of brackets and I hope someone will add something similar to Atom
+     159-01446-26241-004 This would also be great for editing functions inline. For example: dog.bark("hello");inline edit: --
+     221-01446-26244-005 That would be great. Is the necessary metadata to link these things together already available to acc
+      47-01446-26245-006 You could use ctags for the metadata I imagine.
+     118-05878-12266-002 Likewise, there doesn't seem to be a way to save the markdown as HTML. A 'Markdown:SaveAsHTML' featur
+      67-05878-25920-003 I moved a post to a new topic: Bug in Markdown character conversion
+     109-05878-25947-004 Since both of these were fixed quite a while ago, I'm going to go ahead and autoclose this topic in 2
+      86-05878-25993-005 This topic was automatically closed after 24 hours. New replies are no longer allowed.
+      87-12711-25618-002 I assume you are referring to this forum, rather than anything in Atom (e.g. git tags)?
+      79-12711-25620-003 The suggestions this forum gives are amazing. Search works well also. Smart SW.
+      60-12711-25622-004 oh fuck,,, wrong forum sry dont know how to delete this post
+      51-12711-25623-005 look for the very faint trash can under the message
+     154-09798-17151-002 Yes, it can be quite annoying, the only workaround I found is to click on the tree-view background or
+     113-09798-17213-003 ⌘+` changes window focus for me as it should on v0.95.0. Do you have any more details about when it d
+x      43-09798-17215-004 Just confirmed that it works for me too ...
+     283-09798-17217-005 I've just tried again and it definitely doesn't work for me (on OSX 10.9.2), it still simply prints t
+     357-09798-17220-006 A couple things to try: Close Atom and launch using atom --safe from the command line (this loads onl
+     207-09798-17234-007 Same here, I suspect that, just like in this issue there's some link to the system keyboard settings 
+    1234-09798-17291-008 A bit of follow-up on this issue: I tried to understand why Atom trigger a Å instead of `, still got 
+     297-09798-17293-009 Just for comparison, I hooked the keydown event with the following code: view = atom.workspaceView.ge
+     506-09798-17295-010 I found the answer: There's not. Basically this is a behavior induced by the underlying os keyboard l
+     387-09798-17446-011 @abe, I'm also on a French keyboard, and I'm seeing the same issues too. Other applications, includin
+      90-09798-17453-012 Yes there probably a solution at the atom-shell level, but it goes beyond my knowledge ^^'
+     752-09798-25534-013 Here is a relavant discussion on atom-shell level. It turns out to be a chrome bug, but it might be p

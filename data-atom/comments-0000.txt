@@ -1,0 +1,208 @@
+
+# page: 0, date: 2014-02-27
+
+     139-00008-02114-003 It’d be nice to have a minimap similar to the one in Sublime Text. That’s the same thing as a scroll 
+      63-00008-02271-004 I think the intention is to post them in a separate topic here.
+      91-08476-14503-002 What version are you using? This feature was added on version 0.85 https://atom.io/releases
+     280-08476-14546-003 I too get a new 'untitled' document when launching Atom which I then have to get rid of when I load i
+      92-08476-14632-004 I'm using 0.90 and also cant find option not to open new untitled document when opening atom
+x     109-08476-22903-005 Also having this issue. Unable to discover option to disable the "untitled" document whenever Atom is
+x     113-08476-23921-006 Same issue here... using version 0.127.0. Be great if it just open a new window with the sidebar expa
+     224-08476-26145-007 I hate to necro an old topic.. but I was also looking for this in settings.. and couldn't find it str
+      45-08476-26147-008 No, there isn't a setting for this currently.
+     158-08476-26148-009 Thank you.. I thought from this conversation there was one.. I thought maybe I was going nuts.. will 
+     177-08476-26159-010 Well, since many commands will not work without an active window, the blank file is helpful. What wou
+     112-08476-26181-011 My package Save Session does this. If you don't want the full package, you can take a look at how I d
+     159-08476-33422-012 Hi mpeterson2,I've installed your package and, while it correctly restores the sections, it doesn't p
+     134-09352-33333-002 Not sure if it was around when you wrote this. But there's definitely something called Atom Shell. Ch
+      57-09352-33339-003 Yes I know it, in fact Atom is build on top of Atom Shell
+     442-09352-33340-004 The name "Atom Shell" is quite fascinating. When I first saw the name, I thought it would allow me to
+     131-09352-33343-005 kgrossjo: When I first saw the name, I thought it would allow me to run Atom from a tty. I think you 
+     549-09352-33348-006 piranna: I think you would be interested on Slap... Fascinating. Yeah, interesting project. I will lo
+     384-09352-33351-007 If Atom could have splitted its core in a UI independent package that would be awesome, specially att
+     280-09352-33384-008 Back to the original subject, I have been thinking Atom could replace the UI of my desktop. It alread
+     473-09352-33406-009 mark_hahn: I have been thinking Atom could replace the UI of my desktop. If I had Atom running in my 
+     102-15386-33368-002 You can create a tags file using "Exuberant CTags" and then you can do Cmd-Shift-R to jump to any tag
+     194-15386-33369-003 I clarified the original question. I'm not looking so much for tags. I am looking for a way to naviga
+     185-15386-33371-004 I think you're looking for the fuzzy finder (ctrl+t). For example, in one of my projects I can plug c
+      72-15386-33382-005 Yes. I do not see a "mark answer" here or whatever. That's it thank you.
+      82-15386-33395-006 otbrianmackey: Yes. I do not see a "mark answer" here Use the heart in the future.
+     119-15364-33350-002 Please share how to do it. I haven't figured it out. I would benefit greatly from learning how to do 
+     218-15364-33383-003 for example, in my case the element was .list-item. and I needed .list-item:hover::before. So I would
+     203-02650-07793-002 I've only been able to do it in the DevTools console: atom.syntax.grammarForScopeName('text.xml').fil
+     354-02650-07797-003 execjosh said: atom.syntax.grammarForScopeName('text.xml').fileTypes.push('ex_em_elle') I think this 
+    2125-02650-07800-004 It seems that for each "window", the init.coffee gets evaluated before any grammars are available. al
+      37-02650-08116-006 I've released the file-types package!
+     194-02650-08192-007 Wonderful. Thank you, just what I needed I've added a myth~ css definition and don't have to fumble w
+     316-02650-27615-008 First off - brand new to Atom and trying to customize it so I could be missing something obvious. Any
+     532-02650-31246-009 I'll echo the previous comment -- I don't think file-types works anymore on modern versions of Atom (
+      71-02650-31716-010 Thanks, @davepeck. That did the trick for making file-types work again.
+     544-02650-33306-011 For anyone working with MeteorJS, I suggest the following file associations: fileTypes = '.js': 'sour
+     494-02650-33347-012 Thank you for the script. I tweaked it a little to support file extensions that have a period in them
+     209-14108-33332-002 I haven't seen that particular case. Might it have to do with the fact that the code isn't tabbed in 
+     113-04473-07490-002 I too would like this.One of my most used snippets is: console.log('$1', $1); and I miss it when work
+     106-04473-07666-003 This is something we are working on. You can track the issue at https://github.com/atom/snippets/issu
+     157-04473-10944-004 That issue is about multiple cursors in snippets. I was curious about showing possible snippet trigge
+     453-04473-10964-005 djczaski said: I was curious about showing possible snippet triggers like ST If you look at the origi
+     204-04473-33307-006 djczaski: That issue is about multiple cursors in snippets. I was curious about showing possible snip
+      70-15351-33283-002 I believe this has already been reported in the settings-view package.
+     238-15351-33294-003 Thanks! github.com Issue: 'find' doesn't find anything in the settings opened by toejough on 2014-09-
+     694-15331-33213-002 The magic, as I understand it, is here: github.com atom/language-todo/blob/master/grammars/todo.cson#
+     109-15261-32979-002 In the meantime you can put this in your `~/.atom/init.coffee~: atom.config.set 'welcome.showOnStartu
+     152-15261-32980-003 Edit: @olmokramer beat me to it. The Welcome package disables itself after first launch, so don't for
+     396-15261-32984-004 @olmokramer, @Alchiadus thanks guys for hints. But still for better UX it will be better to not send 
+     131-15261-32990-005 You can raise this issue directly on the package repo and even submit a PR if you have the motivation
+x      55-15261-32991-006 @abe thanks to drive me in to community. I surely will.
+x     231-15261-32992-007 @ZakharDay You're welcome I believe this is typically the kind of issue that is simple enough for peo
+      36-15261-33187-008 I created a PR for this: welcome/#27
+     140-11482-21859-002 Just curious. What's the use case for? Usually you want non synchronized right? Do you hit a special 
+     132-11482-21867-003 it is useful anytime you are comparing two files. Also when going through a file and copying sections
+      67-11482-21890-004 Oh yeah true, but really what we want then is a diff program right?
+     477-11482-21894-005 A diff program is often too much trouble. If you have two tabs with the files you want to compare the
+     354-11482-21902-006 Git has a command git difftool It's built into git and set up in git config I guess I was proposing a
+     284-11482-21905-007 We are talking about any two open files, not ones in git. For real diffing of two files I'd like to s
+      75-11482-21907-008 True. Actually could do a temp git trick to create that in a package though
+      73-11482-21908-009 Yeah, if you write a differ that'd probably be an awesome contrib to Atom
+      89-11482-22016-010 Totally agree with @mark_hahn, it would be awesome if you could write a package for this!
+     113-11482-22021-011 I too think a general diff tool, with git diff specifically as one possible mode, would be a major pl
+     180-11482-22023-012 One more thing I thought of last night. It'd be really nice if the markdown viewer scrolled with the 
+     347-11482-22120-013 for git diff i like how netbeans handles it, where you get a popup with the changes inline and are ev
+     341-11482-22121-014 I also am interested in learning how to sync pane's scrolling. I have an open feature issue for my pa
+     222-11482-22122-015 DavidLGoldberg said: True. Actually could do a temp git trick to create that in a package though Mayb
+     278-11482-22128-016 derEremit said: or git diff i like how netbeans handles it, where you get a popup with the changes in
+     272-11482-22129-017 @kgrossjo, That's not what I meant, I actually suggested git difftool much earlier for another sugges
+     249-11482-22147-018 I was looking for the same functionality. Being able to scroll markdown-preview along with the markdo
+     439-11482-22158-019 Specifying anchoring for arbitrary usage is an interesting problem. I would think there would need to
+      55-11482-22184-020 Markdown source-mapping. Anyone know if it's been done?
+      50-06351-10886-002 https://github.com/atom/markdown-preview/issues/24
+      82-06351-33157-003 We now have markdown scroll syncing https://atom.io/packages/markdown-scroll-sync.
+     356-15250-32946-002 Yes, this was implemented ... see this Issue for the full sordid story: github.com Issue: Add portabl
+     122-15250-33150-003 Ah, thanks, I didn't knew about that... it should have a link on the homepage pointing to that, it wo
+     259-15250-33154-004 The feature was just recently added. There are a ton of features in Atom that haven't been documented
+      99-15272-33012-002 You can use the file-types package to open files with the .y.txt extension with the correct grammar
+     167-15272-33015-003 Thanks, this can partly work. But in some cases my filename still gets mangled to 1hj34gc9c4ncd.tmp A
+      60-15272-33022-004 Hmm, too bad. I don't know if there's a package for that yet
+      47-15272-33077-005 Maybe the file-mode package does what you need?
+x      20-15272-33083-006 That's it! Thanks! .
+     101-15260-32981-002 It's not exactly what you're asking for, but there are packages like sync-settings that go a long way
+x      44-15260-32986-003 @olmokramer it works. Thanks for suggestion.
+     672-15260-33009-004 Mostly duplicate of this topic: discuss.atom.io Syncing settings packages between machines Hi, I work
+      60-15260-33010-005 This topic is now closed. New replies are no longer allowed.
+      78-15033-32308-002 How do you open a new project into the same window as shown in the screenshot?
+      65-15033-32315-003 Right-click in the tree view and select Add Root Folder, I think.
+     121-15033-32318-004 Yeah, that's it. Some packages don't really deal with this though, perhaps that's why it's a bit unde
+     792-15033-32329-005 braver: Some packages don't real deal with this though None of mine do. For some time I've called the
+     706-15033-32334-007 It's true. I don't have many packages out and most of my stuff is stylesheets, but I'm feeling it. Ju
+     113-15033-32340-008 braver: You're not "done" until Atom 1.0 is released. Nirvana. There will never be another change to 
+     202-15033-32901-009 I was looking around for this feature. And found this thread. However, I don't seem to have the optio
+     176-15033-32922-010 @noseglid Do you see it in safe mode (atom --safe)? I know there's at least one package that disables
+      78-15033-32971-011 @mnquintana That's exactly it! Turns out the culprit was sublime-tabs! Thanks!
+     120-01043-01400-002 Is there something wrong with just opening Atom in the root of your project? Or am I missing somethin
+     456-01043-01450-003 Rather than having to leave the editor, it is really useful to just swapprojects using the command pa
+     235-01043-01584-004 I see, that makes more sense, so to answer your question then: no, I don't know that this is currentl
+     292-01043-01772-005 The project switcher would be awesome. I think having actual project definition files like in ST woul
+     252-01043-01795-006 I'd love this feature, too. One thing I'd add, though, is that I don't want Atom to add any files to 
+     493-01043-01837-007 I'm not a Node dev, so I wouldn't know how to build this, but maybe the UX could go something like th
+     420-01043-01928-008 I think as far as project management goes it could work similar to how packages are stored currently 
+     177-01043-01946-009 I think I'm going to try and through something together over the weekend, but don't let that stop any
+x      25-01043-02283-010 Awesome idea @pho3nixf1re
+     378-01043-02349-011 Sublime Text project files do serve a purpose. You can define project-specific settings or build syst
+    1755-01043-02457-012 Kind of surprised this is even being debated. Project management is essential, simply put. What shoul
+     212-01043-02464-013 nfour said: Sublime's project file pathing is absolute which makes projects non-portable. This is wro
+      67-01043-02466-014 My bad! It seemed like it was a thing, thanks for clearing that up.
+     519-01043-02750-015 I like your ideas here. Regarding the workspace "mode" (e.g. working on models, then views, etc.) I t
+     153-01043-02791-016 In the plans. We all want it, too, it just didn't make the cut. Once the worst bugs get worked out it
+     366-01043-03019-017 I'll be one of the first to contribute/create a package that shows open files within the project side
+     410-01043-03151-018 Would be nice to support sublime project files while we're at it. Converts/creates atom version on op
+     748-01043-04117-019 As all of you, I'll really like a project-managment feature in Atom. I tried to create a plugin to pa
+     121-01043-04780-020 @nathansobo does it mean we shouldn't focus on creating our plugin for that now, because it'll be don
+     289-15223-32875-002 I'm pretty certain this has been requested before. Since the atom-text-editor element has a data-gram
+     104-15214-32856-002 To my knowledge, there isn't anything special in Atom beyond what is available in your operating syst
+x      40-01523-02254-002 +1 Would really love to see this happen!
+x      55-01523-02311-003 +1 Python web-dev is basically impossible without this!
+x      18-01523-02331-004 Must have feature!
+x     107-01523-02358-005 +1 As said above, this is a must feature. Supporting http://editorconfig.org/ would automatically fix
+      77-01523-02364-006 +1 This needs to be done! Who wants to take on this task and write a package?
+     143-01523-04240-007 I use 2 spaces for languages with braces wrapping blocks (JavaScript, CSS) and 4 spaces for the ones 
+x     275-01523-04257-008 +1 One of the nice things about Sublime Text that I'm missing here is that it will try to automatical
+x      72-01523-04361-009 +1 This was the first problem I ran into. 2 spaces for JS, 4 for python.
+x      55-01523-06366-010 +1 must have. I'm really missing per-language settings.
+     255-01523-10243-011 I just published a first go at automatic indentation detection: https://atom.io/packages/auto-detect-
+x      42-01523-10568-012 @jtokoph Thanks! I'm using it as we speak.
+     164-01523-14926-013 +1! Would love this. @jtokoph's plugin is a step in the good direction but it would be great if you c
+      86-01523-14930-014 I've had luck with the EditorConfig plugin: http://editorconfig.org Very cool concept.
+     400-01523-15467-015 Anyone still looking at this topic, there seems to be a nice solution here: https://atom.io/packages/
+      90-01523-25256-016 And this kind of hackability is the reason why I Atom. Thank you for this simple solution.
+     139-01523-25259-017 Note that this feature has been implemented in Atom core: https://github.com/atom/atom/pull/3718 It s
+      51-01523-25488-018 Nice to read that.Indeed it is a must have feature.
+     308-01523-25585-019 Finally, there is a new release! I don't know how can I set this up in config though.Following pull r
+     141-01523-25587-020 Not sure. I've tried it myself and it's not working for me either! I know @leedohm has messed around 
+    1016-08644-14833-002 Atom is using Chrome Embebed Framework for the GUI (good for you ) and a Node.js base runtime for the
+     228-08644-14839-003 piranna said: currently the Atom core source code is not available The above part is true ... piranna
+     922-08644-14896-004 piranna said: The good news are, except from the fact of using Node.js (based on v8, the same Javascr
+     178-08644-14897-005 It was said that, some time in the future, source code would be released, but no date was said. It's 
+     591-08644-14898-006 Current Web APIs are capable of that, but the main problem is related access to user filesystem, that
+     117-08644-14912-007 There has been plenty of work done to port brackets.io to Chrome OS. Aren't they both built in very s
+     148-08644-14937-008 Not technically support for ChromeOS, but if you can get Crouton running on your Chromebook, you shou
+      38-08644-14976-009 Turns out it only took about 19 hours!
+      54-08644-14983-010 F*ck yeah!!! Can we think it was due to this topic...?
+    2250-08644-15025-011 dannyfritz said: Not technically support for ChromeOS, but if you can get Crouton running on your Chr
+    2873-08644-15062-012 Atom.io really dislikes my chromebook. gyp: name 'chromeos' is not defined while evaluating condition
+     345-08644-15136-013 I get it working on my Ubuntu machine with the instruction on the repo Readme. I needed to do git pul
+     745-08644-15189-014 From what I read on the docs, seems it would be feasable, but would need some work. Atom is based on 
+      93-08644-15324-015 Has anyone tried to use Emscripten to compile atom-shell as a pure JavaScript Chrome Web App?
+     163-08644-15386-016 I don't believe it's a long-term solution, performance would be sub-optimal compared to use the nativ
+     404-08644-16513-017 gyp: name 'chromeos' is not defined while evaluating condition 'target_arch=="arm" and chromeos==1 Ho
+     457-08644-17625-018 I have node and npm working on the chrome book without using a chroot ubuntu with cruton. I just used
+      70-08644-21658-019 @LiamMitchell Did you eventually manage to get it working on ChromeOS?
+     645-08644-24355-020 I'm running into a similar problem here. I have the HP Chromebook 11 and have ran Crouton to have Ubu
+     215-01385-01878-002 In the past for other apps I've used Dropbox, moved the app settings directory to it and created a sy
+     372-01385-08760-003 It would extra slick if you could have it sync with your Github account, so every time you install th
+     313-01385-08903-004 @fleeting your suggestion works great by the way. I moved my atom folder into my Dropbox, and then ju
+     159-01385-09658-005 I have simply just been treating ~/.atom like I have my dotfiles. It lives in my dotfiles repository 
+     217-01385-09660-006 I emailed Github about adding this feature to Atom natively, but they said it would more than likely 
+     178-01385-09678-007 It'd be interesting if the extension came as a service. Login and subscribe via GitHub OAuth, downloa
+     180-01385-13995-008 I would agree, Sync settings with my Git Hub account. In theory you could also sync team settings bas
+     326-01385-18096-009 Im using Mackup for this, which works beautifully although Im finding that syncing the entire .atom f
+     562-01385-18108-010 lmartins said: I was considering excluding from the sync process the following folders: .atom/.node-g
+     272-01385-18319-011 Syncing the parts of the .atom folder would make sense. What I might do is just sync the config.cson 
+     121-01385-18320-012 If you mark your commonly-used packages with stars now, you can install them super-simple by typing: 
+x      62-01385-18321-013 Cool. Didn't realize that command existed; thanks for sharing.
+     184-01385-18513-014 I just noticed that there is a .gitignore file in ~/.atom/ with the following contents: storage compi
+     257-01385-28221-015 I've been pretty happy with a package I found called sync-settingshttps://github.com/Hackafe/atom-syn
+     451-01385-31115-016 Until now I used the symlink solution but I encountered a problem. I don't use the same home folders 
+     284-01385-31161-017 I just recently wrote article about Synchronizing Atom between computers where I wrote about three wa
+     155-01385-32819-019 What do people use to sync Snippets and Keymap theses days?Im using the Settings Synchroniser plugin 
+     351-01385-32829-020 yea github dotfiles (i.e. a repo / private repo for your .atom folder, see bitbucket for privacy worr
+      60-15205-32824-002 I think there are one or more packages that do this already.
+     180-15205-32825-003 Atom-Runner package does this. You can interpret multiple language types (and extensible), including 
+     157-15205-32826-004 Oh, okay I'll look for those. I did try a couple of them, but they seem to be old, because they use d
+     693-15205-32827-005 Definitely, this is something I've been working on too. : The runner package is ill-suited to what I 
+     274-15076-32563-002 There are a couple of git packages out there, and I believe one of them provided that for me. Automat
+     211-15076-32582-003 Git Plus and Automatigit both provide it. But none of them have green and red coloring for removed an
+    1051-15076-32587-004 The language-diff package is the right place for what you're talking about, syntax highlighting of di
+     470-15076-32678-005 Yes, I can always add custom styles, I just thought it would be a good idea for Atom to provide that 
+     117-15076-32689-006 Yes, you could add support for this to various themes. I'd suggest submitting pull requests rather th
+      19-15076-32813-007 That's what I meant
+    1360-15197-32806-002 Yes, there has been: discuss.atom.io Can atom move my workspace to cloud someday? Atom may be not ano
+     210-15161-32690-002 You'd have to build a custom version of Atom Shell with it first and then build Atom using your custo
+    1751-15161-32802-003 you'll have to build the custom atom-shell as @leedohm said, I can offer some insight into doing that
+     126-01067-01929-002 This is the shortcut that I use most often in Sublime and keep trying to do it in Atom. Would love to
+     195-01067-02198-003 In Settings - Autocomplete you will see there is a shortcut of control + space. I personally would li
+     213-01067-02310-004 Not quite what I'm looking for. Autocomplete just helps you find the tag name you were looking for. I
+     198-01067-02643-005 Perhaps I have a special package for Sublime, but when I type " /" it completes the tag. I do have to
+      97-01067-02648-006 mkleehammer said: when I type " /" it completes the tag. This is default behavior since ST3 iirc.
+      70-01067-04267-007 Coda does the same. Would love if / automatically closed the open tag.
+     121-01067-04767-008 Definitely agree - ST3's auto-tag closing was the first thing I looked for when setting up Atom. Miss
+     162-01067-05200-009 I'd love to see the " /" auto-complete functionality... Although, I just discovered Emmet after looki
+x      75-01067-07119-010 Missing it too... to the point I actually came looking for it on the forum.
+      47-01067-07153-011 Did you guys have a look at this?Autoclose HTML
+     250-01067-07156-012 That's nice but it fixes a different need for me. If I encounter something like this div class="test"
+      92-01067-07157-013 @dantz ok mate I see now.If I come across a package like this, I'll be sure to post it here!
+      55-01067-07160-014 thanks. But the autocomplete on eis appreciated as well
+x      50-01067-07326-015 I would like to see this become a feature as well.
+     334-01067-13957-016 I would like to make a clear distinction between autoclose and the close-by-shortcut feature.Both of 
+     173-01067-14197-017 Also missing the close-by-shortcut feature. ALT + CMD + . for closing any HTML tag is second nature. 
+x      57-01067-14387-018 Would like to see the typing-" /" closing option as well.
+      76-01067-14396-019 I've made a plugin that covers this: close-tags. Let me know what you think!
+      70-01067-14605-020 nice work! alt+cmd+. now closes my tags just like Textmate or Sublime.

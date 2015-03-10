@@ -1,0 +1,92 @@
+
+# page: 10, date: 2014-08-07
+
+     638-11351-21326-002 haven't yet discovered how easy it is to do with Atom I've been using nothing but coffeescript on the
+     506-11351-21328-003 That's true! Not everyone is a web dev or using node, javascript, coffee I do think a lot of develope
+     671-11351-21335-004 i do coffeescript but haven't created any package.only when atom is blaming me on errors then i check
+     639-11351-21336-005 I haven't done any packages yet. I find that anything I need someone else has already tackled, or if 
+     920-11351-21337-006 I'm in no way shape or form a web dev and my DOM, java/coffeescript knowledge is incredibly basic. I 
+     327-11351-21378-007 Cofeescript seems reasonably straight forward but as with anything the trick is knowing the libraries
+     140-11351-21379-008 mark_hahn said: Coffeescript is just a thin layer over javascript. A thin, delicious layer ... like t
+ x     35-11351-21380-009 Now I want cake, you owe me a cake.
+     322-11351-21382-010 That much I worked out, but googling javascript stuff was kind of a big scary mess of results. Mostly
+     183-11351-21383-011 Perhaps I should read Javascript the good parts The good news is that coffescript removes the bad par
+     486-11351-21392-012 That said, JavaScript as a powerful object model, capricious, monstrous sometime, but rather interest
+     522-11351-21405-013 abe said: It make me think that there's a opposite side to this thread which would be "how to hack At
+     484-11351-21456-014 abe said: It make me think that there's a opposite side to this thread which would be "how to hack At
+     138-11351-21462-015 kgrossjo said: Atom builds on web technology. And nodejs. It is strange how you use server-side and c
+     935-11351-21479-016 Yes. I don't hack on atom; neither does anyone at work I work with. I wrote two packages, and discove
+     754-11351-21480-017 its very difficult to write plugs that tap into the windowing system without coffee script. Atom full
+     537-11351-21485-018 mark_hahn said: its very difficult to write plugs that tap into the windowing system without coffee s
+     333-11351-21491-019 kgrossjo said: there was this custom magic to define classes That magic was chosen because it is one 
+    1003-11351-21511-020 mark_hahn said: kgrossjo said: there was this custom magic to define classesThat magic was chosen bec
+      45-08584-19271-002 This would be excellent for former vim users.
+ x    138-08584-21577-003 Definitely +1. Having to drag tabs to a new window just to change the root folder is silly. Should be
+     321-08925-21574-002 I was wondering the same thing. Can anyone answer if it's possible to run the Atom code in the browse
+     340-08925-21575-003 Most of the problem is porting the node file system and net stuff. I've thought about having the fs c
+     132-07400-21547-002 Before they implement this feature, you can check out a simple package written by me. https://atom.io
+     178-00448-00771-002 GitHub's not really that big on (S)FTP/WebDav ... for what I hope are obvious reasons. The likelihood
+     181-00448-15161-003 We're in the same boat. 90% of my work is SFTPing to a server. This is really the only feature holdin
+     294-00448-20152-004 I have almost completely moved off of SFTP, but still have uses for it, hence the request. @MattMcAle
+     313-00448-21219-005 What are the obvious reasons for not wanting to edit over SFTP/DAV or other remote connections? It's 
+     466-11273-21031-002 It looks like there's an AutoHotKey TextMate bundle here: http://www.autohotkey.com/board/topic/44924
+      62-11273-21044-003 thx im no big coder but will try to contribute a bit with that
+     152-11273-21045-004 I downloaded the bundle but can't get my windows running ATOM to run shell, I tried using CMD but no 
+     462-11273-21069-005 Sounds like you haven't added Atom to your PATH. If you don't know how to do that, you might want to 
+      63-11234-20922-002 The Project Manager package should help you with the first one.
+      86-11234-20945-003 If you're used to SublimeText's Open Recent menu: https://atom.io/packages/open-recent
+     111-11199-20803-002 Depending on what language you're using, I would suggest looking at one of the lint packages such as 
+     727-11199-20804-003 Hmm, this definitely seems like a good idea, but there's a lot of issues with this: What variables ar
+     274-11199-20805-004 What about a "template" for each language. For instance, in Javascript, store all values prefixed by 
+     145-11199-20806-005 I already have https://github.com/AtomLinter/Linter with https://github.com/AtomLinter/linter-jshint.
+     112-11199-20807-006 I don't know, I haven't tried installing more than one at a time I would assume they would conflict i
+      77-11185-20761-002 There is an Issue open on this here: https://github.com/atom/atom/issues/3023
+     130-11169-20728-002 There is a pull request in the Sublime tabs package for this specific feature.. It hasn't been implem
+     213-11167-20692-002 Are you looking for the ability to customize your keymap, which Atom has? Or the ability to dynamical
+     148-11167-20694-003 Thank for quick activity. Its a kind of customization but not manual changing... keymap.PNG752x358 32
+     265-11167-20697-004 This could definitely be done as a package, perhaps called something like eclipse-keybindings. You wo
+     406-11167-20698-005 Atom is not an IDE, so many of the keybindings would be void. There is no (built-in) concept of build
+     231-11167-20702-006 Not about building,debugging...I'm looking for the mapping of other than IDE realated. like easy comm
+     325-11167-20704-007 Unless you want to build a package to allow switching between common schemes, just create your own ke
+      89-11167-20716-008 Thanks for that,Actually I'm looking for same kind of package or built in feature of atom
+     154-11167-20717-009 Not aware of any package that switches an entire scheme in one fell swoop; good excuse for writing yo
+     129-11162-20679-002 AFAIK there no such thing in atom. It could be implemented, given that there's a way to dissociate pa
+     932-11160-20655-002 For questions about what the Atom team is working on or planning to work on, refer to the FAQ: discus
+      60-11160-20656-003 This topic is now closed. New replies are no longer allowed.
+     328-11147-20617-002 Duplicate of ... discuss.atom.io Is there some type of file preview? When you click a file in sublime
+      60-11147-20618-003 This topic is now closed. New replies are no longer allowed.
+     185-11130-20563-002 Running node online would be a bitch to implement. One could port node with emscripten. It would be 2
+     201-11130-20564-003 Someone recently asked that same question on the repo.I don't know what thoughts the developers have 
+    1234-11130-20574-004 So many duplicates ... discuss.atom.io Let's talk ChromeOS Hey guys, I have been following Atom.io fo
+      60-11130-20575-005 This topic is now closed. New replies are no longer allowed.
+     288-11092-20442-002 If you're looking for localizing atom you may be interested in this post: discuss.atom.io Localisatio
+     215-11092-20443-003 abe said: ocalizing atom you may be interested in this post: thx i think i will try it. I have solved
+      39-11092-20457-004 Closing in favor of the original topic.
+      60-11092-20458-005 This topic is now closed. New replies are no longer allowed.
+x      57-08832-20368-002 I'd also like to see this feature from Sublime very much!
+     215-11058-20349-002 I see atom-shell v0.14.0 fixed this problem. But later, the Atom v0.117.0 was released, it still usin
+     206-11058-20350-003 BTW, publishing a new atom-shell version doesn't imply that the atom codebase is compatible with it, 
+     215-11058-20356-004 When I try to delete a file in Atom's tree-view, Atom have a dialog for confirm move to trash, And th
+     374-11046-20326-002 I don't think this will happen... I sorta like the idea, but I think the GENERAL idea of Atom is to m
+     377-11046-20333-003 @ddavison I'm not so sure about that risk of scope creep.I think language support might be fundamenta
+     164-10827-19609-002 You can change this manually in your keymap.cson by adding '.workspace': 'ctrl-shift-z': 'core:redo' 
+     126-10827-19611-003 Thanks for your answer,I know that I can add shortcuts manually, but I think this one should be prese
+     435-10827-19626-004 You can submit a PR on Atom Core if you feel that it is necessary: https://github.com/atom/atom Thoug
+      25-10827-20273-005 This was added in 0.116.0
+     341-10827-20282-006 Thanks for adding this.This shortcut is not default keybinding of any system, but it is the default i
+     160-10827-20288-007 Cmd+Shift+Z is already mapped to core:redo on OS X. It's the default for the OS. And it already has b
+      66-10827-20290-008 Yes I just added it for Linux and saw it was already done for OSX.
+x      79-00689-06365-002 I would love a feature like this. I also tried dragging tabs out of the window.
+     488-00689-12918-003 I was about to open a thread about this - I think this is absolutely needed, it is basically common p
+x     131-00689-14413-004 +1 -- Tab management actions should work like Chrome. Drop tab on desktop = new window, drag tab from
+x      48-00689-19995-005 How on earth does Atom not already include this?
+x      94-00689-20141-006 +1 and bump. any recognition on this by devs? This is one of the biggest missing features now.
+     863-00689-20143-007 There is an issue open on this here: https://github.com/atom/tabs/issues/39 For an idea of what the d
+x      27-00689-20144-008 Good deal, thanks. @leedohm
+     291-10993-20118-002 If you want to see what is taking so much time, you can use the Timecop package. In many cases, it is
+     587-10993-20123-003 Hi leedohm and thanks for your interest. I've already profiled the startup with Timecop but I can't s
+      97-10993-20126-004 No, I don't have any more suggestions. It looks like you got all the big time sinks out of there.
+     751-10979-20068-002 Related topics discuss.atom.io Package Rating System It would be nice if the Atom Packages Page had s
+      89-10979-20080-003 I moved 3 posts to an existing topic: Feature Request: Better package discovery and stats
+      52-10979-20081-004 Yep ... closing this topic in favor of the original.
+      60-10979-20082-005 This topic is now closed. New replies are no longer allowed.

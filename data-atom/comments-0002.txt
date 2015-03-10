@@ -1,0 +1,191 @@
+
+# page: 2, date: 2015-02-12
+
+     123-14863-31807-002 Actually, I was thinking of writing a package to do title casing. It wouldn't be too hard to do the o
+     793-14863-31810-003 Don't forget ... BumpyCapscamelBackCamelCapsCapWords compoundNamesEmbedded CapsHumpBackInterCapsmixed
+     223-14578-30923-002 Check the issue again I for one would totally support this addition, although maybe not on by default
+     363-14578-30929-003 I suspect this will be somewhat controversial, but personally I would like it too, especially if you 
+     195-14578-30932-004 Just to get a feel for it: dark-title-bar.png780x423 79.4 KB If the title bar would be custom, it mig
+     495-14578-30934-005 Eh, in the pic there you have no menu bar but the title bar is still there. This is an example of no 
+     227-14578-30935-006 In the case of also hiding the menu bar, the buttons could go to the right in the tab bar just like C
+     383-14578-30940-007 dustContributor: Eh, in the pic there you have no menu bar but the title bar is still there. That's j
+     186-14578-31035-008 As a convention, the traffic lights should be on the left. So it could be on top of the tree-view: ti
+      78-14578-31055-009 What if you still want the menu bar? It would be placed left of the File menu?
+     303-14578-31121-010 @dustContributor In OS X's case, the menu bar isn't part of the application window, but instead in th
+     131-14578-31354-011 To be fair it OSX would be the special case, while Windows/Linux using the same method (put icons to 
+     240-14578-31356-012 It would be a little tricky for Linux because it would depend on what desktop environment you're usin
+     351-14578-31358-013 I'm advocating for the Chrome's way of doing things: Don't tie it to the platform, pick where to put 
+     284-14578-31388-014 Some will argue that the window management should stay true to the platform. Because people are alrea
+     338-14578-31389-015 simurai: Because people are already used to it and don't have to learn a new way. I can't stand windo
+    1081-14578-31802-016 I never said anything about borderless windows. I mean, I explained it thoroughly a few times already
+     163-00016-00165-002 Hmm. that's neat, but there are several problems. It's seems really hard to predict where your next t
+     146-00016-00190-003 With a similar highlighting (maybe more transparent) of the region as in the animated example on the 
+     103-00016-00199-004 Yeah if it highlights I'd see it working great, as long as it doesn't collide with syntax highlightin
+     884-00016-00226-005 Yes, it would be great if Atom had support for elastic tabstops. I’ve been looking for a good editor 
+     195-00016-00244-006 I code in ruby and Go, and don't even notice the difference between spaces or tabs anymore. Atom does
+     288-00016-00361-007 I wrote the code for Elastic Tabstops in Ace. I had thought about porting it to Atom, but got distrac
+    1235-00016-00585-008 Please, if you wish to make an implementation of it for Atom, do not do it using spaces, like the Sub
+      93-00016-01035-009 +1 Rastus. If it has to use spaces, its not a real implementation as might as well not do it.
+     186-00016-01303-010 what do you mean? the algorithm is pretty intuitive: a line with less tabstobs than the preceding lin
+     265-00016-01322-011 yeah, it definitely has to be done with spans containing one tab and a style that either modifies tab
+     295-00016-01735-012 I wrote the Sublime Text implementation, which unfortunately had to use spaces due to limitations in 
+     107-00016-02140-013 It seemed confusing at first, but after trying it out with the java implementation it doesn't seem to
+     149-00016-02954-014 Woo just got in! I'm gonna take a look this weekend hopefully.So excited. Markdown previews in the ed
+ b     21-00016-08208-015 hi, any progress yet?
+      62-00016-09458-016 I just invited Nick to the beta...does that count as progress?
+     197-00016-29549-017 The introduction of a new proportionally-spaced coding font (Input: http://input.fontbureau.com/), in
+      17-00016-29580-018 why shouldn’t it?
+      60-00016-29583-019 Hi Nikolaus, are you still up for implementing this package?
+     213-00016-29604-020 Yeah, maybe I'll do that. I looked at it when Atom first came out, and the API was pretty much nonexi
+      52-02692-31721-002 There is a roadmap for Atom: https://atom.io/roadmap
+      84-09600-16761-002 It already does this for me... Screen Shot 2014-05-21 at 10.23.51.png911x521 50.5 KB
+     289-09600-16766-003 sorry, you are right.I wasn't clear enough, with "path" I meant the full path from the root of the pr
+      73-09600-16767-004 And here's sublime: Screen-Shot-2014-05-21-at-12.08.58.png1321x867 107 KB
+     112-09600-16778-005 Can you open an issue here? https://github.com/atom/tabs/issues There, the devs can take a look at th
+     177-09600-16823-006 AbeEstrada said: Can you open an issue here? https://github.com/atom/tabs/issues There, the devs can 
+     125-09600-16830-007 I'd like to able to fix it, but I'm afraid it is currently beyond my capability I'll open the issue a
+      60-09600-16834-008 Here it is: https://github.com/atom/tabs/issues/57 thank you
+     388-09600-16835-009 Not a js/coffee person but I don't actually think it's the tab at fault. This just displays @item.get
+     336-09600-16841-010 Actually it appears to be editor.coffee in atom/atom edit: I think I have a fix that should work, how
+     186-09600-16852-011 No, you can always reference the Issue in Tabs from your pull request ... See "Closing issues across 
+     381-09600-16855-012 Just to clarify when I commit my fix into my branch I would put "Fixes atom/tabs#57" somewhere sensib
+     391-09600-16857-013 I'd just put "Applies to atom/tabs#57" and then the owner of the repo can close it whenever they choo
+     283-09600-16891-014 Submitted a PR just now to atom/atom. My first ever to any OS project and was ably assisted by one of
+     735-09600-31680-015 From what I can tell from the linked github issues, this change was merged into v.0.100.0, but now at
+     257-14823-31673-002 This may be a bit of trouble but you could make symlinks (junctions in windows) in one folder to all 
+     283-14813-31649-002 There is an issue on atom/atom and I think it is being worked on. https://github.com/atom/atom/issues
+     387-14813-31653-003 Ah, I wasn't thinking of the form of tight integration that Atom currently offers with git. mark_hahn
+     320-14813-31655-004 MrTact: given the breadth of packages out there Yes, there is a tremendous breadth, getting breadthie
+     101-14813-31656-005 mark_hahn: Github doesn't support perforce, does it? Nope! AFAIK, Github supports git, and that's it.
+     249-14813-31657-006 MrTact: Nope! AFAIK, Github supports git, and that's it. While GitHub may not support Perforce, it do
+     237-00612-01273-002 Love this idea. The live preview should have a location bar as well, rather than just render the page
+     171-00612-01326-003 This was one of the first things I looked for when I opened Atom. It seems like the technology is ava
+      98-00612-03769-004 Yep, this is great. And this is one of the advantage of Atom (which is build right upon a browser)
+      85-00612-03812-005 Oh man, I'd love to see this. I wish I had the time to implement it myself right now.
+     313-00612-03835-006 I've been using the butterfly terminal in Chrome: http://paradoxxxzero.github.io/2014/02/28/butterfly
+     169-00612-04203-007 I thought this one one of the built-in features of Atom :s I'm a web dev and unless it does live HTML
+     109-00612-04269-008 Likewise, this is a feature I really enjoyed about Sublime and am hoping will be implemented in Atom 
+      40-00612-04342-009 You can use Grunt and set up live reload
+      91-00612-04375-010 I have to agree with @drifterz28 here, this seems better suited for guard with live reload.
+     321-00612-04379-011 Livereload is good, but it's a limited vision. With a feature like this we'd conceivably be able to o
+     153-00612-05803-012 Yep, add me to the list. I already use LiveReload and Grunt with sublime but having a built in web pr
+     262-00612-05813-013 Not just that, with a tight integration you can also inject new code into a website or web app, so yo
+     154-00612-05915-014 There's a feature equivalent to what you're talking about in Adobe's Brackets (Edge Code). But I woul
+      99-00612-05982-015 (forgot to mention) A Chrome Dev console inside Atom could be useful also for javascript debugging.
+     127-00612-05998-016 You can bring up the Developer Tools (with JavaScript Console) with alt+cmd+i. Or select View Develop
+     321-00612-06062-017 This would be a neat plugin. But I don't think this should come as a default/core feature. leedohm sa
+      83-00612-06124-018 Here is a package headed in this direction: https://atom.io/packages/mobile-preview
+     702-00612-15695-019 While I agree with the need of a tighter feedback loop when it comes to browser testing, I feel sad w
+      58-00612-16548-020 I would also really like seeing this as a feature in Atom.
+     892-01383-01871-002 Hi, This is also discussed in this thread - where they talk about remember your open tabs after you q
+      94-01383-02212-003 I agree autosave would be awesome. I have to wonder if someone could write a package for that?
+      91-01383-02222-004 Autosave is a default package http://atom.io/packages/autosave. You just need to enable it!
+     507-01383-02269-005 Hi, This only works for explicitly saved files. It doesn't actually work for untitled files (which in
+     212-01383-31552-006 victorhooi: you can basically open up as many buffers, and then quit - and it will automatically open
+     250-01383-31560-007 Well, no, not if the files haven't been explicitly saved. If you have unnamed files/buffers, they wil
+      91-14449-30512-002 Hi James, there is already work being done on that https://github.com/atom/atom/issues/2939
+     156-14449-30545-003 In the meantime you could ln -s /path/to/usb-drive/.atom ~/.atom, but you'll have to do it on every p
+     181-14449-31361-004 It's done. Check this out: github.com Respect ATOM_HOME env var for portability by kevinsawicki on 12
+     121-14449-31370-005 stupid noob question, don't have a good understanding of how pulls/commits, etc..... is the zip for 0
+    1092-14449-31374-006 No, this was just merged today. It should be in v0.178.0 whenever that comes out. The way to figure t
+x     139-14449-31539-007 wow, thank you! great post! i was going to come back and delete my question since it didn't add to th
+     124-14728-31433-002 You could download the zip and put it anywhere you want? Nobody ever said that the installer was the 
+     358-14728-31435-003 I think he meant where Atom is installed. I don't know if you can control where the executable is ins
+     242-14728-31437-004 mark_hahn: I think he meant where Atom is installed. Yes, that's what I meant: Download the zip file 
+x      34-02133-31412-002 I think that this is essential! +1
+      41-13602-28021-002 Isn't this a bit premature to talk about?
+     367-13602-28038-003 Yes it is. But it should be considered in the future in my opinion. Node and Io will differ soon and 
+     444-13602-28039-004 KeitIG: Node and Io will differ soon and fastly. The assumption you're making is that the difference 
+     553-13602-28040-005 And regarding the performances, I doubt that just changing the underlying engine will do much. What's
+     448-13602-28043-006 leedohm: It could just as well be a huge tradeoff of performance vs. stability I'm afraid of that too
+     116-13602-28058-007 I would think going full vanilla js would make IO.js slower. Isn't the non-js code there explicitly f
+     634-13602-28078-008 As far as I understand io.js is attempting to fix many of the perceived governance problems in node.j
+     249-13602-28082-009 I have read everything in the node forum for 3 or 4 years. I got to know the names of all the major c
+      55-13602-31293-010 It seems that Atom switched to io.js in latest release.
+      62-13602-31403-011 Confirmation here https://news.ycombinator.com/item?id=8991853
+     124-14666-31234-002 None of these features are built-in to Atom. You will need to find add-on packages that do what you w
+     116-14666-31392-003 mark_hahn: You will need to find add-on packages tha What packages show output .php+html+css+javascri
+     122-14666-31393-004 I think most or all of those languages you list are available. Have you tried opening any of those ty
+     196-14666-31396-005 Atom is a text editor, not a web server, nor a web browser. If you want to "run" PHP then please use 
+     259-11526-22013-002 There is an issue on the repo, asking for a portable version, and discussing this very question as we
+     159-11526-22014-003 Yep. Thats how I got around with Sublime. I use the portable version. But as you said, a setting woul
+      72-11526-22017-004 Wouldn't having an option in settings present a chicken and egg problem?
+     177-11526-22018-005 Well, the setting shouldn't auto-apply probably. Instead changing it should Create a copy of the .ato
+     103-11526-22019-006 Right, but how can it know where to load the settings from before the location setting has been loade
+     281-11526-22020-007 A Default. Just as after installing or building it will use the standard .atom location.You can then 
+     213-11526-22058-008 postcasio said: Right, but how can it know where to load the settings from before the location settin
+     765-11526-23685-009 Regarding making it portable: it could just look in the same folder as the executable first, then if 
+     169-11526-31362-010 Clicky clicky: github.com Respect ATOM_HOME env var for portability by kevinsawicki on 12:21AM - 04 F
+     321-11225-20886-002 Atom is a text editor, not an IDE. With that being said, I'm not aware of any such package for any la
+     333-11225-20893-003 There is a somewhat related discussion going on regarding the Atom API docs and how to find a good fo
+     173-11225-20895-004 I am currently working on a package for that since I miss it as well! Not sure what languages you are
+     189-11225-21289-005 This is the one feature that I have been looking at all the editors for. I would love to switch to at
+     348-11225-21420-006 +1 It's a great feature. I hesitated to create this package (for PHP and JS) with the API doc display
+     113-11225-31079-007 @skulled, is there any progress on this package you worked on? I really miss this as well! and exactl
+     143-11225-31360-008 Just responded back to your message. I am hoping to make an initial release sometime later this month
+      46-10256-18172-002 In styles.less: .editor { font-weight: bold; }
+     293-10256-18173-003 Thanks @postcasio for the reply. Is this style.less file the only file that we configure or is their 
+     907-10256-18177-004 There are any number of files that could be edited to achieve this. The way things are set up, at a h
+     221-10256-18178-005 Thanks @leedohm for the reply . My question is that how do you know that there is attribute named com
+     584-10256-18179-006 The font-style part is easy. That's a standard CSS attribute (LESS is just a thin layer on top of CSS
+     145-10256-18180-007 @leedohm That's really impressive !! I Who needs a Documentation when we can inspect elements of the 
+x      43-10256-18186-008 You're very welcome. I'm glad I could help!
+     219-10256-31320-009 atom 0.177solarized-dark-{ui,syntax} theme It looks like this is not working anymore. Could you still
+     591-10256-31321-010 You can find the way to fix it by searching for Shadow DOM on the forum. The shift to the Shadow DOM 
+x      23-10256-31329-011 Thanks, I'll check out.
+      41-14678-31273-002 I would use a seperate program like meld.
+     442-14674-31238-002 The command for what you're asking for is Window: Toggle Developer Tools and it is in the command pal
+     252-14674-31239-003 Thank you. That is very helpful. I'm glad all menu items are in the commands somewhere. As you say, t
+     234-13738-28430-002 If you are talking snippets for CSS there is an excellent package for that released in the past week.
+     119-13738-28432-003 Thanks, but that's not it. I am looking for a autocomplete/suggestions plugin that works the same as 
+     151-13738-28445-004 There are some autocomplete packages that also support CSS, but I haven't found one that is as good a
+b      93-13738-31237-005 Any news on this? Someone created a package as good as chromes inspect for CSS folks like me?
+      40-13576-28320-002 Try https://atom.io/packages/log-console
+     285-13576-28412-003 @yongkangchen Thanks for the tip! I've installed log console, created the .log-console.json file in t
+     386-13576-28478-004 I guess you should command palette log-console:reload-config after you add or modify .log-console.jso
+      80-13576-28479-005 Any question can be submit to https://github.com/yongkangchen/log-console/issues
+     359-13576-28490-006 log-console:reload-config helped, now the plugin is working. It seems to be very useful, but it is no
+     158-13576-28496-007 Got it. You can refer they do for sublime text:https://github.com/thinkrad/SublimeProxyJust change th
+x      36-13576-28544-008 This could actually work! Thank you!
+     163-13576-29794-009 Is there a way to fix this without getting a whole error log thing? Just only jumping to the right li
+     122-13576-31214-010 Stick this in the "External Script Editing Args" of unitys preferences: "$(File):$(Line)"It should gi
+     119-14486-30641-002 There isn't and I'm pretty sure that there is a bug open already requesting this. I can't find it at 
+     156-14486-30661-003 For me, Atom doesn't open an "untitled" tab upon startup, even if I start atom from command line with
+     117-14486-30665-004 If you open a folder, then Atom doesn't open an untitled tab. But if you just open Atom using the ico
+      52-14486-30670-005 That explains a lot. I never open atom from the icon
+x      44-14486-31202-006 ah ok cool I'll see if I can find it, thanks
+     155-06445-11113-002 For those not "in the know", BiDi stands for bi-directional text. Here is a very good introduction: h
+     459-06445-11148-003 morsdyce said: Is it hard to implement? Just reading through about half of the document that @execjos
+     119-06445-11162-004 But as atom is based on a browser engine, they already all support BiDi can't they leverage the suppo
+    1053-06445-11167-005 For layout, you would assume so yes ... but what about cursor movement? Selection highlighting? Take 
+    1025-06445-11177-006 Yes, however enabling direction: rtl (maybe toggling it on and off such as notepad++ does). could be 
+     247-06445-11189-007 You're coming off as someone passionate about wanting a very capable editor Don't worry about it. May
+     330-06445-11221-008 It must not necessarily be an all or nothing thing: a very naive implementation will probably do for 
+     827-06445-15271-009 I am also a RTL user and would very much like to see some support implemented. However, I acknowledge
+    1854-06445-15348-010 I work with bi-directional text day and night. The problem you are describing is a layout problem, no
+     723-06445-15349-011 mderazon said: I actually like the way SublimeText deals with RTL - It doesn't. Instead it writes RTL
+     120-06445-31188-012 It is hard to implement. You can have a look at emacs-bidi. There are so many things to consider, muc
+      79-14652-31172-002 The answer is yes, there's a way: https://atom.io/docs/api/v0.175.0/MenuManager
+    1099-14204-29741-002 I'm not an expert on the Unix security model, so forgive me if my understanding is incomplete. Aren't
+     618-14204-29742-003 leedohm: Also, if the entire process is elevated to root... ... Then no packages would be loaded, bec
+     515-14204-29787-004 The way OS X applications handle this is on save. If the current user doesn't have access to save the
+     277-14204-31118-005 I would recommend this approach as well.Couldn't it be just a core plugin with a pre-save hook if tha
+     439-14631-31089-002 Duplicate of: discuss.atom.io Preference not to open new file when opening atom I'm using atom on osx
+      60-14631-31090-003 This topic is now closed. New replies are no longer allowed.
+     260-00435-00989-002 Developers of the world, please tell me how you use code editors without CodeIntel. Every time I have
+     195-00435-02027-003 Those 3 suggestions are definitely needed to improve productivity. Personally, unless there was somet
+     191-00435-03370-004 I agree with this, it would be a very important feature to make me switch from sublime text. I would 
+     837-00435-03386-005 It's such a hugely important package, and considering the solutions for Sublime can run really sluggi
+     580-00435-03390-006 nfour said: it's a bit dire for a web app to outperform Sublime Keep in mind that Atom is not a web a
+     159-00435-03449-007 Actually yes, that is a good point. Hopefully Atom will have a big enough userbase thus we can expect
+x      44-00435-04102-008 Completely agree, this feature is essential!
+     595-00435-04674-009 Atom already comes with the "Jump to Symbol Definition" feature you are describing. You just have to 
+x      68-00435-05013-010 Ah! Thanks for pointing me in the right direction. Much appreciated.
+     359-00435-31069-011 nfour: Problem with this is that it's slow, and very buggy - sometimes it just doesn't work as expect
+      81-14592-30973-002 I haven't seen that feature no. I assume it could be built into a package though.
+     302-14592-30991-003 lack3r: copy text with syntax highlighting The clipboard API allows arbitrary metadata to be included
+      11-14592-30994-004 Screenshot?
+     111-14592-31023-005 So in a few words, there isn't any easy way to do that in Atom like in Notepad++. Thanks Mark for ans
+x      27-14592-31025-007 Thanks @braver and @leedohm
+     238-01037-01373-002 And I pretty much immediately discovered it: cmd-F and cmd-shift-F. I used cmd-shift-P to search for 
+     189-01037-31006-003 Find is not grep. It would be nice if atom included something akin to emacs M-x grep. Specifically, I

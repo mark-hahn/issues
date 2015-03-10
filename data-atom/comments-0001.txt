@@ -1,0 +1,278 @@
+
+# page: 1, date: 2015-02-25
+
+     469-15096-32656-002 A colleague (very oldschool developer, using Eclipse) recently told me that he works in two git branc
+     396-15096-32694-003 batjko: to have several branches of the same repo opened as different root folders You should be able
+     192-15096-32705-004 Yea I know, but the idea of a package would be to not need a second directory (maybe the package woul
+     891-15096-32711-005 I like this idea for automatically putting each branch in a different root. It would effectively elim
+     220-15096-32731-006 Yea that's what I meant. Just so the user doesn't see or have to deal with all these folders. She jus
+     155-15096-32733-007 batjko: Wouldn't that be fun? If you are nice to me I'll let you work on it. (grin) It's your idea so
+     210-15096-32736-008 Haha, I wish I could, and it's probably one that wouldn't be too complicated for someone with limited
+     341-15096-32743-009 I'm not clear. Wouldn't that break things like navigation and completion? Imagine you're working on t
+     486-15096-32758-010 kgrossjo: Wouldn't that break things like navigation and completion? No more than any use of multiple
+    1198-15096-32760-011 mark_hahn: kgrossjo: , I use multiple branches and I'm happy that there is one Atom instance per bran
+     529-15096-32763-012 kgrossjo: I don't understand how you're saying that all these issues are avoided. Both screen caps yo
+     480-15096-32773-013 I apologize for my tone. In my initial posting, I mentioned what would happen if I'm working on the r
+     106-15096-32779-014 kgrossjo: I apologize for my tone. In my initial posting, Didn't notice. texttogetaroundthedumb20char
+     316-15096-32781-015 kgrossjo: I prefer to keep the branches apart I just had a good idea (I think). It would be nice to h
+     223-01831-02858-004 I also use it for the same thing, and to be honest, I like to use it in Vim to build my regex searche
+     213-01831-08018-005 Given the close modeling on SublimeText for basic design, I'm really surprised that Atom doesn't yet 
+     980-01831-15294-006 out of curiosity, and for my understanding: what exactly is incremental search to you? My interpretat
+    1429-01831-15312-007 In my case, I come from years of emacs and recently Sublime Text. Emacs' version was more sophisticat
+     411-01831-20239-008 Incremental search is where you can hit a key (cmd-i in my case) and start typing. Every keystroke wi
+     277-01831-20398-009 FYI, a shameless plug. My package find-selection does what ctrl-k in eclipse does. Well almost. Until
+      57-01831-20399-010 FWIW, find-selection v0.13.1 now matches ctrl-k behavior.
+     135-01831-20599-011 mark_hahn said: package find-selection does what ctrl-k in eclipse does indeed! Thanks for the tip! (
+      90-01831-20839-012 Edit: Renamed isearch to incremental-search I've published the incremental-search package.
+     165-01831-32644-013 After it jumps to my target I esc to hide the search box and I end up coming back to the begining. Ca
+     219-01831-32701-014 I believe the answer is to press Enter instead of Esc. Enter to confirm, escape to cancel. Also, I'm 
+     304-00466-00722-002 Agreed. alt+click-drag should select blocks of text, alt+shift+click should select a block of text fr
+ x     64-00466-03791-003 This is probably the most noticeable missing feature for me. +1!
+     264-00466-05166-004 I wish the block selection will be implemented as friendly as the option-select in Textmate, i.e. Pre
+     333-00466-06619-005 When implementing, please make sure that it's not just block selection but also block editing. When I
+      76-00466-07400-006 joshferrara said: alt + click + drag = magic Precisely. This is a necessity.
+x      33-00466-09705-007 This is a quite essential feature
+x     113-00466-09726-008 +1. I'm forced to stick with Sublime until vertical selection is added. Surprising that it hasn't mad
+x      28-00466-10024-009 +1, I need this feature too.
+     276-00466-10109-010 Actually another great TM2 feature that ST2 lacks is a way to toggle block/usual selection just by pr
+      64-00466-10144-011 Found a work in progress: https://atom.io/packages/SublimeSelect
+x      45-00466-10231-012 +1 I had to fire up sublime to do this today.
+x      33-00466-10401-013 +1 for alt + click + drag = magic
+      68-00466-10487-014 Found this ctrl + shift + up/down was clashing with the Emmet plugin
+x      99-00466-10654-015 +1, have gotten attached to this feature. Just expected Atom do behave as TM/Sublime on this point.
+      93-00466-11004-016 This package worked for me for a couple days and, for some reason, no longer functions at all
+     150-00466-11020-017 Check out my workaround here: https://github.com/bigfive/atom-sublime-select/issues/3 Should work unt
+     194-00466-11922-018 please also bind it to middle mouse button drag: discuss.atom.io Middle mouse button drag block selec
+x      36-00466-12888-019 +1 for alt + click + drag selection.
+x      71-00466-13026-020 +1 for the option-select TextMate mode. I prefer it to Sublime's model.
+      33-15089-32489-002 There is autcomplete plus package
+     223-15089-32653-003 Yes, the Autocomplete Plus package is very nice, but it isn't very smart in terms of resolving packag
+     756-15089-32658-004 It won't happen. It's just a core package providing UI (a dropdown list of options), interface for su
+     329-12173-32534-002 I want this pretty much daily, too. https://github.com/atom/atom-shell/blob/master/docs/tutorial/desk
+     141-12173-32562-003 This is sort of related to #4241 and #3935 if you want to track those too. But I definitely agree, th
+     326-12173-32569-004 Thanks for those links. I took a look at using the desktop-environment-integration in a package last 
+     369-12173-32585-005 The document you linked to is an Atom Shell document. Atom Shell is the component that handles workin
+     210-12173-32589-006 Thanks. I don't think I need changes to atom-shell itself, but to whichever part of Atom exposes thin
+     991-12173-32593-007 In general, Atom Shell is the part of Atom that has access to the OS-specific stuff. So if you want s
+     182-12173-32595-008 leedohm: Browser and Node integration concepts Ah, that's useful, thanks. I'll try to look at this wh
+     227-02637-03953-002 cmd-` will switch between windows, but there is not command for it and we currently don't have an API
+     579-02637-03958-003 Cmd+` does not exist on European keyboards, where the shortcut has traditionally been cmd+ and cmd+ .
+     169-02637-03974-004 On my Danish keyboard cmd-` is just a longer key sequence, as you have to press shift-´ in order to g
+     106-02637-04141-005 Thanks for that info! I'll create an issue for creating a command that adds some multiple window comm
+     104-02637-04575-006 Wonderful, thanks. @ohm, sure. But it only switches to the next window. There is no way to go backwar
+     153-02637-05441-007 I would've said that this is an OS X issue, not an Atom feature, but that of course doesn't exclude i
+     493-02637-05450-008 Window switching is built into OS X/Cocoa, which will automatically respond to the system-defined key
+     270-02637-06048-009 Speaking of the Cmd+` binding, it has stopped working for me, as of several days ago. My keymaps.cson
+      54-02637-12992-010 I managed to replicate your issue, not working for me.
+      97-02637-13178-011 seems like cmd+ only works when tree view is focused. so ctrl+0 then cmd+ works for me (osx 10.9)
+x      66-02637-18819-012 Any news on that one? Cmd+` is not working for me neither. Thanks!
+x      96-02637-19451-013 Please, I want to resolve this issue to work 100% with Atom and not switch with Sublime Text. +1
+     283-02637-19467-014 Hi there, I have the same problem. On european keywords we do have the cmd+` shortcut available. I th
+      52-02637-19468-015 You are right. However this is not sufficient for me
+x     229-02637-25491-016 Any update on the above ? I'd be happy to help. I am having the issue with a french azerty keyboard. 
+      64-02637-26574-017 Looks like cmd- and cmd- are working in the most recent release.
+     172-02637-27034-018 This still does not work on Mavericks + Danish keyboard (neither cmd-`nor cmd-) I've noticed that the
+     551-02637-32003-019 Using Atom Version 0.146.0 (0.146.0) on OSX 10.9.5 with an AZERTY french layout. I can't switch windo
+      43-02637-32592-020 Finally I get it working using ctrl+cmd+ or
+     156-02200-03972-002 There are a number of drag and drop topics now. Can you clarify what exactly you do with drag and dro
+      95-02200-04083-003 For example: move selected text to another line by dragging or copy if modifier key is pressed.
+x      95-02200-04341-004 I am missing this option too. dragging highlighted text around is something I use all the time.
+x      88-02200-14414-005 I also need this -- drag to relocate the selected text, drag with option/alt key to copy
+      78-02200-32471-006 There is now a drag drop text package. https://atom.io/packages/drag-drop-text
+     108-02200-32484-007 Thanks for providing this package. However, I find it a little strange that this feature is not in th
+     361-02200-32506-008 IMHO, everything that isn't absolutely required should be in a package. Atom is already a big downloa
+     121-07291-18208-002 Otherwise known as "rectangular selection". I'll keep SublimeText around until Atom can do this. Plea
+     107-07291-18215-003 I think this topic is more about dragging the selected text to drop it somewhere else. Cut/paste via 
+     150-07291-18222-004 Yep, the topic for vertical selection is over here: discuss.atom.io Vertical text selection Much need
+x     120-07291-24425-005 Any news on this topic? Looking foward to it as well as the ability to drag with Ctrl pressed to clon
+      75-07291-24426-006 The Issue to subscribe to is here: https://github.com/atom/atom/issues/1909
+     732-07291-32470-007 discuss.atom.io Announcement: Drag-drop-text package From Readme ... drag-drop-text package for the A
+      45-01005-02157-002 Where and why would this be useful? Examples?
+     137-01005-02411-003 Ideally for small screens, e.g. laptops to allow you to reference library api whilst working, practic
+      55-01005-04496-004 I use that for the same thing and for the same reasons.
+x      42-01005-06015-005 Agreed -- would love to have this feature.
+     191-01005-06035-006 I missed this feature in ST 2, something TextMate did very well. Working on a laptop and being able t
+     305-01005-06061-007 This would be a great feature and it's something I'd love. TextMate was great having a transparent ed
+     184-01005-08997-008 I would love to be able to create transparent themes/ui's. I just now tried to create a transparent u
+     181-01005-10102-009 As said above it's very convenient for UI developers when working on a laptop to see the changes in b
+x      28-01005-11928-010 I would love this personally
+     117-01005-12013-011 I have my terminal at 70% opacity just to be able to see the docs on the browser at the same time, +1
+x      20-01005-13570-012 +1 for this feature.
+x     299-01005-14329-013 +1 for transparency. This is also useful when doing a coding demo. Switching between the browser and 
+x     239-01005-14460-014 +1. I also found myself wanting this just now, though my use case was less clearly productive: wantin
+      59-01005-14533-015 To see some text behind the editor, it is a useful feature!
+     208-01005-15210-016 I never switched to Sublime for the same reason. One huge use case for me is to be able to see if Gru
+     135-01005-16994-017 I was just creating a post about this when this post was suggested. I use transparency all the time a
+     146-01005-17003-018 I use this feature all the time to keep an eye on message logs from the application in the background
+     123-01005-20849-019 +1 Would love a little transparency, coding w/ a faint/blurred video in the bg is highly underrated (
+x      37-01005-21623-020 That is exactly what I am looking for
+x      80-04808-08339-002 I'm also looking for this feature. Can't find anything about it unfortunately...
+      93-04808-08380-003 Can you be more specific in what exactly it is you want? I'm not sure what you're asking for.
+     664-04808-08388-004 ok, here is how it works now (Atom): \begin{itemize} \item Aaaa aaa aaa aaaaaaa aaaaaa aaaaaa aaaaaa 
+x      38-04808-08390-005 Thank you, that makes much more sense.
+     119-04808-08481-006 I really, really miss this feature from other text editors, it helps give me indentation context when
+      76-04808-11783-007 I'm certainly a big fan of this it makes wrapped text so much more readable.
+     627-04808-12855-008 I agree. I just got an invite this afternoon, but the wrapping is probably the first negative thing t
+      79-04808-13024-009 Yeah, I'm a big fan of this, too. Is there any way to get it to happen in Atom?
+x      21-04808-16074-010 here. this is a must!
+x      30-04808-17063-011 Another vote for this feature!
+     117-04808-17247-012 +1. Here's a screenshot comparing Atom (left) to ST3 (right) Screen Shot 2014-05-29 at 2.19.43 PM.png
+     687-04808-17359-013 HTML already does this with ul . And atom is based on HTML5 technologies. Why can't the editor simply
+     472-04808-17361-014 jeffmikels said: Why can't the editor simply internally wrap each line in a li and allow the display 
+x      32-04808-17362-015 Vote for this essential feature!
+    1907-04808-17413-016 Perhaps I misunderstood your reply, but I think you misunderstood my concept. I am not thinking of wr
+    1302-04808-17414-017 My bad, I didn't understood at all ^^. Ok I see your point know. But AFAIK you won't be able to do th
+     179-04808-17415-018 We all agree that this feature should be implemented at some point, but it isn't a trivial fix or I'm
+    1298-04808-17431-019 @abe I'm grateful that you are looking into this. I had no idea it would be as difficult as all that.
+     266-04808-21452-020 https://github.com/atom/atom/issues/1125 This is also an issue in Github, FWIW. I'm a little surprise
+     114-01397-01887-002 You're not missing anything. We have an open issue for this but haven't gotten to it yet. Thanks for 
+     289-01397-01901-003 If you typically keep the same setup for columns across projects then you can edit your styles.less a
+     176-01397-02604-004 @fleeting That's a nice, if temporary solution. Truly, though, non-adjustable split panes are a deal 
+     266-01397-02875-005 Coming from Coda I was excited that you could split panes both vertically and horizontally at the sam
+x      41-01397-03421-006 This would be a great upcoming feature +1
+     113-01397-03808-007 Hi @nathansobo, could you please paste the URL of the issue, so we can follow along and/or comment on
+     198-01397-04222-008 Good call- if you want to get designy about it, you can set the two panes to a golden ratio (widthwis
+     151-01397-06353-009 I went to look for the issue, so that I could track progress, but couldn't find one. Is the pane func
+x      54-01397-06701-010 My god. I need this! Trying atom on 13" Macbook Pro =[
+     201-01397-07627-011 I'm sorry, but this is so freaking cool. A hackable editor, with nerds like me coming together to mak
+x      75-01397-09590-012 Still no information about where to find / track a ticket for this feature?
+     153-01397-13660-013 I've implemented a package for maximizing and resizing panes. Feel free to take a look at it: https:/
+     144-01397-23110-014 Very clever @santip. The shortcut to increase/decrease the pane width is even better than having to u
+     128-01397-30600-015 Worth pointing out that the resize-panes package only works on OS X right now. Those of us on Windows
+     113-01397-30965-016 When you maximize a pane, after you finished, how to restore to the previous pane setup? (where you s
+     145-01397-30988-017 dideler: Worth pointing out that the resize-panes package only works on OS X right now. I use one on 
+x      62-01397-31473-018 Any news on this feature?I really miss the resize pane handles
+      86-01397-31812-019 Indeed, I installed and realized after a while that my laptop doesn't have cmd button.
+     434-01397-32399-020 Hi, I haven't really figured out how to implement this in atom, but i made a really nice resizable co
+      70-15044-32347-002 Duh. There is an apm init --package --template myTemplatePath command.
+     163-15044-32348-003 There are also tools like Yeoman to do this sort of bootstrapping.https://github.com/hemanth/generato
+x      92-09099-18181-002 I am interested in this. It's really hard to adjust to a world without barfing and slurping.
+     156-09099-24519-003 There's this: https://github.com/MarcoPolo/atom-paredit ...but it seems to have stalled out and I don
+     322-09099-32314-004 Sorry for reviving this really old topic, but as I'm getting more into Atom, I wouldn't mind Paredit 
+x     123-04781-09410-002 This would be fantastic. I'm on the command line most of the day. This is one of the reasons I haven'
+x      48-04781-10030-003 +1 An awesome feature I really enjoy in Sublime.
+x      46-04781-11025-004 Just another +1, use this feature all the time
+x     124-04781-17938-005 without this feature, I have to have another editor too. is it hard? poking around to see how to do. 
+     195-04781-18145-006 This is a bit of a show stopper for my team, we use the same text editor for the shell ($EDITOR) and 
+     439-04781-18193-007 Can Atom at least be used as the commit log message? From the git reference:The editor used to edit t
+     368-04781-18194-008 Yes, I use it for my all around $EDITOR. Pipe support isn't required for that to happen. My setting f
+     116-04781-18220-009 As a temporary workaround until this is implemented in Atom, you can use my tmpin module like: git di
+b     595-04781-31700-010 Just bumping this to see if any progress is being made to make this work? I have been using Atom full
+      72-04781-32261-011 Piping stdout into an Atom is a must-have. Are any devs working on this?
+     364-04781-32264-012 I don't think anyone is currently working on this, no. As another workaround, you could create a bash
+x      31-04898-30519-002 I'd also be interested in this!
+      58-04898-30520-003 For those of us who haven't used RubyMine, please explain.
+     118-04898-32263-004 I have code that looks like: MyClass.new I can then click on 'MyClass' and be brought to the code whe
+     669-12075-23865-002 This is one of the reasons I do not, as a general rule, include keybindings in my packages. I'd rathe
+     582-12075-23867-003 leedohm said: I'd rather foist that little exercise off on the user of my package I agree with that. 
+     139-12075-23868-004 leedohm said: I do not, as a general rule, include keybindings in my packages There should be a user 
+     529-12075-23869-005 Very fair points. However, it isn't that easy on the user end. My latest dilemma came from installing
+     304-12075-23870-006 rcrooks said: check for conflicts when a package is installed, list them out, and let the user allow/
+      75-12075-23871-007 And it should allow you to enter replacement bindings right then and there.
+     765-12075-23905-008 rcrooks said: Very fair points. However, it isn't that easy on the user end. My latest dilemma came f
+     223-12075-23908-009 I think you're probably right -- I got the selector from the keybindings in Settings, so think that w
+     619-12075-23932-010 Keybinding selectors follow the same specificity rules as CSS. dash:shortcut has a selector of .edito
+     416-12075-24079-011 but still a common central place for all active keybindings would help allot.what does it help to kno
+     163-12075-24081-012 There is a place that shows all registered keybindings in your Atom instance. It is in the Settings V
+      90-12075-24139-013 hmm that is so obvious in front of my sight. i totally forget about that view.shame on me!
+    2399-12075-32245-014 This an old thread, but as more and more users are migrating to Atom, I wanted to add a bit of clarit
+      77-11177-20737-002 There is an Issue open on this here: https://github.com/atom/atom/issues/1722
+     160-11177-22589-003 Guys, guys!!!! github.com Open file paths in focused window by kevinsawicki on 04:43PM - 22 Aug 14 6 
+     270-11177-32189-004 I think that this is a problem: it really annoys me. I'd rather atom overwrites my current open folde
+     182-02712-04070-002 You can do this from your styles.less file. .editor.is-focused { .line.cursor-line { background: tran
+     105-02712-04082-003 Hum indeed. Thank you. However maybe a simple checkbox in setting could be more friendly and easy to 
+     369-02712-04318-004 If you're talking about this: https://atom.io/packages/highlight-line Then yes, my goal is to have op
+x      39-02712-04433-005 Thank you @richrace, it's a good work !
+     161-02712-04741-006 Hey, I've updated it so you can now disable/enable the highlighted line, change the colour (only supp
+x      21-02712-04888-007 Yes you rock thanks !
+     170-02712-20918-008 I used this to hide the highlight on the line number as well: .editor.is-focused { .line.cursor-line,
+     228-02712-32146-009 It seems you need to modify this trick to account for the new Shadow DOM. In styles.less do this inst
+     133-02712-32175-010 The .editor class is actually deprecated. You should use atom-text-editor instead. So atom-text-edito
+x      36-02198-03668-002 +1. I am missing this feature a lot.
+x      32-02198-04218-003 I'm looking for this command too
+x      31-02198-04271-004 Just wanted to +1 this as well!
+x     139-02198-04699-005 +1. Duplicate Line should just be Duplicate Selection. Who cares about one line when Duplicate Select
+     181-02198-04766-006 Not sure about the quality yet, but I'm finding it generally familiar and useful. I may get around to
+x      64-02198-05371-007 +1 - agreed no selection == line; otherwise duplicate selection.
+      77-02198-32110-008 Made a package for this: https://atom.io/packages/duplicate-line-or-selection
+      68-00760-01002-002 Doesn't look like the beta does, at least from looking in the menus.
+     162-00760-08986-003 I don't have any inside information, but I saw this new repo and I think this is can be the beginning
+     178-00760-09521-004 Arrived at this thread because I couldn't find any printing functionality in Atom. Like the OP, I rea
+      43-00760-09553-005 When did Sublime Text add printing support?
+     148-00760-09637-006 It didn't? We're all saying that this is a feature missing from Sublime Text and that we're hoping th
+x     173-00760-11045-007 Agree - lack of printing support is a major missing feature in Sublime Text, and it's the first featu
+      52-00760-11473-008 Go back to 1990 open file up in word goto file print
+     139-00760-13443-009 Lack of printing support is one of the reasons why I'm even looking beyond ST which is a great editor
+     329-00760-14624-010 I would also like to have print functionality. node-webkit has limited support for printing. The atom
+     156-00760-16962-011 I just found https://gitprint.com, I know it is not the same, but this can be helpful for those in ne
+     422-00760-24175-013 Plus one from me too. I just spent a happy day a few weeks back, trying out Atom for the first time "
+     175-00760-24177-014 Sounds like something that could easily be a package, as long as some node module supports access to 
+     225-00760-24205-015 I tried to use that node module and ran into problems. If I remember correctly it needed the stable v
+     195-00760-24585-016 can window.print() in chromium be used? It almost works for me on my windows machine in the sense tha
+      95-00760-31857-017 Is this on a roadmap somewhere? Or perhaps a package to do this? Just need plain text printing.
+     760-00760-31874-018 Questions about the official Atom roadmap can be answered by taking a look at the links in this topic
+     178-00760-31883-019 There is an npm package for printing on any OS: node-printer. I tried to get it to work and had troub
+     151-00760-31900-020 I got https://github.com/tojocky/node-printer to install, what next? Some kind of package that puts a
+     266-00760-31902-021 I can write a package to use that. If you want black-and white text I could have it working in a few 
+     101-03170-32030-002 I agree, atleast open description in a modal. (I was just gonna create this topic, its THAT annoying)
+     144-03170-32033-003 tony612: check the info of a package by opening a tab in the brower. What kind of UI are you suggesti
+      97-14872-31825-002 I like how syncthing includes signed hashes with each release: http://syncthing.net/security.html
+     212-14872-31827-003 If you're concerned about tampering, you can always just download each release directly from https://
+     313-14872-32010-004 Yep. HTTP is probably good enough. Still, it would be even better if the releases were signed. That w
+     584-14845-31759-002 If you explore the packages you will find a feature set that beats other editors, IMHO. It is hard to
+     351-14845-31790-003 Yeah, it's simply not a very interesting discussion at this point. Atom is in a place where you can r
+     927-14845-31792-004 Thanks for the feedback! I think it is pretty telling that more and more often the complaints about A
+     562-14845-31969-005 leedohm: I think it is pretty telling that more and more often the complaints about Atom that I hear 
+     304-01544-02110-002 You can do this by editing your ~/.atom/stylesheet.css file (click Atom Open Your Stylesheet). Then a
+x      27-01544-02121-003 That is really nice thanks.
+     148-01544-03258-005 Any hints on how to control the blink frequency? The default blink rate is faster than OSX default by
+     545-01544-03265-006 So, figured it out:The cursor blink period is controlled by a hard-coded value in Resources/app/src/c
+     117-01544-05379-007 Somewhat question related: Is there anyway to instead make the cursor a square, like in vim when in t
+     182-01544-05387-008 discuss.atom.io Block cursor possible? Any way to get a block cursor similar to the image below, I tr
+      97-01544-15051-009 Is there any way to blink smoothly? As it done in sublime's "caret_style": "phase"? (see #1 here)
+      90-01544-15067-010 Yep! You can do it with css transitions: http://qrohlf.com/posts/atom-initial-impressions/
+     120-01544-20759-011 This stopped working recently, after the switch to the React editor I think. Just tested again on 0.1
+     400-01544-20760-012 I believe the solution is here: discuss.atom.io How to set cursorBlinkPeriod in new react.js editor S
+     256-01544-20763-013 That discusses changing the blink period, but I couldn't find a number to turn it off. However, I dug
+     112-01544-23961-014 None of the CSS approaches suggested here work for me in stopping the cursor from blinking, in the la
+     254-01544-23962-015 I got it to work like this: .editor-contents.is-focused .cursors.blink-off .cursor { opacity: 100; } 
+     184-01544-31909-016 All the previous suggestions didn't work. This seems to work: atom-text-editor::shadow .cursors .curs
+     114-01544-31912-017 It's actually atom-text-editor::shadow .cursors.no-blink .cursor { opacity: 1; } that disables the cu
+     137-14806-31635-002 It's not possible to do this with snippets right now. But you could do this with a bit of code or the
+      87-14806-31639-003 Thanks. Is there some easy to read package where to start to do my first atom package ?
+      74-14806-31642-004 There's the Your First Package document in the docs: https://atom.io/docs/
+     177-14806-31647-005 projetmbc: Typically I would like to use a snippet showing Until you get the new feature you should u
+      99-14806-31659-006 Thanks a lot for the two lats advices. The tiny package is a good example of a very simple package.
+     316-14806-31690-007 Hi, @projetmbc I've made the wrap selection package so if you have any questions of things which you 
+     110-14806-31733-008 Thanks for the help, I will take a look at the code as soon as possible (I have a lot of work for the
+     546-14806-31843-009 @Trudko; I've just took a look and this sounds like black magic for me for the moment. wrapWithText: 
+     348-14806-31859-010 @projetmbc of course it sounds like black magic because it is! What I am doing here is I go through e
+     300-14806-31864-011 Thanks a lot for your help mister black magician. I will try to find 5 min to play with atom packages
+     214-14806-31870-012 projetmbc: Is there an easy way to know a language associated to a file from a package point of view 
+x      22-14806-31878-013 So cute. I love that !
+     647-00104-01095-002 For me, this is the must-have feature. Ever since Sublime brought us Transparent Session Restore, I h
+     481-00104-01804-003 We actually had this behavior for a while pre-beta, but it was frustrating when the underlying state 
+     376-00104-02535-005 IIRC, Sublime does not handle this in any special matter – if you have an open file without changes, 
+     131-00104-02719-006 Textmate as well remembers everything about the session. All open projects, unsaved files, everything
+x      77-00104-02952-007 -1 on the automatic merge. In 99% of the cases you just want the new version.
+     223-00104-03045-008 Make this a configuration For people with it turned off have a shortcut CMD+SHIT+T (open last closed 
+     344-00104-03228-009 Making this a configuration option seems a very tidy way forward. To speak entirely of my own usage, 
+     405-00104-03284-010 I also would like to have my tabs kept in synch between my Mac Pro and my Macbook Pro. I would think 
+     490-00104-03670-011 @hkdobrev Obviously “automatic” does not mean ”just merge”, but “give the user a simple way to do it 
+     598-00104-03674-012 @moeffju I think I didn't make myself clear enough.The behavior of saving sessions should ALWAYS be o
+      85-00104-09041-013 please bting it back! making it a setting and default it to off should be safe enough
+ x    373-00104-10608-014 This is also a must-have feature for me, and is one of the main things holding me back from moving ov
+x      33-00104-14581-016 +1 to this! I love that feature!!
+     258-00104-14934-017 Atom is sadly too annoying without this feature... Might look at contributing if I get time, is anyon
+x     109-00104-15366-018 +1 for me as well. Basically, this missing feature in Atom is why I still have Sublime Text running p
+x     256-00104-15617-019 Same thing for me, I also keep ST running in parallel just for keeping notes and code I don't want to
+x      86-00104-16079-020 +1 to remember open tabs. I'm impressed for the work that you've done. Thanks so much.
+x     130-00104-16255-021 This feature is a must have and sublime text 2 does it well. This is on top of my wishlist for atom. 
+x      55-00104-17288-022 This is a must have if I’m to switch from Sublime Text!
+     306-03229-06323-002 I'd love to see a way of associating file extensions with languages handled by the settings component
+     204-03229-09256-003 I've found I've ran into the same issue with .kit files which compile to HTML every time I open one i
+     170-03229-09715-004 I, also, have the same issue. Many NodeJS templating languages have strange, non-standard extensions,
+     328-03229-11622-005 With a little work I managed to get Atom to remember this setting. In settings locate "Language Php" 
+     392-03229-27435-006 I've tried to do that, and if you already have that kind of extension in other language it will open 
+      43-03229-27436-007 https://github.com/execjosh/atom-file-types
+     419-03229-31837-008 I have the same issue with ERB files in Ruby on Rails projects. I prefer the HTML (Rails) grammar, bu

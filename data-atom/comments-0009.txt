@@ -1,0 +1,199 @@
+
+# page: 9, date: 2014-08-18
+
+      35-11574-22201-002 https://atom.io/packages/atom-ctags
+     111-11574-22892-003 Thanks! I can use it to navigate in my own project, but it does not support go to std functions imple
+      89-11796-22834-002 I see an indicator on the right of each of my tabs. Maybe some package I added does this.
+      43-11796-22835-003 There already is one in the default themes:
+     212-11796-22842-004 Ah. Thanks for the info. I was using the "Unity" theme, which does not include the indicator. Switchi
+     121-11796-22843-005 Right now there isn't a set of rules or documentation of what a UI theme should provide, so I wouldn'
+     343-11796-22851-006 I was referring to the app itself. I hadn't considered that a theme may, or may not include everythin
+     561-11768-22774-002 There is a discussion open on performance, a little crudely named as it may be: discuss.atom.io Why i
+x     116-11768-22802-003 thanks batjko...don't worry about fix the title, my English is not so good and occasionally I make so
+    1459-11732-22661-002 Duplicate of ... discuss.atom.io Bower Style package.json to import install packages across devices I
+      60-11732-22662-003 This topic is now closed. New replies are no longer allowed.
+     123-11722-22635-002 I changed the title to reflect what you are asking for ... since you did categorize it as a "feature"
+     465-00221-00305-002 Some context from IRC: [02.27. 03:23:09] SneakerXZ it is kind of interesting, they used CoffeScript b
+     418-00221-00385-003 Yes, but they talk about the advantage of using node with C++ libraries for example the Regex lib: In
+     312-00221-00721-004 @lukeholder: likely for the same reasons my team still shells out to the Ruby SASS compiler: up until
+     197-00221-00786-005 Honestly less makes total sense with the JS base of this project. I've never understood the desire to
+     292-00221-00793-006 Sadly libsass isn't up to date with the Ruby-based Sass compiler. Less is a good choice for a JavaScr
+     131-00221-00984-007 Stylus, javascript compiled, with a syntax close to coffeescript and much more powerful would be a gr
+x      29-00221-01184-008 +1 for Stylus instead of LESS
+     388-00221-01338-009 Why does a JS lib need to be used at all in the development? Can't the theme build process be customi
+     716-00221-01719-010 FWIW, I can't speak to the choice of implementing Less over Sass, but I can say that I dived right in
+      74-00221-01720-011 That's exactly how I see it, and that's been my experience here with Atom.
+     603-00221-01816-012 Ideally, I'd like you to be able to write stylesheets in whatever language you want. Like everything,
+     542-00221-02476-013 Stylus seems like the best choice on a purely technical level, but LESS is probably better in that mo
+x      28-00221-04434-014 +1 for SASS instead of LESS.
+x      27-00221-05174-015 +1 For SASS instead of LESS
+     189-00221-05493-016 You guys know they won't be adding SASS instead of LESS right? It requires ruby. You're going to have
+     138-00221-08117-017 nfour said: It requires ruby. https://github.com/andrew/node-sasshttps://github.com/medialize/sass.js
+     195-00221-08148-018 Guys, SASS is requiring ruby which would be complicated to build and deliver a node-based package whe
+     708-00221-08603-019 I'm with @jglovier - I'm a long time Sass user but the decision to use LESS here makes complete sense
+     131-00221-10402-020 For what it's worth, you can create themes with vanilla CSS instead of LESS files - so you could use 
+     220-09443-16439-002 I guess this is possible using a combination of a custom grammar matching all words with the same sco
+     188-09443-16441-003 Actually, I don't think it even needs to be a custom grammar. I mean, your color highlight package ma
+     923-09443-16445-004 leedohm said: Actually, I don't think it even needs to be a custom grammar. I mean, your color highli
+     231-09443-16447-005 Honestly, I wouldn't even worry about the scope of the variable. I would just color the names of the 
+      94-09443-22568-006 This post can be closed because of this: https://github.com/p-e-w/language-javascript-semantic
+      20-09443-22570-007 Closing per request.
+      60-09443-22571-008 This topic is now closed. New replies are no longer allowed.
+      57-09301-16114-002 Is this helpful? https://atom.io/packages/remember-window
+    1116-09301-16121-003 Thanks, it comes close but no...It comes close as it remembers the window size. Atom seems to be able
+      89-09301-18119-004 In Ubuntu, all Atom windows first open to fill the entire desktop, but are not maximized.
+     102-09301-18531-005 Same here on Ubuntu. Would be great if Atom was closed maximised, it remains maximised when re-opened
+      90-09301-18532-006 Dittto - it's a trivial thing, but annoying to have to maximise every time Atom is opened.
+     344-09301-18580-007 I noticed that every time I open Atom on linux, the window height is about 1.5em LESS than it was whe
+      97-09301-19619-008 I moved a post to an existing topic: Every time I open Atom, it is slightly too big for my screen
+     320-09301-20257-009 Implementation update: Atom-shell 0.14 should have the isMaximized api function. Atom is currently us
+     138-09301-20359-010 same problem here.every time atom starts not maximized, I had to click the maximized button manually.
+     147-09301-20801-011 Ok, all dependencies should be in right now. I'm now hoping it only takes a little code in the atom r
+     231-09301-22519-012 Atom should now restore the maximized state correctly github.com Restore maximized state of window by
+x      31-09301-22520-013 Thanks for the update! Closing.
+      60-09301-22521-014 This topic is now closed. New replies are no longer allowed.
+x      29-01856-02596-002 Shift-Ctrl-L. You're welcome.
+     161-01856-02607-003 Or Grammar Selector: Show on command pallet if you don't want to remember a second key binding BTW, t
+x     381-01856-02614-004 Thanks - I was (obviously) looking for "language" instead of "grammar"! However, with Sublime Text, I
+     285-01856-02679-005 As far as I understand how things currently work in Atom, the command palette simply displays a list 
+     154-01856-14201-006 i was looking 'set syntax' like in sublime, also tried 'language', never thought of grammer, can we s
+      79-01856-22492-007 i also expected the keywords language or syntax highlighting but never grammar.
+      77-01856-22512-008 I created a package a while back, set-syntax, that offers this functionality.
+     175-11625-22353-002 I seem to remember seeing something like this request before, but can't remember where. Are you askin
+      96-11625-22354-003 Before installing. I'd like to see it right next to the update notification in the settings tab.
+      52-11625-22355-004 I did search first, but didn't see the same request.
+      99-11625-22378-005 Yes, requiring package authors to create release notes for each new version would be good practice.
+     243-11625-22379-006 There is already support for CHANGELOGs: CHANGELOG.png737x204 23.9 KB I don't want to have to have to
+     219-11625-22380-007 Ah, I never noticed that button. Well, I got nothing then. leedohm said: I also feel that "encouragin
+     754-11625-22467-008 I never noticed that either, probably because it's not where it makes most sense (at least to me). In
+     428-11625-22472-009 Similarly, it'd be cool if apm upgrade printed the details of the changelog, just so you could read i
+     504-11625-22474-010 DavidLGoldberg said: Also, has there been any thought about auto pushing patch releases. I can't spea
+     230-11625-22500-011 So yeah especially in highly secure environments this would be bad as default. In practice though, ho
+     885-11625-22510-012 You are probably correct that "the big projects" work that way. Atom definitely does. But a counter-e
+      67-07762-22505-002 I'd love this. Does anyone know if this is possible with a package?
+     151-03814-06114-002 You can get this behavior by adding the following to your keymap: 'body': 'ctrl-tab': 'pane:show-next
+     176-03814-06116-003 Just a heads up, most native OS X apps actually use ⇧⌘[ and ⇧⌘] for switching to the next and previou
+x      36-03814-06129-004 Thanks. Just what I was looking for.
+     104-03814-06693-005 In Sublime Text ctrl+tab switches between the most recently used tabs. "show-next-item" is not the sa
+     172-03814-08051-006 I have never used ⌘{ or ⌘} to switch between tabs. I figured since it was based on webkit it would wo
+     116-03814-22462-007 I made a plugin to scatch that itch: https://atom.io/packages/tab-historyIt's my first plugin, probab
+     415-03814-22465-008 We really only need one of these topics. Closing this one in favor of the longer one: discuss.atom.io
+      60-03814-22466-009 This topic is now closed. New replies are no longer allowed.
+     267-00698-00931-002 That was the very first thing I fixed. Go to the Atom menu Open Your Keymap and add: 'body': 'ctrl-ta
+x      38-00698-00934-003 thanks @tekkub that's almost too easy.
+     181-00698-01066-004 Why is this not the default? I know some apps use Cmd+Opt+Left and Right, but most apps (browsers, ed
+     532-00698-01420-005 DouweM said: Why is this not the default? I know some apps use Cmd+Opt+Left and Right, but most apps 
+     215-00698-01444-006 Looks like browsers support multiple "defaults", because Ctrl+Tab and Ctrl+Shift+Tab are supported ev
+     209-00698-01448-007 Easily fixed, for sure. Not sure why anyone would prefer Ctrl-Tab and Ctrl-Shift-Tab over Cmd-Shift-{
+     373-00698-01490-008 With Caps Lock mapped to Ctrl, Ctrl+Tab and Ctrl+Shift+Tab are one handed shortcuts with pretty much 
+     409-00698-01567-009 jredville said: With Caps Lock mapped to Ctrl, Ctrl+Tab and Ctrl+Shift+Tab are one handed shortcuts w
+      63-00698-01568-010 I must be used to it by now. Don't know if that is a good thing
+     141-00698-02201-011 When I'm tab-nav'in around my hand usually isn't on the home row. I tend to hold down ctrl and shift 
+     287-00698-03465-012 It's worth noting that cmd+shift+{ and } might not be commonly known on non-English keyboard layouts.
+     153-00698-04298-013 I would really like to be able to cycle between most recently used files. Usually super helpful when 
+      74-00698-06702-014 @Alfreddd I recently pushed a package called tab-switcher which does this.
+     117-00698-22463-015 I made a package to scatch that itch: https://atom.io/packages/tab-historyIt's my first plugin, proba
+     237-11644-22428-002 I feel this may get a bit too granular for a one-page Settings View that is already starting to get a
+x      39-04371-07259-002 I like this one = atom-replacement-icon
+x      26-04371-07272-003 I like that one a lot too!
+      86-04371-07288-004 In the same kind = http://dribbble.com/shots/1446941-Atom-Icon?list=show tag=atom_icon
+      74-04371-07291-005 In the same thread the OP linked to, I found this icon that I really like.
+      81-04371-07417-006 It would be great if there will be a way to set the icon by installing a package.
+      48-04371-07556-007 Just changed icons. Looks way nicer in the dock!
+     121-04371-08916-008 I agree! I love everything about atom expect for the ugly Icon...hopefully we get something better fo
+      66-04371-11388-009 Any of these would be worlds better than the current disaster. +1.
+x      71-04371-15045-011 Thanks for listening to the community and generally being awesome devs!
+     123-04371-15457-012 Can we vote on this? I like the icon pre 0.93 better than the current one. Or at least, switch to the
+      41-04371-15460-013 If you like it you can change it yourself
+     568-04371-15602-014 I'm really sad they replaced the original icon with this. The green glossy sphere looks dated and gen
+      41-04371-15641-015 A SVG icon would be preferable for Linux.
+     167-04371-15659-016 I have been using the one found here, looks great on Arch. atom-orange.png512x512 34.8 KB atom-green.
+      61-04371-17935-017 I like this one. https://dribbble.com/shots/1443056-Atom-Icon
+     287-04371-19785-018 I took my time to create a new icon, it follows the color scheme of the website aswell. Do with it as
+     403-04371-19891-019 I like Numix's implementation for their icon pack: Screenshot from 2014-07-16 11:29:07.png1600x900 1.
+     131-04371-22356-020 Hi all- I made one today: Download .icns here (Mac only, can make Win version if you want):http://clo
+     175-06045-10307-002 If you press RETURN, it will scroll to the first match. You can even keep typing if you want to be mo
+      82-06045-22286-004 I moved a post to a new topic: What is the class used to style the search results?
+      50-06045-22295-005 Closing this since Atom offers this functionality.
+      60-06045-22296-006 This topic is now closed. New replies are no longer allowed.
+     334-09404-16429-002 Also, for what it's worth, Mac users can alias the open command to get the same effect: open -a Atom 
+     297-09404-16499-003 We went through a lot of iterations of the cli early on. I believe the reason we went with this appro
+    1771-09404-16515-004 OK, so you don't want to use open -a, but why does the Atom binary take so long to contact the other 
+     135-09404-16519-005 Same problem when opening Atom on Windows, by launching it from the taskbar or to edit a file, il alw
+     160-09404-16523-006 @ProbablyCorey I totally forgot about all the CLI options. Great reason for not using open -a. I'll h
+     149-09404-16816-007 Another option would be for us to abandon the bourne script and use a node script. This could allow u
+b     245-09404-22267-008 Any updates on this? I think Atom is awesome already, but in this particular case it's pretty slow. W
+     284-09404-22268-009 @sandstrom If you're referring to performance, there is a related issue on the repo which you might w
+     377-11587-22214-002 There are a couple different ways, the easiest is to do: On the machine that has all of your desired 
+      78-11587-22215-003 Just curious but how does the list of starred packages get to the new machine?
+     195-11587-22225-004 It is stored in your atom.io profile. You can log in to your atom.io profile through apm by executing
+     104-11587-22229-005 More curiosity: Is there any other advantage to logging in with APM? I didn't realize you could do th
+      55-11587-22231-006 In order to publish packages, you have to be logged in.
+x      89-11587-22254-007 That is great top marks to the development team and the speed of your reply. Thanks again
+     278-00219-00290-002 This is already possible, though the setting is a little bit hidden. Open up the preferences with cmd
+x      80-00219-00298-003 Thanks a lot. I think I must get used to the modular nature of Atom. Lovely tool
+      96-00219-00459-004 or if you want you can always theme it out ... .tree-view { .status-ignored { display: none; } }
+     172-00219-01745-005 Does the ignore setting accept wildcards? E.g. I tried the above and added ._* which often works for 
+     815-00219-03328-006 sneaknz said: Does the ignore setting accept wildcards? E.g. I tried the above and added .* which oft
+     361-00219-15764-007 Thanks so much for pointing that out. It would be great if that was checked by default, as otherewise
+     321-00219-19112-008 Is it now possible to hide all dot files (.*) in tree view without write each filename in the hidden 
+     690-00219-19512-009 Potentially very helpful (though I am puzzled why this is not the default and what "Ignored Names" is
+     121-00219-19513-010 .git, .svn, and .DS_Store are all full file names. .pyc, .h and .py are not. *.pyc will achieve what 
+x      23-00219-19521-011 Thank you. That did it.
+     171-00219-20295-012 @balupton did you ever get to the bottom of this? As far as I can tell the "Ingored Names" list under
+      94-00219-20296-013 It is the expected behavior if Hide Ignored Names is unchecked in the Tree View settings page:
+      71-00219-20298-014 Thanks @leedohm. When that's not checked, what does "Ignored Names" do?
+     260-00219-20314-015 I know that it currently affects the fuzzy-finder package, for example the fuzzy-finder:find-file com
+     102-00219-22192-016 I moved 3 posts to a new topic: Ignored files not showing when opening a descendant folder of Git roo
+      44-11549-22117-002 If you write your package using JS then yes.
+     128-11549-22130-003 @abe, Won't work in coffee? Also, coffee has tricks to fall back to native JS, haven't used them, do 
+     240-11549-22133-004 Nope, CS motto has always been to only implement what's available in every browsers, so it sticks to 
+     253-11549-22134-005 DavidLGoldberg said: Also, coffee has tricks to fall back to native JS You just need back-ticks aroun
+     281-11549-22171-006 Nothing prevents it to run, but backticks in CS are generally considered as a bad practice. Personall
+     164-11549-22188-007 abe said: I try to isolate the code in question and put it in its own JS file Putting JS in its own f
+      99-07053-12050-002 Like this?https://atom.io/packages/project-switcher or thishttps://atom.io/packages/project-manager
+     301-07053-12935-003 Not really. I guess they could work but they're intended to do much more. I just want Atom to remembe
+     149-07053-20957-004 This is quite near of what you want: https://atom.io/packages/open-last-project The only thing it doe
+      62-07053-20958-005 So... more like this:https://atom.io/packages/remember-session
+     253-07053-21728-006 Is this issue being worked at for the main Atom editor? This should be built into the editor as a bas
+     249-07053-22068-007 @sondreb: It looks like there was an Issue on atom/atom but someone made an apm package first. So the
+     403-07053-22124-008 FWIW, I just do atom . in a shell window in the appropriate place to open the project(s) I would like
+     539-10504-18776-002 Hi @alexandernst, I'm not sure if this is what you're looking for, but I made a small fiddle to show 
+x     101-10504-18778-003 Thank you, this helps me, but it keeps being a hack. It would be good if we could get this into Atom.
+     451-10504-18779-004 alexandernst said: Thank you, this helps me, but it keeps being a hack. It would be good if we could 
+     388-10504-18782-005 Indeed, I like the idea of DIY, but there must be some essential thing that Atom should support, or i
+     284-10504-22090-006 Hrmm, so does this mean that I'll have to find a css modification if I want to get my tabs to look li
+     437-10504-22091-007 As an alternative to showing a perfect tab width character (like how I posted in my last message) I'v
+     114-03247-05102-002 Atom doesn't currently have this feature, but many people have asked for it and I can see how it woul
+     149-03247-05134-003 It's a Mac standard feature, and I think it's probably pretty standard for any IDE. Should I file it,
+     110-03247-05178-004 It's filed in our feature request list. We will point people to this discussion when they request the
+      65-03247-22029-005 I moved 2 posts to a new topic: Atom opening many tabs on startup
+     111-10150-22000-002 Type this in Settings - Non Word Characters: /()"':,.; ~!@#%^ *|+=[]{}`?-I just removed the $ from th
+      92-11430-21615-002 How would you see all the other "top level" folders, e.g. siblings of "src" in your example?
+     104-11430-21626-003 A while back I opened this Issue for similar functionality: https://github.com/atom/tree-view/issues/
+     373-11430-21640-004 I like this idea and I think it could be a great plugin to write. And having one in the editor view (
+     122-11430-21642-005 What about breadcrumbs in the status bar? Or maybe at least make the current path (which it currently
+     154-11430-21644-006 A breadcrumbs trail at the top or bottom perhaps, with each breadcrumb able to produce a dropdown men
+      73-11430-21648-007 I can hear someone typing away on tree view package "breadcrumb" already.
+      44-11430-21659-008 I hope so, I don't got the skills for it yet
+     422-11430-21849-009 Here you go: https://atom.io/packages/tree-view-breadcrumb Still in early stage, no click to scroll t
+     127-11430-21891-010 Wasn't it suppossed to be horizontal, or? But great effort, @abe. I am admiring you all, that got the
+      88-11430-21928-011 @rogernordqvist What is not horizontal enough ? I fail to see what you're talking about.
+     179-11430-21929-012 I think he means it's not obvious that the breadcrumbs are a new little bar on top of the file struct
+     636-11430-21941-013 Sorry, I have to appologize, @abe. As @batjko said, I did not notice the small bar above the tree vie
+     732-11430-21945-014 No offense, of course , I wasn't sure what you were referring to as we talked about two kind of bread
+     478-11430-21948-015 The cost would have been huge, and with probably a lot of UX issues. Maybe someone will come someday 
+     192-11430-21998-016 Wow, somehow I missed this in the gif as well. Same original gif right? I can't believe it looks so o
+     175-11494-21889-002 Not sure if I missunderstood the question, but CTRL+home moves me to top of document, CTRL+end to the
+     327-11494-21892-003 Ah, looking at the source for keymaps/linux.cson, I see: 'ctrl-home': 'core:move-to-top' 'ctrl-end': 
+     471-11494-21899-004 bolinfest said: I am confused about what the difference between editor:move-to-beginning-of-screen-li
+     184-11494-21925-005 @bolinfest I know, I run some OSX from time to time with swedish keyboard layout, and I got a really 
+      47-11489-21874-002 It's in the main settings page near the bottom.
+     177-11489-21875-003 You can change the setting as @mark_hahn described if you haven't already and then you should be able
+     265-11489-21895-004 @leedohm, you'll never make it in marketing. You didn't hype your tab-related package. Here. I'll do 
+     122-11439-21646-002 The code in the package "last-tab" might help haven't checked it out. At shell to fetch code for you:
+     242-11439-21649-003 Have you tried going into the Keybindings tab in the Settings View and using the clipboard icon to co
+      99-11439-21756-004 I tried that already, but it didn't seem to do anything. Maybe because it's for panes and not tabs?
+     262-11439-21757-005 Okay. I was able to override it and remove the cmd-k from in front. Not sure why it wasn't working wi
+     194-11439-21759-006 @DavidLGoldberg, Sorry that didn't help. Looks like the keybinding for last-tab is only for jumping t
+      33-11439-21788-007 Alright, yeah was worth a shot :\

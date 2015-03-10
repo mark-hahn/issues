@@ -3,7 +3,7 @@ fs = require 'fs'
 request = require 'request'
 
 token = '207e2ec811c24123b8e483b784534d3c690084e5'
-outFilePfx = 'data/comments-'
+outFilePfx = 'data-atom/comments-'
 
 module.exports = 
 
@@ -12,8 +12,8 @@ module.exports =
     # 
     # atom.workspace.open('issues.txt').then (editor) ->
 
-      firstPage = 1
-      lastPage  = 100
+      firstPage = 0
+      lastPage  = 10
       
       page = firstPage - 1
       
@@ -31,48 +31,45 @@ module.exports =
         
         if fs.existsSync filePath then oneIssuesPage(); return
         
-        url = "https://api.github.com/repos/atom/atom/issues" +
-                "?filter=all" +
-                "&page=" + page
+        url = "https://discuss.atom.io/c/features.json?page=" + page
 
-        options =
-          url: url
-          method: 'GET'
-          headers:
-            "User-Agent": "mark-hahn-issue-stats-app"
-            Authorization: 'token ' + token
-          json: true
+        options = {url, method: 'GET', json: yes}
 
         request options, (err, res, body) =>
+          {topics} = body.topic_list
+          {created_at, id, posts_count, reply_count} = topics[0]
           
-          if not body.length then oneIssuesPage(); return
+          if not topics.length then oneIssuesPage(); return
           
           pageHdr = '\n# page: ' + page + 
-                    ', date: ' + body[0].created_at[0...10] +
-                    ', count: ' + body.length +
-                    ', rateLimit: ' + res.headers['x-ratelimit-remaining'] +
-                    ' of ' + res.headers['x-ratelimit-limit'] +
+                    ', date: '   + created_at[0...10] +
                     '\n\n'
                         
           console.log pageHdr
           fs.appendFileSync filePath, pageHdr
           
           do oneIssue = ->
-            if not (issue = body.shift())
+            if not (issue = topics.shift())
               process.nextTick oneIssuesPage
               return
             
-            options.url = "https://api.github.com/repos/atom/atom/issues/#{issue.number}/comments"
+            options.url = "https://discuss.atom.io/t/about-the-features-category/#{issue.id}.json"
 
             request options, (err, res, body) =>
-              if body.message then console.log 'comment error:', body.message
-              else
-                for comment in body
-                  fs.appendFileSync filePath, '   ' + padChars(comment.body.length, 4) + 
-                                                '-' + comment.id + 
-                                                '-' + issue.number +        
-                                                ' ' + comment.body[0..100].replace(/\s+/g, ' ') + '\n'
-
+              {posts} = body.post_stream
+              
+              for post in posts[1...]
+                comment = post.cooked.replace /\<.*?\>/g, ''
+                                     .replace /&.*?;/g, ' '
+                                     .replace /\s+/g, ' '
+                                     .replace /^\s+|\s+$/g, ''
+                
+                fs.appendFileSync filePath, '   ' + padChars(comment.length,   5     ) + 
+                                              '-' + padChars(issue.id,         5, '0') + 
+                                              '-' + padChars(post.id,          5, '0') + 
+                                              '-' + padChars(post.post_number, 3, '0') +        
+                                              ' ' + comment[0..100]                    + 
+                                              '\n'
               process.nextTick oneIssue
                               
           

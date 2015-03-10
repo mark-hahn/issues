@@ -1,0 +1,119 @@
+
+# page: 8, date: 2014-09-12
+
+     217-12095-23949-002 Try linter-write-good It does some simple checks on text for things like passive-voice, weasel words,
+     188-08613-14743-002 Does this help (for now)? discuss.atom.io Remember open "projects" when reopening Atom Like this? htt
+     619-08613-14832-003 @AbeEstrada - thanks, but no. those are nice packages, and i downloaded them all ready, but they don'
+x     339-08613-14892-004 I agree...there's nothing more annoying than when I have to restart my work computer, which has vario
+     354-08613-15053-005 I actually still have a copy of Sublime that I keep running to paste little snippets of text into. Th
+     306-08613-23942-006 I agree, I really need this. Especially since it seems closing Atom's window keeps the app open in me
+      66-02292-03277-002 A nice demo video showing this in action: http://vimeo.com/4346107
+x      33-02292-05294-003 I'm really missing that one, too.
+x      73-02292-05438-004 This is the only reason why I haven't switched over from sublime to atom.
+     142-02292-05439-005 I'm guessing that this is fairly simple to create a package for. I don't need so I probably won't imp
+     179-02292-10342-006 Definitely missing this. Have a list of items, need each line to be wrapped with li then a . Also mis
+      88-02292-12315-007 Unless i've missed where this has become a reality already - +1 to getting this working.
+x      55-02292-12543-008 👍 I'm with @JulianNorton on this. It's a deal breaker.
+x      81-02292-12609-009 +1 this is one of my favourite shortcuts from sublime/textmate, bring it to Atom!
+      61-02292-16807-010 Found a solution. Emmet!https://github.com/emmetio/emmet-atom
+     187-02292-16812-011 True but I find shift + cmd + a a bit cumbersome to wrap a selected text in an abbreviation you have 
+x      33-02292-22426-012 I'm also waiting for this feature
+    1047-02292-23885-013 Okay, so on my end Emmet now has bind the command to ^W . The main issue I still have is I can only t
+     231-12062-23824-002 I'll just link this into the other variations of the same question discuss.atom.io Can atom move my w
+     289-12062-23825-003 That's a rather different question: this isn't about porting Atom as a whole - many of the modules us
+     220-12062-23826-004 I understand the difference, but it is a related question and people searching for what you're talkin
+     399-12062-23829-005 I think there also was a comment made by someone from the atom team, to the effect that the editor mi
+     188-12040-23747-002 See my Stack Overflow answer here: stackoverflow.com How do I write a custom command in Atom? asked b
+x      31-12040-23749-003 thanks..this did the works!!...
+      24-08394-14347-002 Any more detail on that?
+     897-08394-14380-003 I agree that sublime's fuzzy find is exceptionally good, and atom's isn't there, yet. I find a few th
+      99-08394-14588-004 and also preview support with fuzzy find, arrow up and down should preview this file, that's better
+     193-08394-23511-005 I find that hitting ctrl-a before typing some additional characters is not much of an issue -- it's e
+     162-08394-23512-006 A lot of this has been fixed or improved in the intervening months and the fuzz-aldrin package was ju
+    1477-08394-23543-007 Well, yes, @kgrossjo, that's exactly what I do. But there's cognitive load associated with making the
+      49-08394-23552-008 Have you filed a bug on the fuzzy-finder package?
+      46-08394-23561-009 https://github.com/atom/fuzzy-finder/issues/57
+x      25-08394-23563-010 Awesome, thanks for that!
+x     250-08595-17404-002 Completely agree! I too use several Services to assist with blogging and text editing. Brett Terpstra
+x      30-08595-21589-003 +1,000,000. This is essential.
+     251-08595-21602-004 It's interesting, the kind of things people seem to regard as "essential". I have never heard of or u
+     920-08595-21639-005 Not a mac user then? They are extremely useful, customisable global/contextual menu items available a
+     130-08595-22644-006 Yep. Services are quite useful , and I'm using too Brett's MD Service Tools. Unluckily only some of t
+     249-08595-23536-007 I'm also a major user of Brett's Markdown Service Tools. The fact that Atom doesn't support Services 
+     428-08595-23557-008 There is an Issue open on this here: https://github.com/atom/atom/issues/3204 And it looks like work 
+x      62-08595-23562-009 This is great news! Thanks for looking into this issue for us.
+     163-11987-23500-002 Yeah, it should probably be renamed to "Remove Gutter" or the functionality changed. I opened a bug t
+     196-11987-23558-003 Closing this as a duplicate of the older topic: discuss.atom.io Use the gutter without enabling linen
+      60-11987-23559-004 This topic is now closed. New replies are no longer allowed.
+     563-01441-23510-002 It works differently than in vim, but I think you can get something similar. Atom has "panes" and "ta
+     162-01441-23514-003 joefiorini said: Each tab, and split, then is just displaying the contents of a buffer. That is defin
+     490-01441-23520-004 There is a fundamental difference between Atom and Vim. Let's say the basic unit is a buffer (like a 
+     343-01441-23523-005 In Atom there is a one-to-one correspondence between files and buffers. Is this true in Vim? If not t
+     381-11981-23482-002 This is a frequent request. Just search for "autocomplete" or "intellisense" and you'll find examples
+      60-11981-23483-003 This topic is now closed. New replies are no longer allowed.
+      62-06417-10965-002 Do you mean like the Developer Tools view that opens with ⌘⌥I?
+     119-06417-10981-003 mattapperson said: SublimeWebInspector I think he meant this project: http://sokolovstas.github.io/Su
+     178-06417-10990-004 Correct, I was talking about SublimeWebInspector that is integrated to the editor to be able to work 
+     235-06417-23350-005 hey @leedohm! on this topic... do you happen to know how do you go about setting --remote-debugging-p
+     244-06417-23353-006 I like the idea to integrate dev tools more directly into the editor, i.e. the ability to set breakpo
+      59-06417-23361-007 It has been stated that Atom will not attempt to be an IDE.
+     293-06417-23366-008 Sadly, no, I haven't looked into setting Chromium flags for Atom. @zcbenz would be the expert on that
+     244-06417-23371-009 mark_hahn said: It has been stated that Atom will not attempt to be an IDE. Yes, at its core. And I t
+     117-06417-23379-010 this works now... atom --remote-debugging-port=9222 see https://github.com/atom/atom-shell/issues/498
+    1409-11880-23156-002 I like that idea a lot. Would be really helpful! It's probably possible for JS/CS and whatever other 
+     478-11880-23180-003 not sure if such eval can guess the type of variables exactly to fill the function to be evaluated wi
+     149-11880-23183-004 Well, it was meant as a starting point.Maybe somebody has already been working on something similar o
+     228-11880-23280-005 http://rsense.github.io/another great tool. again for ruby. i have already an idea but not sure if an
+    1420-10884-19775-002 Short answer: yes Longer question that might lead to an answer: Pretty printing what? discuss.atom.io
+     579-10884-19776-003 "prettyprint", "pretty print", and "beautify" are all in common usage. I just find it hard to remembe
+     528-10884-19786-004 Yea there are quite a few beautifiers already, this one having the most downloads so far: https://ato
+     512-10884-19793-005 mark_hahn said: I just realized that beautify wouldn't really be useful for coffeescript since you ar
+     131-10884-23267-006 Doesn't work for me. On the first file I tried it on, an SCSS file, if failed. https://github.com/Gla
+     130-11339-23090-002 The Text Pastry package handles that last requirement (to undo a selection). If anyone has a hint for
+      78-11339-23131-003 I have a pull request submitted to find-and-replace to add both undo and skip.
+x      26-11339-23264-004 @dsandstrom great, thanks!
+     195-11925-23262-002 Essentially a duplicate of the more general topic: discuss.atom.io Pretty print package? Has anyone l
+     188-11906-23197-002 You could also have a command that would check the cursor position and conditionally do one of two th
+      49-11906-23228-003 Can you not use Editor::getCursorScopes for this?
+    1237-11906-23254-004 I imagine if I'm implementing leedohm's idea, that I can. But if I'm doing that, then I'm hacking aro
+    1111-11906-23258-005 I think the reason this doesn't work is because the key events get fired on the editor itself and not
+     101-10763-23233-002 FYI - I have just uploaded a package to allow this: https://atom.io/packages/wheel-zoom Hope it helps
+     950-06438-23163-002 I was looking for this exact thing this morning, and realized that snippets take care of this rather 
+     298-06438-23177-003 You know you can write snippets with multi-line bodies too. From the snippets package README: '.sourc
+     108-06438-23181-004 Hah! Yeah when I broke out sed, I had a nagging feeling that I was doing it wrong. This works great! 
+     450-11881-23140-002 Duplicate of: discuss.atom.io Save/Reload work session Dear All, Atom currently opens always with an 
+      60-11881-23141-003 This topic is now closed. New replies are no longer allowed.
+     425-11879-23129-002 Duplicate of: discuss.atom.io Browser live preview Hi, When I work with CSS/HTML spend much time with
+      60-11879-23130-003 This topic is now closed. New replies are no longer allowed.
+     227-06125-10445-002 You can use Child Process from node.js to call the open command. It would look something like this ch
+      70-06125-10456-003 And how to exec it inside one of the Atom tabs? That would be sweet...
+     104-06125-10533-004 @piranna You can use a package. https://atom.io/packages/web-viewhttps://atom.io/packages/mobile-prev
+      95-06125-10565-005 Thanks! @AbeEstrada That's what I wanted!But, when I tested, this package can't read AngularJS.
+     147-06125-23125-006 Both of those packages are broken now. We need a maintained package of it. I suck and realy hate coff
+      36-05397-09206-002 That is what CMD+C and CMD+V are for
+     186-05397-09210-003 Those work; but having copy/paste in the context menu is a de facto standard these days. If keyboard 
+      49-05397-12765-004 so is hacking the context menu an option in atom?
+      99-05397-12778-005 Yes ... quite easy in fact. See the "Menus" section: https://atom.io/docs/latest/creating-a-package
+     187-05397-20380-006 I'm really a Keyboard-shortcut-guy. But when i started using atom i realized that i use rightclick-co
+     110-05397-20753-007 If anyone needs this feature I made a small plugin to implement it.https://atom.io/packages/copy-past
+x      28-05397-21404-008 Thank you very much Shieldal
+      37-05397-22610-009 I still think this has to be in core!
+      57-05397-23113-010 merged 3 days ago: https://github.com/atom/atom/pull/3394
+x      27-11870-23093-002 I've wanted the same thing.
+     585-11870-23100-003 Essentially a duplicate of: discuss.atom.io Scope-aware expanding selection using Alt+Up (like in Int
+      71-11871-23092-002 That would be a nice package for someone to do. I'll put it on my list.
+     427-11748-22703-002 A package could be written to make this a built-in feature. If I wrote it could I get credit as a jun
+    1465-11748-22705-003 If I wrote it could I get credit as a junior bio-engineer or something?You will be the Principal bio-
+     244-11748-22706-004 I'll do it for the experience. But I'd like to get credit for it whenever possible. I'll work up a si
+     158-11748-22707-005 Sir, I will definitely be honoured to assist you, with regards, Dr.D.K.Samuel, Senior Virologist, Ind
+     609-11748-23058-006 Respected Sir, thanks for your idea on using regular expressions. your code works very well , Thank y
+     221-11748-23059-007 Text highlighting in color would require a package to be written. But you can outline all of them at 
+      88-11748-23062-008 Yes Sir, i saw the box, Sir will not any color addon for Atom be suitable, thanks Samuel
+      41-11748-23063-009 I find this thread strangely fascinating.
+     158-11857-23053-002 You can use the instructions here: https://atom.io/docs/latest/converting-a-text-mate-bundle To conve
+     126-11466-22504-002 Does anyone know if it is compatible? I know there is a pretty big community programming on the raspb
+     274-11466-22507-003 Has anyone brought Chromium to an ARM system?I think Atom has a lot of dependencies that make niche s
+      43-11466-22538-004 Yes, Chromium is available for ARM systems.
+     146-11466-22946-005 Also Chromebooks. There are a lot of us with ARM Chromebooks that have full Linux distributions on th
+     628-11466-22947-006 There are other challenges with ChromeOS. There is another topic regarding that over here: discuss.at
+     370-11811-22913-002 No, there is not a package available to provide such a sidebar to my knowledge. No, Atom won't genera

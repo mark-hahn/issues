@@ -1,0 +1,134 @@
+
+# page: 7, date: 2014-03-17
+
+     122-05044-08597-002 I think you're after the same thing as this? http://discuss.atom.io/t/browser-live-preview/612/12 If 
+     333-05044-08733-005 @coldhawaiian I don't really see the major difference between viewing a local web page and viewing a 
+     303-05044-08739-006 The live-preview feature that isn't quite what I'm asking for. The live-preview is for viewing pages 
+     311-05044-08742-007 As long as there's an address bar where you could enter http://localhost/ or http://api.rubyonrails.o
+     251-05044-15534-008 +1 for this feature, it would be incredibly useful for documentation references and also for previewi
+      72-05044-25442-009 See the new package web-browser at https://atom.io/packages/web-browser.
+     305-12623-25380-002 The Atom team has stated that they're going to stick with the title bar matching system defaults for 
+     160-12623-25392-003 There is a discussion about adding ability to dynamically show/hide menu bar, like many applications 
+      99-03606-05962-002 +1 I think this is the best way also. If you want to open the file, double-click to persist the tab
+     123-03606-06166-003 Sublime will also only open the file once you start typing the a file being previewed (as well as dou
+     174-03606-06176-004 +1 this is a really cool feature in Sublime Text! But it will be nice to add a status to those tempor
+     133-03606-06210-005 Agreed, when browsing big projects my tabs are flooded with unwanted files... Preview option like wha
+     134-03606-06861-006 +1 this is essential. Here is the Atom Tree View repo, surely this feature could be included. https:/
+     124-03606-07663-007 Yes please add this feature. Every time I start developing, I can't ever see my tab names because the
+     132-03606-08020-008 There's an open issue/pull request for this functionality: https://github.com/atom/tree-view/pull/52 
+     115-03606-08044-009 This is one of my favorite features of Sublime and already one of the most frustrating non-features o
+      51-03606-09401-010 +1 agree with everyone here. I love that about ST2.
+     230-03606-11026-011 +1 Specifically the preview while using the file finder. I often arrow through various similar files 
+     116-03606-11143-012 Another voter supporting this feature. It's actually quite annoying that it opens a tab each time a f
+     505-03606-12194-013 While I agree that this is a neat feature, I don't believe I want the devs to put this in. Perhaps we
+     329-03606-12226-014 I'm definitely on board with "not just a Node.js Sublime" but an editor that takes the best ideas of 
+     319-03606-12407-015 +1 for this feature ! Though I do agree with @MofuJofu, I can't see an easier way to preview a file t
+     738-03606-12529-016 This one of those features that if you don't put it in, you're another step behind. If you get too "c
+     197-03606-12541-017 Since opinions on how to preview files are entirely subjective, the devs should try and package sever
+      21-03606-14441-018 +1 need this feature.
+      82-03606-14598-019 +1 This feature is pretty critical. Didn't realize how much I needed it until now.
+     122-03606-14638-020 I personally rarely even use tabs at all. In fact, as soon as I discovered it was possible, I turned 
+     532-05777-09958-002 Here's the official statement on timeline for other platforms: discuss.atom.io Timeline On Windows an
+     184-05777-11963-003 I'd love to be able to have FTP access it's one of the main reasons our company uses Coda. Please imp
+     152-05777-11965-004 derekbtw said: Would it be possible for someone to create a package for this? Seeing what some others
+     196-05777-14217-005 For me this is the main feature that is holding me back from switching over form Sublime Text. I love
+     102-05777-14290-006 I would love to see SFTP access as well And make sure it is capable of using Keys instead of password
+      38-05777-14651-007 +1 - The feature would make me switch.
+     273-05777-14659-008 This is possible by doing a package, they are severals modules for npm to acces a FTP server. I won't
+     284-05777-14663-009 I keep switching back to ST3 for this reason I am using SFTP package which should be pretty simple to
+     627-05777-15819-010 +1 - publish-to-SFTP functionality would make me switch. I use Coda, Espresso, and Sublime Text. Of t
+     171-05777-15824-011 One way to implement the minimal functionality of this would be to execute a bash-script every time a
+     289-05777-15845-012 I am looking at a package that will download a remote folder and then upload that folder back to the 
+     163-05777-16033-013 This Node package seems to be pretty hot right now:https://github.com/LeanMeanFightingMachine/dploy M
+     571-05777-16394-014 Hello miking7: You may be interested in watching this project:https://github.com/theproducer/ftp I'm 
+     186-05777-23615-015 @theproducer Great initiative. What's the status: is it ready for use, still in development or has it
+      85-05777-23618-016 @Hagge, there are a few FTP packages available: https://atom.io/packages/search?q=ftp
+     342-05777-25306-017 For anyone still wrestling with the FTP issue: I set up a web disk in cPanel, opened it in Nautilus, 
+     155-12548-25163-002 My tabs-to-spaces package can convert any form of leading whitespace to all spaces (untabify) or all 
+      26-12548-25235-003 Oh, that works fine thanks
+      46-02188-03405-002 I don't think TextMate has built-in compilers.
+      87-02188-03733-003 Perhaps the OP is referring to something similar to the "Build" system in Sublime text?
+     205-02188-03736-004 If I go into TextMate - Bundles - C - Run It will compile the program and run it. Similarly you could
+     403-02188-03796-005 The Node API has system level access, so if this doesn't exist yet, it shouldn't be hard to implement
+      97-02188-03800-006 editor = atom.workspace.getActiveEditor() buffer = editor.getBuffer() filePath = buffer.file.path
+      78-12527-25101-002 Sounds like you might want to add a feature request to the go-to-line package.
+      53-12527-25104-003 I filed an issue with the go-to-line package. Thanks!
+      46-12508-25042-002 I published a language-r package a while back.
+     108-12508-25074-003 i am looking for the same thing ... @leedohm - how do i install your R language syntax highlighting p
+     443-12508-25076-004 You can install packages by either: Installing from the Settings View Open Settings (Cmd+, on OS X an
+     566-12502-25033-002 See my answer here: discuss.atom.io Installed packages list into single file There are a couple diffe
+      56-12502-25056-003 It may sound dumb, but what is apm and how to I use it ?
+     124-12502-25057-004 Never mind, I found that when instlaling Atom using Chocolatey, it adds the Atom Package Manager in t
+      92-11590-22221-002 I went through the same pain adding @ to the word chars. Your option 1 makes the most sense.
+     104-11590-22233-003 I agree with @mark_hahn, option #1 makes the most sense. I'd open an Issue on the settings-view packa
+     133-11590-22236-004 Auto-populate the field with the defaults when editing. Minor detail: you would populate it with the 
+     353-11590-25047-005 Found a related issue and added a link to this from there. This forum won't let me post another link 
+      75-02212-15527-002 test driving a windows build. it's nowhere to be found. extremely annoying.
+     427-02212-15539-003 Yes, this reallly needs to be possible. In the meantime you can sort of achieve this by doing Cmd-T (
+     101-02212-17407-004 Pretty please from me too. Stupid as it sounds, but this is a deal-breaker feature for me personally.
+     282-02212-24510-005 Moving also from Sublime CMD-T is somewhat a remedy.I'm not using US layout so CMD-SHIFT-[ combinatio
+      80-02212-25048-006 I am using https://github.com/guillaume86/tab-history which works great for now.
+     289-12486-25002-002 Most of the time, I just have them hidden. When I need to see them, I focus the tree view and press I
+     517-12478-24975-002 The git philosophy is that if a folder contains a .git folder then that folder is a git repo. If you 
+    1273-12478-24980-003 If you look at the pinned topic describing the Atom Roadmap: discuss.atom.io Atom Roadmap to 1.0 We w
+     637-12478-24981-004 Also, this topic is a duplicate of this earlier topic: discuss.atom.io How to work with projects Is t
+     164-12478-24983-005 Wow! Oops. I didn't see those anywhere. I better hone my search skills before posting. Thank you. Tha
+     467-12478-24984-006 You're welcome. I'm glad I could point you in the right direction I also have to agree with @mark_hah
+      60-12478-24985-007 This topic is now closed. New replies are no longer allowed.
+     682-09072-15596-002 This might be due to different font smoothings. You can select "Atom - Open Your Stylesheet" (on OS X
+     248-09072-15634-003 I use "auto", which from what I can tell and have read allows the OS to pick the optimum font-smoothi
+     856-09072-15643-004 Thanks for the suggestion with the "auto" option. I created my own theme and found that there was onl
+     217-09072-15896-005 Antialiased font smoothing makes the text a little lighter, but it loses subpixel rendering. It's sti
+     360-09072-22718-006 in my case change the webkit font parameters doesnt works, I remove all these and use the old chrome 
+      51-09072-22719-007 I use "auto", Menlo 13px on my Thunderbolt Display:
+      46-09072-24813-008 Which syntax theme do you use? It's fantastic.
+      53-09072-24838-009 It's my own creation, Tesla. I'll publish it for you.
+      68-09072-24851-010 @jenna The theme is published at https://atom.io/packages/tesla-atom
+     533-12414-24808-002 See these Issues: github.com Issue: Update and Restart should open where you left off closed opened b
+     255-12403-24763-002 You can subscribe to the Issue here: github.com Issue: Windows updater and installer open opened by b
+      61-12403-24764-003 Done. Thank You for reply. I look forward for these features!
+     140-12312-24523-002 That's a good idea for an enhancement or package. I don't see a feature request on the tree-view pack
+     348-12312-24545-003 lukasoppermann: Hey, is there a way, or could somebody write a package, that lets you move all files 
+     138-12305-24489-002 Duplicate of: discuss.atom.io Vertical text selection Much needed! alt + click + drag = magic Closing
+      60-12305-24490-003 This topic is now closed. New replies are no longer allowed.
+      91-12287-24445-002 I don't know of a package that does this currently, but it sounds like a good idea for one.
+      34-12287-24472-003 https://atom.io/packages/docblockr
+      35-00755-00996-002 Same shortcut as in Sublime: CMD-D.
+      57-00755-01019-003 Or Cmd-Shift-L for multiline, also exactly as in Sublime.
+     111-00755-01158-004 One thing I miss from Sublime is being able to undo a multi selection with CMD+U I feel this needs to
+     104-00755-01198-005 Haha you've already given it a go then? To be honest, you can accomplish the same thing by pressing E
+      58-00755-01219-006 Really miss "Option+Click drag" feature from sublime text.
+      32-00755-01228-007 Undo, not remove all selections.
+     217-00755-02217-008 It seems like option-click doesn't allow for selecting a "rectangle" of text. I'd often use this to s
+     211-00755-02223-009 Option-click actually works perfectly for me. It allows rectangular selections that use multiple sele
+      73-00755-02227-010 Really? Are you doing anything special? Is there a plugin to enable this?
+     523-00755-02232-011 You’re going to find it ridiculous, but as I was going to create an animated GIF file to demonstrate 
+     339-00755-04263-012 Multiple selections are working fine for me, except that multiple-cursor paste doesn't work as expect
+     881-00755-04579-013 I really love the multi-selection in ST and Atom. I'd add there is a subtle difference (a big plus fo
+     396-00755-04952-014 dohzya said: I'd add there is a subtle difference (a big plus for Atom): with something already selec
+     168-00755-04962-015 I deactivated this particular shortcut It is the Mission Control's ^↓ shortcut (“Application's window
+      49-00755-04978-016 Sweet! Now I can use the multi-select. Thank you.
+      82-00755-06524-017 The default mission control keyboard shortcuts are terrible. I always change them.
+      91-00755-08461-018 please see this video for a detailed example of this feature request: http://bit.ly/1lGVvE7
+     186-00755-12070-019 This - needs to be it's own post as a feature request. That's the only thing really wrong with atom's
+     664-00755-12072-020 There already is at least one (I believe there are more, actually) separate post on this multi-select
+     107-12252-24382-002 I don't know of anything that does this for you, unfortunately. It might be a good package to write t
+     413-12210-24260-002 What is it you're asking for exactly? Are you asking: Is it possible and easy to extend Atom to add s
+     555-12210-24263-003 Fair question(s). Answering your questions in order. This is what my original question meant to ask. 
+     668-12210-24264-004 Is there direct support in Atom to make colorization of certain grammar elements variable based on so
+     488-12210-24270-005 Having now more insight on how grammars works, it should be possible to add new rules dynamically to 
+     739-12210-24271-006 There was this post where someone attempted to build dynamic grammars along these lines: discuss.atom
+      35-12210-24284-007 Lots of reading to do. Thanks guys!
+      94-03882-06410-002 The closest we have is cmd-shift-\ which will show the currently opened file in the tree view.
+    1080-03882-24216-003 Not sure what thread necro policy is, but this matches my desires exactly. We've got a very large pro
+      96-03882-24217-004 There is an Issue tracking this enhancement request: https://github.com/atom/tree-view/issues/36
+     168-12170-24150-002 Not built in to Atom. Additionally, there are a few code beautifier packages out there for various la
+     433-12049-23766-002 That's an IDE feature, and specific to each language. There is no generic solution to this problem. I
+      98-12049-23777-003 I did a quick search but it seems there's nothing like that (or I haven't been able to find it)...
+     433-12049-23781-004 At least someone wrote a package for coffee script, maybe there's some way to plug other languages on
+     199-12049-23797-005 Im still looking for something like this also. It's essentially a symbol viewer, and it makes a lot o
+      80-12049-23839-006 lmartins said: It's essentially a symbol viewer Exactly what I need too. Bump up
+     125-12049-23906-007 It's not the same thing, but you can hit cmd-r for something not almost, but not quite, entirely unli
+      87-12049-24055-008 You are right, but sometimes you need a visual orientation about the file you opened ^^
+     111-12113-23984-002 Atom does not currently support multiple font sizes or proportionally-spaced fonts for the reasons yo
+     373-12113-23985-003 tillda said: When I switch to not-fixed-width font When my font broke in 126 I used Atom with Helveti

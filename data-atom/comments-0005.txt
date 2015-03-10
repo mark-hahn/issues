@@ -1,0 +1,157 @@
+
+# page: 5, date: 2014-12-09
+
+      67-03282-05190-002 It is fixed in 0.68.0, changelog here http://latestatomversion.com/
+     100-03282-07350-003 Weird, mine is on 0.71.0 and it still isn't indenting properly. Do I have to fix a config somewhere?
+      44-03282-07365-004 Same, on 71.0 and still seeing the "old" way
+     101-03282-28216-005 I know this is an old conversation, but hitting COMMAND + RETURN makes this work as you wish in 0.153
+     133-13665-28202-002 Seems like you're not the first asking for that: http://www.sublimetext.com/forum/viewtopic.php?f=2 t
+    1847-13575-27979-002 I haven't found a good package, yet. But here are my current snippets, I've been meaning to make them
+x      27-13575-28064-003 Those are awesome snippets!
+      57-13575-28097-004 I made a package: https://atom.io/packages/css-snippets .
+      44-13575-28155-005 Way to scratch our own itch! Downloading now
+x      30-13575-28177-006 That's what Atom is all about.
+      77-02157-03408-002 Your third request already exists. As for the rest, I'd like to see them too.
+     207-02157-05117-003 For me, not being able to have split view into columns is prohibiting me from using Atom, actually.I 
+     144-02157-07331-004 Totally agree. I'm using it for PHP, and using to look into Controller and View without two open tabs
+     182-02157-07384-005 This is a beta product. I guess Atom is not ready yet. However, I just wanted to get on the record as
+     166-02157-07446-006 yep, splitting is a must-have. Emacs, vim, sublime approaches all have their advantages, but without 
+      97-02157-07447-007 owait, Cmd-Shift-P split // Cmd-K well there you go. Maybe it just needs menu items for the noobs
+     718-02157-07580-008 My thread on the same topic. Seems like perhaps there ought to be a master list of desires somewhere 
+     166-02157-07604-009 davidlee said: My wishes for multi pane workflow Interesting...it is there indeed. Cmd-shift-P and se
+     298-02157-07610-010 dstarh said: Seems like perhaps there ought to be a master list of desires somewhere and let the comm
+     529-02157-07612-011 dstarh said: Seems like perhaps there ought to be a master list of desires somewhere and let the comm
+     774-02157-07615-012 The moderators are actively closing duplicate topics to make it so that there is only one canonical p
+     188-02157-07626-013 cmd + shift + p search for pane, selected pane split left This totally worked, but when I tried using
+ x     27-02157-07629-014 Doesn't work for me either.
+     191-02157-07636-015 Not just open the current file twice when splitting (that's the least likely behavior someone would w
+      54-02157-07641-016 Sure, but that is, on average, a less common use case.
+     533-02157-07651-017 I couldn't actually get cmd + k to work with any consistency. I have to hit command k a zillion times
+     155-02157-07655-018 Try doing cmd+K, then left. I think holding all three keys, cmd+K+left, doesn't work; and doing cmd+K
+     213-02157-07656-019 Edit: ^ What he said It's actually cmd+k (pause) arrow key. Not cmd+k+arrow. That seems to work bette
+x      84-02157-07687-020 Thank you sooo much jasoncrawford Mattieuga!!! Now it works great!!! That's awesome!
+     407-04254-07033-002 Sounds like some sensible suggestions, that would cover pretty much all of my requests though I'd ext
+     102-04254-07094-003 All great suggestions. I've switched from ST and miss the hot keys that came with the Origami package
+     166-04254-07217-004 Ah yes, moving a tab between panes would be pretty good as well via shortcut but I don't do it often 
+     364-04254-07223-005 chrisWhite said: It would be great to be able to completely maximize a single pane and switch back to
+     378-04254-07282-006 dstarh said: Panes should be able exist regardless if they contain an open file. We should be able to
+     125-04254-07290-008 Yep that gets us part of the way there. Curious if this is stuff that belongs in core or should be re
+     135-04254-07330-009 I have also been trying to figure out if you can move tabs between panes. like "move-right" ? I would
+     149-04254-07336-010 I personally would like panes to exist inside of the tab rather than tabs exist inside the pane. Idea
+     236-04254-07343-011 So, if I'm understanding you correctly, you want a bunch of panes in each tab, so that any given tab 
+     354-04254-07362-012 Three more suggestions for multi-panel: Drag Drop like Eclipse and Gedit does (probably their best fe
+     324-04254-07661-013 The pane would be the file. Currently .panes contains .pane which contains .tab-bar. Just change it s
+     167-04254-07709-014 I get that the pane is the file but where does the info about a pane go, like the title, it's dirty s
+     436-04254-07790-015 Does anyone else desire a multi pane joint scrolling feature? I am working with md right now and look
+      82-04254-08026-017 This would be a fantastic feature but I don't think I would want it on by default.
+     182-04254-08666-018 The title = active paneDirty status = global (one dirty pane = entire tab marked dirty)Close button w
+     252-04254-08679-019 Yea that sounds very awkward. You would have to click on a pane to see the name of the file in that p
+      80-04254-08736-020 I was about to mention Maxpane also, it's quite useful while working with panes.
+      70-04254-09173-021 I'd really like a shortcut for swapping a file between my active panes
+     462-04254-09360-022 It isn't awkward. Vim works like this for most (if not all) people, and it works remarkably well. Clo
+     317-10756-19436-002 Isn't this core:cut? But to attempt to answer your question, no, there is currently no way to simply 
+     240-10756-19437-003 core:cut, ey?I notice I don't actually know where to find the reference for available commands. I sup
+     721-10756-19440-004 batjko said: I notice I don't actually know where to find the reference for available commands. Well,
+     105-10756-19441-005 Ah ok, that rings a bell. Thanks for your quick though late response, @leedohm.Better get some rest t
+     347-10756-19447-006 Yeah, as far as I know -- there's no general way to do composition of commands if you want "compositi
+      56-10756-19449-007 I have submitted a PR for the shift-delete behavior now.
+     808-10756-27759-008 Did something on this topic change in the meantime? I would as well be really interested in this. As 
+     363-10756-27768-009 There are always going to be composite commands that people want. Rather than try to create a command
+     208-10756-27861-010 Thanks a lot for the link/post @leedohm . I'm currently trying to do something similar, I wrote it as
+     309-13475-27719-002 Rather than pressing a key to go to the end of the line and then pressing ENTER, I just use Cmd+ENTER
+     313-13475-27748-003 I use editor:move-to-end-of-word. '.workspace .editor': 'ctrl-space': 'editor:move-to-end-of-word' It
+     294-13475-27765-004 Thank you! a lot leedohm and dsandstrom. Anyway, I was doing a bit research on atom.io's "keybindings
+     105-13475-27771-005 The Command Palette (Cmd+Shift+P on OS X) is the canonical list of commands in any configuration of A
+x      66-13475-27809-006 Thank you, I will sure have a look. you may close this thread now.
+     235-13475-27854-007 I added a package that I think works better. See: https://atom.io/packages/non-navigation . It is new
+     433-02428-27846-002 I was just thinking something along these lines. I realize, of course, that part of the whole point o
+     567-04788-27717-002 I have the same problem and wishes (on node projects, mostly): I want to exclude ignored files from s
+      95-13462-27698-002 If you mean localization of the strings in the UI, I don't know of any plans so far to do that.
+     211-13462-27700-003 It'll probably come at some time, there's already an issue for that: github.com Issue: Possible Trans
+     115-09046-15624-002 It would help if you were more detailed in what it is you're looking for that the current solutions d
+      80-09046-15688-003 Use CTags on your projects' source code, to get the functionality you are after.
+     422-09046-15700-004 happy to clarify: In JavaScript for instance, when dealing with an array for example - after the dot 
+     153-09046-15703-005 At this point in its development, Atom is more of an editor than an IDE. People are working as fast a
+     690-09046-15710-006 orenm said: btw - the "ternjs" plugin was suppose to bypass this issue Did you follow the instruction
+     209-09046-15716-007 leedohm said: Atom is more of an editor than an IDE Is brackets an IDE? the support is baked in via t
+     381-09046-15720-008 orenm said: Is brackets an IDE? From what I understand and in my opinion, yes ... the intent for Brac
+     457-09046-16464-009 Sublime Text isn't an IDE. And Atom has copied quite a bit out of ST. Using CTags isn't fast if Atom 
+      63-09046-23486-010 https://atom.io/packages/atom-ctags still no parameters showing
+     897-09046-23698-011 @justnorris sublime autocompletition is far away of smart, you've a few extensions like ternjs which 
+      92-09046-25340-012 I wish they copied WebStorm instead of Sublime. WebStorm is a very excellent editor and IDE.
+     477-09046-26074-013 orenm: Does this editor support natively smart autocomplete à la webstorm or vs2013?Also, tried the t
+     275-09046-26076-014 every now and then i get a comment on this old post. the fact of the matter is:intellJ is doing the b
+     431-09046-27697-015 For me I don't need some fancy functions mapping like in an IDE. I just need the basic function defin
+     694-09046-27699-016 See this new topic: discuss.atom.io What can we do to improve autocomplete? I've used several code ed
+     101-09046-27725-017 This topic was automatically closed 24 hours after the last reply. New replies are no longer allowed.
+     106-13447-27680-002 No, there isn't currently an option for that. You could submit an Issue or Pull Request to add one th
+     249-13439-27638-002 With the advent of syntax-scoped settings, is this necessary? For example, I have some grammars that 
+     107-13439-27649-003 What if the files are written in the same language? Is there something like path specific grammar set
+      88-13439-27651-004 Not as of yet, no. Project-specific settings are in the backlog, if not the 1.0 roadmap.
+     197-13429-27608-002 I think you'll be interested in the tree-view-open-files package made by @postcasio. Edit: I noticed 
+      93-13429-27610-003 That could work, but I'd rather not have the open files listed again above the project files.
+      79-13426-27603-002 You can use my indentation-indicator package to get the first of your requests.
+ x     55-13426-27604-003 I like it! And that was the most important one, for me.
+     221-13414-27582-002 Node isn't capable of replacing a module so I don't think a hot reload of atom is possible. FWIW, the
+     122-07609-27535-002 Any progress on this? I, too, would like to use the system color picker. It has many more options for
+      61-12566-25213-002 rye: you use tabs for indentation and spaces for alignment +1
+     119-12566-25546-003 +1 Trying to use smart tabs in Atom as it is now is quite frustrating. The tab settings need much mor
+     193-12566-25552-004 Personally, I feel like it would be much easier if every aspect of code entry (keystroke handling) we
+     163-12566-25553-005 You can create callbacks for keybindings right now. You could even create a package that customizes t
+     239-12566-27505-006 I'm glad that keys are callbackable, but I'm wondering about packaging this. It would be great if Ato
+      89-13360-27429-002 Ah. There is already a package for this! cool.https://atom.io/packages/highlight-selected
+     546-13289-27290-002 Add to your init.coffee (Atom Open Your Init Script) atom.commands.add 'atom-workspace', 'find-and-re
+     121-13289-27309-003 Wicked, thanks @postcasio — It'd be cool to not have to set Destroy Empty Panes, but that's a tiny pr
+     265-13289-27330-004 Try this: atom.commands.add 'atom-workspace', 'find-and-replace:close-results', - itemUri = 'atom://f
+x      43-13289-27340-005 @postcasio - that works, my sincere thanks!
+     111-08228-14069-002 That sounds amazing! I'm sure I'd forget to use it but it sounds great. As a side note, does Sublime 
+     233-08228-14070-003 Magnar Sveen wrote a version of this for Emacs, but it had to be specialized for every language. Atom
+     172-08228-15030-004 I've also been looking for an editor that has this feature. Any update on this? Is it something that 
+     674-08228-15226-005 To answer my own question, yes it does (kinda) - ⌘ + ⇧ + Space is 'expand to scope'. Not sure it work
+    1182-08228-15266-006 What's involved in a general solution to this is an understanding of the grammar of whatever language
+     572-08228-15300-007 While I see where you're coming from, Sublime (which 'understands' languages as much as TM and Atom d
+     413-08228-15301-008 Ah good point. So if we base it off of scopes and do a best guess ... Get the "most specific" scope a
+     226-08228-16018-009 @alexrussell in reply to your side note, there's a Sublime plugin called expand-region which does a b
+     314-08228-16242-010 Yup exactly. But yeah, probably far from ideal. Certainly feels like a job for a non-core package eit
+     494-08228-25316-011 Here's a plugin which uses the syntax highlighting scopes to expand selection: https://atom.io/packag
+     462-08228-25317-012 Alternatively, one could implement a selection expander based on some rule like: scan left for a left
+     285-08228-27272-013 Out of frustration for this missing feature, I implemented a package that tries to behave as close as
+     135-08228-27273-014 That looks awesome @mrolla! I will definitely try it out. However, why did you go with Ctrl-Cmd-W as 
+     218-08228-27274-015 No particular reason, I used to have it mapped that way when I started using it frequently in Idea an
+     182-13264-27223-002 Have you seen how todo lists work in GitHub-Flavored Markdown? I'd think this would be the best metho
+     180-13264-27235-003 It sounds like you want org-mode from emacs. I've been thinking about doing some sort of org-mode lit
+     110-11809-22899-002 I use the symbol-gen package. It also includes a definition for CoffeeScript so that it is supported 
+     679-11809-22902-003 Thanks once again. There was no command other than generate in symbol-gen so I assume you mean to use
+     139-11809-22906-004 Yep, that's what I use after I use symbol-gen to generate the ctags. I guess I got fixated on your po
+     554-11809-27179-005 Ok, let's say you have something like include ../_header In modern IDEs holding Cmd (or Ctrl) while h
+      61-11809-27183-006 There's nothing built into Atom that does this currently, no.
+     416-02163-03774-002 There seems to be decent functionality for it, it just needs to be triggered. require('tree-view/lib/
+      77-02163-03778-003 cmd + n creates new file in both atom and sublime. or am I missing something?
+     390-02163-04031-004 ard said: am I missing something? Yes. It's the saving that's the problem. Bring up the console and r
+     249-02163-04037-005 frunns said: I prefer not using the mouse just to create a file, and the OS X save file window is jus
+     386-02163-27120-006 Perhaps a little late, but you can get this functionality by typing Ctrl+0 to get to the treeview, an
+     110-02163-27124-007 Actually, there's a fancy-new-file package package that works very much like similar add-ons for Subl
+     526-11780-22798-002 I thought about writing a CSV editor that would basically just be a matrix of cells with inputs ... m
+     488-11780-22799-003 leedohm said: I thought about writing a CSV editor that would basically just be a matrix of cells wit
+     366-11780-22816-004 I would go for the formatted CSV grammar approach. It would be easy to do and I'd use it a lot. Espec
+     259-11780-24119-006 It reminds me that there was a previous discussion on a pretty similar topic: discuss.atom.io Table m
+      87-11780-24121-007 Yea that's the one I linked in as well. It seems there is a common goal with that idea.
+     404-11780-24124-008 Oh, I completely missed the link in your post, my bad. And yeah, there's definitely something somethi
+     294-11780-26948-009 I wish I understood how http://jsfiddle.net/ondras/hYfN3/ performs this magic of making cells editabl
+    1682-11780-26990-010 I doesn't see any magic here, just a table with an input in each cells and styles for :hover and :foc
+     239-11780-27095-011 I think the best approach is to create a contenteditable HTML table from the CSV file when opening it
+     123-13201-27059-002 These should probably be filed as feature requests on the settings-view package. If you do so, can yo
+     434-13185-27023-002 Personally I am using Atom on a Macbook Pro, and I use the touchpad gestures to switch between window
+     124-13185-27025-003 From a reason which I am unable to figure out, CMD + ~ doesn't work. I am working on it, will edit if
+     141-13185-27026-004 Check the Keyboard pane in System Preferences. Here's the shortcut you're interested in: Screen Shot 
+     331-13185-27029-005 I asked the wrong question, I am sorry. I am not trying to move between files in the same window. I a
+     197-13185-27030-006 That's what we are referring to, unless you've done something odd then the respective keyboard shortc
+     282-13185-27038-007 I modified this one to command-alt-tab because backtick is a deadkey in the US Int'l keyboard layout.
+      91-01198-01583-002 Related: Apple retires Snow Leopard from support, leaves 1 in 5 Macs vulnerable to attacks.
+     202-01198-05732-003 I would appreciate this as well. While I can upgrade to later versions of OS X, I chose not to, becau
+     223-01198-06256-004 I use 10.7.5 and have no support either, I feel very sad about this, I see no reason for atom.io to n
+      79-01198-11354-005 I would like to see it on 10.7.5 as well, but please do for older versions too.
+x      28-01198-12254-006 +1 for Snow Leopard support.
+     133-01198-12259-007 Since Tiamo's hack almost all older Mac's can be upgraded to Mavericks. That is what I did with my 20
+     724-01198-15576-008 Hello, PLEASE make a build for Mac OS X 10.6.8. Mavericks is NOT an option for anyone who uses their 
+     180-01198-26979-009 Seems like this thread has fallen on deaf ears, but I'll echo comments made by @mattrdev I intend to 

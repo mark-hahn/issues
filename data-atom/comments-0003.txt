@@ -1,0 +1,194 @@
+
+# page: 3, date: 2014-06-05
+
+     372-09993-17602-002 I don't use Emacs, but I tried to understand what you explained and I hope this helps. Add this to yo
+     195-09993-17762-003 Yay! Works like a charm! You rock! Now, would it be possible to bind this to some keyboard command th
+      65-09993-17784-004 Use cmd-k 0 instead of f6 'body': 'cmd-k 0': 'custom:close-panes'
+      77-09993-17790-005 That works like a charm too. Now I just need to get it into my muscle memory.
+     428-09993-30963-006 I'm looking for this functionality, but with the ability to restore the previously closed tabs and pa
+     182-09993-30974-007 Opening the files that were closed would be easy, just record which ones and open them on restore. Re
+     249-09993-30987-008 leedohm: Restoring the exact pane configuration might be harder, Look at smart-tab-sort as an example
+     138-03883-06262-002 +1. This would be nice to have. I wonder if it calls for hacking of the core files (atom.sh, atom.js)
+     275-03883-06266-003 Indeed, very useful when clicking an exception or some other part of a stack trace lands me at the co
+     104-03883-06414-004 We don't support columns right now, but you can open a file to a specific line like this atom my-file
+     277-03883-06454-005 Oh, I didn't notice that and I think I know why. It works when I open the file for the first time but
+      62-03883-06913-006 @ncr That sounds like a bug. I'll add it to our issue tracker.
+     198-03883-18721-007 Any news on this? Should be an easy fix. This is really important for users that write LaTeX files. S
+     146-03883-18722-008 Here's the bug that was opened: https://github.com/atom/atom/issues/1743 You can click the Subscribe 
+     176-03883-30952-009 Is there a way to do this from the API (e.g. https://atom.io/docs/api/v0.176.0/Atom#instance-open) Up
+      72-03883-30970-010 And this feature was added a while ago ... so I'm closing this as fixed.
+      60-03883-30971-011 This topic is now closed. New replies are no longer allowed.
+     413-14434-30446-002 You could use something like this: .tree-view-resizer { width: 10px!important; min-width: 10px!import
+      60-14434-30447-003 Cool. I can do this to avoid seeing it at all until I hover.
+     483-14434-30915-004 After a playing a bit, this does width: auto and has a transition: .tree-view-resizer { width: auto!i
+     140-14434-30922-005 olmokramer: After a playing a bit, this does width: auto and has a transition: This works great. When
+      58-14434-30959-006 Already done that you can find it here: autohide-tree-view
+      86-14336-30149-002 Finishing a javascript function without a semicolon is valid syntax, even for JS Lint.
+     183-14336-30150-003 I guess the same question applies to objects and they do require the semi-colon. You could look at tu
+     225-14336-30182-004 My understanding is that function foo() { ... } does not require a trailing semicolon, but var foo = 
+      37-14336-30183-005 JavaScript NEVER requires semi-colons
+     161-14336-30185-006 It seems atom-semicolons just removes them. (Maybe I'm misunderstanding the code.) And I mentioned th
+     110-14336-30187-007 I wonder whether I can get used to that coding style... Somehow I'm really attached to these little b
+     122-14336-30190-008 JavaScript doesn't require whitespace, either. Lots of people use semicolons to add clarity, and Atom
+     915-14336-30203-009 DawnPaladin: Lots of people use semicolons to add clarity, and Atom should support that. Atom does su
+      56-14336-30212-010 I would have never thought of snippets. Chic! Très chic!
+     220-14336-30213-011 I also use a custom command to add a ; to the current line and a line break: atom.workspaceView.comma
+     190-14336-30220-012 It's also worth looking at the snippets that the language-javascript package already provides. There 
+     852-14336-30237-013 @kgrossjo @DawnPaladin I was merely reminding that JS doesn't require anything regarding semi-colons.
+     148-14336-30449-014 Looking nice. Though I wouldn't want the cursor to move. (Or I'd like that the cursor jumps back to w
+     186-14336-30576-015 Another option to explore might be fixmyjs. It may, admittedly, do more than you're looking to do, bu
+     170-14336-30901-016 For SublimeText there is a plugin called Auto Semicolon, I am working on one for Atom at the moment, 
+     760-14572-30897-002 From the FAQ (one of them anyway): discuss.atom.io FAQ: Have a question for the Atom team? Check here
+     181-08451-17946-002 It would be nice to have a live reload of files, without asking ever single time that something new i
+     148-08451-25869-003 Actually on my mac Mavericks with Atom 0.137.0, when file changes externally, I don't even get a prom
+     217-08451-28258-004 Doesn't prompt me either (Win 7, Atom 0.153) - it doesn't update the file at all, which I have to do 
+     135-08451-30832-005 Lots of good questions, no answers.... ??? I am too looking for automatic reload, prompt or not. Is t
+     153-04413-07352-002 The editor is built using web technology in a Chromium WebView. It's possible that NSScrollView behav
+     195-04413-07379-003 I'm not directly familiar with Chromium WebViews, but I know a standard WebKit(2) WebView can be embe
+     382-04413-30801-004 I was just wondering this too – can atom-shell support the "rubber-banding" scroll effect in OS X? It
+      52-04021-06510-002 This seems to be working now in the 0.71.0 update...
+      50-04021-06512-003 I wrote this after updating to 0.71…will try again
+     143-04021-06516-004 Actually you're right, I got mistaken I thought you meant reopening a folder that you were working on
+     363-04021-06520-005 I think modified files are also an important part of this issue. I'd love it if Atom would behave sim
+      81-04021-06521-006 Ahhh ok. That's a little less-upsetting, but still leaves a bit to be desired IMO
+     294-04021-06522-007 I'm usually actively devving on several feature branches at once, so I'll have them all open in diffe
+     362-04021-07547-008 I'll second this - I can trust that Sublime's state will never change if I quit it myself, or my batt
+     224-04021-16469-009 I'd like to add another "me too". Since using Sublime Text I can't see switching to any editor that d
+     305-04021-18794-010 +1 I just get used to take notes in the editor and don't care to save them, I know the editor will ke
+      41-04021-20231-011 Yes, this is really a core feature I want
+     102-04021-20269-012 I found this package ( https://atom.io/packages/remember-session ) does similar stuff. Hope this help
+     294-04021-21401-013 Yes, but it's important to note that this should be done constantly, and NOT JUST ON QUITTING. If it 
+     208-04021-23955-014 If anyone is still interested, I just published a package that does this. It's probably got some bugs
+     222-04021-23971-015 mpeterson2 said: https://atom.io/packages/save-session Sounds like what many people want, however it'
+     500-04021-23976-016 That package saves dimensions and the paths to files that are open, then restores that information. M
+      46-04021-23977-017 Ok, gotcha. I think I'll have a go at it then.
+     165-04021-25519-018 I think this is a great package (https://atom.io/packages/save-session). The only thing missing is to
+     426-04021-25566-019 Yeah, there is an issue for that with some ideas of how it could be implemented. Unfortunately, it do
+     125-04021-25583-020 Is this being done or is it in any part of the roadmap to 1.0? This is pretty annoying, its essencial
+     539-06707-11456-002 There's also this other thread on essentially the same topic ... just reversed ... discuss.atom.io Do
+      94-06707-13383-003 +1 from me. saving project state is an important feature. hope to see this in the near future.
+     194-06707-13859-004 I made a package to do this, you can check it out here: https://atom.io/packages/remember-sessionIt´s
+     141-06707-16413-005 nice! @hampustagerud will try it out. Btw, I'm now using the project-management package to save my pr
+     666-06707-30810-006 Hi this HAS to be addressed. Atom should come default with being able to open previous project folder
+     362-06707-30811-007 leongaban: Atom should come default with being able to open previous project folders and files... Thi
+      58-01305-01738-002 I believe you can do this by typing atom from a directory.
+      66-01305-01741-003 Correct, if you just do atom within the directory it will open it.
+      22-01305-01810-004 Ah! Beautiful. Thanks!
+     234-01305-02353-005 Do you need to create your own alias for this? After downloading the atom zip file, I extracted it to
+     119-01305-02356-006 Open up the command palette (⇧⌘P if you haven't figured that out yet) and run the command called Inst
+      26-01305-03084-007 @rpowelll thanks for this!
+     308-01305-08850-008 CLI support from Atom.app/Contents/MacOS/Atom is great but not as Sublime. The feature I like the mos
+     162-01305-08922-009 LoicMahieu said: I never tried, but, is Atom supporting Git message editing ? Yes, I set my global Gi
+     645-01305-11047-010 There is also command line --help: atom --helpAtom Editor v0.80.0 Usage: atom [options] [file ...] Op
+     144-01305-26135-011 For some reason, shell commands weren't automatically installed when I installed Atom recently. If th
+     207-01305-30804-012 I did not have to install Shell Commands just now. On a Mac OS X install, downloaded Atom, dragged it
+     630-14488-30645-002 Duplicate of this topic: discuss.atom.io Saved workspaces Loving atom.io so far! So far it's comparin
+     124-14488-30651-004 No objections, but that thread you pointed to isn't conclusive, all it is people saying that it not w
+     231-14488-30654-005 That's correct. The feature you're requesting doesn't exist as of yet, but we try to keep all discuss
+     113-14488-30659-006 Take a look at my most recent post on that thread: https://discuss.atom.io/t/saved-workspaces/2641/6?
+     101-14488-30741-007 This topic was automatically closed 24 hours after the last reply. New replies are no longer allowed.
+     308-02641-03985-002 If you open the root directory of a project, for instance ~/src/foo and then open a few files. If you
+     265-02641-03997-003 It doesn't seem to be consistent though. I've multiple times (accidentally) closed Atom, and launched
+     149-02641-09411-004 Inconsistent for me as well. Sometimes you need to quit Atom to activate a package and then when I tr
+     449-02641-13529-005 I am also missing the idea of projects. If you often work on several projects at a time, having Atom 
+      95-02641-30657-006 For anyone still interested, it's on deck for 1.0 now: https://github.com/atom/atom/issues/1603
+     596-14479-30615-002 You could write a shell/cmd script that does it all: INSTALLER_URL="http://atom.io/download/deb"; INS
+      89-14479-30616-003 This a pretty awesome way of doing the only problem is you couldn't have this and atom :/
+      90-14475-30607-002 It doesn't do that now, no. Could someone make a package that works like that? Absolutely.
+     261-14475-30608-003 Find in Project does something like this, but for all files in the current project. And the result is
+     133-01737-02493-002 I too would love this. Since I work with my company's SSH, this would be perfect to use. Any info on 
+     191-01737-02856-003 i would love to see a "ultraedit like" sftp/scp integration (open, save as, browse) - native integrat
+      48-01737-02876-004 Agree!I'm only pointing what I'm using by now...
+     513-01737-05067-005 I've been working on an open source project called GitSync. https://github.com/ClockworkNet/GitSync B
+     217-01737-05264-006 I still support a more simple ssh solution giving the fact that a lot of people that wants that is be
+     207-01737-06139-007 Really it is very important feature currently we are working all in remote server that we access by s
+      80-01737-06322-008 Maybe use something like this http://www.neverstopbuilding.com/mount-ssh-on-osx?
+     199-01737-06337-009 @Garito stated that MacFUSE and sshfs doesn't work for them: Garito said: I've trying with macfuse an
+     178-01737-06358-010 uh.. don't know how I missed that.. thanks! I've also been exploring the use o SSH from Atom, but I a
+      73-01737-06472-011 Yes, this is what I've tested without success (if you read the thread...)
+      50-01737-09623-012 'Tramp' in emacs is an example of this capability.
+    1129-01737-10197-013 I to work on a remote dev server. GitSync would not work as all of my git command flow would still be
+     148-01737-12461-014 IMHO, the TextMate approach is both simple and elegant, I'd love to have a similar solution for Atom:
+     203-01737-12463-015 I'm highly disagree with the convenience of this solution (in the same way I don't like sshfs one too
+     564-01737-12464-016 I don't know if this is atom-version-related or just my setup or what, but working on an sshfs/osxfus
+     613-01737-12470-017 @Garito You're asking for a SFTP browser extension. If this serves your workflow, sure, why not. Howe
+     327-01737-15479-018 What would be really great to have is this plus a little bit more: an execution layer for all scripts
+     114-01737-15632-019 +1.I like the style of rmate command used by textmate and sublime text. It is more convenient than tr
+     190-01737-15656-020 Has anyone used sftp plugin for sublime text? Doing something similar in Atom isn't that hard. I woul
+      58-14430-30433-002 Give https://atom.io/packages/auto-update-packages a shot.
+     319-14430-30448-003 Looks like it would be good for automatically updating, but some people may not want to necessarily u
+     120-14430-30517-004 Add an issue on that package's repo. Suggest that an option should be added to only check for updates
+     243-13879-28834-002 Couldn't you just write a wrapper that strips off the first parameter and then calls atom.cmd with th
+     219-13879-28840-003 Absolutely I could. I could also go in and add it myself and submit a pull request. This is the featu
+     234-13879-28841-004 I'm not saying it shouldn't be added. I can see how it is useful. And this is definitely the place to
+     698-13879-30452-005 Sorry. I took offense at a perceived tone in your second sentence. I blame the internet. For anyone i
+     177-14424-30410-002 I'm pretty sure all you have to do is restyle .foldable ... but one of the CSS experts here can help 
+     252-14424-30413-003 This worked for me: atom-text-editor::shadow .line-number.foldable .icon-right { visibility: visible;
+     172-14424-30414-004 Yeah I've tried searching it in the CSS codes of the themes, yet I found none. Could you refer me to 
+      60-14424-30415-005 Where should I place it? @olmokramerSorry I'm a novice here.
+      18-14424-30416-006 Maybe @olmokramer?
+      49-14424-30418-007 Where should I place it? Sorry I'm a novice here.
+     145-14424-30419-008 Oh right... Open your ~/.atom/styles.less and add it in there You can open it from edit- open your st
+      94-14424-30420-009 It would go in your styles.less. Open the Command Palette and search for Open Your Stylesheet.
+      31-14424-30421-010 Now this is what I call support
+     162-14424-30423-011 Thank you so much @olmokramer and @leedohm! PS. Kudos also to your dark-flat-ui @olmokramer, I'm usin
+      62-14424-30426-012 You're welcome, @anobilisgorse.And thanks for the compliments!
+     103-14408-30373-002 enhanced-tabs implements tab switching with Ctrl-Tab. I don't know if it covers all your points thoug
+    1316-14408-30374-003 Edit: seems I was slow, the package mentioned in the previous post is probably better suited. Leaving
+     128-14408-30375-004 olmokramer: enhanced-tabs wow! this does exactly what I need!thanks a-lot, and respect for for @js-pa
+     101-14408-30376-005 olmokramer: enhanced-tabs thanks for posting the solution.I'm going with enhanced-tabs for now though
+     342-14343-30176-002 I think opening from the project root location makes a lot of sense. It's predictable. The way I work
+     158-14343-30196-003 I never open files from the File Open dialog. I almost always use the fuzzy finder, Cmd+T on OS X. Ju
+     244-14335-30179-002 So that's detection not only on file extension or shebang line but on content as well? Also, The dire
+     638-14335-30192-003 StenV: Is there a link to this list? Yes, earlier in that section where it says, "Atom Linguist langu
+     235-14321-30118-002 Any or all of these are certainly possible with Atom. Take a look at http://atom.io/packages/. If you
+     258-14321-30124-003 The first part sounds a lot like something you can accomplish using multiple cursors and emmet.There 
+     472-14321-30139-004 Thanks guys, I've managed to find packages for most of these requirements, but havent found one for t
+      46-14321-30145-005 Auto-indent is an option in the settings page.
+     217-14321-30147-006 It is, and it's checked, but it does not work for me or a friend who is testing it on his machine. [e
+     107-14321-30163-007 Auto indent works just fine for me. Does it work when starting atom with atom --safe from the command
+     154-14321-30164-008 Yes, there was a problem with a plug-in.My only complaint is that the Emmet wrap in tag function does
+      36-14321-30167-009 You could try nagging emmet about it
+      27-14321-30168-010 Ah... I see you already did
+      80-14324-30115-002 It's definetely possible. I did this in my theme: .gutter { margin-right: 2em; }
+     164-14324-30116-003 Thank you, should be nice if this is a default design approaching, I almost give up on Atom because w
+     413-14324-30117-004 All this is up to the theme design. You can create an issue, or even better a pull request, at the re
+     560-14324-30119-005 @braver Btw. do you know if it is possible to select the .gutter in CSS by data-grammar ?You showed m
+     226-14324-30120-006 The gutter lives inside the atom-text-editor element, so something like this should work: atom-text-e
+     199-14324-30121-007 atom-text-editor .gutter, atom-text-editor::shadow .gutter { background: transparent; } This little c
+     229-14324-30126-008 You can also do this, to only add padding to the editor if there is no gutter. atom-text-editor, atom
+     259-14324-30130-010 The gutter lives inside the atom-text-editor element, so something like this should work: atom-text-e
+     160-14324-30138-011 This works for me: atom-text-editor[data-grammar="source css less"], atom-text-editor[data-grammar="s
+     166-14324-30160-012 nylki: @olmokramer hm, this doesn't work. Hm... It does work for me. I just literally copied the code
+      70-01243-03801-002 This is extremely important for use with Visor terminals and the like.
+      65-01243-05052-003 +1 Well important, since Apple decided to bastardised it in Lion.
+      29-01243-05092-004 This would come in handy plz.
+      69-01243-06986-005 +1 I would also love this. Fullscreen currently breaks my visor term.
+      17-01243-08852-006 Another for this!
+      26-01243-09338-007 Yup, same here... DO WANT!
+      85-01243-09432-008 Do want this feature! Rather useful when using several applications at the same time.
+      92-01243-10967-009 I would love this as well - using Atom with spaces and multiple monitors hinders efficiency.
+     152-01243-12723-010 I fully agree too : mac OS X full screen support is not useable for me, I would love that Atom implem
+     117-01243-12817-011 Yeah, this would be great. The animation that comes with switching to an OS X full screen space makes
+      56-01243-13605-012 This is vital for people suffering from motion sickness.
+     239-01243-14862-013 I just want to mention that, if this is added, it should not be the default - having the OS standard 
+      66-01243-27446-014 +1 This is feature is what's keeping me from using atom full time.
+      80-01243-28384-015 FYI, there is a related issue on github: https://github.com/atom/atom/issues/967
+      72-01243-30062-016 +1 - This is really critical to me. Apple's fullscreen mode is terrible.
+      22-14281-29985-002 See the term2 package.
+     187-14281-29991-003 Awesome! That's exactly what I needed. I didn't have to configure anything either. I just hit Ctrl+Al
+      64-03824-06158-002 I didn't know about this feature in other tree views. I like it!
+      43-03824-27831-003 This works on atom too! Thanks for the tip!
+     591-03824-29956-004 This feature exists in atom. It did not work in Ubuntu 14.04 because Alt+LMB is taken by default. Fol
+     121-14193-29728-002 I would assume the security is the same as in any other node app. I'm sure tons of info has been publ
+     160-14193-29949-003 It might help to know which specific security concerns you'd like documented.Are they related to copy
+     279-14264-29919-002 While it may not be exactly what you want, there are the symbols-view:toggle-file-symbols and the sym
+     303-14264-29920-003 Sheridan_Tech: allow me to see them as they change in stepthrough. This would require atom to be an I
+     429-14228-29813-002 That feature has been requested and the Atom team decided to not implement it, to keep the current bo
+      84-14228-29836-003 Actually @leedohm bookmarks are permanent. In my case problem was different package.
+     166-14228-29844-004 It was my understanding that they are permanent so long as you don't close the file. But they persist
+     968-14228-29867-005 Well this just got stranger for me. I normally launch atom from its GUI shortcut. When launching atom
+     566-14228-29868-006 Looking at https://github.com/atom/bookmarks/issues/22 again I see that it is noted there that you ne
+     220-14228-29869-007 jimjoh: to be retained when launching atom from a GUI shortcut How would atom know which project you 
+     358-14228-29910-008 mark_hahn: How would atom know which project you are opening? It doesn't matter to me how atom would 
+     594-14228-29911-009 jimjoh: I believe atom is geared towards a single project work flow Yes it definitely is. It is geare
